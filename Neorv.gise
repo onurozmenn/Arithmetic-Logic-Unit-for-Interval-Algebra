@@ -35,13 +35,17 @@
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="VerilogTopModule_summary.html"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="VerilogTopModule_xst.xrpt"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="neorv32_test_setup_bootloader.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="neorv32_test_setup_bootloader.bit" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="neorv32_test_setup_bootloader.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="neorv32_test_setup_bootloader.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="neorv32_test_setup_bootloader.drc" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="neorv32_test_setup_bootloader.lso"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="neorv32_test_setup_bootloader.ncd" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="neorv32_test_setup_bootloader.ngc"/>
@@ -57,6 +61,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="neorv32_test_setup_bootloader.twr" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="neorv32_test_setup_bootloader.twx" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="neorv32_test_setup_bootloader.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="neorv32_test_setup_bootloader.ut" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:fileType="FILE_XPI" xil_pn:name="neorv32_test_setup_bootloader.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="neorv32_test_setup_bootloader.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="neorv32_test_setup_bootloader_envsettings.html"/>
@@ -74,6 +79,8 @@
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="neorv32_test_setup_bootloader_summary.xml"/>
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="neorv32_test_setup_bootloader_usage.xml"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="neorv32_test_setup_bootloader_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
@@ -108,12 +115,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1740161724" xil_pn:in_ck="4779609767701793903" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="1026057575128845134" xil_pn:start_ts="1740161693">
+    <transform xil_pn:end_ts="1740168004" xil_pn:in_ck="4779609767701793903" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="1026057575128845134" xil_pn:start_ts="1740167986">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="neorv32_test_setup_bootloader.lso"/>
       <outfile xil_pn:name="neorv32_test_setup_bootloader.ngc"/>
@@ -130,18 +135,23 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1740161734" xil_pn:in_ck="-5310446084658354254" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-7292699397265610272" xil_pn:start_ts="1740161728">
+    <transform xil_pn:end_ts="1740167097" xil_pn:in_ck="-5310446084658354254" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-7292699397265610272" xil_pn:start_ts="1740167093">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
       <outfile xil_pn:name="neorv32_test_setup_bootloader.bld"/>
       <outfile xil_pn:name="neorv32_test_setup_bootloader.ngd"/>
       <outfile xil_pn:name="neorv32_test_setup_bootloader_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1740161854" xil_pn:in_ck="-7771245764649816900" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="-398923363910175968" xil_pn:start_ts="1740161734">
+    <transform xil_pn:end_ts="1740167233" xil_pn:in_ck="-7771245764649816900" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="-398923363910175968" xil_pn:start_ts="1740167097">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
       <outfile xil_pn:name="neorv32_test_setup_bootloader.pcf"/>
       <outfile xil_pn:name="neorv32_test_setup_bootloader_map.map"/>
@@ -152,9 +162,10 @@
       <outfile xil_pn:name="neorv32_test_setup_bootloader_summary.xml"/>
       <outfile xil_pn:name="neorv32_test_setup_bootloader_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1740161890" xil_pn:in_ck="-6208175574059913675" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-3829590541433901613" xil_pn:start_ts="1740161854">
+    <transform xil_pn:end_ts="1740167260" xil_pn:in_ck="-6208175574059913675" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-3829590541433901613" xil_pn:start_ts="1740167233">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
       <outfile xil_pn:name="neorv32_test_setup_bootloader.ncd"/>
       <outfile xil_pn:name="neorv32_test_setup_bootloader.pad"/>
@@ -166,9 +177,26 @@
       <outfile xil_pn:name="neorv32_test_setup_bootloader_pad.txt"/>
       <outfile xil_pn:name="neorv32_test_setup_bootloader_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1740161890" xil_pn:in_ck="7530070616202962104" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1740161883">
+    <transform xil_pn:end_ts="1740167282" xil_pn:in_ck="-7944541207627844277" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1740167270">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="neorv32_test_setup_bootloader.bgn"/>
+      <outfile xil_pn:name="neorv32_test_setup_bootloader.bit"/>
+      <outfile xil_pn:name="neorv32_test_setup_bootloader.drc"/>
+      <outfile xil_pn:name="neorv32_test_setup_bootloader.ut"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1740167260" xil_pn:in_ck="7530070616202962104" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1740167255">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
       <outfile xil_pn:name="neorv32_test_setup_bootloader.twr"/>
       <outfile xil_pn:name="neorv32_test_setup_bootloader.twx"/>
