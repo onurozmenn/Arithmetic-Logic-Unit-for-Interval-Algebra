@@ -1,0 +1,65 @@
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design neorv32_top.ngc ...
+WARNING:NetListWriters:298 - No output is written to neorv32_top.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file neorv32_top.edif ...
+ngc2edif: Total memory usage is 92092 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design neorv32_test_setup_bootloader.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   neorv32_test_setup_bootloader.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/io_system.neorv32_uart0_enabled.neorv32_uart0_inst/bus_rsp_o
+   _data[31 : 0] on block neorv32_test_setup_bootloader is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus neorv32_top_inst/core_req[0]_addr[31 :
+   2] on block neorv32_test_setup_bootloader is not reconstructed, because there
+   are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus neorv32_top_inst/clk_gen[4 : 0] on block
+   neorv32_test_setup_bootloader is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_ins
+   t/issue_engine_data[33 : 0] on block neorv32_test_setup_bootloader is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_ins
+   t/n0972[6 : 0] on block neorv32_test_setup_bootloader is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_ins
+   t/cnt_nxt[31 : 0] on block neorv32_test_setup_bootloader is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_ins
+   t/trap_ctrl_irq_buf[11 : 0] on block neorv32_test_setup_bootloader is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_ins
+   t/trap_ctrl_irq_pnd[11 : 0] on block neorv32_test_setup_bootloader is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_ins
+   t/csr_mtvec[31 : 0] on block neorv32_test_setup_bootloader is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_ins
+   t/trap_ctrl_exc_buf[8 : 0] on block neorv32_test_setup_bootloader is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/io_system.neorv32_uart0_enabled.neorv32_uart0_inst/GND_408_o
+   _GND_408_o_mux_8_OUT[31 : 0] on block neorv32_test_setup_bootloader is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file neorv32_test_setup_bootloader.edif ...
+ngc2edif: Total memory usage is 110336 kilobytes
+

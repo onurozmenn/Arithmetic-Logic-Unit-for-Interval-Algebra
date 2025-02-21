@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/onur/Desktop/Neorv/neorv32_test_setup_bootloader.ncd
+OUTFILE=/home/onur/Desktop/Neorv/neorv32_test_setup_bootloader.bit
+FAMILY=Spartan6
+PART=xc6slx45-2csg324
+WORKINGDIR=/home/onur/Desktop/Neorv
+LICENSE=WebPack
+USER_INFO=212882409_0_0_817

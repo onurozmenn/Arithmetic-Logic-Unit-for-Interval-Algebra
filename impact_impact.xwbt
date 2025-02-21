@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=/home/onur/Desktop/Neorv/impact.xsl
+OUTFILE=/home/onur/Desktop/Neorv/impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=/home/onur/Desktop/Neorv
+LICENSE=iMPACT
+USER_INFO=iMPACT
