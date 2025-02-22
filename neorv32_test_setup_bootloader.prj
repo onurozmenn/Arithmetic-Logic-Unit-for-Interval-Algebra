@@ -1,6 +1,6 @@
-verilog work "../VerilogCode.v"
+verilog work "IALU.v"
 vhdl neorv32 "../neorv32-main/rtl/core/neorv32_package.vhd"
-vhdl work "../IALU/TOPVHDL.vhd"
+vhdl work "TopModules_wrapper.vhd"
 vhdl neorv32 "../neorv32-main/rtl/core/neorv32_fifo.vhd"
 vhdl neorv32 "../neorv32-main/rtl/core/neorv32_cpu_decompressor.vhd"
 vhdl neorv32 "../neorv32-main/rtl/core/neorv32_cpu_cp_shifter.vhd"

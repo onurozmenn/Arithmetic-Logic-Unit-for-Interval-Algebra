@@ -89,22 +89,24 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001bd000000010000000100000000000000000000000064ffffffff000000810000000000000001000001bd0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000200000000010000000100000000000000000000000064ffffffff000000810000000000000001000002000000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
-      <SelectedItems/>
-      <ScrollbarPosition orientation="vertical" >25</ScrollbarPosition>
+      <SelectedItems>
+         <SelectedItem>neorv32_top.ucf</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >21</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000390000000040101000100000000000000000000000064ffffffff0000008100000000000000040000011e0000000100000000000000290000000100000000000000750000000100000000000001d40000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000220000000040101000100000000000000000000000064ffffffff0000008100000000000000040000011e0000000100000000000000290000000100000000000000750000000100000000000000640000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>neorv32_top.ucf</CurrentItem>
    </ItemView>
@@ -128,68 +130,6 @@
          <ClosedNode>Implement Design/Map</ClosedNode>
          <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
          <ClosedNode>Implement Design/Translate</ClosedNode>
-         <ClosedNode>Synthesize - XST</ClosedNode>
-         <ClosedNode>User Constraints</ClosedNode>
-      </ClosedNodes>
-      <SelectedItems>
-         <SelectedItem>Synthesize - XST</SelectedItem>
-      </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
-      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000017c000000010000000100000000000000000000000064ffffffff0000008100000000000000010000017c0000000100000000</ViewHeaderState>
-      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Synthesize - XST</CurrentItem>
-   </ItemView>
-   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
-      <ClosedNodes>
-         <ClosedNodesVersion>1</ClosedNodesVersion>
-      </ClosedNodes>
-      <SelectedItems>
-         <SelectedItem/>
-      </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
-      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000018b000000010000000100000000000000000000000064ffffffff0000008100000000000000010000018b0000000100000000</ViewHeaderState>
-      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
-   </ItemView>
-   <SourceProcessView>000000ff0000000000000002000001ad000000dd01000000060100000002</SourceProcessView>
-   <CurrentView>Implementation</CurrentView>
-   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
-      <ClosedNodes>
-         <ClosedNodesVersion>2</ClosedNodesVersion>
-         <ClosedNode>/Unassigned User Library Modules/neorv32_test_setup_bootloader - neorv32_test_setup_bootloader_rtl</ClosedNode>
-      </ClosedNodes>
-      <SelectedItems>
-         <SelectedItem>Unassigned User Library Modules</SelectedItem>
-      </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
-      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000002d5000000020000000000000000000000000200000064ffffffff000000810000000300000002000002d50000000100000003000000000000000100000003</ViewHeaderState>
-      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Unassigned User Library Modules</CurrentItem>
-   </ItemView>
-   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
-      <ClosedNodes>
-         <ClosedNodesVersion>1</ClosedNodesVersion>
-         <ClosedNode>Design Utilities</ClosedNode>
-      </ClosedNodes>
-      <SelectedItems>
-         <SelectedItem/>
-      </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
-      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000011a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000011a0000000100000000</ViewHeaderState>
-      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
-   </ItemView>
-   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
-      <ClosedNodes>
-         <ClosedNodesVersion>1</ClosedNodesVersion>
-         <ClosedNode>Configure Target Device</ClosedNode>
-         <ClosedNode>Design Utilities</ClosedNode>
-         <ClosedNode>Implement Design</ClosedNode>
-         <ClosedNode>Synthesize - XST</ClosedNode>
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
@@ -197,8 +137,129 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000018b000000010000000100000000000000000000000064ffffffff0000008100000000000000010000018b0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001f1000000010000000100000000000000000000000064ffffffff000000810000000000000001000001f10000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000200000000010000000100000000000000000000000064ffffffff000000810000000000000001000002000000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff0000000000000002000001ad000000dd01000000060100000002</SourceProcessView>
+   <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/Unassigned User Library Modules/neorv32_test_setup_bootloader - neorv32_test_setup_bootloader_rtl/neorv32_top_inst - neorv32_top - neorv32_top_rtl/neorv32_bus_io_switch_inst - neorv32_bus_io_switch - neorv32_bus_io_switch_rtl</ClosedNode>
+         <ClosedNode>/Unassigned User Library Modules/neorv32_test_setup_bootloader - neorv32_test_setup_bootloader_rtl/neorv32_top_inst - neorv32_top - neorv32_top_rtl/neorv32_clint_inst - neorv32_clint - neorv32_clint_rtl</ClosedNode>
+         <ClosedNode>/Unassigned User Library Modules/neorv32_test_setup_bootloader - neorv32_test_setup_bootloader_rtl/neorv32_top_inst - neorv32_top - neorv32_top_rtl/neorv32_cpu_inst - neorv32_cpu - neorv32_cpu_rtl/neorv32_cpu_alu_inst - neorv32_cpu_alu - neorv32_cpu_alu_rtl/neorv32_cpu_cp_cfu_inst - neorv32_cpu_cp_cfu - neorv32_cpu_cp_cfu_rtl/TopModules_wrapper_inst - TopModules_wrapper - Behavioral/IALU_inst - IALU</ClosedNode>
+         <ClosedNode>/Unassigned User Library Modules/neorv32_test_setup_bootloader - neorv32_test_setup_bootloader_rtl/neorv32_top_inst - neorv32_top - neorv32_top_rtl/neorv32_cpu_inst - neorv32_cpu - neorv32_cpu_rtl/neorv32_cpu_alu_inst - neorv32_cpu_alu - neorv32_cpu_alu_rtl/neorv32_cpu_cp_fpu_inst - neorv32_cpu_cp_fpu - neorv32_cpu_cp_fpu_rtl</ClosedNode>
+         <ClosedNode>/Unassigned User Library Modules/neorv32_test_setup_bootloader - neorv32_test_setup_bootloader_rtl/neorv32_top_inst - neorv32_top - neorv32_top_rtl/neorv32_cpu_inst - neorv32_cpu - neorv32_cpu_rtl/neorv32_cpu_control_inst - neorv32_cpu_control - neorv32_cpu_control_rtl</ClosedNode>
+         <ClosedNode>/Unassigned User Library Modules/neorv32_test_setup_bootloader - neorv32_test_setup_bootloader_rtl/neorv32_top_inst - neorv32_top - neorv32_top_rtl/neorv32_cpu_inst - neorv32_cpu - neorv32_cpu_rtl/neorv32_cpu_icc_inst - neorv32_cpu_icc - neorv32_cpu_icc_rtl</ClosedNode>
+         <ClosedNode>/Unassigned User Library Modules/neorv32_test_setup_bootloader - neorv32_test_setup_bootloader_rtl/neorv32_top_inst - neorv32_top - neorv32_top_rtl/neorv32_dcache_inst - neorv32_cache - neorv32_cache_rtl</ClosedNode>
+         <ClosedNode>/Unassigned User Library Modules/neorv32_test_setup_bootloader - neorv32_test_setup_bootloader_rtl/neorv32_top_inst - neorv32_top - neorv32_top_rtl/neorv32_debug_dm_inst - neorv32_debug_dm - neorv32_debug_dm_rtl</ClosedNode>
+         <ClosedNode>/Unassigned User Library Modules/neorv32_test_setup_bootloader - neorv32_test_setup_bootloader_rtl/neorv32_top_inst - neorv32_top - neorv32_top_rtl/neorv32_icache_inst - neorv32_cache - neorv32_cache_rtl</ClosedNode>
+         <ClosedNode>/Unassigned User Library Modules/neorv32_test_setup_bootloader - neorv32_test_setup_bootloader_rtl/neorv32_top_inst - neorv32_top - neorv32_top_rtl/neorv32_neoled_inst - neorv32_neoled - neorv32_neoled_rtl</ClosedNode>
+         <ClosedNode>/Unassigned User Library Modules/neorv32_test_setup_bootloader - neorv32_test_setup_bootloader_rtl/neorv32_top_inst - neorv32_top - neorv32_top_rtl/neorv32_onewire_inst - neorv32_onewire - neorv32_onewire_rtl</ClosedNode>
+         <ClosedNode>/Unassigned User Library Modules/neorv32_test_setup_bootloader - neorv32_test_setup_bootloader_rtl/neorv32_top_inst - neorv32_top - neorv32_top_rtl/neorv32_pwm_inst - neorv32_pwm - neorv32_pwm_rtl</ClosedNode>
+         <ClosedNode>/Unassigned User Library Modules/neorv32_test_setup_bootloader - neorv32_test_setup_bootloader_rtl/neorv32_top_inst - neorv32_top - neorv32_top_rtl/neorv32_sdi_inst - neorv32_sdi - neorv32_sdi_rtl</ClosedNode>
+         <ClosedNode>/Unassigned User Library Modules/neorv32_test_setup_bootloader - neorv32_test_setup_bootloader_rtl/neorv32_top_inst - neorv32_top - neorv32_top_rtl/neorv32_slink_inst - neorv32_slink - neorv32_slink_rtl</ClosedNode>
+         <ClosedNode>/Unassigned User Library Modules/neorv32_test_setup_bootloader - neorv32_test_setup_bootloader_rtl/neorv32_top_inst - neorv32_top - neorv32_top_rtl/neorv32_spi_inst - neorv32_spi - neorv32_spi_rtl</ClosedNode>
+         <ClosedNode>/Unassigned User Library Modules/neorv32_test_setup_bootloader - neorv32_test_setup_bootloader_rtl/neorv32_top_inst - neorv32_top - neorv32_top_rtl/neorv32_trng_inst - neorv32_trng - neorv32_trng_rtl</ClosedNode>
+         <ClosedNode>/Unassigned User Library Modules/neorv32_test_setup_bootloader - neorv32_test_setup_bootloader_rtl/neorv32_top_inst - neorv32_top - neorv32_top_rtl/neorv32_twd_inst - neorv32_twd - neorv32_twd_rtl</ClosedNode>
+         <ClosedNode>/Unassigned User Library Modules/neorv32_test_setup_bootloader - neorv32_test_setup_bootloader_rtl/neorv32_top_inst - neorv32_top - neorv32_top_rtl/neorv32_twi_inst - neorv32_twi - neorv32_twi_rtl</ClosedNode>
+         <ClosedNode>/Unassigned User Library Modules/neorv32_test_setup_bootloader - neorv32_test_setup_bootloader_rtl/neorv32_top_inst - neorv32_top - neorv32_top_rtl/neorv32_uart0_inst - neorv32_uart - neorv32_uart_rtl</ClosedNode>
+         <ClosedNode>/Unassigned User Library Modules/neorv32_test_setup_bootloader - neorv32_test_setup_bootloader_rtl/neorv32_top_inst - neorv32_top - neorv32_top_rtl/neorv32_uart1_inst - neorv32_uart - neorv32_uart_rtl</ClosedNode>
+         <ClosedNode>/Unassigned User Library Modules/neorv32_test_setup_bootloader - neorv32_test_setup_bootloader_rtl/neorv32_top_inst - neorv32_top - neorv32_top_rtl/neorv32_xbus_inst - neorv32_xbus - neorv32_xbus_rtl</ClosedNode>
+         <ClosedNode>/Unassigned User Library Modules/neorv32_test_setup_bootloader - neorv32_test_setup_bootloader_rtl/neorv32_top_inst - neorv32_top - neorv32_top_rtl/neorv32_xcache_inst - neorv32_cache - neorv32_cache_rtl</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>neorv32_test_setup_bootloader - neorv32_test_setup_bootloader_rtl (/home/onur/Desktop/Neorv/neorv32_test_setup_bootloader.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000384000000020000000000000000000000000200000064ffffffff000000810000000300000002000003840000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>neorv32_test_setup_bootloader - neorv32_test_setup_bootloader_rtl (/home/onur/Desktop/Neorv/neorv32_test_setup_bootloader.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000200000000010000000100000000000000000000000064ffffffff000000810000000000000001000002000000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Design Summary/Reports</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001f1000000010000000100000000000000000000000064ffffffff000000810000000000000001000001f10000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Design Summary/Reports</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Behavioral Check Syntax</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000200000000010000000100000000000000000000000064ffffffff000000810000000000000001000002000000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Behavioral Check Syntax</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Behavioral Check Syntax</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000200000000010000000100000000000000000000000064ffffffff000000810000000000000001000002000000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Behavioral Check Syntax</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="ManualCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>xc6slx45-2csg324</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001fb000000020000000000000000000000000000000064ffffffff0000008100000000000000020000012e0000000100000000000000cd0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>xc6slx45-2csg324</CurrentItem>
    </ItemView>
 </Project>

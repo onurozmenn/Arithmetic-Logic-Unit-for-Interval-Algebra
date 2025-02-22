@@ -1,0 +1,2 @@
+verilog work "IALU.v"
+vhdl neorv32 "../IALU/TOPVHDL.vhd"

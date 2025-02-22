@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2025-02-21T20:57:58</DateModified>
+  <DateModified>2025-02-22T01:16:40</DateModified>
   <ModuleName>neorv32_test_setup_bootloader</ModuleName>
-  <SummaryTimeStamp>2025-02-19T15:11:36</SummaryTimeStamp>
+  <SummaryTimeStamp>2025-02-21T23:20:17</SummaryTimeStamp>
   <SavedFilePath>/home/onur/Desktop/Neorv/iseconfig/neorv32_test_setup_bootloader.xreport</SavedFilePath>
   <ImplementationReportsDirectory>/home/onur/Desktop/Neorv/</ImplementationReportsDirectory>
-  <DateInitialized>2025-02-19T15:12:50</DateInitialized>
+  <DateInitialized>2025-02-21T23:20:24</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>
