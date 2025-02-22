@@ -226,3 +226,10 @@ xst -intstyle ise -ifn "/home/onur/Desktop/Neorv/neorv32_test_setup_bootloader.x
 xst -intstyle ise -ifn "/home/onur/Desktop/Neorv/neorv32_test_setup_bootloader.xst" -ofn "/home/onur/Desktop/Neorv/neorv32_test_setup_bootloader.syr" 
 xst -intstyle ise -ifn "/home/onur/Desktop/Neorv/neorv32_test_setup_bootloader.xst" -ofn "/home/onur/Desktop/Neorv/neorv32_test_setup_bootloader.syr" 
 xst -intstyle ise -ifn "/home/onur/Desktop/Neorv/neorv32_test_setup_bootloader.xst" -ofn "/home/onur/Desktop/Neorv/neorv32_test_setup_bootloader.syr" 
+xst -intstyle ise -ifn "/home/onur/Desktop/Neorv/neorv32_test_setup_bootloader.xst" -ofn "/home/onur/Desktop/Neorv/neorv32_test_setup_bootloader.syr" 
+xst -intstyle ise -ifn "/home/onur/Desktop/Neorv/neorv32_test_setup_bootloader.xst" -ofn "/home/onur/Desktop/Neorv/neorv32_test_setup_bootloader.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc neorv32_top.ucf -p xc6slx45-csg324-2 neorv32_test_setup_bootloader.ngc neorv32_test_setup_bootloader.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o neorv32_test_setup_bootloader_map.ncd neorv32_test_setup_bootloader.ngd neorv32_test_setup_bootloader.pcf 
+par -w -intstyle ise -ol high -mt off neorv32_test_setup_bootloader_map.ncd neorv32_test_setup_bootloader.ncd neorv32_test_setup_bootloader.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml neorv32_test_setup_bootloader.twx neorv32_test_setup_bootloader.ncd -o neorv32_test_setup_bootloader.twr neorv32_test_setup_bootloader.pcf -ucf neorv32_top.ucf 
+bitgen -intstyle ise -f neorv32_test_setup_bootloader.ut neorv32_test_setup_bootloader.ncd 

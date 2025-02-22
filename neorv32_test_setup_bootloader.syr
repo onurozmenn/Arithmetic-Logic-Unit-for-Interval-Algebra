@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total CPU time to Xst completion: 0.02 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total CPU time to Xst completion: 0.02 secs
  
 --> 
 Reading design: neorv32_test_setup_bootloader.prj
@@ -413,7 +413,6 @@ WARNING:HDLCompiler:413 - "/home/onur/Desktop/Neorv/IALU.v" Line 395: Result of 
 WARNING:HDLCompiler:413 - "/home/onur/Desktop/Neorv/IALU.v" Line 398: Result of 32-bit expression is truncated to fit in 1-bit target.
 Back to vhdl to continue elaboration
 INFO:HDLCompiler:679 - "/home/onur/Desktop/neorv32-main/rtl/core/neorv32_cpu_cp_cfu.vhd" Line 205. Case statement is complete. others clause is never selected
-WARNING:HDLCompiler:634 - "/home/onur/Desktop/neorv32-main/rtl/core/neorv32_cpu_cp_cfu.vhd" Line 96: Net <ialu_clk> does not have a driver.
 
 Elaborating entity <neorv32_cpu_lsu> (architecture <neorv32_cpu_lsu_rtl>) from library <neorv32>.
 
@@ -1423,7 +1422,6 @@ WARNING:Xst:647 - Input <rtype_i> is never used. This port will be preserved and
 INFO:Xst:3210 - "/home/onur/Desktop/neorv32-main/rtl/core/neorv32_cpu_cp_cfu.vhd" line 129: Output port <stateCross> of the instance <TopModules_inst> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/home/onur/Desktop/neorv32-main/rtl/core/neorv32_cpu_cp_cfu.vhd" line 129: Output port <flag1> of the instance <TopModules_inst> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/home/onur/Desktop/neorv32-main/rtl/core/neorv32_cpu_cp_cfu.vhd" line 129: Output port <flag2> of the instance <TopModules_inst> is unconnected or connected to loadless signal.
-WARNING:Xst:653 - Signal <ialu_clk> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Found 1-bit register for signal <ialu_rst>.
     Found 32-bit register for signal <key_mem<1>>.
     Found 32-bit register for signal <key_mem<2>>.
@@ -2605,170 +2603,34 @@ INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmet
 =========================================================================
 
 INFO:Xst:2261 - The FF/Latch <rx_engine_state_1> in Unit <io_system.neorv32_uart0_enabled.neorv32_uart0_inst> is equivalent to the following FF/Latch, which will be removed : <tx_engine_state_2> 
-WARNING:Xst:1293 - FF/Latch <tABCD_12> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_13> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_14> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_15> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_16> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_17> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_18> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_19> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_20> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_21> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_22> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_23> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_24> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_25> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_26> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_27> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_28> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_29> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_30> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_31> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_59> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_60> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_61> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_62> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_63> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <state_0> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <state_1> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <normstate_1> (without init value) has a constant value of 0 in block <normmul>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <ch> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_0> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_1> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_2> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_3> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_4> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_5> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_6> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_7> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_8> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_9> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_10> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_11> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_53> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_54> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_55> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_56> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_57> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_58> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_59> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_60> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_61> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_62> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_63> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <state_0> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <state_1> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <ialu_funct_0> (without init value) has a constant value of 0 in block <neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <ialu_funct_1> (without init value) has a constant value of 0 in block <neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <ialu_funct_2> (without init value) has a constant value of 0 in block <neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <ialu_funct_3> (without init value) has a constant value of 0 in block <neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <ialu_funct_4> (without init value) has a constant value of 0 in block <neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <host_rsp_o_err> (without init value) has a constant value of 0 in block <neorv32_bus_reg_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <tx_engine_cts_0> (without init value) has a constant value of 0 in block <io_system.neorv32_uart0_enabled.neorv32_uart0_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_32> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_33> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_34> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_35> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_36> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_37> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_38> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_39> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_40> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_41> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_42> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_43> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_44> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_45> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_46> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_47> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_48> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_49> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_50> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_51> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_52> has a constant value of 0 in block <multup>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <normstate_1> (without init value) has a constant value of 0 in block <normmul>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <ch> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_0> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_1> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_2> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_3> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_4> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_5> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_6> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_7> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_8> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_9> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_10> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_11> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_12> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_13> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_14> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_15> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_16> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_17> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <trap_ctrl_exc_buf_2> (without init value) has a constant value of 0 in block <neorv32_cpu_control_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <trap_ctrl_exc_buf_9> (without init value) has a constant value of 0 in block <neorv32_cpu_control_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <trap_ctrl_exc_buf_10> (without init value) has a constant value of 0 in block <neorv32_cpu_control_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <exe_engine_pc_0> (without init value) has a constant value of 0 in block <neorv32_cpu_control_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <trap_ctrl_irq_pnd_2> (without init value) has a constant value of 0 in block <neorv32_cpu_control_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <trap_ctrl_irq_pnd_3> (without init value) has a constant value of 0 in block <neorv32_cpu_control_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <trap_ctrl_irq_pnd_4> (without init value) has a constant value of 0 in block <neorv32_cpu_control_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <trap_ctrl_irq_pnd_7> (without init value) has a constant value of 0 in block <neorv32_cpu_control_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <trap_ctrl_irq_pnd_8> (without init value) has a constant value of 0 in block <neorv32_cpu_control_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <trap_ctrl_irq_pnd_9> (without init value) has a constant value of 0 in block <neorv32_cpu_control_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <trap_ctrl_irq_pnd_10> (without init value) has a constant value of 0 in block <neorv32_cpu_control_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <trap_ctrl_irq_pnd_12> (without init value) has a constant value of 0 in block <neorv32_cpu_control_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <trap_ctrl_irq_pnd_13> (without init value) has a constant value of 0 in block <neorv32_cpu_control_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <trap_ctrl_irq_pnd_14> (without init value) has a constant value of 0 in block <neorv32_cpu_control_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <trap_ctrl_irq_pnd_15> (without init value) has a constant value of 0 in block <neorv32_cpu_control_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <trap_ctrl_irq_pnd_16> (without init value) has a constant value of 0 in block <neorv32_cpu_control_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <trap_ctrl_irq_pnd_17> (without init value) has a constant value of 0 in block <neorv32_cpu_control_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <trap_ctrl_irq_pnd_18> (without init value) has a constant value of 0 in block <neorv32_cpu_control_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <trap_ctrl_irq_buf_19> (without init value) has a constant value of 0 in block <neorv32_cpu_control_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <trap_ctrl_irq_buf_20> (without init value) has a constant value of 0 in block <neorv32_cpu_control_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <host_rsp_o_err> (without init value) has a constant value of 0 in block <neorv32_bus_reg_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ialu_funct_4> (without init value) has a constant value of 0 in block <neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ialu_funct_3> (without init value) has a constant value of 0 in block <neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ialu_funct_2> (without init value) has a constant value of 0 in block <neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ialu_funct_1> (without init value) has a constant value of 0 in block <neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ialu_funct_0> (without init value) has a constant value of 0 in block <neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <csr_mtvec_1> (without init value) has a constant value of 0 in block <neorv32_cpu_control_inst>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_39> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_40> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_41> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_42> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_43> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_44> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_45> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_46> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_47> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_48> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_49> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_50> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_51> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_52> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_53> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_54> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_55> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_56> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_57> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_58> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_18> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_19> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_20> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_21> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_22> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_23> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_24> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_25> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_26> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_27> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_28> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_29> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_30> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_31> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_32> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_33> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_34> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_35> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_36> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_37> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <tABCD_38> has a constant value of 0 in block <multdown>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <trap_ctrl_irq_buf_20> (without init value) has a constant value of 0 in block <neorv32_cpu_control_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <trap_ctrl_irq_buf_19> (without init value) has a constant value of 0 in block <neorv32_cpu_control_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <trap_ctrl_irq_pnd_18> (without init value) has a constant value of 0 in block <neorv32_cpu_control_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <trap_ctrl_irq_pnd_17> (without init value) has a constant value of 0 in block <neorv32_cpu_control_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <trap_ctrl_irq_pnd_16> (without init value) has a constant value of 0 in block <neorv32_cpu_control_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <trap_ctrl_irq_pnd_15> (without init value) has a constant value of 0 in block <neorv32_cpu_control_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <trap_ctrl_irq_pnd_14> (without init value) has a constant value of 0 in block <neorv32_cpu_control_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <trap_ctrl_irq_pnd_13> (without init value) has a constant value of 0 in block <neorv32_cpu_control_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <trap_ctrl_irq_pnd_12> (without init value) has a constant value of 0 in block <neorv32_cpu_control_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <trap_ctrl_irq_pnd_10> (without init value) has a constant value of 0 in block <neorv32_cpu_control_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <trap_ctrl_irq_pnd_9> (without init value) has a constant value of 0 in block <neorv32_cpu_control_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <trap_ctrl_irq_pnd_8> (without init value) has a constant value of 0 in block <neorv32_cpu_control_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <trap_ctrl_irq_pnd_7> (without init value) has a constant value of 0 in block <neorv32_cpu_control_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <trap_ctrl_irq_pnd_4> (without init value) has a constant value of 0 in block <neorv32_cpu_control_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <trap_ctrl_irq_pnd_3> (without init value) has a constant value of 0 in block <neorv32_cpu_control_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <trap_ctrl_irq_pnd_2> (without init value) has a constant value of 0 in block <neorv32_cpu_control_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <exe_engine_pc_0> (without init value) has a constant value of 0 in block <neorv32_cpu_control_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <trap_ctrl_exc_buf_10> (without init value) has a constant value of 0 in block <neorv32_cpu_control_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <trap_ctrl_exc_buf_9> (without init value) has a constant value of 0 in block <neorv32_cpu_control_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <trap_ctrl_exc_buf_2> (without init value) has a constant value of 0 in block <neorv32_cpu_control_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <tx_engine_cts_1> (without init value) has a constant value of 0 in block <io_system.neorv32_uart0_enabled.neorv32_uart0_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <csr_mepc_0> of sequential type is unconnected in block <neorv32_cpu_control_inst>.
 WARNING:Xst:2677 - Node <device_req_o_addr_0> of sequential type is unconnected in block <neorv32_bus_reg_inst>.
@@ -2785,104 +2647,6 @@ WARNING:Xst:2677 - Node <device_req_o_addr_29> of sequential type is unconnected
 WARNING:Xst:2677 - Node <device_req_o_addr_30> of sequential type is unconnected in block <neorv32_bus_reg_inst>.
 WARNING:Xst:2677 - Node <device_req_o_addr_31> of sequential type is unconnected in block <neorv32_bus_reg_inst>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <trap_ctrl_env_entered> is unconnected in block <neorv32_cpu_control_inst>.
-WARNING:Xst:1294 - Latch <s1> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <s2> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_3_q> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <exp1_3> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <exp1_4> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <exp1_2> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <exp1_1> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <exp2_3> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <exp1_0> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <exp2_4> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <exp2_2> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <exp2_1> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <fract1_8> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <exp2_0> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <fract1_9> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <fract1_5> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <fract1_7> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <fract1_6> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <fract1_2> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <fract1_4> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <fract1_3> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <fract1_1> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <fract1_0> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <fract2_7> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <fract2_9> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <fract2_8> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <fract2_6> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <fract2_5> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <fract2_2> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <fract2_4> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <fract2_3> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <fract2_1> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <fract2_0> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_4_q> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_10_q> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_6_q> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_8_q> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_12_q> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_14_q> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_20_q> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_16_q> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_18_q> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_26_q> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_22_q> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_24_q> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_32_q> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_28_q> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_30_q> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_2_q> is equivalent to a wire in block <multdown>.
-WARNING:Xst:1294 - Latch <s1> is equivalent to a wire in block <multup>.
-WARNING:Xst:1294 - Latch <s2> is equivalent to a wire in block <multup>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_117_q> is equivalent to a wire in block <multup>.
-WARNING:Xst:1294 - Latch <exp1_3> is equivalent to a wire in block <multup>.
-WARNING:Xst:1294 - Latch <exp1_4> is equivalent to a wire in block <multup>.
-WARNING:Xst:1294 - Latch <exp1_2> is equivalent to a wire in block <multup>.
-WARNING:Xst:1294 - Latch <exp1_1> is equivalent to a wire in block <multup>.
-WARNING:Xst:1294 - Latch <exp2_3> is equivalent to a wire in block <multup>.
-WARNING:Xst:1294 - Latch <exp1_0> is equivalent to a wire in block <multup>.
-WARNING:Xst:1294 - Latch <exp2_4> is equivalent to a wire in block <multup>.
-WARNING:Xst:1294 - Latch <exp2_2> is equivalent to a wire in block <multup>.
-WARNING:Xst:1294 - Latch <exp2_1> is equivalent to a wire in block <multup>.
-WARNING:Xst:1294 - Latch <fract1_8> is equivalent to a wire in block <multup>.
-WARNING:Xst:1294 - Latch <exp2_0> is equivalent to a wire in block <multup>.
-WARNING:Xst:1294 - Latch <fract1_9> is equivalent to a wire in block <multup>.
-WARNING:Xst:1294 - Latch <fract1_5> is equivalent to a wire in block <multup>.
-WARNING:Xst:1294 - Latch <fract1_7> is equivalent to a wire in block <multup>.
-WARNING:Xst:1294 - Latch <fract1_6> is equivalent to a wire in block <multup>.
-WARNING:Xst:1294 - Latch <fract1_2> is equivalent to a wire in block <multup>.
-WARNING:Xst:1294 - Latch <fract1_4> is equivalent to a wire in block <multup>.
-WARNING:Xst:1294 - Latch <fract1_3> is equivalent to a wire in block <multup>.
-WARNING:Xst:1294 - Latch <fract1_1> is equivalent to a wire in block <multup>.
-WARNING:Xst:1294 - Latch <fract1_0> is equivalent to a wire in block <multup>.
-WARNING:Xst:1294 - Latch <fract2_7> is equivalent to a wire in block <multup>.
-WARNING:Xst:1294 - Latch <fract2_9> is equivalent to a wire in block <multup>.
-WARNING:Xst:1294 - Latch <fract2_8> is equivalent to a wire in block <multup>.
-WARNING:Xst:1294 - Latch <fract2_6> is equivalent to a wire in block <multup>.
-WARNING:Xst:1294 - Latch <fract2_5> is equivalent to a wire in block <multup>.
-WARNING:Xst:1294 - Latch <fract2_2> is equivalent to a wire in block <multup>.
-WARNING:Xst:1294 - Latch <fract2_4> is equivalent to a wire in block <multup>.
-WARNING:Xst:1294 - Latch <fract2_3> is equivalent to a wire in block <multup>.
-WARNING:Xst:1294 - Latch <fract2_1> is equivalent to a wire in block <multup>.
-WARNING:Xst:1294 - Latch <fract2_0> is equivalent to a wire in block <multup>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_118_q> is equivalent to a wire in block <multup>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_124_q> is equivalent to a wire in block <multup>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_120_q> is equivalent to a wire in block <multup>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_122_q> is equivalent to a wire in block <multup>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_126_q> is equivalent to a wire in block <multup>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_128_q> is equivalent to a wire in block <multup>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_134_q> is equivalent to a wire in block <multup>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_130_q> is equivalent to a wire in block <multup>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_132_q> is equivalent to a wire in block <multup>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_140_q> is equivalent to a wire in block <multup>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_136_q> is equivalent to a wire in block <multup>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_138_q> is equivalent to a wire in block <multup>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_146_q> is equivalent to a wire in block <multup>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_142_q> is equivalent to a wire in block <multup>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_144_q> is equivalent to a wire in block <multup>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_116_q> is equivalent to a wire in block <multup>.
 WARNING:Xst:1294 - Latch <i2_30> is equivalent to a wire in block <div_normalized>.
 WARNING:Xst:1294 - Latch <i2_2> is equivalent to a wire in block <div_normalized>.
 WARNING:Xst:1294 - Latch <i2_1> is equivalent to a wire in block <div_normalized>.
@@ -3344,240 +3108,6 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ialu_funct_1> (with
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ialu_funct_2> (without init value) has a constant value of 0 in block <neorv32_cpu_cp_cfu>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ialu_funct_3> (without init value) has a constant value of 0 in block <neorv32_cpu_cp_cfu>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ialu_funct_4> (without init value) has a constant value of 0 in block <neorv32_cpu_cp_cfu>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <state_1> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <state_0> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <normmul/normstate_1> (without init value) has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <ch> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_35> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_36> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_37> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_38> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_39> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_40> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_41> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_42> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_43> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_44> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_45> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_46> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_47> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_48> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_49> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_50> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_51> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_52> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_53> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_54> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_55> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_56> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_57> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_58> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_59> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_60> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_61> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_62> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_63> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_1> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_0> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_2> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_3> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_4> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_5> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_6> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_7> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_8> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_9> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_10> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_11> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_12> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_13> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_14> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_15> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_16> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_17> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_34> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_33> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_32> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_31> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_30> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_29> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_28> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_27> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_26> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_25> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_24> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_23> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_22> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_21> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_20> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_19> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_18> has a constant value of 0 in block <MultiplierTopModule_1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_3_q> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1294 - Latch <s1> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1294 - Latch <s2> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1294 - Latch <exp1_4> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1294 - Latch <exp1_1> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1294 - Latch <exp1_3> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1294 - Latch <exp1_2> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1294 - Latch <exp2_3> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1294 - Latch <exp1_0> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1294 - Latch <exp2_4> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1294 - Latch <exp2_0> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1294 - Latch <exp2_2> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1294 - Latch <exp2_1> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1294 - Latch <fract1_9> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1294 - Latch <fract1_8> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1294 - Latch <fract1_5> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1294 - Latch <fract1_7> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1294 - Latch <fract1_6> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1294 - Latch <fract1_2> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1294 - Latch <fract1_4> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1294 - Latch <fract1_3> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1294 - Latch <fract2_9> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1294 - Latch <fract1_1> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1294 - Latch <fract1_0> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1294 - Latch <fract2_6> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1294 - Latch <fract2_8> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1294 - Latch <fract2_7> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1294 - Latch <fract2_3> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1294 - Latch <fract2_5> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1294 - Latch <fract2_4> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1294 - Latch <fract2_0> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1294 - Latch <fract2_2> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1294 - Latch <fract2_1> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_4_q> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_10_q> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_6_q> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_8_q> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_16_q> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_12_q> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_14_q> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_22_q> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_18_q> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_20_q> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_28_q> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_24_q> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_26_q> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_2_q> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_30_q> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_32_q> is equivalent to a wire in block <MultiplierTopModule_1>.
-WARNING:Xst:1293 - FF/Latch <state_1> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <state_0> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <normmul/normstate_1> (without init value) has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <ch> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_35> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_36> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_37> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_38> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_39> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_40> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_41> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_42> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_43> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_44> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_45> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_46> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_47> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_48> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_49> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_50> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_51> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_52> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_53> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_54> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_55> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_56> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_57> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_58> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_59> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_60> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_61> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_62> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_63> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_1> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_0> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_2> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_3> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_4> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_5> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_6> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_7> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_8> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_9> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_10> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_11> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_12> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_13> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_14> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_15> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_16> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_17> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_34> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_33> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_32> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_31> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_30> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_29> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_28> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_27> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_26> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_25> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_24> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_23> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_22> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_21> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_20> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_19> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <tABCD_18> has a constant value of 0 in block <MultiplierTopModule_2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_117_q> is equivalent to a wire in block <MultiplierTopModule_2>.
-WARNING:Xst:1294 - Latch <s1> is equivalent to a wire in block <MultiplierTopModule_2>.
-WARNING:Xst:1294 - Latch <s2> is equivalent to a wire in block <MultiplierTopModule_2>.
-WARNING:Xst:1294 - Latch <exp1_4> is equivalent to a wire in block <MultiplierTopModule_2>.
-WARNING:Xst:1294 - Latch <exp1_1> is equivalent to a wire in block <MultiplierTopModule_2>.
-WARNING:Xst:1294 - Latch <exp1_3> is equivalent to a wire in block <MultiplierTopModule_2>.
-WARNING:Xst:1294 - Latch <exp1_2> is equivalent to a wire in block <MultiplierTopModule_2>.
-WARNING:Xst:1294 - Latch <exp2_3> is equivalent to a wire in block <MultiplierTopModule_2>.
-WARNING:Xst:1294 - Latch <exp1_0> is equivalent to a wire in block <MultiplierTopModule_2>.
-WARNING:Xst:1294 - Latch <exp2_4> is equivalent to a wire in block <MultiplierTopModule_2>.
-WARNING:Xst:1294 - Latch <exp2_0> is equivalent to a wire in block <MultiplierTopModule_2>.
-WARNING:Xst:1294 - Latch <exp2_2> is equivalent to a wire in block <MultiplierTopModule_2>.
-WARNING:Xst:1294 - Latch <exp2_1> is equivalent to a wire in block <MultiplierTopModule_2>.
-WARNING:Xst:1294 - Latch <fract1_9> is equivalent to a wire in block <MultiplierTopModule_2>.
-WARNING:Xst:1294 - Latch <fract1_8> is equivalent to a wire in block <MultiplierTopModule_2>.
-WARNING:Xst:1294 - Latch <fract1_5> is equivalent to a wire in block <MultiplierTopModule_2>.
-WARNING:Xst:1294 - Latch <fract1_7> is equivalent to a wire in block <MultiplierTopModule_2>.
-WARNING:Xst:1294 - Latch <fract1_6> is equivalent to a wire in block <MultiplierTopModule_2>.
-WARNING:Xst:1294 - Latch <fract1_2> is equivalent to a wire in block <MultiplierTopModule_2>.
-WARNING:Xst:1294 - Latch <fract1_4> is equivalent to a wire in block <MultiplierTopModule_2>.
-WARNING:Xst:1294 - Latch <fract1_3> is equivalent to a wire in block <MultiplierTopModule_2>.
-WARNING:Xst:1294 - Latch <fract2_9> is equivalent to a wire in block <MultiplierTopModule_2>.
-WARNING:Xst:1294 - Latch <fract1_1> is equivalent to a wire in block <MultiplierTopModule_2>.
-WARNING:Xst:1294 - Latch <fract1_0> is equivalent to a wire in block <MultiplierTopModule_2>.
-WARNING:Xst:1294 - Latch <fract2_6> is equivalent to a wire in block <MultiplierTopModule_2>.
-WARNING:Xst:1294 - Latch <fract2_8> is equivalent to a wire in block <MultiplierTopModule_2>.
-WARNING:Xst:1294 - Latch <fract2_7> is equivalent to a wire in block <MultiplierTopModule_2>.
-WARNING:Xst:1294 - Latch <fract2_3> is equivalent to a wire in block <MultiplierTopModule_2>.
-WARNING:Xst:1294 - Latch <fract2_5> is equivalent to a wire in block <MultiplierTopModule_2>.
-WARNING:Xst:1294 - Latch <fract2_4> is equivalent to a wire in block <MultiplierTopModule_2>.
-WARNING:Xst:1294 - Latch <fract2_0> is equivalent to a wire in block <MultiplierTopModule_2>.
-WARNING:Xst:1294 - Latch <fract2_2> is equivalent to a wire in block <MultiplierTopModule_2>.
-WARNING:Xst:1294 - Latch <fract2_1> is equivalent to a wire in block <MultiplierTopModule_2>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_118_q> is equivalent to a wire in block <MultiplierTopModule_2>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_124_q> is equivalent to a wire in block <MultiplierTopModule_2>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_120_q> is equivalent to a wire in block <MultiplierTopModule_2>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_122_q> is equivalent to a wire in block <MultiplierTopModule_2>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_130_q> is equivalent to a wire in block <MultiplierTopModule_2>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_126_q> is equivalent to a wire in block <MultiplierTopModule_2>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_128_q> is equivalent to a wire in block <MultiplierTopModule_2>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_136_q> is equivalent to a wire in block <MultiplierTopModule_2>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_132_q> is equivalent to a wire in block <MultiplierTopModule_2>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_134_q> is equivalent to a wire in block <MultiplierTopModule_2>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_142_q> is equivalent to a wire in block <MultiplierTopModule_2>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_138_q> is equivalent to a wire in block <MultiplierTopModule_2>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_140_q> is equivalent to a wire in block <MultiplierTopModule_2>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_116_q> is equivalent to a wire in block <MultiplierTopModule_2>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_144_q> is equivalent to a wire in block <MultiplierTopModule_2>.
-WARNING:Xst:1294 - Latch <dual_dual_DLATCH_146_q> is equivalent to a wire in block <MultiplierTopModule_2>.
 WARNING:Xst:1294 - Latch <div_normalized/i2_30> is equivalent to a wire in block <DividerTopModule>.
 WARNING:Xst:1294 - Latch <div_normalized/i2_1> is equivalent to a wire in block <DividerTopModule>.
 WARNING:Xst:1294 - Latch <div_normalized/i2_0> is equivalent to a wire in block <DividerTopModule>.
@@ -3653,76 +3183,344 @@ Optimizing FSM <neorv32_top_inst/core_complex_gen[0].neorv32_core_bus_switch_ins
  s_busy_b  | 11
 -----------------------
 WARNING:Xst:2677 - Node <fetch_engine_pc_0> of sequential type is unconnected in block <neorv32_cpu_control>.
-WARNING:Xst:2973 - All outputs of instance <multdown> of block <MultiplierTopModule_1> are unconnected in block <IALU>. Underlying logic will be removed.
-WARNING:Xst:2973 - All outputs of instance <multup> of block <MultiplierTopModule_2> are unconnected in block <IALU>. Underlying logic will be removed.
 WARNING:Xst:2973 - All outputs of instance <divdown> of block <DividerTopModule> are unconnected in block <IALU>. Underlying logic will be removed.
 WARNING:Xst:2973 - All outputs of instance <divup> of block <DividerTopModule> are unconnected in block <IALU>. Underlying logic will be removed.
-WARNING:Xst:2973 - All outputs of instance <comp> of block <Comparator> are unconnected in block <MultiplierTopModule_1>. Underlying logic will be removed.
-WARNING:Xst:2677 - Node <roundmul/temp2_0> of sequential type is unconnected in block <MultiplierTopModule_1>.
-WARNING:Xst:2677 - Node <roundmul/temp2_1> of sequential type is unconnected in block <MultiplierTopModule_1>.
-WARNING:Xst:2677 - Node <roundmul/temp1_0> of sequential type is unconnected in block <MultiplierTopModule_1>.
-WARNING:Xst:2677 - Node <roundmul/temp1_1> of sequential type is unconnected in block <MultiplierTopModule_1>.
-WARNING:Xst:2677 - Node <roundmul/temp1_2> of sequential type is unconnected in block <MultiplierTopModule_1>.
-WARNING:Xst:2677 - Node <roundmul/temp2_2> of sequential type is unconnected in block <MultiplierTopModule_1>.
-WARNING:Xst:2677 - Node <roundmul/temp2_3> of sequential type is unconnected in block <MultiplierTopModule_1>.
-WARNING:Xst:2677 - Node <roundmul/temp1_3> of sequential type is unconnected in block <MultiplierTopModule_1>.
-WARNING:Xst:2677 - Node <roundmul/temp2_4> of sequential type is unconnected in block <MultiplierTopModule_1>.
-WARNING:Xst:2677 - Node <roundmul/temp1_4> of sequential type is unconnected in block <MultiplierTopModule_1>.
-WARNING:Xst:2677 - Node <roundmul/temp2_5> of sequential type is unconnected in block <MultiplierTopModule_1>.
-WARNING:Xst:2677 - Node <roundmul/temp1_5> of sequential type is unconnected in block <MultiplierTopModule_1>.
-WARNING:Xst:2677 - Node <roundmul/temp2_6> of sequential type is unconnected in block <MultiplierTopModule_1>.
-WARNING:Xst:2677 - Node <roundmul/temp1_6> of sequential type is unconnected in block <MultiplierTopModule_1>.
-WARNING:Xst:2677 - Node <roundmul/temp2_7> of sequential type is unconnected in block <MultiplierTopModule_1>.
-WARNING:Xst:2677 - Node <roundmul/temp1_7> of sequential type is unconnected in block <MultiplierTopModule_1>.
-WARNING:Xst:2677 - Node <roundmul/temp2_8> of sequential type is unconnected in block <MultiplierTopModule_1>.
-WARNING:Xst:2677 - Node <roundmul/temp2_9> of sequential type is unconnected in block <MultiplierTopModule_1>.
-WARNING:Xst:2677 - Node <roundmul/temp1_8> of sequential type is unconnected in block <MultiplierTopModule_1>.
-WARNING:Xst:2677 - Node <roundmul/temp1_9> of sequential type is unconnected in block <MultiplierTopModule_1>.
-WARNING:Xst:2677 - Node <roundmul/temp1_10> of sequential type is unconnected in block <MultiplierTopModule_1>.
-WARNING:Xst:2677 - Node <roundmul/temp2_10> of sequential type is unconnected in block <MultiplierTopModule_1>.
-WARNING:Xst:2677 - Node <roundmul/temp2_11> of sequential type is unconnected in block <MultiplierTopModule_1>.
-WARNING:Xst:2677 - Node <roundmul/temp1_11> of sequential type is unconnected in block <MultiplierTopModule_1>.
-WARNING:Xst:2677 - Node <roundmul/temp2_12> of sequential type is unconnected in block <MultiplierTopModule_1>.
-WARNING:Xst:2677 - Node <roundmul/temp1_12> of sequential type is unconnected in block <MultiplierTopModule_1>.
-WARNING:Xst:2677 - Node <roundmul/temp1_13> of sequential type is unconnected in block <MultiplierTopModule_1>.
-WARNING:Xst:2677 - Node <roundmul/temp2_13> of sequential type is unconnected in block <MultiplierTopModule_1>.
-WARNING:Xst:2677 - Node <roundmul/temp2_14> of sequential type is unconnected in block <MultiplierTopModule_1>.
-WARNING:Xst:2677 - Node <roundmul/temp1_14> of sequential type is unconnected in block <MultiplierTopModule_1>.
-WARNING:Xst:2677 - Node <roundmul/temp1_15> of sequential type is unconnected in block <MultiplierTopModule_1>.
-WARNING:Xst:2677 - Node <roundmul/temp2_15> of sequential type is unconnected in block <MultiplierTopModule_1>.
-WARNING:Xst:2973 - All outputs of instance <comp> of block <Comparator> are unconnected in block <MultiplierTopModule_2>. Underlying logic will be removed.
-WARNING:Xst:2677 - Node <roundmul/temp2_0> of sequential type is unconnected in block <MultiplierTopModule_2>.
-WARNING:Xst:2677 - Node <roundmul/temp2_1> of sequential type is unconnected in block <MultiplierTopModule_2>.
-WARNING:Xst:2677 - Node <roundmul/temp1_0> of sequential type is unconnected in block <MultiplierTopModule_2>.
-WARNING:Xst:2677 - Node <roundmul/temp1_1> of sequential type is unconnected in block <MultiplierTopModule_2>.
-WARNING:Xst:2677 - Node <roundmul/temp1_2> of sequential type is unconnected in block <MultiplierTopModule_2>.
-WARNING:Xst:2677 - Node <roundmul/temp2_2> of sequential type is unconnected in block <MultiplierTopModule_2>.
-WARNING:Xst:2677 - Node <roundmul/temp2_3> of sequential type is unconnected in block <MultiplierTopModule_2>.
-WARNING:Xst:2677 - Node <roundmul/temp1_3> of sequential type is unconnected in block <MultiplierTopModule_2>.
-WARNING:Xst:2677 - Node <roundmul/temp2_4> of sequential type is unconnected in block <MultiplierTopModule_2>.
-WARNING:Xst:2677 - Node <roundmul/temp1_4> of sequential type is unconnected in block <MultiplierTopModule_2>.
-WARNING:Xst:2677 - Node <roundmul/temp2_5> of sequential type is unconnected in block <MultiplierTopModule_2>.
-WARNING:Xst:2677 - Node <roundmul/temp1_5> of sequential type is unconnected in block <MultiplierTopModule_2>.
-WARNING:Xst:2677 - Node <roundmul/temp2_6> of sequential type is unconnected in block <MultiplierTopModule_2>.
-WARNING:Xst:2677 - Node <roundmul/temp1_6> of sequential type is unconnected in block <MultiplierTopModule_2>.
-WARNING:Xst:2677 - Node <roundmul/temp2_7> of sequential type is unconnected in block <MultiplierTopModule_2>.
-WARNING:Xst:2677 - Node <roundmul/temp1_7> of sequential type is unconnected in block <MultiplierTopModule_2>.
-WARNING:Xst:2677 - Node <roundmul/temp2_8> of sequential type is unconnected in block <MultiplierTopModule_2>.
-WARNING:Xst:2677 - Node <roundmul/temp2_9> of sequential type is unconnected in block <MultiplierTopModule_2>.
-WARNING:Xst:2677 - Node <roundmul/temp1_8> of sequential type is unconnected in block <MultiplierTopModule_2>.
-WARNING:Xst:2677 - Node <roundmul/temp1_9> of sequential type is unconnected in block <MultiplierTopModule_2>.
-WARNING:Xst:2677 - Node <roundmul/temp1_10> of sequential type is unconnected in block <MultiplierTopModule_2>.
-WARNING:Xst:2677 - Node <roundmul/temp2_10> of sequential type is unconnected in block <MultiplierTopModule_2>.
-WARNING:Xst:2677 - Node <roundmul/temp2_11> of sequential type is unconnected in block <MultiplierTopModule_2>.
-WARNING:Xst:2677 - Node <roundmul/temp1_11> of sequential type is unconnected in block <MultiplierTopModule_2>.
-WARNING:Xst:2677 - Node <roundmul/temp2_12> of sequential type is unconnected in block <MultiplierTopModule_2>.
-WARNING:Xst:2677 - Node <roundmul/temp1_12> of sequential type is unconnected in block <MultiplierTopModule_2>.
-WARNING:Xst:2677 - Node <roundmul/temp1_13> of sequential type is unconnected in block <MultiplierTopModule_2>.
-WARNING:Xst:2677 - Node <roundmul/temp2_13> of sequential type is unconnected in block <MultiplierTopModule_2>.
-WARNING:Xst:2677 - Node <roundmul/temp2_14> of sequential type is unconnected in block <MultiplierTopModule_2>.
-WARNING:Xst:2677 - Node <roundmul/temp1_14> of sequential type is unconnected in block <MultiplierTopModule_2>.
-WARNING:Xst:2677 - Node <roundmul/temp1_15> of sequential type is unconnected in block <MultiplierTopModule_2>.
-WARNING:Xst:2677 - Node <roundmul/temp2_15> of sequential type is unconnected in block <MultiplierTopModule_2>.
+WARNING:Xst:2677 - Node <multdown/dual_dual_DLATCH_2_q> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/dual_dual_DLATCH_30_q> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/dual_dual_DLATCH_28_q> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/dual_dual_DLATCH_32_q> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/dual_dual_DLATCH_24_q> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/dual_dual_DLATCH_22_q> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/dual_dual_DLATCH_26_q> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/dual_dual_DLATCH_18_q> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/dual_dual_DLATCH_16_q> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/dual_dual_DLATCH_20_q> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/dual_dual_DLATCH_12_q> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/dual_dual_DLATCH_10_q> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/dual_dual_DLATCH_14_q> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/dual_dual_DLATCH_6_q> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/dual_dual_DLATCH_4_q> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/dual_dual_DLATCH_8_q> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/state_1> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/state_0> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/normmul/normstate_0> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/normmul/normstate_1> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/fract2_0> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/fract2_2> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/fract2_3> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/fract2_1> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/fract2_5> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/fract2_6> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/fract2_4> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/fract2_8> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/fract2_9> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/fract2_7> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/fract1_1> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/fract1_2> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/fract1_0> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/fract1_4> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/fract1_5> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/fract1_3> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/fract1_7> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/fract1_8> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/fract1_6> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/fract1_9> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/exp2_0> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/exp2_2> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/exp2_3> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/exp2_1> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/exp1_0> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/exp1_1> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/exp2_4> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/exp1_3> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/exp1_4> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/exp1_2> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/s1> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/s2> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/dual_dual_DLATCH_3_q> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/ch> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_63> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_62> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_61> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_60> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_59> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_58> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_57> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_56> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_55> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_54> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_53> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_52> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_51> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_50> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_49> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_48> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_47> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_46> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_45> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_44> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_43> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_42> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_41> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_40> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_39> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_38> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_37> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_36> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_35> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_34> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_33> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_32> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_31> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_30> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_29> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_28> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_27> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_26> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_25> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_24> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_23> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_22> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_21> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_20> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_19> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_18> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_17> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_16> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_15> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_14> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_13> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_12> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_11> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_10> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_9> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_8> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_7> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_6> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_5> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_4> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_3> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_2> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_1> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/tABCD_0> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2973 - All outputs of instance <multdown/comp> of block <Comparator> are unconnected in block <IALU>. Underlying logic will be removed.
+WARNING:Xst:2677 - Node <multdown/roundmul/temp0_0> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/roundmul/temp2_0> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/roundmul/temp0_1> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/roundmul/temp2_1> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/roundmul/temp1_0> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/roundmul/temp1_1> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/roundmul/temp0_2> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/roundmul/temp1_2> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/roundmul/temp0_3> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/roundmul/temp2_2> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/roundmul/temp2_3> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/roundmul/temp1_3> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/roundmul/temp2_4> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/roundmul/temp1_4> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/roundmul/temp0_4> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/roundmul/temp0_5> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/roundmul/temp2_5> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/roundmul/temp1_5> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/roundmul/temp0_6> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/roundmul/temp2_6> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/roundmul/temp1_6> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/roundmul/temp2_7> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/roundmul/temp1_7> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/roundmul/temp0_7> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/roundmul/temp0_8> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/roundmul/temp2_8> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/roundmul/temp0_9> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/roundmul/temp2_9> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/roundmul/temp1_8> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/roundmul/temp1_9> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/roundmul/temp0_10> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/roundmul/temp1_10> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/roundmul/temp0_11> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/roundmul/temp2_10> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/roundmul/temp2_11> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/roundmul/temp1_11> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/roundmul/temp0_12> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/roundmul/temp2_12> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/roundmul/temp1_12> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/roundmul/temp0_13> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/roundmul/temp1_13> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/roundmul/temp0_14> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/roundmul/temp2_13> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/roundmul/temp2_14> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/roundmul/temp1_14> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/roundmul/temp1_15> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/roundmul/temp2_15> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multdown/roundmul/temp0_15> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/roundmul/temp0_15> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/roundmul/temp2_15> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/roundmul/temp1_15> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/roundmul/temp1_14> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/roundmul/temp2_14> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/roundmul/temp2_13> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/roundmul/temp0_14> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/roundmul/temp1_13> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/roundmul/temp0_13> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/roundmul/temp1_12> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/roundmul/temp2_12> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/roundmul/temp0_12> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/roundmul/temp1_11> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/roundmul/temp2_11> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/roundmul/temp2_10> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/roundmul/temp0_11> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/roundmul/temp1_10> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/roundmul/temp0_10> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/roundmul/temp1_9> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/roundmul/temp1_8> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/roundmul/temp2_9> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/roundmul/temp0_9> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/roundmul/temp2_8> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/roundmul/temp0_8> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/roundmul/temp0_7> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/roundmul/temp1_7> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/roundmul/temp2_7> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/roundmul/temp1_6> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/roundmul/temp2_6> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/roundmul/temp0_6> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/roundmul/temp1_5> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/roundmul/temp2_5> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/roundmul/temp0_5> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/roundmul/temp0_4> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/roundmul/temp1_4> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/roundmul/temp2_4> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/roundmul/temp1_3> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/roundmul/temp2_3> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/roundmul/temp2_2> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/roundmul/temp0_3> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/roundmul/temp1_2> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/roundmul/temp0_2> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/roundmul/temp1_1> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/roundmul/temp1_0> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/roundmul/temp2_1> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/roundmul/temp0_1> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/roundmul/temp2_0> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/roundmul/temp0_0> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/dual_dual_DLATCH_116_q> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/dual_dual_DLATCH_144_q> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/dual_dual_DLATCH_142_q> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/dual_dual_DLATCH_146_q> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/dual_dual_DLATCH_138_q> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/dual_dual_DLATCH_136_q> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/dual_dual_DLATCH_140_q> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/dual_dual_DLATCH_132_q> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/dual_dual_DLATCH_130_q> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/dual_dual_DLATCH_134_q> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/dual_dual_DLATCH_126_q> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/dual_dual_DLATCH_124_q> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/dual_dual_DLATCH_128_q> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/dual_dual_DLATCH_120_q> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/dual_dual_DLATCH_118_q> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/dual_dual_DLATCH_122_q> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/state_1> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/state_0> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/normmul/normstate_0> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/normmul/normstate_1> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/fract2_0> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/fract2_2> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/fract2_3> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/fract2_1> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/fract2_5> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/fract2_6> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/fract2_4> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/fract2_8> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/fract2_9> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/fract2_7> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/fract1_1> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/fract1_2> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/fract1_0> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/fract1_4> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/fract1_5> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/fract1_3> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/fract1_7> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/fract1_8> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/fract1_6> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/fract1_9> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/exp2_0> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/exp2_2> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/exp2_3> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/exp2_1> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/exp1_0> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/exp1_1> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/exp2_4> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/exp1_3> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/exp1_4> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/exp1_2> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/s1> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/s2> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/dual_dual_DLATCH_117_q> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/ch> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_63> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_62> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_61> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_60> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_59> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_58> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_57> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_56> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_55> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_54> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_53> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_52> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_51> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_50> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_49> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_48> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_47> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_46> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_45> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_44> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_43> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_42> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_41> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_40> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_39> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_38> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_37> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_36> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_35> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_34> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_33> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_32> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_31> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_30> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_29> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_28> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_27> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_26> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_25> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_24> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_23> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_22> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_21> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_20> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_19> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_18> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_17> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_16> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_15> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_14> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_13> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_12> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_11> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_10> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_9> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_8> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_7> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_6> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_5> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_4> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_3> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_2> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_1> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/tABCD_0> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2973 - All outputs of instance <multup/comp> of block <Comparator> are unconnected in block <IALU>. Underlying logic will be removed.
+WARNING:Xst:2677 - Node <multdown/Mmult_n0106> of sequential type is unconnected in block <IALU>.
+WARNING:Xst:2677 - Node <multup/Mmult_n0108> of sequential type is unconnected in block <IALU>.
 WARNING:Xst:1710 - FF/Latch <bus_rsp_o_data_31> (without init value) has a constant value of 0 in block <neorv32_gpio>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <bus_rsp_o_data_30> (without init value) has a constant value of 0 in block <neorv32_gpio>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <bus_rsp_o_data_29> (without init value) has a constant value of 0 in block <neorv32_gpio>. This FF/Latch will be trimmed during the optimization process.
@@ -3782,8 +3580,6 @@ WARNING:Xst:3002 - This design contains one or more registers/latches that are d
     exe_engine_state_FSM_FFd4 in unit <neorv32_cpu_control>
     exe_engine_state_FSM_FFd3 in unit <neorv32_cpu_control>
 
-WARNING:Xst:2042 - Unit MultiplierTopModule_1: 17 internal tristates are replaced by logic (pull-up yes): E<0>, E<10>, E<11>, E<12>, E<13>, E<14>, E<15>, E<1>, E<2>, E<3>, E<4>, E<5>, E<6>, E<7>, E<8>, E<9>, flag.
-WARNING:Xst:2042 - Unit MultiplierTopModule_2: 17 internal tristates are replaced by logic (pull-up yes): E<0>, E<10>, E<11>, E<12>, E<13>, E<14>, E<15>, E<1>, E<2>, E<3>, E<4>, E<5>, E<6>, E<7>, E<8>, E<9>, flag.
 WARNING:Xst:2042 - Unit DividerTopModule: 17 internal tristates are replaced by logic (pull-up yes): flagout, result<0>, result<10>, result<11>, result<12>, result<13>, result<14>, result<15>, result<1>, result<2>, result<3>, result<4>, result<5>, result<6>, result<7>, result<8>, result<9>.
 
 Optimizing unit <neorv32_test_setup_bootloader> ...
@@ -3824,10 +3620,6 @@ Optimizing unit <Comparator> ...
 Optimizing unit <AdderSubtractorTopModule> ...
 
 Optimizing unit <AdderSignFunction> ...
-
-Optimizing unit <MultiplierTopModule_1> ...
-
-Optimizing unit <MultiplierTopModule_2> ...
 
 Optimizing unit <DividerTopModule> ...
 
@@ -4224,15 +4016,15 @@ clk_i          |         |         |   14.036|         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 28.00 secs
-Total CPU time to Xst completion: 26.01 secs
+Total REAL time to Xst completion: 24.00 secs
+Total CPU time to Xst completion: 23.02 secs
  
 --> 
 
 
-Total memory usage is 468964 kilobytes
+Total memory usage is 451524 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings : 1253 (   0 filtered)
+Number of warnings : 1049 (   0 filtered)
 Number of infos    :  397 (   0 filtered)
 
