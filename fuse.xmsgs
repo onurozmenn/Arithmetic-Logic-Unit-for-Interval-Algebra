@@ -5,7 +5,10 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Simulator" num="732" delta="unknown" >Ignoring Verilog file(s) <arg fmt="%s" index="1"> /opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v</arg>
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"/home/onur/Desktop/Neorv/IALU.v" Line 590: Port <arg fmt="%s" index="1">E</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"/home/onur/Desktop/Neorv/IALU.v" Line 351: Port <arg fmt="%s" index="1">cout</arg> is not connected to this instance
 </msg>
 
 </messages>

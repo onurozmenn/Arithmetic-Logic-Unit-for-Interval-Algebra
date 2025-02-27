@@ -198,25 +198,25 @@ endmodule
 
 
 
-module Four_Bit_Divider(input [`EXP-1:0] a,
-								input [`EXP-1:0] b,
-								output reg [`EXP:0] div_result);
+module Four_Bit_Divider(input [`MANTISSA:0] a,
+								input [`MANTISSA:0] b,
+								output reg [`MANTISSA+1:0] div_result);
 	integer i = 0;
-	reg [`EXP:0] n;
-	reg [`EXP:0] c;
+	reg [`MANTISSA+1:0] n;
+	reg [`MANTISSA+1:0] c;
 
 	always @(*)begin
 		n=0;
 		c=0;
-		div_result[`EXP] = (a >= b)? 1 : 0;
+		div_result[`MANTISSA+1] = (a >= b)? 1 : 0;
 		c = (a >= b)? (a-b)<<1 : a<<1;
-		for(i = 1; i<`EXP+1; i=i+1)begin
+		for(i = 1; i<`MANTISSA+2; i=i+1)begin
 			n = c-{1'b1,b};
-			if(n[`EXP])begin
-				div_result[`EXP-i] = 1;
+			if(n[`MANTISSA+1])begin
+				div_result[`MANTISSA+1-i] = 1;
 				c = c-{1'b1,b}<<1;
 			end else begin
-				div_result[`EXP-i]=0;
+				div_result[`MANTISSA+1-i]=0;
 				c = c<<1;
 			end
 		end
@@ -378,7 +378,7 @@ module Div_Normalization(input [`EXP-1:0] exp_result,
 		if(~tmp[`MANTISSA+1])begin
 			for (i = `MANTISSA;i>=0;i=i-1) begin
 				if ((tmp[i] == 1'b1) & ~flag)begin
-					i2 = `EXP-i;
+					i2 = `MANTISSA+1-i;
 					flag = 1'b1;
 				end
 			end	
@@ -390,7 +390,7 @@ module Div_Normalization(input [`EXP-1:0] exp_result,
 			tmp = tmp+1;
 		end
 		
-		final_frac = tmp[3:1];
+		final_frac = tmp[`MANTISSA:1];
 		if(~tmp[`MANTISSA+1])begin
 			final_exp = final_exp-1;		
 			final_frac = 0;
@@ -401,8 +401,8 @@ endmodule
 
 
 module AdderSignFunction(
-    input [`W-1:0] fract1,
-    input [`W-1:0] fract2,
+    input [`MANTISSA+4:0] fract1,
+    input [`MANTISSA+4:0] fract2,
     input s1,
     input s2,
     input operator,
@@ -515,11 +515,10 @@ module MultiplierTopModule #(parameter updown = 0)(input clk,
 		reg [1:0] state = 2'b00;
 		wire [1:0] normstate, roundstate;
 		wire c_sumexp, temp1gtemp2;
-		wire [(`MANTISSA*2)-1:0] mult_fract;
-		wire [`EXP-1:0] mult_sumexp, norm_exp, f_exp;
+		wire [((`MANTISSA+1)*2)-1:0] mult_fract;
+		wire [`EXP-1:0] mult_sumexp, norm_exp;
 		reg  [`EXP-1:0] mult_sumexp2;
-		wire [(`MANTISSA*2)-1:0] norm_res; 
-		wire [`MANTISSA-1:0] f_res;
+		wire [((`MANTISSA+1)*2)-1:0] norm_res; 
 		wire [`W-1:0] temp0, temp1, temp2;
 		reg ch = 0;
 		reg [(`W*4)-1:0] tABCD=0;
@@ -592,10 +591,10 @@ module MultiplierTopModule #(parameter updown = 0)(input clk,
 endmodule
 
 module NormalizeMul(
-		input [(`MANTISSA*2)-1:0] m_result,
+		input [((`MANTISSA+1)*2)-1:0] m_result,
 		input [`EXP-1:0] s_exp,
 		input sign,
-		output reg [(`MANTISSA*2)-1:0] s_result,
+		output reg [((`MANTISSA+1)*2)-1:0] s_result,
 		output reg [`EXP-1:0] n_exp,
 		input dual,
 		input [1:0] state,
@@ -603,7 +602,7 @@ module NormalizeMul(
 	);
 	reg [2:0] error;
 	always@(*)begin
-		case(m_result[`W-1])
+		case(m_result[((`MANTISSA+1)*2)-1])
 			0: begin
 					s_result = m_result;
 					n_exp = s_exp;
@@ -630,7 +629,7 @@ module NormalizeMul(
 endmodule
 
 module RoundingMul(
-		input [(`MANTISSA*2)-1:0] s_result,		
+		input [((`MANTISSA+1)*2)-1:0] s_result,		
 		input [`EXP-1:0] r_exp,		
 		input sign,
 		output reg [`W-1:0] temp0,
@@ -647,10 +646,10 @@ module RoundingMul(
 	reg [`MANTISSA-1:0] f_result;
 
 	always@(*)begin
-		f_exp = r_exp;
-		tmp = s_result[(`MANTISSA*2)-1:3];
+		f_exp = r_exp;//21--9
+		tmp = s_result[((`MANTISSA+1)*2)-1:(((`MANTISSA+1)*2)-1)-(`MANTISSA+1)];
 		if(s_result[2])begin
-			tmp = s_result[(`MANTISSA*2)-1:3] + 1'b1;
+			tmp = s_result[((`MANTISSA+1)*2)-1:(((`MANTISSA+1)*2)-1)-(`MANTISSA+2)] + 1'b1;
 			//Renormalize
 			if ( tmp[`MANTISSA+1] == 1'b1)
 			begin

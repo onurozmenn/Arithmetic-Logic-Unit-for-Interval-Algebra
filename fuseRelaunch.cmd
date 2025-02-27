@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/home/onur/Desktop/Neorv/ialutb_isim_beh.exe" -prj "/home/onur/Desktop/Neorv/ialutb_beh.prj" "ialutb" "work.glbl" 

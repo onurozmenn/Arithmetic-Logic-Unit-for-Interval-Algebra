@@ -38,8 +38,8 @@ Setup/Hold to clock clk_i
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-rstn_i      |    1.321(R)|      SLOW  |   -0.183(R)|      SLOW  |clk_i_BUFGP       |   0.000|
-uart0_rxd_i |    3.265(R)|      SLOW  |   -1.786(R)|      FAST  |clk_i_BUFGP       |   0.000|
+rstn_i      |    2.780(R)|      SLOW  |   -1.458(R)|      FAST  |clk_i_BUFGP       |   0.000|
+uart0_rxd_i |    1.935(R)|      SLOW  |   -0.861(R)|      SLOW  |clk_i_BUFGP       |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Clock clk_i to Pad
@@ -47,15 +47,15 @@ Clock clk_i to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-gpio_o<0>   |         9.551(R)|      SLOW  |         3.875(R)|      FAST  |clk_i_BUFGP       |   0.000|
-gpio_o<1>   |         9.904(R)|      SLOW  |         4.057(R)|      FAST  |clk_i_BUFGP       |   0.000|
-gpio_o<2>   |         9.908(R)|      SLOW  |         4.050(R)|      FAST  |clk_i_BUFGP       |   0.000|
-gpio_o<3>   |        10.034(R)|      SLOW  |         4.142(R)|      FAST  |clk_i_BUFGP       |   0.000|
-gpio_o<4>   |        10.649(R)|      SLOW  |         4.480(R)|      FAST  |clk_i_BUFGP       |   0.000|
-gpio_o<5>   |        16.157(R)|      SLOW  |         7.837(R)|      FAST  |clk_i_BUFGP       |   0.000|
-gpio_o<6>   |        12.509(R)|      SLOW  |         5.515(R)|      FAST  |clk_i_BUFGP       |   0.000|
-gpio_o<7>   |        12.742(R)|      SLOW  |         5.644(R)|      FAST  |clk_i_BUFGP       |   0.000|
-uart0_txd_o |        11.665(R)|      SLOW  |         5.130(R)|      FAST  |clk_i_BUFGP       |   0.000|
+gpio_o<0>   |         9.753(R)|      SLOW  |         3.991(R)|      FAST  |clk_i_BUFGP       |   0.000|
+gpio_o<1>   |         9.966(R)|      SLOW  |         4.103(R)|      FAST  |clk_i_BUFGP       |   0.000|
+gpio_o<2>   |         9.989(R)|      SLOW  |         4.136(R)|      FAST  |clk_i_BUFGP       |   0.000|
+gpio_o<3>   |        10.211(R)|      SLOW  |         4.233(R)|      FAST  |clk_i_BUFGP       |   0.000|
+gpio_o<4>   |        10.636(R)|      SLOW  |         4.474(R)|      FAST  |clk_i_BUFGP       |   0.000|
+gpio_o<5>   |        16.343(R)|      SLOW  |         7.937(R)|      FAST  |clk_i_BUFGP       |   0.000|
+gpio_o<6>   |        12.308(R)|      SLOW  |         5.415(R)|      FAST  |clk_i_BUFGP       |   0.000|
+gpio_o<7>   |        12.767(R)|      SLOW  |         5.662(R)|      FAST  |clk_i_BUFGP       |   0.000|
+uart0_txd_o |        11.261(R)|      SLOW  |         4.836(R)|      FAST  |clk_i_BUFGP       |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk_i
@@ -63,18 +63,18 @@ Clock to Setup on destination clock clk_i
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk_i          |   19.640|         |         |         |
+clk_i          |   33.482|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Sat Feb 22 13:10:51 2025 
+Analysis completed Tue Feb 25 14:37:36 2025 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 503 MB
+Peak Memory Usage: 534 MB
 
 
 
