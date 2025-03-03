@@ -4,8 +4,8 @@
      changes made to this file may result in unpredictable
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
-<DeviceUsageSummary rev="21">
-<DesignStatistics TimeStamp="Tue Feb 25 14:37:52 2025"><group name="NetStatistics">
+<DeviceUsageSummary rev="22">
+<DesignStatistics TimeStamp="Mon Mar  3 22:59:04 2025"><group name="NetStatistics">
 <item name="NumNets_Active" rev="21">
 <attrib name="value" value="6927"/></item>
 <item name="NumNets_Gnd" rev="21">
@@ -108,121 +108,74 @@
 <attrib name="value" value="277"/></item>
 </group>
 <group name="MiscellaneousStatistics">
-<item name="AGG_BONDED_IO" rev="20">
+<item name="AGG_BONDED_IO" rev="22">
 <attrib name="value" value="12"/></item>
-<item name="AGG_IO" rev="20">
+<item name="AGG_IO" rev="22">
 <attrib name="value" value="12"/></item>
-<item name="AGG_LOCED_IO" rev="20">
+<item name="AGG_LOCED_IO" rev="22">
 <attrib name="value" value="12"/></item>
-<item name="AGG_SLICE" rev="20">
-<attrib name="value" value="1724"/></item>
-<item name="NUM_BONDED_IOB" rev="20">
+<item name="AGG_SLICE" rev="22">
+<attrib name="value" value="1833"/></item>
+<item name="NUM_BONDED_IOB" rev="22">
 <attrib name="value" value="12"/></item>
-<item name="NUM_BSFULL" rev="20">
-<attrib name="value" value="1955"/></item>
-<item name="NUM_BSLUTONLY" rev="20">
-<attrib name="value" value="2737"/></item>
-<item name="NUM_BSREGONLY" rev="20">
-<attrib name="value" value="969"/></item>
-<item name="NUM_BSUSED" rev="20">
-<attrib name="value" value="5661"/></item>
-<item name="NUM_BUFG" rev="20">
+<item name="NUM_BSFULL" rev="22">
+<attrib name="value" value="2029"/></item>
+<item name="NUM_BSLUTONLY" rev="22">
+<attrib name="value" value="3004"/></item>
+<item name="NUM_BSREGONLY" rev="22">
+<attrib name="value" value="902"/></item>
+<item name="NUM_BSUSED" rev="22">
+<attrib name="value" value="5935"/></item>
+<item name="NUM_BUFG" rev="22">
 <attrib name="value" value="3"/></item>
-<item name="NUM_DSP48A1" rev="20">
+<item name="NUM_DSP48A1" rev="22">
 <attrib name="value" value="2"/></item>
-<item name="NUM_LOCED_IOB" rev="20">
+<item name="NUM_LOCED_IOB" rev="22">
 <attrib name="value" value="12"/></item>
-<item name="NUM_LOGIC_O5ANDO6" rev="20">
-<attrib name="value" value="911"/></item>
-<item name="NUM_LOGIC_O5ONLY" rev="20">
-<attrib name="value" value="122"/></item>
-<item name="NUM_LOGIC_O6ONLY" rev="20">
-<attrib name="value" value="3647"/></item>
-<item name="NUM_LUT_RT_DRIVES_CARRY4" rev="20">
+<item name="NUM_LOGIC_O5ANDO6" rev="22">
+<attrib name="value" value="1018"/></item>
+<item name="NUM_LOGIC_O5ONLY" rev="22">
+<attrib name="value" value="123"/></item>
+<item name="NUM_LOGIC_O6ONLY" rev="22">
+<attrib name="value" value="3871"/></item>
+<item name="NUM_LUT_RT_DRIVES_CARRY4" rev="22">
 <attrib name="value" value="4"/></item>
-<item name="NUM_LUT_RT_DRIVES_FLOP" rev="20">
-<attrib name="value" value="8"/></item>
-<item name="NUM_LUT_RT_EXO5" rev="20">
-<attrib name="value" value="8"/></item>
-<item name="NUM_LUT_RT_EXO6" rev="20">
-<attrib name="value" value="1"/></item>
-<item name="NUM_LUT_RT_O5" rev="20">
-<attrib name="value" value="2"/></item>
-<item name="NUM_LUT_RT_O5ANDO6" rev="20">
+<item name="NUM_LUT_RT_DRIVES_FLOP" rev="22">
+<attrib name="value" value="17"/></item>
+<item name="NUM_LUT_RT_EXO5" rev="22">
+<attrib name="value" value="17"/></item>
+<item name="NUM_LUT_RT_EXO6" rev="22">
 <attrib name="value" value="3"/></item>
-<item name="NUM_LUT_RT_O6" rev="20">
+<item name="NUM_LUT_RT_O5" rev="22">
+<attrib name="value" value="3"/></item>
+<item name="NUM_LUT_RT_O5ANDO6" rev="22">
+<attrib name="value" value="1"/></item>
+<item name="NUM_LUT_RT_O6" rev="22">
 <attrib name="value" value="122"/></item>
-<item name="NUM_RAMB16BWER" rev="20">
+<item name="NUM_RAMB16BWER" rev="22">
 <attrib name="value" value="74"/></item>
-<item name="NUM_SLICEL" rev="20">
-<attrib name="value" value="349"/></item>
-<item name="NUM_SLICEX" rev="20">
-<attrib name="value" value="1375"/></item>
-<item name="NUM_SLICE_CARRY4" rev="20">
-<attrib name="value" value="212"/></item>
-<item name="NUM_SLICE_CONTROLSET" rev="20">
-<attrib name="value" value="98"/></item>
-<item name="NUM_SLICE_CYINIT" rev="20">
-<attrib name="value" value="5773"/></item>
-<item name="NUM_SLICE_F7MUX" rev="20">
-<attrib name="value" value="138"/></item>
-<item name="NUM_SLICE_FF" rev="20">
-<attrib name="value" value="2926"/></item>
-<item name="NUM_SLICE_LATCH" rev="20">
-<attrib name="value" value="201"/></item>
-<item name="NUM_SLICE_UNUSEDCTRL" rev="20">
-<attrib name="value" value="722"/></item>
-<item name="NUM_UNUSABLE_FF_BELS" rev="20">
-<attrib name="value" value="193"/></item>
+<item name="NUM_SLICEL" rev="22">
+<attrib name="value" value="407"/></item>
+<item name="NUM_SLICEX" rev="22">
+<attrib name="value" value="1426"/></item>
+<item name="NUM_SLICE_CARRY4" rev="22">
+<attrib name="value" value="294"/></item>
+<item name="NUM_SLICE_CONTROLSET" rev="22">
+<attrib name="value" value="100"/></item>
+<item name="NUM_SLICE_CYINIT" rev="22">
+<attrib name="value" value="6248"/></item>
+<item name="NUM_SLICE_F7MUX" rev="22">
+<attrib name="value" value="115"/></item>
+<item name="NUM_SLICE_FF" rev="22">
+<attrib name="value" value="2935"/></item>
+<item name="NUM_SLICE_LATCH" rev="22">
+<attrib name="value" value="209"/></item>
+<item name="NUM_SLICE_UNUSEDCTRL" rev="22">
+<attrib name="value" value="824"/></item>
+<item name="NUM_UNUSABLE_FF_BELS" rev="22">
+<attrib name="value" value="200"/></item>
 </group>
 </DesignStatistics>
-<DeviceUsage TimeStamp="Tue Feb 25 14:37:52 2025"><group name="SiteSummary">
-<item name="BUFG" rev="21">
-<attrib name="total" value="1000000"/><attrib name="used" value="3"/></item>
-<item name="BUFG_BUFG" rev="21">
-<attrib name="total" value="1000000"/><attrib name="used" value="3"/></item>
-<item name="CARRY4" rev="21">
-<attrib name="total" value="1000000"/><attrib name="used" value="212"/></item>
-<item name="DSP48A1" rev="21">
-<attrib name="total" value="1000000"/><attrib name="used" value="2"/></item>
-<item name="DSP48A1_DSP48A1" rev="21">
-<attrib name="total" value="1000000"/><attrib name="used" value="2"/></item>
-<item name="FF_SR" rev="21">
-<attrib name="total" value="1000000"/><attrib name="used" value="221"/></item>
-<item name="HARD0" rev="21">
-<attrib name="total" value="1000000"/><attrib name="used" value="15"/></item>
-<item name="HARD1" rev="21">
-<attrib name="total" value="1000000"/><attrib name="used" value="28"/></item>
-<item name="INVERTER" rev="21">
-<attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
-<item name="IOB" rev="21">
-<attrib name="total" value="1000000"/><attrib name="used" value="12"/></item>
-<item name="IOB_IMUX" rev="21">
-<attrib name="total" value="1000000"/><attrib name="used" value="3"/></item>
-<item name="IOB_INBUF" rev="21">
-<attrib name="total" value="1000000"/><attrib name="used" value="3"/></item>
-<item name="IOB_OUTBUF" rev="21">
-<attrib name="total" value="1000000"/><attrib name="used" value="9"/></item>
-<item name="LUT5" rev="21">
-<attrib name="total" value="1000000"/><attrib name="used" value="1046"/></item>
-<item name="LUT6" rev="21">
-<attrib name="total" value="1000000"/><attrib name="used" value="4684"/></item>
-<item name="PAD" rev="21">
-<attrib name="total" value="1000000"/><attrib name="used" value="12"/></item>
-<item name="RAMB16BWER" rev="21">
-<attrib name="total" value="1000000"/><attrib name="used" value="74"/></item>
-<item name="RAMB16BWER_RAMB16BWER" rev="21">
-<attrib name="total" value="1000000"/><attrib name="used" value="74"/></item>
-<item name="REG_SR" rev="21">
-<attrib name="total" value="1000000"/><attrib name="used" value="2906"/></item>
-<item name="SELMUX2_1" rev="21">
-<attrib name="total" value="1000000"/><attrib name="used" value="138"/></item>
-<item name="SLICEL" rev="21">
-<attrib name="total" value="1000000"/><attrib name="used" value="349"/></item>
-<item name="SLICEX" rev="21">
-<attrib name="total" value="1000000"/><attrib name="used" value="1375"/></item>
-</group>
-</DeviceUsage>
 <ReportConfigData TimeStamp="Tue Feb 25 14:37:52 2025"><group name="DSP48A1">
 <item name="CEA" rev="21">
 <attrib name="CEA_INV" value="0"/><attrib name="CEA" value="2"/></item>

@@ -22,8 +22,13 @@ module IALU (
 	wire flagadd1,flagadd2,flagt1,flagt2;
 	
 	wire [`W-1:0] F1,F2,S1,S2;
+	reg stateCrossRes = 1'b0;
+	assign result = (funct[4:3] == 2'b00)?
+													(funct == 5'b00001||funct == 5'b00000)?{ANSLADD, ANSUADD}:{ANSL, ANSU}:(
+													(funct[4:3] == 2'b01)?(32'b0)://Temp dummy
+													(funct[4:3] == 2'b10)?(stateCrossRes):({16{2'b01}}));
 	
-	assign result = (funct == 5'b00001||funct == 5'b00000)?{ANSLADD, ANSUADD}:{ANSL, ANSU};
+	
 	assign flag1 = (funct == 5'b00001||funct == 5'b00000)?flagadd1:flagt1;
 	assign flag2 = (funct == 5'b00001||funct == 5'b00000)?flagadd2:flagt2;
 	ProcessRedirectorModule islem(
@@ -40,6 +45,14 @@ module IALU (
 		.OPCODE(funct), 
 		.dual(dual)
 	);
+	always@(stateCross)begin
+		stateCrossRes = 32'b0;
+		if((funct[2:0]+3'b001) == stateCross)
+			stateCrossRes = {31'b0,1'b1};
+		else
+			stateCrossRes = {32'b0};
+		
+	end
 	AdderSubtractorTopModule adderdown(F1, S1, funct, ANSLADD, flagadd1);
 	AdderSubtractorTopModule adderup  (F2, S2, funct, ANSUADD, flagadd2);							 				
 	MultiplierTopModule #(.updown(0)) multdown (clk, F1, S1, F2, S2, funct, dual, ANSL, flagt1); 
