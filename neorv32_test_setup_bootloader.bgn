@@ -6,7 +6,7 @@ Loading device for application Rf_Device from file '6slx45.nph' in environment
 package csg324, speed -2
 Opened constraints file neorv32_test_setup_bootloader.pcf.
 
-Tue Feb 25 14:37:40 2025
+Tue Mar 18 14:37:10 2025
 
 /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/bitgen -intstyle ise -w -g DebugBitstream:No -g Binary:no -g CRC:Enable -g Reset_on_err:No -g ConfigRate:2 -g ProgPin:PullUp -g TckPin:PullUp -g TdiPin:PullUp -g TdoPin:PullUp -g TmsPin:PullUp -g UnusedPin:PullDown -g UserID:0xFFFFFFFF -g ExtMasterCclk_en:No -g SPI_buswidth:1 -g TIMER_CFG:0xFFFF -g multipin_wakeup:No -g StartUpClk:CClk -g DONE_cycle:4 -g GTS_cycle:5 -g GWE_cycle:6 -g LCK_cycle:NoWait -g Security:None -g DonePipe:Yes -g DriveDone:No -g en_sw_gsr:No -g drive_awake:No -g sw_clk:Startupclk -g sw_gwe_cycle:5 -g sw_gts_cycle:4 neorv32_test_setup_bootloader.ncd 
 
@@ -130,21 +130,41 @@ There were 0 CONFIG constraint(s) processed from neorv32_test_setup_bootloader.p
 
 Running DRC.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
+   orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
+   divdown/div_result<11> is sourced by a combinatorial pin. This is not good
+   design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
    neorv32_top_inst/core_complex_gen[0].neorv32_core_bus_switch_inst/rstn_i_inv
    is sourced by a combinatorial pin. This is not good design practice. Use the
    CE pin to control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
    orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
+   divup/div_result<11> is sourced by a combinatorial pin. This is not good
+   design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
+   orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
    multup/roundmul/_n0166 is sourced by a combinatorial pin. This is not good
    design practice. Use the CE pin to control the loading of data into the
    flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net icon_control0<13> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
    orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
    multdown/roundmul/_n0166 is sourced by a combinatorial pin. This is not good
    design practice. Use the CE pin to control the loading of data into the
    flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
+   orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
+   multup/_n0144 is sourced by a combinatorial pin. This is not good design
+   practice. Use the CE pin to control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
    orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
@@ -155,11 +175,6 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
    orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
    multdown/_n0142 is sourced by a combinatorial pin. This is not good design
-   practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
-   orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
-   multup/_n0144 is sourced by a combinatorial pin. This is not good design
    practice. Use the CE pin to control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
@@ -194,16 +209,16 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
    orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
-   adderdown/signFunc/operator_s1_MUX_630_o is sourced by a combinatorial pin.
+   adderdown/signFunc/operator_s1_MUX_627_o is sourced by a combinatorial pin.
    This is not good design practice. Use the CE pin to control the loading of
    data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
    orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
-   adderup/signFunc/operator_s1_MUX_630_o is sourced by a combinatorial pin.
+   adderup/signFunc/operator_s1_MUX_627_o is sourced by a combinatorial pin.
    This is not good design practice. Use the CE pin to control the loading of
    data into the flip-flop.
-DRC detected 0 errors and 13 warnings.  Please see the previously displayed
+DRC detected 0 errors and 16 warnings.  Please see the previously displayed
 individual error or warning messages for more details.
 Creating bit map...
 Saving bit stream in "neorv32_test_setup_bootloader.bit".

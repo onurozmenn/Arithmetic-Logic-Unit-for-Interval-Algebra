@@ -5,32 +5,25 @@
 `define TOTALW 32 //2*W TOTAL INTERVAL LENGTH
 
 module IALU (
-		input  clk,
-		input  rst,
-		input  [(`TOTALW)-1:0]  a,
-		input  [(`TOTALW)-1:0]  b,
-		input  [ 4:0]  funct,
-		input  [ 1:0]  fmt,
-		input  [ 2:0]  rm, 
-		output [ 3:0]  stateCross,
-		output [`TOTALW-1:0]  result,
-		output flag1, flag2, dual
-   );
+	input  clk,
+	input  rst,
+	input  [(`TOTALW)-1:0]  a,
+	input  [(`TOTALW)-1:0]  b,
+	input  [ 4:0]  funct,
+	input  [ 1:0]  fmt,
+	input  [ 2:0]  rm, 
+	output [ 3:0]  stateCross,
+	output reg [`TOTALW-1:0]  result,
+	output reg flag
+);
 	wire [  3:0] condition;
-	wire [`W-1:0] ANSU,ANSL;
-	wire [`W-1:0] ANSLADD,ANSUADD;
-	wire flagadd1,flagadd2,flagt1,flagt2;
+	wire [`W-1:0] ANSU, ANSL;
+	wire [`W-1:0] ANSLADD, ANSUADD;
+	wire flagadd1, flagadd2, flagt1, flagt2;
+	reg flagadd1_reg, flagadd2_reg, flagt1_reg, flagt2_reg;
 	
-	wire [`W-1:0] F1,F2,S1,S2;
+	wire [`W-1:0] F1, F2, S1, S2;
 	reg stateCrossRes = 1'b0;
-	assign result = (funct[4:3] == 2'b00)?
-													(funct == 5'b00001||funct == 5'b00000)?{ANSLADD, ANSUADD}:{ANSL, ANSU}:(
-													(funct[4:3] == 2'b01)?(32'b0)://Temp dummy
-													(funct[4:3] == 2'b10)?(stateCrossRes):({16{2'b01}}));
-	
-	
-	assign flag1 = (funct == 5'b00001||funct == 5'b00000)?flagadd1:flagt1;
-	assign flag2 = (funct == 5'b00001||funct == 5'b00000)?flagadd2:flagt2;
 	ProcessRedirectorModule islem(
 		.AL(a[`TOTALW-1:`W]),
 		.AU(a[ 	  `W-1:0]),
@@ -45,23 +38,62 @@ module IALU (
 		.OPCODE(funct), 
 		.dual(dual)
 	);
-	always@(stateCross)begin
-		stateCrossRes = 32'b0;
-		if((funct[2:0]+3'b001) == stateCross)
-			stateCrossRes = {31'b0,1'b1};
-		else
-			stateCrossRes = {32'b0};
-		
-	end
 	AdderSubtractorTopModule adderdown(F1, S1, funct, ANSLADD, flagadd1);
 	AdderSubtractorTopModule adderup  (F2, S2, funct, ANSUADD, flagadd2);							 				
 	MultiplierTopModule #(.updown(0)) multdown (clk, F1, S1, F2, S2, funct, dual, ANSL, flagt1); 
 	MultiplierTopModule #(.updown(1)) multup   (clk, F2, S2, F1, S1, funct, dual, ANSU, flagt2); 
 	DividerTopModule divdown(F1, S1, funct, ANSL, flagt1);
 	DividerTopModule divup(F2, S2, funct, ANSU, flagt2);
-endmodule			
-
-
+	// Register flags to handle asynchronous setting
+	
+	always @(posedge clk or posedge rst) begin
+		if (rst) begin
+			flagadd1_reg <= 1'b0;
+			flagadd2_reg <= 1'b0;
+			flagt1_reg <= 1'b0;
+			flagt2_reg <= 1'b0;
+			result <= 32'b0;
+			flag <= 1'b0;
+		end else begin
+			// Register flags when they become 1
+			if (flagadd1) flagadd1_reg <= 1'b1;
+			if (flagadd2) flagadd2_reg <= 1'b1;
+			if (flagt1) flagt1_reg <= 1'b1;
+			if (flagt2) flagt2_reg <= 1'b1;
+			
+			// Handle add operations
+			if (flagadd1_reg && flagadd2_reg) begin
+				if (funct == 5'b00001 || funct == 5'b00000) begin
+					result <= {ANSLADD, ANSUADD};
+					flag <= 1'b1;
+					// Reset flags after capturing result
+					flagadd1_reg <= 1'b0;
+					flagadd2_reg <= 1'b0;
+				end
+			end
+			
+			// Handle multiply/divide operations
+			if (flagt1_reg && flagt2_reg) begin
+				if (funct != 5'b00001 && funct != 5'b00000) begin
+					result <= {ANSL, ANSU};
+					flag <= 1'b1;
+					// Reset flags after capturing result
+					flagt1_reg <= 1'b0;
+					flagt2_reg <= 1'b0;
+				end
+			end
+			
+			// Handle other operation results
+			if (funct[4:3] == 2'b10) begin
+				result <= stateCrossRes;
+			end
+			if (flag) begin
+				flag <= 1'b0;
+				result <= 32'bz;
+			end
+		end
+	end
+endmodule
 
 module ProcessRedirectorModule( 
 		input [`W-1:0] AU,
@@ -209,8 +241,6 @@ module Comparator(
 		end
 endmodule
 
-
-
 module Four_Bit_Divider(input [`MANTISSA:0] a,
 								input [`MANTISSA:0] b,
 								output reg [`MANTISSA+1:0] div_result);
@@ -235,7 +265,6 @@ module Four_Bit_Divider(input [`MANTISSA:0] a,
 		end
 	end
 endmodule
-
 
 module ErrorDetector(
     input [`W-2:0] AU,
@@ -276,8 +305,6 @@ module ErrorDetector(
 	 end
 endmodule
 
-
-
 module ZeroComparatorG(
     input [`W-1:0] A,
     output G
@@ -291,8 +318,6 @@ module ZeroComparatorL(
 );
 	 assign L = (A[`W-1] && A[`W-2:0]) != {(`W-1){1'b0}};
 endmodule
-
-
 
 module CrossComparator(
 		input [`W-1:0] AU,
@@ -344,8 +369,6 @@ module CrossComparator(
 		end
 endmodule
 
-
-
 module DividerTopModule(input [`W-1:0] n1,n2,
 					input [4:0] OPCODE,
 					output [`W-1:0] result,
@@ -367,11 +390,8 @@ module DividerTopModule(input [`W-1:0] n1,n2,
 		flagout = (OPCODE==5'b0011)?flag:1'bz;
 	 
 	 end
-	 assign result = (OPCODE==5'b00011)?{s1^s2,f_exp,f_frac}:{`W{1'bz}};
-	 
+	 assign result = (OPCODE==5'b00011)?{s1^s2,f_exp,f_frac}:{`W{1'bz}}; 
 endmodule
-
-
 
 module Div_Normalization(input [`EXP-1:0] exp_result,
 								 input [`MANTISSA+1:0] frac_result,
@@ -412,7 +432,6 @@ module Div_Normalization(input [`EXP-1:0] exp_result,
 	end
 endmodule
 
-
 module AdderSignFunction(
     input [`MANTISSA+4:0] fract1,
     input [`MANTISSA+4:0] fract2,
@@ -421,8 +440,7 @@ module AdderSignFunction(
     input operator,
     output reg s=0
     );
-always@(fract1,fract2,s1,s2,operator)
-begin
+always @ (fract1,fract2,s1,s2,operator)begin
 	//Toplama
 	if(~operator)begin
 		if(~(s1^s2))begin
@@ -477,14 +495,9 @@ begin
 				$display("Sonu 0 iaret yok");
 			end
 		end
-	end
-		
-	
+	end	
 end
 endmodule
-
-
-
 
 module FullAdder( input a, b, cin, 
 						output sum, cout);
@@ -506,9 +519,6 @@ module Four_Bit_Substractor_Div(input [`EXP-1:0] A,B,
 
 	   assign Sum = {cout,t_sum} + (`W-1);
 endmodule
-
-
-
 
 module MultiplierTopModule #(parameter updown = 0)(input clk,
 		input [`W-1:0] A,
@@ -699,9 +709,7 @@ module RoundingMul(
 					  end
 		endcase
 	end
-
 endmodule
-
 
 module AdderSubtractorTopModule(
 		input [`W-1:0] A,
@@ -830,5 +838,4 @@ module AdderSubtractorTopModule(
 		ress = {finalsign, normexp, roundedfract};
 	end
 	assign C = ress;
-	
 endmodule

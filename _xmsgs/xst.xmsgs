@@ -5,52 +5,61 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 177: Assignment to <arg fmt="%s" index="1">L</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 26: Using initial value of <arg fmt="%s" index="1">stateCrossRes</arg> since it is never assigned
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 90: Assignment to <arg fmt="%s" index="1">error</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 209: Assignment to <arg fmt="%s" index="1">L</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 92: Assignment to <arg fmt="%s" index="1">flag</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 122: Assignment to <arg fmt="%s" index="1">error</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 44: Assignment to <arg fmt="%s" index="1">condition</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 124: Assignment to <arg fmt="%s" index="1">flag</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 783: Result of <arg fmt="%d" index="1">10</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 37: Assignment to <arg fmt="%s" index="1">condition</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 603: Port <arg fmt="%s" index="1">E</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 791: Result of <arg fmt="%d" index="1">10</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 597: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 613: Port <arg fmt="%s" index="1">E</arg> is not connected to this instance
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 665: Result of <arg fmt="%d" index="1">13</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">12</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 607: Signal &lt;<arg fmt="%s" index="1">c_sumexp</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 597: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 607: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 364: Port <arg fmt="%s" index="1">cout</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 675: Result of <arg fmt="%d" index="1">13</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">12</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 224: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 607: Signal &lt;<arg fmt="%s" index="1">c_sumexp</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 507: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 607: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 399: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 387: Port <arg fmt="%s" index="1">cout</arg> is not connected to this instance
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 403: Result of <arg fmt="%d" index="1">13</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">12</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 254: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 408: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 520: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 411: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 419: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 423: Result of <arg fmt="%d" index="1">13</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">12</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 428: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 431: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
 <msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/onur/Desktop/Neorv/neorv32_test_setup_bootloader.vhd</arg>&quot; line <arg fmt="%s" index="2">45</arg>: Output port &lt;<arg fmt="%s" index="3">xbus_adr_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">neorv32_top_inst</arg>&gt; is unconnected or connected to loadless signal.
@@ -1433,16 +1442,7 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">rtype_i</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/onur/Desktop/neorv32-main/rtl/core/neorv32_cpu_cp_cfu.vhd</arg>&quot; line <arg fmt="%s" index="2">129</arg>: Output port &lt;<arg fmt="%s" index="3">stateCross</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">TopModules_inst</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/onur/Desktop/neorv32-main/rtl/core/neorv32_cpu_cp_cfu.vhd</arg>&quot; line <arg fmt="%s" index="2">129</arg>: Output port &lt;<arg fmt="%s" index="3">flag1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">TopModules_inst</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/onur/Desktop/neorv32-main/rtl/core/neorv32_cpu_cp_cfu.vhd</arg>&quot; line <arg fmt="%s" index="2">129</arg>: Output port &lt;<arg fmt="%s" index="3">flag2</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">TopModules_inst</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/onur/Desktop/Neorv/TopModules_wrapper.vhd</arg>&quot; line <arg fmt="%s" index="2">42</arg>: Output port &lt;<arg fmt="%s" index="3">dual</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">IALU_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/onur/Desktop/Neorv/TopModules_wrapper.vhd</arg>&quot; line <arg fmt="%s" index="2">37</arg>: Output port &lt;<arg fmt="%s" index="3">stateCross</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">IALU_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">fmt</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -1451,13 +1451,10 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">rm</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">rst</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/onur/Desktop/Neorv/IALU.v</arg>&quot; line <arg fmt="%s" index="2">27</arg>: Output port &lt;<arg fmt="%s" index="3">condition</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">islem</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/onur/Desktop/Neorv/IALU.v</arg>&quot; line <arg fmt="%s" index="2">34</arg>: Output port &lt;<arg fmt="%s" index="3">condition</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">islem</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/onur/Desktop/Neorv/IALU.v</arg>&quot; line <arg fmt="%s" index="2">90</arg>: Output port &lt;<arg fmt="%s" index="3">error</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">errdet</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/onur/Desktop/Neorv/IALU.v</arg>&quot; line <arg fmt="%s" index="2">122</arg>: Output port &lt;<arg fmt="%s" index="3">error</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">errdet</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">OPCODE&lt;4:1&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -1466,10 +1463,10 @@
 <msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">s</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/onur/Desktop/Neorv/IALU.v</arg>&quot; line <arg fmt="%s" index="2">603</arg>: Output port &lt;<arg fmt="%s" index="3">E</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">comp</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/onur/Desktop/Neorv/IALU.v</arg>&quot; line <arg fmt="%s" index="2">613</arg>: Output port &lt;<arg fmt="%s" index="3">E</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">comp</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/onur/Desktop/Neorv/IALU.v</arg>&quot; line <arg fmt="%s" index="2">603</arg>: Output port &lt;<arg fmt="%s" index="3">flag</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">comp</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/onur/Desktop/Neorv/IALU.v</arg>&quot; line <arg fmt="%s" index="2">613</arg>: Output port &lt;<arg fmt="%s" index="3">flag</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">comp</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">dual_dual_DLATCH_3_q</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -1781,10 +1778,10 @@
 <msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">temp1&lt;15&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/onur/Desktop/Neorv/IALU.v</arg>&quot; line <arg fmt="%s" index="2">603</arg>: Output port &lt;<arg fmt="%s" index="3">E</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">comp</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/onur/Desktop/Neorv/IALU.v</arg>&quot; line <arg fmt="%s" index="2">613</arg>: Output port &lt;<arg fmt="%s" index="3">E</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">comp</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/onur/Desktop/Neorv/IALU.v</arg>&quot; line <arg fmt="%s" index="2">603</arg>: Output port &lt;<arg fmt="%s" index="3">flag</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">comp</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/onur/Desktop/Neorv/IALU.v</arg>&quot; line <arg fmt="%s" index="2">613</arg>: Output port &lt;<arg fmt="%s" index="3">flag</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">comp</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">dual_dual_DLATCH_117_q</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -1934,7 +1931,7 @@
 <msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">dual_dual_DLATCH_116_q</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/onur/Desktop/Neorv/IALU.v</arg>&quot; line <arg fmt="%s" index="2">364</arg>: Output port &lt;<arg fmt="%s" index="3">cout</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">subs</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/onur/Desktop/Neorv/IALU.v</arg>&quot; line <arg fmt="%s" index="2">387</arg>: Output port &lt;<arg fmt="%s" index="3">cout</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">subs</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">A&lt;4:4&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -2501,6 +2498,9 @@
 <msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
 </msg>
 
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">flag_clk_DFF_296</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">IALU_inst</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">31 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;flag_clk_DFF_295&gt; &lt;flag_clk_DFF_297&gt; &lt;flag_clk_DFF_298&gt; &lt;flag_clk_DFF_301&gt; &lt;flag_clk_DFF_299&gt; &lt;flag_clk_DFF_300&gt; &lt;flag_clk_DFF_302&gt; &lt;flag_clk_DFF_303&gt; &lt;flag_clk_DFF_306&gt; &lt;flag_clk_DFF_304&gt; &lt;flag_clk_DFF_305&gt; &lt;flag_clk_DFF_307&gt; &lt;flag_clk_DFF_308&gt; &lt;flag_clk_DFF_311&gt; &lt;flag_clk_DFF_309&gt; &lt;flag_clk_DFF_310&gt; &lt;flag_clk_DFF_312&gt; &lt;flag_clk_DFF_313&gt; &lt;flag_clk_DFF_316&gt; &lt;flag_clk_DFF_314&gt; &lt;flag_clk_DFF_315&gt; &lt;flag_clk_DFF_317&gt; &lt;flag_clk_DFF_318&gt; &lt;flag_clk_DFF_321&gt; &lt;flag_clk_DFF_319&gt; &lt;flag_clk_DFF_320&gt; &lt;flag_clk_DFF_322&gt; &lt;flag_clk_DFF_323&gt; &lt;flag_clk_DFF_294&gt; &lt;flag_clk_DFF_324&gt; &lt;flag_clk_DFF_325&gt; </arg>
+</msg>
+
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">rx_engine_state_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">io_system.neorv32_uart0_enabled.neorv32_uart0_inst</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;tx_engine_state_2&gt; </arg>
 </msg>
 
@@ -2669,15 +2669,15 @@
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">trap_ctrl_irq_buf_18</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_cpu_control_inst</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Mram_bus_req_i_addr[11]_GND_660_o_wide_mux_0_OUT</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Mram_bus_req_i_addr[11]_GND_725_o_wide_mux_0_OUT</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
 
 <msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_exe_engine_ir[14]_GND_10_o_Mux_321_o</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
 </msg>
 
-<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram__n4082</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram__n4584</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
 </msg>
 
-<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram__n4091</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram__n4593</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
 </msg>
 
 <msg type="info" file="Xst" num="3217" delta="old" >HDL ADVISOR - Register &lt;<arg fmt="%s" index="1">dbus_req_o_amoop</arg>&gt; currently described with an asynchronous reset, could be combined with distributed RAM &lt;<arg fmt="%s" index="2">Mram_amo_cmd</arg>&gt; for implementation on block RAM resources if you made this reset synchronous instead.
@@ -2772,6 +2772,9 @@
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">sreg_sys_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_sys_reset</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;sreg_ext_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">flag_clk_DFF_295</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">IALU</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">31 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;flag_clk_DFF_296&gt; &lt;flag_clk_DFF_297&gt; &lt;flag_clk_DFF_300&gt; &lt;flag_clk_DFF_298&gt; &lt;flag_clk_DFF_299&gt; &lt;flag_clk_DFF_303&gt; &lt;flag_clk_DFF_301&gt; &lt;flag_clk_DFF_302&gt; &lt;flag_clk_DFF_306&gt; &lt;flag_clk_DFF_304&gt; &lt;flag_clk_DFF_305&gt; &lt;flag_clk_DFF_307&gt; &lt;flag_clk_DFF_308&gt; &lt;flag_clk_DFF_311&gt; &lt;flag_clk_DFF_309&gt; &lt;flag_clk_DFF_310&gt; &lt;flag_clk_DFF_314&gt; &lt;flag_clk_DFF_312&gt; &lt;flag_clk_DFF_313&gt; &lt;flag_clk_DFF_317&gt; &lt;flag_clk_DFF_315&gt; &lt;flag_clk_DFF_316&gt; &lt;flag_clk_DFF_318&gt; &lt;flag_clk_DFF_319&gt; &lt;flag_clk_DFF_322&gt; &lt;flag_clk_DFF_320&gt; &lt;flag_clk_DFF_321&gt; &lt;flag_clk_DFF_323&gt; &lt;flag_clk_DFF_324&gt; &lt;flag_clk_DFF_325&gt; &lt;flag_clk_DFF_294&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">rx_engine_state_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_uart</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;tx_engine_state_2&gt; </arg>
@@ -2933,6 +2936,8 @@ Xilinx highly recommends one of the following:
           (timing simulation highly recommended when using this option)
 </msg>
 
+<msg type="warning" file="Xst" num="2042" delta="old" >Unit <arg fmt="%s" index="1">IALU</arg>: <arg fmt="%d" index="2">32</arg> internal tristates are replaced by logic (pull-up <arg fmt="%s" index="3">yes</arg>): </msg>
+
 <msg type="warning" file="Xst" num="2040" delta="old" >Unit <arg fmt="%s" index="1">IALU</arg>: <arg fmt="%d" index="2">34</arg> multi-source signals are replaced by logic (pull-up <arg fmt="%s" index="3">yes</arg>): </msg>
 
 <msg type="warning" file="Xst" num="2042" delta="old" >Unit <arg fmt="%s" index="1">DividerTopModule</arg>: <arg fmt="%d" index="2">17</arg> internal tristates are replaced by logic (pull-up <arg fmt="%s" index="3">yes</arg>): </msg>
@@ -3070,9 +3075,6 @@ Xilinx highly recommends one of the following:
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/ialu_fmt_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/ialu_rst</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/ialu_rm_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
@@ -3421,6 +3423,9 @@ Xilinx highly recommends one of the following:
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multup/tABCD_59</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multdown/tABCD_27&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/flagadd1_reg</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/flagadd2_reg&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_uart0_enabled.neorv32_uart0_inst/bus_rsp_o_data_20</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;neorv32_top_inst/io_system.neorv32_uart0_enabled.neorv32_uart0_inst/bus_rsp_o_data_19&gt; </arg>
