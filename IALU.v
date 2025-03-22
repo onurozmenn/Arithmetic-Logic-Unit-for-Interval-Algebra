@@ -162,7 +162,7 @@ module ProcessRedirectorModule(
 						end
 						// Durum 8: AU <= 0 && BU <= 0
 						else if (!G_AU_0 && !G_BU_0 ) begin
-							condition = (OPCODE == 5'b00010) ? 4'b1101 : 4'b1001;
+							condition = (OPCODE == 5'b00010) ? 4'b1100 : 4'b1001;
 						end
 						// Durum 9: AL < 0 < AU && BL < 0 < BU
 						else if (L_AL_0 && G_AU_0 && L_BL_0 && G_BU_0) begin
@@ -190,7 +190,8 @@ module ProcessRedirectorModule(
 	end
 endmodule
 
-module Comparator(
+module Comparator
+		#(parameter ws = 1)(
 		input [`W-1:0] A,
 		input [`W-1:0] B,
 		output reg G, // a > b ise 1
@@ -199,11 +200,11 @@ module Comparator(
 		);
 		
 		wire A_S = A[`W-1];
-		wire [`EXP-1:0] A_EXP = A[`W-2:`W-2-`EXP];
+		wire [`EXP-1:0] A_EXP = A[`W-2:`W-1-`EXP];
 		wire [`MANTISSA-1:0] A_FRACT = A[`MANTISSA-1:0];
 		
 		wire B_S = B[`W-1];
-		wire [`EXP-1:0] B_EXP = B[`W-2:`W-2-`EXP];
+		wire [`EXP-1:0] B_EXP = B[`W-2:`W-1-`EXP];
 		wire [`MANTISSA-1:0] B_FRACT = B[`MANTISSA-1:0];
 		reg L;
 		always @(*) begin
@@ -213,28 +214,45 @@ module Comparator(
 			flag = 0;
 			if (A == B) begin
 				E = 1;
-			end else if (A_S != B_S) begin
+			end else if ((A_S != B_S)) begin
 				// aret farklysa
 				if (A_S) L = 1; // a negatif, b pozitif
 				else G = 1;    // a pozitif, b negatif
 			end else begin
-				// aretler aynysa
-				if (A_EXP > B_EXP) begin
-					 // s karlatrmas
-					 if (!A_S) G = 1;
-					 else L = 1;
-				end else if (A_EXP < B_EXP) begin
-					 if (!A_S) L = 1;
-					 else G = 1;
-				end else begin
-					 // sler aynysa, fract karlatrmas
-					 if (A_FRACT > B_FRACT) begin
-						  if (!A_S) G = 1;
-						  else L = 1;
-					 end else begin
-						  if (!A_S) L = 1;
-						  else G = 1;
-					 end
+				if(ws)begin						
+					// aretler aynysa
+					if (A_EXP > B_EXP) begin
+						 // s karlatrmas
+						 if (!A_S ) G = 1;
+						 else L = 1;
+					end else if (A_EXP < B_EXP) begin
+						 if (!A_S) L = 1;
+						 else G = 1;
+					end else begin
+						 // sler aynysa, fract karlatrmas
+						 if (A_FRACT > B_FRACT) begin
+							  if (!A_S) G = 1;
+							  else L = 1;
+						 end else begin
+							  if (!A_S) L = 1;
+							  else G = 1;
+						 end
+					end
+				end else begin				
+					// aretler aynysa
+					if (A_EXP > B_EXP) begin
+						 // s karlatrmas
+						 G = 1;
+					end else if (A_EXP < B_EXP) begin
+						 L = 1;
+					end else begin
+						 // sler aynysa, fract karlatrmas
+						 if (A_FRACT > B_FRACT) begin
+							  G = 1;
+						 end else begin
+							  L = 1;
+						 end
+					end
 				end
 			end
 			flag = 1;
@@ -610,7 +628,7 @@ module MultiplierTopModule #(parameter updown = 0)(input clk,
 		assign mult_fract = {1'b1,fract1}*{1'b1,fract2};
 		NormalizeMul normmul(mult_fract, mult_sumexp2, s1^s2, norm_res, norm_exp, dual, state, normstate, ch);
 		RoundingMul roundmul(norm_res, norm_exp, s1^s2, temp0, temp1, temp2, dual, normstate, roundstate, ch);
-		Comparator comp(.A({1'b0,temp1[`W-2:0]}), .B({1'b0,temp2[`W-2:0]}), .G(temp1gtemp2));
+		Comparator #(.ws(0))comp(.A(temp1[`W-1:0]), .B(temp2[`W-1:0]), .G(temp1gtemp2));
 endmodule
 
 module NormalizeMul(

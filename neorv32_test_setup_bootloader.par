@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-hp::  Tue Mar 18 14:36:30 2025
+hp::  Sat Mar 22 20:53:45 2025
 
 par -w -intstyle ise -ol high -mt off neorv32_test_setup_bootloader_map.ncd
 neorv32_test_setup_bootloader.ncd neorv32_test_setup_bootloader.pcf 
@@ -22,16 +22,16 @@ Device speed data version:  "PRODUCTION 1.23 2013-10-13".
 Device Utilization Summary:
 
 Slice Logic Utilization:
-  Number of Slice Registers:                 3,532 out of  54,576    6%
-    Number used as Flip Flops:               3,322
+  Number of Slice Registers:                 3,529 out of  54,576    6%
+    Number used as Flip Flops:               3,319
     Number used as Latches:                    210
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                      5,306 out of  27,288   19%
-    Number used as logic:                    5,178 out of  27,288   18%
-      Number using O6 output only:           3,953
+  Number of Slice LUTs:                      5,380 out of  27,288   19%
+    Number used as logic:                    5,253 out of  27,288   19%
+      Number using O6 output only:           4,023
       Number using O5 output only:             168
-      Number using O5 and O6:                1,057
+      Number using O5 and O6:                1,062
       Number used as ROM:                        0
     Number used as Memory:                      88 out of   6,408    1%
       Number used as Dual Port RAM:              0
@@ -40,18 +40,18 @@ Slice Logic Utilization:
         Number using O6 output only:            70
         Number using O5 output only:             1
         Number using O5 and O6:                 17
-    Number used exclusively as route-thrus:     40
-      Number with same-slice register load:     30
+    Number used exclusively as route-thrus:     39
+      Number with same-slice register load:     29
       Number with same-slice carry load:        10
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                 2,141 out of   6,822   31%
+  Number of occupied Slices:                 2,248 out of   6,822   32%
   Number of MUXCYs used:                     1,288 out of  13,644    9%
-  Number of LUT Flip Flop pairs used:        6,550
-    Number with an unused Flip Flop:         3,264 out of   6,550   49%
-    Number with an unused LUT:               1,244 out of   6,550   18%
-    Number of fully used LUT-FF pairs:       2,042 out of   6,550   31%
+  Number of LUT Flip Flop pairs used:        6,734
+    Number with an unused Flip Flop:         3,447 out of   6,734   51%
+    Number with an unused LUT:               1,354 out of   6,734   20%
+    Number of fully used LUT-FF pairs:       1,933 out of   6,734   28%
     Number of slice register sites lost
       to control set restrictions:               0 out of  54,576    0%
 
@@ -94,19 +94,19 @@ Specific Feature Utilization:
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 5 secs 
-Finished initial Timing Analysis.  REAL time: 5 secs 
+Starting initial Timing Analysis.  REAL time: 4 secs 
+Finished initial Timing Analysis.  REAL time: 4 secs 
 
 Starting Router
 
 
-Phase  1  : 34967 unrouted;      REAL time: 5 secs 
+Phase  1  : 35441 unrouted;      REAL time: 5 secs 
 
-Phase  2  : 31511 unrouted;      REAL time: 7 secs 
+Phase  2  : 31980 unrouted;      REAL time: 7 secs 
 
-Phase  3  : 15199 unrouted;      REAL time: 17 secs 
+Phase  3  : 15237 unrouted;      REAL time: 16 secs 
 
-Phase  4  : 15199 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 18 secs 
+Phase  4  : 15237 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 17 secs 
 
 Updating file: neorv32_test_setup_bootloader.ncd with current fully routed design.
 
@@ -122,7 +122,7 @@ Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL 
 
 Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 26 secs 
 Total REAL time to Router completion: 26 secs 
-Total CPU time to Router completion: 26 secs 
+Total CPU time to Router completion: 25 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -140,19 +140,9 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|         clk_i_BUFGP |  BUFGMUX_X2Y4| No   | 1069 |  0.066     |  1.774      |
+|         clk_i_BUFGP |  BUFGMUX_X2Y4| No   | 1071 |  0.065     |  1.773      |
 +---------------------+--------------+------+------+------------+-------------+
-|    icon_control0<0> |  BUFGMUX_X2Y2| No   |   65 |  0.058     |  1.768      |
-+---------------------+--------------+------+------+------------+-------------+
-|neorv32_top_inst/cor |              |      |      |            |             |
-|e_complex_gen[0].neo |              |      |      |            |             |
-|rv32_cpu_inst/neorv3 |              |      |      |            |             |
-|2_cpu_alu_inst/neorv |              |      |      |            |             |
-|32_cpu_cp_cfu_inst_t |              |      |      |            |             |
-|rue.neorv32_cpu_cp_c |              |      |      |            |             |
-|fu_inst/TopModules_i |              |      |      |            |             |
-|nst/IALU_inst/multup |              |      |      |            |             |
-|        /_n0145_BUFG | BUFGMUX_X3Y13| No   |   11 |  0.014     |  1.744      |
+|    icon_control0<0> |  BUFGMUX_X2Y2| No   |   64 |  0.059     |  1.770      |
 +---------------------+--------------+------+------+------------+-------------+
 |neorv32_top_inst/cor |              |      |      |            |             |
 |e_complex_gen[0].neo |              |      |      |            |             |
@@ -162,7 +152,22 @@ Generating Clock Report
 |rue.neorv32_cpu_cp_c |              |      |      |            |             |
 |fu_inst/TopModules_i |              |      |      |            |             |
 |nst/IALU_inst/multdo |              |      |      |            |             |
-|      wn/_n0217_BUFG |  BUFGMUX_X2Y3| No   |    9 |  0.006     |  1.743      |
+|      wn/_n0215_BUFG |  BUFGMUX_X2Y3| No   |   11 |  0.004     |  1.725      |
++---------------------+--------------+------+------+------------+-------------+
+|neorv32_top_inst/cor |              |      |      |            |             |
+|e_complex_gen[0].neo |              |      |      |            |             |
+|rv32_cpu_inst/neorv3 |              |      |      |            |             |
+|2_cpu_alu_inst/neorv |              |      |      |            |             |
+|32_cpu_cp_cfu_inst_t |              |      |      |            |             |
+|rue.neorv32_cpu_cp_c |              |      |      |            |             |
+|fu_inst/TopModules_i |              |      |      |            |             |
+|nst/IALU_inst/multup |              |      |      |            |             |
+|        /_n0144_BUFG | BUFGMUX_X3Y13| No   |   12 |  0.027     |  1.748      |
++---------------------+--------------+------+------+------------+-------------+
+|neorv32_top_inst/cor |              |      |      |            |             |
+|e_complex_gen[0].neo |              |      |      |            |             |
+|rv32_core_bus_switch |              |      |      |            |             |
+|    _inst/rstn_i_inv |         Local|      |  474 |  0.000     | 10.939      |
 +---------------------+--------------+------+------+------------+-------------+
 |neorv32_top_inst/cor |              |      |      |            |             |
 |e_complex_gen[0].neo |              |      |      |            |             |
@@ -172,12 +177,17 @@ Generating Clock Report
 |rue.neorv32_cpu_cp_c |              |      |      |            |             |
 |fu_inst/TopModules_i |              |      |      |            |             |
 |nst/IALU_inst/divdow |              |      |      |            |             |
-|    n/div_result<11> |         Local|      |   94 |  0.000     |  3.725      |
+|    n/div_result<11> |         Local|      |   98 |  0.207     |  2.274      |
 +---------------------+--------------+------+------+------------+-------------+
 |neorv32_top_inst/cor |              |      |      |            |             |
 |e_complex_gen[0].neo |              |      |      |            |             |
-|rv32_core_bus_switch |              |      |      |            |             |
-|    _inst/rstn_i_inv |         Local|      |  471 |  0.000     |  6.222      |
+|rv32_cpu_inst/neorv3 |              |      |      |            |             |
+|2_cpu_alu_inst/neorv |              |      |      |            |             |
+|32_cpu_cp_cfu_inst_t |              |      |      |            |             |
+|rue.neorv32_cpu_cp_c |              |      |      |            |             |
+|fu_inst/TopModules_i |              |      |      |            |             |
+|nst/IALU_inst/multdo |              |      |      |            |             |
+|  wn/roundmul/_n0150 |         Local|      |    9 |  1.089     |  1.727      |
 +---------------------+--------------+------+------+------------+-------------+
 |neorv32_top_inst/cor |              |      |      |            |             |
 |e_complex_gen[0].neo |              |      |      |            |             |
@@ -187,7 +197,7 @@ Generating Clock Report
 |rue.neorv32_cpu_cp_c |              |      |      |            |             |
 |fu_inst/TopModules_i |              |      |      |            |             |
 |nst/IALU_inst/divup/ |              |      |      |            |             |
-|      div_result<11> |         Local|      |   89 |  0.183     |  3.469      |
+|      div_result<11> |         Local|      |   87 |  0.258     |  5.309      |
 +---------------------+--------------+------+------+------------+-------------+
 |neorv32_top_inst/cor |              |      |      |            |             |
 |e_complex_gen[0].neo |              |      |      |            |             |
@@ -197,9 +207,9 @@ Generating Clock Report
 |rue.neorv32_cpu_cp_c |              |      |      |            |             |
 |fu_inst/TopModules_i |              |      |      |            |             |
 |nst/IALU_inst/multup |              |      |      |            |             |
-|    /roundmul/_n0166 |         Local|      |    7 |  0.833     |  1.604      |
+|    /roundmul/_n0166 |         Local|      |    7 |  1.470     |  1.997      |
 +---------------------+--------------+------+------+------------+-------------+
-|   icon_control0<13> |         Local|      |    4 |  0.000     |  0.674      |
+|   icon_control0<13> |         Local|      |    4 |  0.000     |  0.586      |
 +---------------------+--------------+------+------+------------+-------------+
 |neorv32_top_inst/cor |              |      |      |            |             |
 |e_complex_gen[0].neo |              |      |      |            |             |
@@ -209,7 +219,7 @@ Generating Clock Report
 |rue.neorv32_cpu_cp_c |              |      |      |            |             |
 |fu_inst/TopModules_i |              |      |      |            |             |
 |nst/IALU_inst/multdo |              |      |      |            |             |
-|  wn/roundmul/_n0166 |         Local|      |    6 |  0.838     |  1.721      |
+|  wn/roundmul/_n0166 |         Local|      |    6 |  1.311     |  1.906      |
 +---------------------+--------------+------+------+------------+-------------+
 |neorv32_top_inst/cor |              |      |      |            |             |
 |e_complex_gen[0].neo |              |      |      |            |             |
@@ -219,7 +229,7 @@ Generating Clock Report
 |rue.neorv32_cpu_cp_c |              |      |      |            |             |
 |fu_inst/TopModules_i |              |      |      |            |             |
 |nst/IALU_inst/multup |              |      |      |            |             |
-|             /_n0144 |         Local|      |   12 |  1.513     |  2.384      |
+|             /_n0231 |         Local|      |   13 |  1.809     |  2.649      |
 +---------------------+--------------+------+------+------------+-------------+
 |neorv32_top_inst/cor |              |      |      |            |             |
 |e_complex_gen[0].neo |              |      |      |            |             |
@@ -229,7 +239,7 @@ Generating Clock Report
 |rue.neorv32_cpu_cp_c |              |      |      |            |             |
 |fu_inst/TopModules_i |              |      |      |            |             |
 |nst/IALU_inst/multup |              |      |      |            |             |
-|    /roundmul/_n0150 |         Local|      |    9 |  1.013     |  1.579      |
+|    /roundmul/_n0150 |         Local|      |    8 |  0.451     |  1.302      |
 +---------------------+--------------+------+------+------------+-------------+
 |neorv32_top_inst/cor |              |      |      |            |             |
 |e_complex_gen[0].neo |              |      |      |            |             |
@@ -239,17 +249,7 @@ Generating Clock Report
 |rue.neorv32_cpu_cp_c |              |      |      |            |             |
 |fu_inst/TopModules_i |              |      |      |            |             |
 |nst/IALU_inst/multdo |              |      |      |            |             |
-|           wn/_n0142 |         Local|      |    9 |  0.763     |  1.387      |
-+---------------------+--------------+------+------+------------+-------------+
-|neorv32_top_inst/cor |              |      |      |            |             |
-|e_complex_gen[0].neo |              |      |      |            |             |
-|rv32_cpu_inst/neorv3 |              |      |      |            |             |
-|2_cpu_alu_inst/neorv |              |      |      |            |             |
-|32_cpu_cp_cfu_inst_t |              |      |      |            |             |
-|rue.neorv32_cpu_cp_c |              |      |      |            |             |
-|fu_inst/TopModules_i |              |      |      |            |             |
-|nst/IALU_inst/multdo |              |      |      |            |             |
-|  wn/roundmul/_n0150 |         Local|      |    9 |  1.032     |  1.428      |
+|           wn/_n0140 |         Local|      |   12 |  1.032     |  1.764      |
 +---------------------+--------------+------+------+------------+-------------+
 |neorv32_top_inst/cor |              |      |      |            |             |
 |e_complex_gen[0].neo |              |      |      |            |             |
@@ -259,7 +259,7 @@ Generating Clock Report
 |rue.neorv32_cpu_cp_c |              |      |      |            |             |
 |fu_inst/TopModules_i |              |      |      |            |             |
 |nst/IALU_inst/multup |              |      |      |            |             |
-|    /roundmul/_n0181 |         Local|      |    6 |  0.634     |  1.257      |
+|    /roundmul/_n0181 |         Local|      |    5 |  0.899     |  1.501      |
 +---------------------+--------------+------+------+------------+-------------+
 |neorv32_top_inst/cor |              |      |      |            |             |
 |e_complex_gen[0].neo |              |      |      |            |             |
@@ -269,32 +269,10 @@ Generating Clock Report
 |rue.neorv32_cpu_cp_c |              |      |      |            |             |
 |fu_inst/TopModules_i |              |      |      |            |             |
 |nst/IALU_inst/multdo |              |      |      |            |             |
-|  wn/roundmul/_n0181 |         Local|      |    5 |  0.636     |  1.317      |
+|  wn/roundmul/_n0181 |         Local|      |    5 |  0.584     |  1.154      |
 +---------------------+--------------+------+------+------------+-------------+
 |U_icon_pro/U0/iUPDAT |              |      |      |            |             |
-|               E_OUT |         Local|      |    1 |  0.000     |  2.058      |
-+---------------------+--------------+------+------+------------+-------------+
-|neorv32_top_inst/cor |              |      |      |            |             |
-|e_complex_gen[0].neo |              |      |      |            |             |
-|rv32_cpu_inst/neorv3 |              |      |      |            |             |
-|2_cpu_alu_inst/neorv |              |      |      |            |             |
-|32_cpu_cp_cfu_inst_t |              |      |      |            |             |
-|rue.neorv32_cpu_cp_c |              |      |      |            |             |
-|fu_inst/TopModules_i |              |      |      |            |             |
-|nst/IALU_inst/multup |              |      |      |            |             |
-|/normmul/state[1]_PW |              |      |      |            |             |
-|     R_126_o_Mux_7_o |         Local|      |    1 |  0.000     |  0.670      |
-+---------------------+--------------+------+------+------------+-------------+
-|neorv32_top_inst/cor |              |      |      |            |             |
-|e_complex_gen[0].neo |              |      |      |            |             |
-|rv32_cpu_inst/neorv3 |              |      |      |            |             |
-|2_cpu_alu_inst/neorv |              |      |      |            |             |
-|32_cpu_cp_cfu_inst_t |              |      |      |            |             |
-|rue.neorv32_cpu_cp_c |              |      |      |            |             |
-|fu_inst/TopModules_i |              |      |      |            |             |
-|nst/IALU_inst/multdo |              |      |      |            |             |
-|wn/normmul/state[1]_ |              |      |      |            |             |
-|   PWR_126_o_Mux_7_o |         Local|      |    1 |  0.000     |  0.578      |
+|               E_OUT |         Local|      |    1 |  0.000     |  1.842      |
 +---------------------+--------------+------+------+------------+-------------+
 |neorv32_top_inst/cor |              |      |      |            |             |
 |e_complex_gen[0].neo |              |      |      |            |             |
@@ -314,9 +292,31 @@ Generating Clock Report
 |32_cpu_cp_cfu_inst_t |              |      |      |            |             |
 |rue.neorv32_cpu_cp_c |              |      |      |            |             |
 |fu_inst/TopModules_i |              |      |      |            |             |
+|nst/IALU_inst/multdo |              |      |      |            |             |
+|wn/normmul/state[1]_ |              |      |      |            |             |
+|   PWR_126_o_Mux_7_o |         Local|      |    1 |  0.000     |  0.578      |
++---------------------+--------------+------+------+------------+-------------+
+|neorv32_top_inst/cor |              |      |      |            |             |
+|e_complex_gen[0].neo |              |      |      |            |             |
+|rv32_cpu_inst/neorv3 |              |      |      |            |             |
+|2_cpu_alu_inst/neorv |              |      |      |            |             |
+|32_cpu_cp_cfu_inst_t |              |      |      |            |             |
+|rue.neorv32_cpu_cp_c |              |      |      |            |             |
+|fu_inst/TopModules_i |              |      |      |            |             |
+|nst/IALU_inst/multup |              |      |      |            |             |
+|/normmul/state[1]_PW |              |      |      |            |             |
+|     R_126_o_Mux_7_o |         Local|      |    1 |  0.000     |  0.373      |
++---------------------+--------------+------+------+------------+-------------+
+|neorv32_top_inst/cor |              |      |      |            |             |
+|e_complex_gen[0].neo |              |      |      |            |             |
+|rv32_cpu_inst/neorv3 |              |      |      |            |             |
+|2_cpu_alu_inst/neorv |              |      |      |            |             |
+|32_cpu_cp_cfu_inst_t |              |      |      |            |             |
+|rue.neorv32_cpu_cp_c |              |      |      |            |             |
+|fu_inst/TopModules_i |              |      |      |            |             |
 |nst/IALU_inst/adderu |              |      |      |            |             |
 |p/signFunc/operator_ |              |      |      |            |             |
-|        s1_MUX_627_o |         Local|      |    1 |  0.000     |  0.373      |
+|        s1_MUX_627_o |         Local|      |    1 |  0.000     |  0.578      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -338,26 +338,26 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  TS_U_TO_J = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    11.551ns|     3.449ns|       0|           0
-   TO TIMEGRP "J_CLK" 15 ns                 | HOLD        |     1.116ns|            |       0|           0
+  TS_U_TO_J = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    11.974ns|     3.026ns|       0|           0
+   TO TIMEGRP "J_CLK" 15 ns                 | HOLD        |     1.069ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  TS_U_TO_U = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    14.005ns|     0.995ns|       0|           0
-   TO TIMEGRP "U_CLK" 15 ns                 | HOLD        |     0.441ns|            |       0|           0
+  TS_U_TO_U = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    13.947ns|     1.053ns|       0|           0
+   TO TIMEGRP "U_CLK" 15 ns                 | HOLD        |     0.475ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  TS_J_CLK = PERIOD TIMEGRP "J_CLK" 30 ns H | SETUP       |    20.096ns|     9.904ns|       0|           0
-  IGH 50%                                   | HOLD        |     0.385ns|            |       0|           0
+  TS_J_CLK = PERIOD TIMEGRP "J_CLK" 30 ns H | SETUP       |    20.487ns|     9.513ns|       0|           0
+  IGH 50%                                   | HOLD        |     0.343ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_D2_TO_T2_ila_pro_0_path" TIG     | SETUP       |         N/A|     3.648ns|     N/A|           0
+  PATH "TS_D2_TO_T2_ila_pro_0_path" TIG     | SETUP       |         N/A|     4.180ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
   PATH "TS_J2_TO_D2_ila_pro_0_path" TIG     | N/A         |         N/A|         N/A|     N/A|         N/A
 ----------------------------------------------------------------------------------------------------------
   PATH "TS_J3_TO_D2_ila_pro_0_path" TIG     | N/A         |         N/A|         N/A|     N/A|         N/A
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_J4_TO_D2_ila_pro_0_path" TIG     | SETUP       |         N/A|     3.631ns|     N/A|           0
+  PATH "TS_J4_TO_D2_ila_pro_0_path" TIG     | MAXDELAY    |         N/A|     3.855ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_J_TO_D_path" TIG                 | SETUP       |         N/A|     6.775ns|     N/A|           0
+  PATH "TS_J_TO_D_path" TIG                 | SETUP       |         N/A|     4.853ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_D_TO_J_path" TIG                 | MAXDELAY    |         N/A|     4.801ns|     N/A|           0
+  PATH "TS_D_TO_J_path" TIG                 | MAXDELAY    |         N/A|     6.227ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -374,9 +374,9 @@ Generating Pad Report.
 All signals are completely routed.
 
 Total REAL time to PAR completion: 27 secs 
-Total CPU time to PAR completion: 27 secs 
+Total CPU time to PAR completion: 25 secs 
 
-Peak Memory Usage:  760 MB
+Peak Memory Usage:  764 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.
