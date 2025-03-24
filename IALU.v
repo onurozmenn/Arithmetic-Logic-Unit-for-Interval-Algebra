@@ -689,16 +689,20 @@ module RoundingMul(
 	always@(*)begin
 		f_exp = r_exp;//21--9
 		tmp = s_result[((`MANTISSA+1)*2)-1:(((`MANTISSA+1)*2)-1)-(`MANTISSA+1)];
-		if(s_result[2])begin
-			tmp = s_result[((`MANTISSA+1)*2)-1:(((`MANTISSA+1)*2)-1)-(`MANTISSA+2)] + 1'b1;
-			//Renormalize
+		
+		if(s_result[9])begin
+			tmp = s_result[((`MANTISSA+1)*2)-1:(((`MANTISSA+1)*2)-1)-(`MANTISSA+1)] + 'b1;
+			//Renormalize2120191817161514131211109
+			
 			if ( tmp[`MANTISSA+1] == 1'b1)
 			begin
+			
 				tmp =  tmp >> 1;
 				f_exp = r_exp + 1'b1;
+				
 				if(r_exp == 5'b11110)
 					error = {2'b01,sign};
-					$display("Overflow error rounding");
+					$display("Overflow error rounding %b",tmp[`MANTISSA+1]);
 			end
 		end
 		f_result = tmp[`MANTISSA-1:0];

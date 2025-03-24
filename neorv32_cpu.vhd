@@ -40,7 +40,7 @@ entity neorv32_cpu is
     RISCV_ISA_Zbkc      : boolean; -- implement carry-less multiplication instructions
     RISCV_ISA_Zbkx      : boolean; -- implement cryptography crossbar permutation extension
     RISCV_ISA_Zbs       : boolean; -- implement single-bit bit-manipulation extension
-    RISCV_ISA_Zfinx     : boolean; -- implement 32-bit floating-point extension
+    RISCV_ISA_Zfinx     : boolean; -- implement 32-bit floating-point extension --XFintf--
     RISCV_ISA_Zicntr    : boolean; -- implement base counters
     RISCV_ISA_Zicond    : boolean; -- implement integer conditional operations
     RISCV_ISA_Zihpm     : boolean; -- implement hardware performance monitors
@@ -95,7 +95,7 @@ end neorv32_cpu;
 architecture neorv32_cpu_rtl of neorv32_cpu is
 
   -- auto-configuration --
-  constant rf_rs3_en_c : boolean := RISCV_ISA_Zxcfu or RISCV_ISA_Zfinx; -- 3rd register file read port
+  constant rf_rs3_en_c : boolean := RISCV_ISA_Zxcfu or RISCV_ISA_Zfinx; -- 3rd register file read port --XFintf--
   constant riscv_a_c   : boolean := RISCV_ISA_Zaamo and RISCV_ISA_Zalrsc; -- A: atomic memory operations
   constant riscv_b_c   : boolean := RISCV_ISA_Zba and RISCV_ISA_Zbb and RISCV_ISA_Zbs; -- B: bit manipulation
   constant riscv_zkt_c : boolean := CPU_FAST_SHIFT_EN; -- Zkt: data-independent execution time for cryptographic operations
@@ -164,7 +164,7 @@ begin
       cond_sel_string_f(true,             "_zicsr",    "" ) & -- always enabled
       cond_sel_string_f(true,             "_zifencei", "" ) & -- always enabled
       cond_sel_string_f(RISCV_ISA_Zihpm,  "_zihpm",    "" ) &
-      cond_sel_string_f(RISCV_ISA_Zfinx,  "_zfinx",    "" ) &
+      cond_sel_string_f(RISCV_ISA_Zfinx,  "_zfinx",    "" ) & --XFintf--
       cond_sel_string_f(riscv_zkn_c,      "_zkn",      "" ) &
       cond_sel_string_f(RISCV_ISA_Zknd,   "_zknd",     "" ) &
       cond_sel_string_f(RISCV_ISA_Zkne,   "_zkne",     "" ) &
@@ -237,7 +237,7 @@ begin
     RISCV_ISA_Zbkc      => RISCV_ISA_Zbkc,      -- implement carry-less multiplication instructions
     RISCV_ISA_Zbkx      => RISCV_ISA_Zbkx,      -- implement cryptography crossbar permutation extension
     RISCV_ISA_Zbs       => RISCV_ISA_Zbs,       -- implement single-bit bit-manipulation extension
-    RISCV_ISA_Zfinx     => RISCV_ISA_Zfinx,     -- implement 32-bit floating-point extension
+    RISCV_ISA_Zfinx     => RISCV_ISA_Zfinx,     -- implement 32-bit floating-point extension --XFintf--
     RISCV_ISA_Zicntr    => RISCV_ISA_Zicntr,    -- implement base counters
     RISCV_ISA_Zicond    => RISCV_ISA_Zicond,    -- implement integer conditional operations
     RISCV_ISA_Zihpm     => RISCV_ISA_Zihpm,     -- implement hardware performance monitors
@@ -345,7 +345,7 @@ begin
     RISCV_ISA_Zbkc   => RISCV_ISA_Zbkc,   -- implement carry-less multiplication instructions
     RISCV_ISA_Zbkx   => RISCV_ISA_Zbkx,   -- implement cryptography crossbar permutation extension
     RISCV_ISA_Zbs    => RISCV_ISA_Zbs,    -- implement single-bit instructions
-    RISCV_ISA_Zfinx  => RISCV_ISA_Zfinx,  -- implement 32-bit floating-point extension
+    RISCV_ISA_Zfinx  => RISCV_ISA_Zfinx,  -- implement 32-bit floating-point extension --XFintf--
     RISCV_ISA_Zicond => RISCV_ISA_Zicond, -- implement integer conditional operations
     RISCV_ISA_Zknd   => RISCV_ISA_Zknd,   -- implement cryptography NIST AES decryption extension
     RISCV_ISA_Zkne   => RISCV_ISA_Zkne,   -- implement cryptography NIST AES encryption extension

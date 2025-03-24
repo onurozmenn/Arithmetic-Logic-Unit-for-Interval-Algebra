@@ -48,7 +48,7 @@ entity neorv32_top is
     RISCV_ISA_Zbkc        : boolean                        := false;       -- implement carry-less multiplication instructions
     RISCV_ISA_Zbkx        : boolean                        := false;       -- implement cryptography crossbar permutation extension
     RISCV_ISA_Zbs         : boolean                        := false;       -- implement single-bit bit-manipulation extension
-    RISCV_ISA_Zfinx       : boolean                        := false;       -- implement 32-bit floating-point extension
+    RISCV_ISA_Zfinx       : boolean                        := false;       -- implement 32-bit floating-point extension --XFintf--
     RISCV_ISA_Zicntr      : boolean                        := true;        -- implement base counters
     RISCV_ISA_Zicond      : boolean                        := false;       -- implement integer conditional operations
     RISCV_ISA_Zihpm       : boolean                        := false;       -- implement hardware performance monitors
@@ -502,7 +502,7 @@ begin
       RISCV_ISA_Zbkc      => RISCV_ISA_Zbkc,
       RISCV_ISA_Zbkx      => RISCV_ISA_Zbkx,
       RISCV_ISA_Zbs       => RISCV_ISA_Zbs,
-      RISCV_ISA_Zfinx     => RISCV_ISA_Zfinx,
+      RISCV_ISA_Zfinx      => RISCV_ISA_Zfinx, --XFintf--
       RISCV_ISA_Zicntr    => RISCV_ISA_Zicntr,
       RISCV_ISA_Zicond    => RISCV_ISA_Zicond,
       RISCV_ISA_Zihpm     => RISCV_ISA_Zihpm,

@@ -1,7 +1,7 @@
 -- The NEORV32 RISC-V Processor - github.com/stnolting/neorv32
 -- Auto-generated memory initialization image (for internal BOOTROM)
 -- Source: bootloader/build/main.bin
--- Built: 01.02.2025 19:30:34
+-- Built: 14.02.2025 13:38:46
 
 library ieee;
 use ieee.std_logic_1164.all;
@@ -859,8 +859,8 @@ x"72656461",
 x"0a3e3e20",
 x"444c420a",
 x"46203a56",
-x"20206265",
-x"30322031",
+x"31206265",
+x"30322034",
 x"480a3532",
 x"203a5657",
 x"00000020",

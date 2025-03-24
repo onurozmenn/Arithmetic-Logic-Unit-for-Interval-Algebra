@@ -124,61 +124,11 @@
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_application_image.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_boot_rom.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_bootloader_image.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_bus.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_cache.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_cfs.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_clint.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_clockgate.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_cpu.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_cpu_alu.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_cpu_control.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_cpu_cp_bitmanip.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_cpu_cp_cfu.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_cpu_cp_cond.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_cpu_cp_crypto.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_cpu_cp_fpu.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_cpu_cp_muldiv.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_cpu_cp_shifter.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_cpu_decompressor.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_cpu_icc.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_cpu_lsu.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_cpu_pmp.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_cpu_regfile.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_crc.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_debug_auth.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_debug_dm.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_debug_dtm.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_dma.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_dmem.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_fifo.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_gpio.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_gptmr.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_imem.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_neoled.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_onewire.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_package.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_pwm.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_sdi.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_slink.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_spi.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_sys.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_sysinfo.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_top.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_trng.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_twd.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_twi.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_uart.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_wdt.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_xbus.vhd"/>
-      <outfile xil_pn:name="IALU.v"/>
-      <outfile xil_pn:name="TopModules_wrapper.vhd"/>
-      <outfile xil_pn:name="ialutb.v"/>
-      <outfile xil_pn:name="neorv32_test_setup_bootloader.vhd"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1740502959" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-2626337902378619538" xil_pn:start_ts="1740502959">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -199,87 +149,32 @@
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_application_image.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_boot_rom.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_bootloader_image.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_bus.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_cache.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_cfs.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_clint.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_clockgate.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_cpu.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_cpu_alu.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_cpu_control.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_cpu_cp_bitmanip.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_cpu_cp_cfu.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_cpu_cp_cond.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_cpu_cp_crypto.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_cpu_cp_fpu.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_cpu_cp_muldiv.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_cpu_cp_shifter.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_cpu_decompressor.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_cpu_icc.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_cpu_lsu.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_cpu_pmp.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_cpu_regfile.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_crc.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_debug_auth.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_debug_dm.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_debug_dtm.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_dma.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_dmem.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_fifo.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_gpio.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_gptmr.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_imem.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_neoled.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_onewire.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_package.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_pwm.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_sdi.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_slink.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_spi.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_sys.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_sysinfo.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_top.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_trng.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_twd.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_twi.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_uart.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_wdt.vhd"/>
-      <outfile xil_pn:name="../neorv32-main/rtl/core/neorv32_xbus.vhd"/>
-      <outfile xil_pn:name="IALU.v"/>
-      <outfile xil_pn:name="TopModules_wrapper.vhd"/>
-      <outfile xil_pn:name="ialutb.v"/>
-      <outfile xil_pn:name="neorv32_test_setup_bootloader.vhd"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1740688710" xil_pn:in_ck="272897649929538535" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="735929690525166309" xil_pn:start_ts="1740688706">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="fuse.log"/>
-      <outfile xil_pn:name="ialutb_beh.prj"/>
-      <outfile xil_pn:name="ialutb_isim_beh.exe"/>
-      <outfile xil_pn:name="isim"/>
-      <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="xilinxsim.ini"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1740688710" xil_pn:in_ck="-5598515052862477680" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-2635020159598702926" xil_pn:start_ts="1740688710">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="ialutb_isim_beh.wdb"/>
-      <outfile xil_pn:name="isim.cmd"/>
-      <outfile xil_pn:name="isim.log"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1740135653" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1740135653">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -313,20 +208,13 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="IALU.ngr"/>
-      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
-      <outfile xil_pn:name="neorv32_test_setup_bootloader.lso"/>
-      <outfile xil_pn:name="neorv32_test_setup_bootloader.ngc"/>
-      <outfile xil_pn:name="neorv32_test_setup_bootloader.ngr"/>
-      <outfile xil_pn:name="neorv32_test_setup_bootloader.prj"/>
-      <outfile xil_pn:name="neorv32_test_setup_bootloader.stx"/>
-      <outfile xil_pn:name="neorv32_test_setup_bootloader.syr"/>
-      <outfile xil_pn:name="neorv32_test_setup_bootloader.xst"/>
-      <outfile xil_pn:name="neorv32_test_setup_bootloader_xst.xrpt"/>
-      <outfile xil_pn:name="webtalk_pn.xml"/>
-      <outfile xil_pn:name="xst"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1740218886" xil_pn:in_ck="-5427759657382496563" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-8374451741245385860" xil_pn:start_ts="1740218886">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -335,66 +223,57 @@
     <transform xil_pn:end_ts="1742665988" xil_pn:in_ck="-5110458748336741959" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-7292699397265610272" xil_pn:start_ts="1742665972">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="_ngo"/>
-      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
-      <outfile xil_pn:name="neorv32_test_setup_bootloader.bld"/>
-      <outfile xil_pn:name="neorv32_test_setup_bootloader.ngd"/>
-      <outfile xil_pn:name="neorv32_test_setup_bootloader_cs.blc"/>
-      <outfile xil_pn:name="neorv32_test_setup_bootloader_cs.ngc"/>
-      <outfile xil_pn:name="neorv32_test_setup_bootloader_ngdbuild.xrpt"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1742666024" xil_pn:in_ck="-7771245764649816900" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="-398923363910175968" xil_pn:start_ts="1742665988">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
-      <outfile xil_pn:name="neorv32_test_setup_bootloader.pcf"/>
-      <outfile xil_pn:name="neorv32_test_setup_bootloader_map.map"/>
-      <outfile xil_pn:name="neorv32_test_setup_bootloader_map.mrp"/>
-      <outfile xil_pn:name="neorv32_test_setup_bootloader_map.ncd"/>
-      <outfile xil_pn:name="neorv32_test_setup_bootloader_map.ngm"/>
-      <outfile xil_pn:name="neorv32_test_setup_bootloader_map.xrpt"/>
-      <outfile xil_pn:name="neorv32_test_setup_bootloader_summary.xml"/>
-      <outfile xil_pn:name="neorv32_test_setup_bootloader_usage.xml"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1742666060" xil_pn:in_ck="-6208175574059913675" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-3829590541433901613" xil_pn:start_ts="1742666024">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
-      <outfile xil_pn:name="neorv32_test_setup_bootloader.ncd"/>
-      <outfile xil_pn:name="neorv32_test_setup_bootloader.pad"/>
-      <outfile xil_pn:name="neorv32_test_setup_bootloader.par"/>
-      <outfile xil_pn:name="neorv32_test_setup_bootloader.ptwx"/>
-      <outfile xil_pn:name="neorv32_test_setup_bootloader.unroutes"/>
-      <outfile xil_pn:name="neorv32_test_setup_bootloader.xpi"/>
-      <outfile xil_pn:name="neorv32_test_setup_bootloader_pad.csv"/>
-      <outfile xil_pn:name="neorv32_test_setup_bootloader_pad.txt"/>
-      <outfile xil_pn:name="neorv32_test_setup_bootloader_par.xrpt"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1742666083" xil_pn:in_ck="-7944541207627844277" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1742666063">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
-      <outfile xil_pn:name="neorv32_test_setup_bootloader.bgn"/>
-      <outfile xil_pn:name="neorv32_test_setup_bootloader.bit"/>
-      <outfile xil_pn:name="neorv32_test_setup_bootloader.drc"/>
-      <outfile xil_pn:name="neorv32_test_setup_bootloader.ut"/>
-      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
-      <outfile xil_pn:name="webtalk.log"/>
-      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1742294612" xil_pn:in_ck="-7944541207627857131" xil_pn:name="TRAN_analyzeDesignUsingChipscope" xil_pn:prop_ck="-7292699397265610272" xil_pn:start_ts="1742294612">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1742666060" xil_pn:in_ck="7530070616202962104" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1742666054">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
-      <outfile xil_pn:name="neorv32_test_setup_bootloader.twr"/>
-      <outfile xil_pn:name="neorv32_test_setup_bootloader.twx"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
   </transforms>
 

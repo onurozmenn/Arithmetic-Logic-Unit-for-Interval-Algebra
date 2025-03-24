@@ -25,7 +25,7 @@ entity neorv32_cpu_alu is
     RISCV_ISA_Zbkc   : boolean; -- implement carry-less multiplication instructions
     RISCV_ISA_Zbkx   : boolean; -- implement cryptography crossbar permutation extension
     RISCV_ISA_Zbs    : boolean; -- implement single-bit instructions
-    RISCV_ISA_Zfinx  : boolean; -- implement 32-bit floating-point extension
+    RISCV_ISA_Zfinx  : boolean; -- implement 32-bit floating-point extension --XFintf--
     RISCV_ISA_Zicond : boolean; -- implement integer conditional operations
     RISCV_ISA_Zknd   : boolean; -- implement cryptography NIST AES decryption extension
     RISCV_ISA_Zkne   : boolean; -- implement cryptography NIST AES encryption extension
@@ -253,7 +253,7 @@ begin
   -- FLOAT-Opcode Co-Processor: Single-Precision FPUUnit ('Zfinx' ISA Extension) ------------
   -- -------------------------------------------------------------------------------------------
   neorv32_cpu_cp_fpu_inst_true:
-  if RISCV_ISA_Zfinx generate
+  if RISCV_ISA_Zfinx generate --XFintf--
     neorv32_cpu_cp_fpu_inst: entity neorv32.neorv32_cpu_cp_fpu
     port map (
       -- global control --
@@ -282,7 +282,7 @@ begin
   end generate;
 
   neorv32_cpu_cp_fpu_inst_false:
-  if not RISCV_ISA_Zfinx generate
+  if not RISCV_ISA_Zfinx generate --XFintf--
     fpu_csr_en    <= '0';
     fpu_csr_we    <= '0';
     csr_rdata_fpu <= (others => '0');

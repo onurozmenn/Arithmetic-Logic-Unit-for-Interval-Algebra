@@ -48,7 +48,7 @@ entity neorv32_cpu_control is
     RISCV_ISA_Zbkc      : boolean; -- implement carry-less multiplication instructions
     RISCV_ISA_Zbkx      : boolean; -- implement cryptography crossbar permutation extension
     RISCV_ISA_Zbs       : boolean; -- implement single-bit bit-manipulation extension
-    RISCV_ISA_Zfinx     : boolean; -- implement 32-bit floating-point extension
+    RISCV_ISA_Zfinx     : boolean; -- implement 32-bit floating-point extension --XFintf--
     RISCV_ISA_Zicntr    : boolean; -- implement base counters
     RISCV_ISA_Zicond    : boolean; -- implement integer conditional operations
     RISCV_ISA_Zihpm     : boolean; -- implement hardware performance monitors
@@ -946,11 +946,11 @@ begin
 
       -- user-defined U-mode CFU CSRs --
       when csr_cfureg0_c | csr_cfureg1_c | csr_cfureg2_c | csr_cfureg3_c =>
-        csr_valid(2) <= bool_to_ulogic_f(RISCV_ISA_Zxcfu); -- available if CFU implemented
+        csr_valid(2) <= bool_to_ulogic_f(RISCV_ISA_Zxcfu); -- available if CFU implemented --XFintf-- ??
 
       -- floating-point CSRs --
       when csr_fflags_c | csr_frm_c | csr_fcsr_c =>
-        csr_valid(2) <= bool_to_ulogic_f(RISCV_ISA_Zfinx); -- available if FPU implemented
+        csr_valid(2) <= bool_to_ulogic_f(RISCV_ISA_Zfinx); -- available if FPU implemented --XFintf--
 
       -- machine trap setup/handling, environment/information registers, etc. --
       when csr_mstatus_c   | csr_mstatush_c      | csr_misa_c      | csr_mie_c       | csr_mtvec_c  |
@@ -1680,7 +1680,7 @@ begin
           -- floating-point unit
           -- --------------------------------------------------------------------
           when csr_fflags_c | csr_frm_c | csr_fcsr_c =>
-            if RISCV_ISA_Zfinx then
+            if RISCV_ISA_Zfinx then --XFintf--
               csr.rdata <= xcsr_rdata_i; -- implemented externally
             end if;
 
@@ -1688,7 +1688,7 @@ begin
           -- custom functions unit
           -- --------------------------------------------------------------------
           when csr_cfureg0_c | csr_cfureg1_c | csr_cfureg2_c | csr_cfureg3_c =>
-            if RISCV_ISA_Zxcfu then
+            if RISCV_ISA_Zxcfu then --XFintf-- ??
               csr.rdata <= xcsr_rdata_i; -- implemented externally
             end if;
 
@@ -1880,7 +1880,7 @@ begin
             csr.rdata(2)  <= bool_to_ulogic_f(RISCV_ISA_Zmmul);     -- Zmmul: mul/div
             csr.rdata(3)  <= bool_to_ulogic_f(RISCV_ISA_Zxcfu);     -- Zxcfu: custom RISC-V instructions
             csr.rdata(4)  <= bool_to_ulogic_f(RISCV_ISA_Zkt);       -- Zkt: data independent execution latency
-            csr.rdata(5)  <= bool_to_ulogic_f(RISCV_ISA_Zfinx);     -- Zfinx: FPU using x registers
+            csr.rdata(5)  <= bool_to_ulogic_f(RISCV_ISA_Zfinx);     -- Zfinx: FPU using x registers --XFintf--
             csr.rdata(6)  <= bool_to_ulogic_f(RISCV_ISA_Zicond);    -- Zicond: integer conditional operations
             csr.rdata(7)  <= bool_to_ulogic_f(RISCV_ISA_Zicntr);    -- Zicntr: base counters
             csr.rdata(8)  <= bool_to_ulogic_f(RISCV_ISA_Smpmp);     -- Smpmp: physical memory protection

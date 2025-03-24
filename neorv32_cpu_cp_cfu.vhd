@@ -16,6 +16,8 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
+library neorv32;
+use neorv32.neorv32_package.all;
 entity neorv32_cpu_cp_cfu is
   port (
     -- global control --
@@ -59,25 +61,50 @@ architecture neorv32_cpu_cp_cfu_rtl of neorv32_cpu_cp_cfu is
   constant rm7 : std_ulogic_vector(2 downto 0) := "110";
   constant rm8 : std_ulogic_vector(2 downto 0) := "111";
 
-
+component TopModules_wrapper
+    Port ( clk         : in  STD_ULOGIC;
+           rst         : in  STD_ULOGIC;
+           a           : in  STD_ULOGIC_VECTOR(31 downto 0);
+           b           : in  STD_ULOGIC_VECTOR(31 downto 0);
+           funct       : in  STD_ULOGIC_VECTOR(4 downto 0);
+           fmt         : in  STD_ULOGIC_VECTOR(1 downto 0);
+           rm          : in  STD_ULOGIC_VECTOR(2 downto 0);
+           result      : out STD_ULOGIC_VECTOR(31 downto 0);
+           flag       : out STD_ULOGIC
+         );
+end component;
   -- key storage (accessed via CFU CSRs) --
   type key_mem_t is array (0 to 3) of std_ulogic_vector(31 downto 0);
   signal key_mem : key_mem_t;
   signal funct5 : std_ulogic_vector(4 downto 0); -- funct5, 5 bit
   signal fmt    : std_ulogic_vector(1 downto 0); -- fmt, 2 bit
+  signal result : std_ulogic_Vector(31 downto 0);
   -- processing logic --
   type xfint_t is record
-    done : std_ulogic_vector(1 downto 0); -- multi-cycle done shift register; 2 stages = 2 cyles latency
-    opa  : std_ulogic_vector(31 downto 0); -- input operand a
-    opb  : std_ulogic_vector(31 downto 0); -- input operand b
+    done : std_ulogic_vector(2 downto 0); -- multi-cycle done shift register; 2 stages = 2 cyles latency
+    al  : std_ulogic_vector(15 downto 0); -- input operand a
+    au  : std_ulogic_vector(15 downto 0); -- input operand b
+    bl  : std_ulogic_vector(15 downto 0); -- input operand a
+    bu  : std_ulogic_vector(15 downto 0); -- input operand b
     res  : std_ulogic_vector(31 downto 0); -- operation results
   end record;
   signal xfint : xfint_t;
+  
+  -- Signals for TopModules_wrapper
+  signal ialu_clk        : std_ulogic;
+  signal ialu_rst        : std_ulogic;
+  signal ialu_a          : std_ulogic_vector(31 downto 0);
+  signal ialu_b          : std_ulogic_vector(31 downto 0);
+  signal ialu_funct      : std_ulogic_vector(4 downto 0);
+  signal ialu_fmt        : std_ulogic_vector(1 downto 0);
+  signal ialu_rm         : std_ulogic_vector(2 downto 0);
+  signal ialu_result     : std_ulogic_vector(31 downto 0);
+  signal ialu_flag      : std_ulogic;
 
+begin
+	 
   funct5 <= funct7_i(6 downto 2);
   fmt    <= funct7_i(1 downto 0);
-begin
-
   -- CFU-Internal Control and Status Registers (CFU-CSRs): 128-Bit Key Storage --------------
   -- -------------------------------------------------------------------------------------------
   -- synchronous write access --
@@ -94,47 +121,74 @@ begin
 
   -- asynchronous read access --
   csr_rdata_o <= key_mem(to_integer(unsigned(csr_addr_i)));
+  -- Instantiate TopModules_wrapper
+	TopModules_inst : TopModules_wrapper
+	  port map (
+		 clk         => clk_i,            -- global clock
+		 rst         => ialu_rst,           -- global reset
+		 a           => ialu_a,            -- rs1_i'yi 'a'ya bala
+		 b           => ialu_b,            -- rs2_i'yi 'b'ye bala
+		 funct       => ialu_funct,           -- funct5'i 'funct'ye bala
+		 fmt         => ialu_fmt,              -- fmt'i 'fmt'ye bala
+		 rm          => ialu_rm,         -- funct3_i'yi 'rm'ye bala
+		 result      => ialu_result,     -- ilem sonucu
+		 flag         => ialu_flag      -- flag1 k
+		   );
 
 
-  -- XTEA Processing Core ------------------------------------------------------------------
-  -- -------------------------------------------------------------------------------------------
+  -- CORE ------------------------------------------------------------------
+  -- CORE ------------------------------------------------------------------
   xfint_core: process(rstn_i, clk_i)
   begin
     if (rstn_i = '0') then
       xfint.done <= (others => '0');
-      xfint.opa  <= (others => '0');
-      xfint.opb  <= (others => '0');
+      xfint.al   <= (others => '0');
+      xfint.au   <= (others => '0');
+      xfint.bl   <= (others => '0');
+      xfint.bu   <= (others => '0');
       xfint.res  <= (others => '0');
+      ialu_rst   <= '1'; -- Reset the IALU initially
     elsif rising_edge(clk_i) then
-      if (funct5 = "00000") then
         -- "operation-done" shift register: module has 2 cycles latency --
         xfint.done(0) <= '0'; -- default: no operation trigger
         xfint.done(1) <= xfint.done(0);
+        xfint.done(2) <= xfint.done(1);
 
         -- trigger new operation --
-        if (start_i = '1') then --and (rtype_i = r3type_c) then-- execution trigger and correct instruction type
-          xfint.opa     <= rs1_i; -- buffer input operand rs1 (for improved physical timing)
-          xfint.opb     <= rs2_i; -- buffer input operand rs2 (for improved physical timing)
-          xfint.done(0) <= '1'; -- trigger operation
+        if (start_i = '1') then -- execution trigger and correct instruction type
+          xfint.al      <= rs1_i(31 downto 16); -- buffer input operand rs1 (for improved physical timing)
+          xfint.au      <= rs1_i(15 downto  0); -- buffer input operand rs1 (for improved physical timing)
+          xfint.bl      <= rs2_i(31 downto 16); -- buffer input operand rs2 (for improved physical timing)
+          xfint.bu      <= rs2_i(15 downto  0); -- buffer input operand rs2 (for improved physical timing)
+
+
+          -- Connect inputs to IALU
+          ialu_a     <= rs1_i; -- Pass rs1_i to IALU input a
+          ialu_b     <= rs2_i; -- Pass rs2_i to IALU input b
+          ialu_funct <= funct5; -- Pass funct5 to IALU input funct
+          ialu_fmt   <= fmt;    -- Pass fmt to IALU input fmt
+          ialu_rm    <= funct3_i; -- Pass funct3_i to IALU input rm
+          ialu_rst   <= '0'; -- Deassert reset for IALU
         end if;
 
+		  if (ialu_flag = '1') then
+			 xfint.done(0) <= '1'; -- trigger operation
+			 
+		  end if;
         -- data processing --
-        if (xfint.done(0) = '1') then -- second-stage execution trigger
-          -- update "sum" round key --
-          if (funct3_i(2) = '1') then -- initialize
-            xfint.res <= 3;
-          elsif (funct3_i(1 downto 0) = rm1(1 downto 0)) then -- encrypt v0
-            xfint.res <= 4;
-          elsif (funct3_i(1 downto 0) = rm2(1 downto 0)) then -- decrypt v1
-            xfint.res <= 5;
-          end if;
+        if (xfint.done(1) = '1') then -- second-stage execution trigger
+          -- Use the result from IALU
+				xfint.res <= ialu_result; -- Store the result from IALU
+            ialu_rst   <= '1'; -- Deassert reset for IALU
+
         end if;
 
-      end if;
-
-    end if ;
+    end if;
   end process xfint_core;
 
+
+
+  -- ENDCORE ------------------------------------------------------------------
 
 
   -- Function Result Select -----------------------------------------------------------------
@@ -146,10 +200,7 @@ begin
       case funct3_i is -- just check "funct3" here; "funct7" bit-field is ignored in this example
         when rm1 | rm2 | rm3 | rm4 | rm5 | rm6 | rm7 | rm8 => -- xtea encryption/decryption
           result_o <= xfint.res; -- processing result
-          valid_o  <= xfint.done(1); -- multi-cycle processing done when set
-        when (rm8 = rm7) => -- xtea initialization
-          result_o <= (others => '0'); -- just output zero
-          valid_o  <= '1'; -- pure-combinatorial, so we are done "immediately"
+          valid_o  <= xfint.done(2); -- multi-cycle processing done when set
         when others => -- all unspecified operations
           result_o <= (others => '0'); -- no logic implemented
           valid_o  <= '0'; -- this will cause an illegal instruction exception after timeout
