@@ -204,76 +204,96 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1742664302" xil_pn:in_ck="2459603812473531842" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="1026057575128845134" xil_pn:start_ts="1742664261">
+    <transform xil_pn:end_ts="1742836388" xil_pn:in_ck="-8312234578811187506" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="1026057575128845134" xil_pn:start_ts="1742836345">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputAdded"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="IALU.ngr"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="neorv32_test_setup_bootloader.lso"/>
+      <outfile xil_pn:name="neorv32_test_setup_bootloader.ngc"/>
+      <outfile xil_pn:name="neorv32_test_setup_bootloader.ngr"/>
+      <outfile xil_pn:name="neorv32_test_setup_bootloader.prj"/>
+      <outfile xil_pn:name="neorv32_test_setup_bootloader.stx"/>
+      <outfile xil_pn:name="neorv32_test_setup_bootloader.syr"/>
+      <outfile xil_pn:name="neorv32_test_setup_bootloader.xst"/>
+      <outfile xil_pn:name="neorv32_test_setup_bootloader_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
     </transform>
     <transform xil_pn:end_ts="1740218886" xil_pn:in_ck="-5427759657382496563" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-8374451741245385860" xil_pn:start_ts="1740218886">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1742665988" xil_pn:in_ck="-5110458748336741959" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-7292699397265610272" xil_pn:start_ts="1742665972">
+    <transform xil_pn:end_ts="1742836401" xil_pn:in_ck="-5110458748336741959" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-7292699397265610272" xil_pn:start_ts="1742836391">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="neorv32_test_setup_bootloader.bld"/>
+      <outfile xil_pn:name="neorv32_test_setup_bootloader.ngd"/>
+      <outfile xil_pn:name="neorv32_test_setup_bootloader_cs.blc"/>
+      <outfile xil_pn:name="neorv32_test_setup_bootloader_cs.ngc"/>
+      <outfile xil_pn:name="neorv32_test_setup_bootloader_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1742666024" xil_pn:in_ck="-7771245764649816900" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="-398923363910175968" xil_pn:start_ts="1742665988">
+    <transform xil_pn:end_ts="1742836430" xil_pn:in_ck="-7771245764649816900" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="-398923363910175968" xil_pn:start_ts="1742836401">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="NotReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="neorv32_test_setup_bootloader.pcf"/>
+      <outfile xil_pn:name="neorv32_test_setup_bootloader_map.map"/>
+      <outfile xil_pn:name="neorv32_test_setup_bootloader_map.mrp"/>
+      <outfile xil_pn:name="neorv32_test_setup_bootloader_map.ncd"/>
+      <outfile xil_pn:name="neorv32_test_setup_bootloader_map.ngm"/>
+      <outfile xil_pn:name="neorv32_test_setup_bootloader_map.xrpt"/>
+      <outfile xil_pn:name="neorv32_test_setup_bootloader_summary.xml"/>
+      <outfile xil_pn:name="neorv32_test_setup_bootloader_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1742666060" xil_pn:in_ck="-6208175574059913675" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-3829590541433901613" xil_pn:start_ts="1742666024">
+    <transform xil_pn:end_ts="1742836463" xil_pn:in_ck="-6208175574059913675" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-3829590541433901613" xil_pn:start_ts="1742836430">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="NotReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="neorv32_test_setup_bootloader.ncd"/>
+      <outfile xil_pn:name="neorv32_test_setup_bootloader.pad"/>
+      <outfile xil_pn:name="neorv32_test_setup_bootloader.par"/>
+      <outfile xil_pn:name="neorv32_test_setup_bootloader.ptwx"/>
+      <outfile xil_pn:name="neorv32_test_setup_bootloader.unroutes"/>
+      <outfile xil_pn:name="neorv32_test_setup_bootloader.xpi"/>
+      <outfile xil_pn:name="neorv32_test_setup_bootloader_pad.csv"/>
+      <outfile xil_pn:name="neorv32_test_setup_bootloader_pad.txt"/>
+      <outfile xil_pn:name="neorv32_test_setup_bootloader_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1742666083" xil_pn:in_ck="-7944541207627844277" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1742666063">
+    <transform xil_pn:end_ts="1742837000" xil_pn:in_ck="-7944541207627844277" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1742836982">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
-      <status xil_pn:value="NotReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="neorv32_test_setup_bootloader.bgn"/>
+      <outfile xil_pn:name="neorv32_test_setup_bootloader.bit"/>
+      <outfile xil_pn:name="neorv32_test_setup_bootloader.drc"/>
+      <outfile xil_pn:name="neorv32_test_setup_bootloader.ut"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
     <transform xil_pn:end_ts="1742294612" xil_pn:in_ck="-7944541207627857131" xil_pn:name="TRAN_analyzeDesignUsingChipscope" xil_pn:prop_ck="-7292699397265610272" xil_pn:start_ts="1742294612">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="InputRemoved"/>
     </transform>
-    <transform xil_pn:end_ts="1742666060" xil_pn:in_ck="7530070616202962104" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1742666054">
+    <transform xil_pn:end_ts="1742836463" xil_pn:in_ck="7530070616202962104" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1742836457">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="NotReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="neorv32_test_setup_bootloader.twr"/>
+      <outfile xil_pn:name="neorv32_test_setup_bootloader.twx"/>
     </transform>
   </transforms>
 
