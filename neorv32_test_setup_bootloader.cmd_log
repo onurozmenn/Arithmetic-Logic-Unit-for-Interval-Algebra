@@ -439,3 +439,4 @@ trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml neorv32_test_setup_bootloader.
 bitgen -intstyle ise -f neorv32_test_setup_bootloader.ut neorv32_test_setup_bootloader.ncd 
 bitgen -intstyle ise -f neorv32_test_setup_bootloader.ut neorv32_test_setup_bootloader.ncd 
 bitgen -intstyle ise -f neorv32_test_setup_bootloader.ut neorv32_test_setup_bootloader.ncd 
+xst -intstyle ise -ifn "/home/onur/Desktop/Neorv/neorv32_test_setup_bootloader.xst" -ofn "/home/onur/Desktop/Neorv/neorv32_test_setup_bootloader.syr" 
