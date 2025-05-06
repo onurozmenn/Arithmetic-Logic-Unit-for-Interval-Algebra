@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="par" timeStamp="Tue Apr 15 14:35:02 2025">
+  <application stringID="par" timeStamp="Tue May  6 18:31:04 2025">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -45,7 +45,7 @@
         <column stringID="speed"/>
         <row stringID="row" value="0">
           <item stringID="arch" value="Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz"/>
-          <item stringID="speed" value="4797.851 MHz"/>
+          <item stringID="speed" value="4621.041 MHz"/>
         </row>
       </table>
     </section>
@@ -59,183 +59,15 @@
     </task>
     <task stringID="PAR_PAR">
       <section stringID="PAR_DESIGN_SUMMARY">
-        <item stringID="PAR_REAL_TIME_COMPLETION_ROUTER" value="22 secs "/>
-        <item stringID="PAR_CPU_TIME_COMPLETION_ROUTER" value="22 secs "/>
+        <item stringID="PAR_REAL_TIME_COMPLETION_ROUTER" value="38 secs "/>
+        <item stringID="PAR_CPU_TIME_COMPLETION_ROUTER" value="39 secs "/>
         <item dataType="int" stringID="PAR_UNROUTES" value="0"/>
         <item dataType="float" stringID="PAR_TIMING_SCORE" value="0.000000"/>
-        <item stringID="PAR_REAL_TIME_COMPLETION_PAR" value="23 secs "/>
-        <item stringID="PAR_CPU_TIME_COMPLETION_PAR" value="23 secs "/>
+        <item stringID="PAR_REAL_TIME_COMPLETION_PAR" value="39 secs "/>
+        <item stringID="PAR_CPU_TIME_COMPLETION_PAR" value="41 secs "/>
       </section>
     </task>
     <task stringID="PAR_par">
-      <section stringID="PAR_DLY_CLK_REPORT"/>
-      <section stringID="PAR_CLOCK_REPORT">
-        <table stringID="PAR_CLOCK_TABLE">
-          <column label="Clock Net" stringID="CLOCK_NET"/>
-          <column label="Routed" stringID="ROUTED"/>
-          <column label="Resource" stringID="RESOURCE"/>
-          <column label="Locked" stringID="LOCKED"/>
-          <column label="Fanout" stringID="FANOUT"/>
-          <column label="Net Skew(ns)" stringID="NET_SKEW"/>
-          <column label="Max Delay(ns)" stringID="MAX_DELAY"/>
-          <row stringID="row" value="1">
-            <item label="Clock Net" stringID="CLOCK_NET" value="clk_i_BUFGP"/>
-            <item label="Routed" stringID="ROUTED" value="ROUTED"/>
-            <item label="Resource" stringID="RESOURCE" value="BUFGMUX_X2Y4"/>
-            <item label="Locked" stringID="LOCKED" value="No"/>
-            <item dataType="float" label="Fanout" stringID="FANOUT" value="1064.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.066000"/>
-            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="1.774000"/>
-          </row>
-          <row stringID="row" value="2">
-            <item label="Clock Net" stringID="CLOCK_NET" value="icon_control0&lt;0>"/>
-            <item label="Routed" stringID="ROUTED" value="ROUTED"/>
-            <item label="Resource" stringID="RESOURCE" value="BUFGMUX_X2Y2"/>
-            <item label="Locked" stringID="LOCKED" value="No"/>
-            <item dataType="float" label="Fanout" stringID="FANOUT" value="64.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.060000"/>
-            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="1.770000"/>
-          </row>
-          <row stringID="row" value="3">
-            <item label="Clock Net" stringID="CLOCK_NET" value="neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multdown/_n0294_BUFG"/>
-            <item label="Routed" stringID="ROUTED" value="ROUTED"/>
-            <item label="Resource" stringID="RESOURCE" value="BUFGMUX_X2Y3"/>
-            <item label="Locked" stringID="LOCKED" value="No"/>
-            <item dataType="float" label="Fanout" stringID="FANOUT" value="10.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.011000"/>
-            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="1.741000"/>
-          </row>
-          <row stringID="row" value="4">
-            <item label="Clock Net" stringID="CLOCK_NET" value="neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multup/_n0296_BUFG"/>
-            <item label="Routed" stringID="ROUTED" value="ROUTED"/>
-            <item label="Resource" stringID="RESOURCE" value="BUFGMUX_X3Y13"/>
-            <item label="Locked" stringID="LOCKED" value="No"/>
-            <item dataType="float" label="Fanout" stringID="FANOUT" value="11.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.008000"/>
-            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="1.742000"/>
-          </row>
-          <row stringID="row" value="5">
-            <item label="Clock Net" stringID="CLOCK_NET" value="neorv32_top_inst/core_complex_gen[0].neorv32_core_bus_switch_inst/rstn_i_inv"/>
-            <item label="Routed" stringID="ROUTED" value="ROUTED"/>
-            <item label="Resource" stringID="RESOURCE" value="Local"/>
-            <item dataType="float" label="Fanout" stringID="FANOUT" value="467.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.000000"/>
-            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="6.723000"/>
-          </row>
-          <row stringID="row" value="6">
-            <item label="Clock Net" stringID="CLOCK_NET" value="neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divdown/div_result&lt;11>"/>
-            <item label="Routed" stringID="ROUTED" value="ROUTED"/>
-            <item label="Resource" stringID="RESOURCE" value="Local"/>
-            <item dataType="float" label="Fanout" stringID="FANOUT" value="102.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.306000"/>
-            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="2.573000"/>
-          </row>
-          <row stringID="row" value="7">
-            <item label="Clock Net" stringID="CLOCK_NET" value="neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_result&lt;11>"/>
-            <item label="Routed" stringID="ROUTED" value="ROUTED"/>
-            <item label="Resource" stringID="RESOURCE" value="Local"/>
-            <item dataType="float" label="Fanout" stringID="FANOUT" value="97.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.337000"/>
-            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="3.350000"/>
-          </row>
-          <row stringID="row" value="8">
-            <item label="Clock Net" stringID="CLOCK_NET" value="neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/flagmul1"/>
-            <item label="Routed" stringID="ROUTED" value="ROUTED"/>
-            <item label="Resource" stringID="RESOURCE" value="Local"/>
-            <item dataType="float" label="Fanout" stringID="FANOUT" value="4.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="1.081000"/>
-            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="2.074000"/>
-          </row>
-          <row stringID="row" value="9">
-            <item label="Clock Net" stringID="CLOCK_NET" value="icon_control0&lt;13>"/>
-            <item label="Routed" stringID="ROUTED" value="ROUTED"/>
-            <item label="Resource" stringID="RESOURCE" value="Local"/>
-            <item dataType="float" label="Fanout" stringID="FANOUT" value="4.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.000000"/>
-            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="1.079000"/>
-          </row>
-          <row stringID="row" value="10">
-            <item label="Clock Net" stringID="CLOCK_NET" value="neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multdown/roundmul/_n0459"/>
-            <item label="Routed" stringID="ROUTED" value="ROUTED"/>
-            <item label="Resource" stringID="RESOURCE" value="Local"/>
-            <item dataType="float" label="Fanout" stringID="FANOUT" value="5.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.640000"/>
-            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="1.263000"/>
-          </row>
-          <row stringID="row" value="11">
-            <item label="Clock Net" stringID="CLOCK_NET" value="neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multup/roundmul/_n0459"/>
-            <item label="Routed" stringID="ROUTED" value="ROUTED"/>
-            <item label="Resource" stringID="RESOURCE" value="Local"/>
-            <item dataType="float" label="Fanout" stringID="FANOUT" value="5.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.762000"/>
-            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="1.348000"/>
-          </row>
-          <row stringID="row" value="12">
-            <item label="Clock Net" stringID="CLOCK_NET" value="neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multup/roundmul/_n0686"/>
-            <item label="Routed" stringID="ROUTED" value="ROUTED"/>
-            <item label="Resource" stringID="RESOURCE" value="Local"/>
-            <item dataType="float" label="Fanout" stringID="FANOUT" value="7.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="1.589000"/>
-            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="2.320000"/>
-          </row>
-          <row stringID="row" value="13">
-            <item label="Clock Net" stringID="CLOCK_NET" value="neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/flagmul2"/>
-            <item label="Routed" stringID="ROUTED" value="ROUTED"/>
-            <item label="Resource" stringID="RESOURCE" value="Local"/>
-            <item dataType="float" label="Fanout" stringID="FANOUT" value="4.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.282000"/>
-            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="0.814000"/>
-          </row>
-          <row stringID="row" value="14">
-            <item label="Clock Net" stringID="CLOCK_NET" value="neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multdown/roundmul/_n0686"/>
-            <item label="Routed" stringID="ROUTED" value="ROUTED"/>
-            <item label="Resource" stringID="RESOURCE" value="Local"/>
-            <item dataType="float" label="Fanout" stringID="FANOUT" value="7.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.988000"/>
-            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="1.383000"/>
-          </row>
-          <row stringID="row" value="15">
-            <item label="Clock Net" stringID="CLOCK_NET" value="U_icon_pro/U0/iUPDATE_OUT"/>
-            <item label="Routed" stringID="ROUTED" value="ROUTED"/>
-            <item label="Resource" stringID="RESOURCE" value="Local"/>
-            <item dataType="float" label="Fanout" stringID="FANOUT" value="1.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.000000"/>
-            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="2.394000"/>
-          </row>
-          <row stringID="row" value="16">
-            <item label="Clock Net" stringID="CLOCK_NET" value="neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/adderdown/signFunc/operator_s1_MUX_627_o"/>
-            <item label="Routed" stringID="ROUTED" value="ROUTED"/>
-            <item label="Resource" stringID="RESOURCE" value="Local"/>
-            <item dataType="float" label="Fanout" stringID="FANOUT" value="1.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.000000"/>
-            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="0.769000"/>
-          </row>
-          <row stringID="row" value="17">
-            <item label="Clock Net" stringID="CLOCK_NET" value="neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multdown/normmul/state[1]_PWR_93_o_Mux_7_o"/>
-            <item label="Routed" stringID="ROUTED" value="ROUTED"/>
-            <item label="Resource" stringID="RESOURCE" value="Local"/>
-            <item dataType="float" label="Fanout" stringID="FANOUT" value="1.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.000000"/>
-            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="0.578000"/>
-          </row>
-          <row stringID="row" value="18">
-            <item label="Clock Net" stringID="CLOCK_NET" value="neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multup/normmul/state[1]_PWR_93_o_Mux_7_o"/>
-            <item label="Routed" stringID="ROUTED" value="ROUTED"/>
-            <item label="Resource" stringID="RESOURCE" value="Local"/>
-            <item dataType="float" label="Fanout" stringID="FANOUT" value="1.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.000000"/>
-            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="0.373000"/>
-          </row>
-          <row stringID="row" value="19">
-            <item label="Clock Net" stringID="CLOCK_NET" value="neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/adderup/signFunc/operator_s1_MUX_627_o"/>
-            <item label="Routed" stringID="ROUTED" value="ROUTED"/>
-            <item label="Resource" stringID="RESOURCE" value="Local"/>
-            <item dataType="float" label="Fanout" stringID="FANOUT" value="1.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.000000"/>
-            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="1.169000"/>
-          </row>
-        </table>
-      </section>
       <section stringID="PAR_PAD_PIN_REPORT">
         <table stringID="PAR_PINOUT_BY_PIN_NUMBER">
           <column label="Pin&#xA;Number" sort="smart" stringID="Pin_Number"/>
@@ -2370,7 +2202,7 @@
     </task>
   </application>
 
-  <application stringID="Par" timeStamp="Tue Apr 15 14:35:02 2025">
+  <application stringID="Par" timeStamp="Tue May  6 18:31:04 2025">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -2410,22 +2242,22 @@
         <column stringID="speed"/>
         <row stringID="row" value="0">
           <item stringID="arch" value="Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz"/>
-          <item stringID="speed" value="4588.850 MHz"/>
+          <item stringID="speed" value="4454.851 MHz"/>
         </row>
       </table>
     </section>
     <task label="Device Utilization Summary" stringID="PAR_DEVICE_UTLIZATION">
       <section stringID="PAR_SLICE_REPORTING">
-        <item AVAILABLE="54576" dataType="int" label="Number of Slice Registers" stringID="PAR_SLICE_REGISTERS" value="3503">
-          <item dataType="int" stringID="PAR_NUM_SLICE_FF" value="3327"/>
-          <item dataType="int" stringID="PAR_NUM_SLICE_LATCH" value="176"/>
+        <item AVAILABLE="54576" dataType="int" label="Number of Slice Registers" stringID="PAR_SLICE_REGISTERS" value="2962">
+          <item dataType="int" stringID="PAR_NUM_SLICE_FF" value="2903"/>
+          <item dataType="int" stringID="PAR_NUM_SLICE_LATCH" value="59"/>
           <item dataType="int" stringID="PAR_NUM_SLICE_LATCHTHRU" value="0"/>
           <item dataType="int" stringID="PAR_NUM_SLICE_LATCHLOGIC" value="0"/>
         </item>
-        <item AVAILABLE="27288" dataType="int" label="Number of Slice LUTS" stringID="PAR_SLICE_LUTS" value="5275">
-          <item dataType="int" stringID="PAR_NUM_LOGIC_O5ONLY" value="169"/>
-          <item dataType="int" stringID="PAR_NUM_LOGIC_O6ONLY" value="3958"/>
-          <item dataType="int" stringID="PAR_NUM_LOGIC_O5ANDO6" value="1018"/>
+        <item AVAILABLE="27288" dataType="int" label="Number of Slice LUTS" stringID="PAR_SLICE_LUTS" value="5062">
+          <item dataType="int" stringID="PAR_NUM_LOGIC_O5ONLY" value="122"/>
+          <item dataType="int" stringID="PAR_NUM_LOGIC_O6ONLY" value="3888"/>
+          <item dataType="int" stringID="PAR_NUM_LOGIC_O5ANDO6" value="1036"/>
           <item dataType="int" stringID="PAR_NUM_ROM_O5ONLY" value="0"/>
           <item dataType="int" stringID="PAR_NUM_ROM_O6ONLY" value="0"/>
           <item dataType="int" stringID="PAR_NUM_ROM_O5ANDO6" value="0"/>
@@ -2435,25 +2267,25 @@
           <item dataType="int" stringID="PAR_NUM_SPRAM_O5ONLY" value="0"/>
           <item dataType="int" stringID="PAR_NUM_SPRAM_O6ONLY" value="0"/>
           <item dataType="int" stringID="PAR_NUM_SPRAM_O5ANDO6" value="0"/>
-          <item dataType="int" stringID="PAR_NUM_SRL_O5ONLY" value="1"/>
-          <item dataType="int" stringID="PAR_NUM_SRL_O6ONLY" value="50"/>
-          <item dataType="int" stringID="PAR_NUM_SRL_O5ANDO6" value="37"/>
-          <item dataType="int" stringID="PAR_NUM_LUT_RT_EXO6" value="9"/>
-          <item dataType="int" stringID="PAR_NUM_LUT_RT_EXO5" value="32"/>
+          <item dataType="int" stringID="PAR_NUM_SRL_O5ONLY" value="0"/>
+          <item dataType="int" stringID="PAR_NUM_SRL_O6ONLY" value="0"/>
+          <item dataType="int" stringID="PAR_NUM_SRL_O5ANDO6" value="0"/>
+          <item dataType="int" stringID="PAR_NUM_LUT_RT_EXO6" value="3"/>
+          <item dataType="int" stringID="PAR_NUM_LUT_RT_EXO5" value="12"/>
           <item dataType="int" stringID="PAR_NUM_LUT_RT_O5ANDO6" value="1"/>
-          <item dataType="int" stringID="PAR_NUM_LUT_RT_DRIVES_FLOP" value="32"/>
-          <item dataType="int" stringID="PAR_NUM_LUT_RT_DRIVES_CARRY4" value="10"/>
+          <item dataType="int" stringID="PAR_NUM_LUT_RT_DRIVES_FLOP" value="12"/>
+          <item dataType="int" stringID="PAR_NUM_LUT_RT_DRIVES_CARRY4" value="4"/>
           <item dataType="int" stringID="PAR_NUM_LUT_RT_DRIVES_OTHERS" value="0"/>
         </item>
-        <item AVAILABLE="6822" dataType="int" stringID="PAR_OCCUPIED_SLICES" value="2065">
-          <item AVAILABLE="1809" dataType="int" stringID="PAR_NUM_SLICEL" value="414"/>
-          <item AVAILABLE="1602" dataType="int" stringID="PAR_NUM_SLICEM" value="38"/>
-          <item AVAILABLE="3411" dataType="int" stringID="PAR_NUM_SLICEX" value="1613"/>
+        <item AVAILABLE="6822" dataType="int" stringID="PAR_OCCUPIED_SLICES" value="1855">
+          <item AVAILABLE="1809" dataType="int" stringID="PAR_NUM_SLICEL" value="401"/>
+          <item AVAILABLE="1602" dataType="int" stringID="PAR_NUM_SLICEM" value="0"/>
+          <item AVAILABLE="3411" dataType="int" stringID="PAR_NUM_SLICEX" value="1454"/>
         </item>
-        <item dataType="int" stringID="PAR_OCCUPIED_LUT_AND_FF" value="6480">
-          <item dataType="int" stringID="PAR_OCCUPIED_LUT_ONLY" value="3231"/>
-          <item dataType="int" stringID="PAR_OCCUPIED_FF_ONLY" value="1205"/>
-          <item dataType="int" stringID="PAR_OCCUPIED_FF_AND_LUT" value="2044"/>
+        <item dataType="int" stringID="PAR_OCCUPIED_LUT_AND_FF" value="5972">
+          <item dataType="int" stringID="PAR_OCCUPIED_LUT_ONLY" value="3222"/>
+          <item dataType="int" stringID="PAR_OCCUPIED_FF_ONLY" value="910"/>
+          <item dataType="int" stringID="PAR_OCCUPIED_FF_AND_LUT" value="1840"/>
         </item>
       </section>
       <section stringID="PAR_IOB_REPORTING">
@@ -2472,15 +2304,15 @@
       </section>
       <section stringID="PAR_HARD_IP_REPORTING"/>
       <section stringID="PAR_RAM_FIFO_DATA">
-        <item AVAILABLE="116" dataType="int" stringID="PAR_NUM_RAMB16BWER" value="76"/>
+        <item AVAILABLE="116" dataType="int" stringID="PAR_NUM_RAMB16BWER" value="74"/>
         <item AVAILABLE="232" dataType="int" stringID="PAR_NUM_RAMB8BWER" value="0"/>
       </section>
       <section stringID="PAR_IP_DATA">
-        <item AVAILABLE="4" dataType="int" stringID="PAR_NUM_BSCAN" value="1"/>
+        <item AVAILABLE="4" dataType="int" stringID="PAR_NUM_BSCAN" value="0"/>
         <item AVAILABLE="256" dataType="int" stringID="PAR_NUM_BUFH" value="0"/>
         <item AVAILABLE="8" dataType="int" stringID="PAR_NUM_BUFPLL" value="0"/>
         <item AVAILABLE="4" dataType="int" stringID="PAR_NUM_BUFPLL_MCB" value="0"/>
-        <item AVAILABLE="58" dataType="int" stringID="PAR_NUM_DSP48A1" value="2"/>
+        <item AVAILABLE="58" dataType="int" stringID="PAR_NUM_DSP48A1" value="4"/>
         <item AVAILABLE="0" dataType="int" stringID="PAR_NUM_GTPA1_DUAL" value="0"/>
         <item AVAILABLE="1" dataType="int" stringID="PAR_NUM_ICAP" value="0"/>
         <item AVAILABLE="2" dataType="int" stringID="PAR_NUM_MCB" value="0"/>
@@ -2492,7 +2324,7 @@
         <item AVAILABLE="1" dataType="int" stringID="PAR_NUM_SUSPEND_SYNC" value="0"/>
       </section>
       <section stringID="PAR_BUFG_DATA">
-        <item dataType="int" stringID="PAR_NUM_BUFG" value="4"/>
+        <item dataType="int" stringID="PAR_NUM_BUFG" value="2"/>
         <item dataType="int" stringID="PAR_NUM_BUFGMUX" value="0"/>
         <item dataType="int" stringID="PAR_AVAILABLE" value="16"/>
       </section>

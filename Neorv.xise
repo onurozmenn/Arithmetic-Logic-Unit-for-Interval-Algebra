@@ -276,9 +276,6 @@
       <association xil_pn:name="Implementation" xil_pn:seqID="24"/>
       <library xil_pn:name="neorv32"/>
     </file>
-    <file xil_pn:name="chipscope.cdc" xil_pn:type="FILE_CDC">
-      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
-    </file>
   </files>
 
   <properties>
@@ -615,7 +612,6 @@
 
   <bindings>
     <binding xil_pn:location="/neorv32_test_setup_bootloader" xil_pn:name="neorv32_top.ucf"/>
-    <binding xil_pn:location="/neorv32_test_setup_bootloader" xil_pn:name="chipscope.cdc"/>
   </bindings>
 
   <libraries>

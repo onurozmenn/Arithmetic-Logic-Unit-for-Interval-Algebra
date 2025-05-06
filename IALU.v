@@ -27,7 +27,6 @@ module IALU (
 	reg [1:0] fdual = 0;
 	
 	wire [`W-1:0] F1, F2, S1, S2;
-	reg stateCrossRes = 1'b0;
 	ProcessRedirectorModule islem(
 		.AL(a[`TOTALW-1:`W]),
 		.AU(a[ 	  `W-1:0]),
@@ -79,8 +78,26 @@ module IALU (
 					flagadd1_reg <= 1'b0;
 					flagadd2_reg <= 1'b0;
 				end
+				
+				if (funct == 5'b01001 || funct == 5'b01000 || funct == 5'b01010) begin
+					result <= {{16{1'b1}}, ANSUADD};
+					flag <= 1'b1;
+					// Reset flags after capturing result
+					flagadd1_reg <= 1'b0;
+					flagadd2_reg <= 1'b0;
+				end
 			end
 			
+			if (funct == 5'b01011 ) begin
+				result <= {{16{1'b1}}, a[`TOTALW-1:`W]};
+				flag <= 1'b1;
+				// Reset flags after capturing result
+			end
+			if (funct == 5'b01100) begin
+				result <= {{16{1'b1}}, a[ 	    `W-1:0]};
+				flag <= 1'b1;
+				// Reset flags after capturing result
+			end
 			// Handle multiply operations
 			if (flagmul1_reg && flagmul2_reg) begin
 				if (funct == 5'b00010) begin
@@ -111,7 +128,13 @@ module IALU (
 			end
 			// Handle other operation results
 			if (funct[4:3] == 2'b10) begin
-				result <= stateCrossRes;
+				if(funct == 5'b10000)begin
+					result <= {{28{1'b1}},stateCross};
+					flag <= 1'b1;
+				end else begin
+					result <= {{31{1'b1}},((stateCross[2:0] == funct[2:0]) && (stateCross[3] == 1'b0)?1'b1:1'b0)};
+					flag <= 1'b1;
+				end
 			end
 			if (flag) begin
 				flag <= 1'b0;
@@ -210,7 +233,16 @@ module ProcessRedirectorModule(
 					F2 = (condition != 4'b1110 & condition != 4'b1111) ? (condition[1] ? AU : AL) : AU;
 					S2 = (condition != 4'b1110 & condition != 4'b1111) ? (condition[0] ? BU : BL) : BL;
 					flag = 1'b1;
-				end  // !! GERI KALAN OPCODE LAR
+				end else if (OPCODE[4:3] == 2'b01)begin
+					
+					if(OPCODE[2:0] == 3'b000 || OPCODE[2:0] == 3'b001 || OPCODE[2:0] == 3'b010) begin
+						F1 = 16'b0;
+						S1 = 16'b0;
+						F2 = AU;
+						S2 = AL;
+					end
+					
+				end
 		end 
 	end
 endmodule
@@ -563,29 +595,27 @@ module Four_Bit_Substractor_Div(input [`EXP-1:0] A,B,
 	   assign Sum = {cout,t_sum} + (`W-1);
 endmodule
 
+
 module MultiplierTopModule #(parameter updown = 0)(
 	   input clk,
-		input [`W-1:0] A,
-		input [`W-1:0] B,
-		input [`W-1:0] C,
-		input [`W-1:0] D,
+		input [`W-1:0] A, //F2 S2 F1 S1 ///// AU
+		input [`W-1:0] B,	// BL
+		input [`W-1:0] C, // AL
+		input [`W-1:0] D, // BU
 		input [4:0] OPCODE,
 		input dual,
 		output reg [`W-1:0] E,
 		output reg flag);
 		
-		reg s1,s2;
-		reg [`EXP-1:0] exp1,exp2;
-		reg [`MANTISSA-1:0] fract1, fract2;
+		reg s1,s2,s3,s4;
+		reg [`EXP-1:0] exp1,exp2,exp3,exp4;
+		reg [`MANTISSA-1:0] fract1, fract2, fract3, fract4;
 		
-		
-		reg [1:0] state = 2'b00;
-		wire [1:0] normstate, roundstate;
-		wire c_sumexp, temp1gtemp2;
-		wire [((`MANTISSA+1)*2)-1:0] mult_fract;
-		wire [`EXP-1:0] mult_sumexp, norm_exp;
-		reg  [`EXP-1:0] mult_sumexp2;
-		wire [((`MANTISSA+1)*2)-1:0] norm_res; 
+		wire c_sumexp,c_sumexp2, temp0gtemp1;
+		wire [((`MANTISSA+1)*2)-1:0] mult_fract, mult_fract2;
+		wire [`EXP-1:0] mult_sumexp, mult_sumexp3, norm_exp, norm_exp2;
+		reg  [`EXP-1:0] mult_sumexp2, mult_sumexp4;
+		wire [((`MANTISSA+1)*2)-1:0] norm_res, norm_res2; 
 		wire [`W-1:0] temp0, temp1, temp2;
 		reg ch = 0;
 		reg [(`W*4)-1:0] tABCD=0;
@@ -593,28 +623,32 @@ module MultiplierTopModule #(parameter updown = 0)(
 		always@(*)begin
 			
 			flag = 1'b0;
-			case({dual,state})
-				3'b100:begin
-						flag = 1'b0;
-						E = 0;
-						s1 = (~updown[0])?A[`W-1]:C[`W-1];
-						s2 = B[`W-1];
-						exp1 = (~updown[0])?A[`W-2:`MANTISSA]:C[`W-2:`MANTISSA];
-						exp2 = B[`W-2:`MANTISSA];
-						fract1 = (~updown[0])?A[`MANTISSA-1:0]:C[`MANTISSA-1:0];
-						fract2 = B[`MANTISSA-1:0];
-				end
-				3'b101:begin
-						s1 = (~updown[0])?C[`W-1]:A[`W-1];
-						s2 = D[`W-1];
-						exp1 = (~updown[0])?C[`W-2:`MANTISSA]:A[`W-2:`MANTISSA];
-						exp2 = D[`W-2:`MANTISSA];
-						fract1 = (~updown[0])?C[`MANTISSA-1:0]:A[`MANTISSA-1:0];
-						fract2 = D[`MANTISSA-1:0];
-				end
-				3'b110:begin
-					E = (temp1gtemp2?temp1:temp2);
+			case(dual)
+				1'b0:begin
+					s1 = A[`W-1];
+					s2 = B[`W-1];
+					exp1 = A[`W-2:`MANTISSA];
+					exp2 = B[`W-2:`MANTISSA];
+					fract1 = A[`MANTISSA-1:0];
+					fract2 = B[`MANTISSA-1:0];
+					E = temp0;
 					flag = 1'b1;
+				end
+				1'b1:begin
+					s1 = (~updown[0])?A[`W-1]:C[`W-1];
+					s2 = B[`W-1];
+					s3 = (~updown[0])?C[`W-1]:A[`W-1];
+					s4 = D[`W-1];
+					exp1 = (~updown[0])?A[`W-2:`MANTISSA]:C[`W-2:`MANTISSA];
+					exp2 = B[`W-2:`MANTISSA];
+					exp3 = (~updown[0])?C[`W-2:`MANTISSA]:A[`W-2:`MANTISSA];
+					exp4 = D[`W-2:`MANTISSA];
+					fract1 = (~updown[0])?A[`MANTISSA-1:0]:C[`MANTISSA-1:0];
+					fract2 = B[`MANTISSA-1:0];
+					fract3 = (~updown[0])?C[`MANTISSA-1:0]:A[`MANTISSA-1:0];
+					fract4 = D[`MANTISSA-1:0];
+					E = ((temp0gtemp1 && dual)?temp0:temp1);
+					flag = 1'b1;	
 				end
 				default:begin
 					s1 = A[`W-1];
@@ -628,83 +662,65 @@ module MultiplierTopModule #(parameter updown = 0)(
 				end
 			endcase
 		end	
-		always @(posedge clk)begin
-			if(tABCD != {A,B,C,D})begin
-				ch = 1'b1;
-				state <= 2'b00;
-				tABCD <= {A,B,C,D};
-			end else begin
-				ch = 1'b0;
-				state <= roundstate; 
-			end
-		end
 		
 		assign {c_sumexp,mult_sumexp} = exp1+exp2;
 		
 		always@(mult_sumexp)begin
-			 /*if({c_sumexp,mult_sumexp} <= 5'b00111)begin
-				$display("Underflow error A:%b B:%b",A,B);
-			 end else if({c_sumexp,mult_sumexp} >= 5'b10110)begin
-				$display("Overflow error A:%b B:%b",A,B);
-			 end*/
 			 mult_sumexp2 = {c_sumexp,mult_sumexp}-(`W-1);
 		end
 		
+		assign {c_sumexp2,mult_sumexp3} = exp3+exp4;
+		
+		always@(mult_sumexp3)begin
+			 mult_sumexp4 = {c_sumexp2,mult_sumexp3}-(`W-1);
+		end
+		
 		assign mult_fract = {1'b1,fract1}*{1'b1,fract2};
-		NormalizeMul normmul(mult_fract, mult_sumexp2, s1^s2, norm_res, norm_exp, dual, state, normstate, ch);
-		RoundingMul roundmul(norm_res, norm_exp, s1^s2, temp0, temp1, temp2, dual, normstate, roundstate, ch);
-		Comparator #(.ws(0))comp(.A(temp1), .B(temp2), .G(temp1gtemp2));
+		assign mult_fract2 = {1'b1,fract3}*{1'b1,fract4};
+		NormalizeMul normmul(mult_fract, mult_sumexp2, s1^s2, norm_res, norm_exp, dual);
+		NormalizeMul #(.duality(1))normmul2 (mult_fract2, mult_sumexp4, s3^s4, norm_res2, norm_exp2, dual);
+		RoundingMul roundmul(norm_res, norm_exp, s1^s2, temp0, dual);
+		RoundingMul #(.duality(1))roundmul2(norm_res2, norm_exp2, s3^s4, temp1, dual);
+		Comparator #(.ws(0))comp(.A(temp0), .B(temp1), .G(temp0gtemp1));
 endmodule
 
-module NormalizeMul(
+module NormalizeMul #(parameter duality = 0)(
 		input [((`MANTISSA+1)*2)-1:0] m_result,
 		input [`EXP-1:0] s_exp,
 		input sign,
 		output reg [((`MANTISSA+1)*2)-1:0] s_result,
 		output reg [`EXP-1:0] n_exp,
-		input dual,
-		input [1:0] state,
-		output reg [1:0] normstate, input ch
+		input dual
 	);
 	reg [2:0] error;
 	always@(*)begin
-		case(m_result[((`MANTISSA+1)*2)-1])
-			0: begin
-					s_result = m_result;
-					n_exp = s_exp;
-				end
-			1: begin
-					s_result = m_result>>1;
-					n_exp = s_exp + 5'b00001;
-					if(s_exp == 5'b11110)
-						error = {2'b01,sign};
-						$display("Overflow error normalize");
-				end
-		endcase
-		if(dual)begin
-			case (state)
-				2'b00:normstate <= 2'b01;
-				2'b01:normstate <= 2'b10;
-				2'b10:normstate <= ch?(2'b00):(normstate);
-				2'b11:normstate <= 2'b00;
+		if (duality == 1'b0 || dual == 1'b1)begin
+			case(m_result[((`MANTISSA+1)*2)-1])
+				0: begin
+						s_result = m_result;
+						n_exp = s_exp;
+					end
+				1: begin
+						s_result = m_result>>1;
+						n_exp = s_exp + 5'b00001;
+						if(s_exp == 5'b11110)
+							error = {2'b01,sign};
+							$display("Overflow error normalize");
+					end
 			endcase
-		end else begin
-			normstate <= 2'b00; 
+		end else begin 
+			s_result = 0;
+			n_exp = 0;
 		end
 	end
 endmodule
 
-module RoundingMul(
+module RoundingMul#(parameter duality = 0)(
 		input [((`MANTISSA+1)*2)-1:0] s_result,		
 		input [`EXP-1:0] r_exp,		
 		input sign,
-		output reg [`W-1:0] temp0,
 		output reg [`W-1:0] temp1,
-		output reg [`W-1:0] temp2,
-		input dual,
-		input [1:0] normstate,
-		output reg [1:0] roundstate,
-		input ch
+		input dual
 	);
 	reg [`MANTISSA+1:0] tmp;
 	reg [2:0] error;
@@ -712,50 +728,33 @@ module RoundingMul(
 	reg [`MANTISSA-1:0] f_result;
 
 	always@(*)begin
-		f_exp = r_exp;//21--9
-		tmp = s_result[((`MANTISSA+1)*2)-1:(((`MANTISSA+1)*2)-1)-(`MANTISSA+1)];
-		
-		if(s_result[9])begin
-			tmp = s_result[((`MANTISSA+1)*2)-1:(((`MANTISSA+1)*2)-1)-(`MANTISSA+1)] + 'b1;
-			//Renormalize2120191817161514131211109
+	
+		if (duality == 1'b0 || dual == 1'b1)begin
+			f_exp = r_exp;//21--9
+			tmp = s_result[((`MANTISSA+1)*2)-1:(((`MANTISSA+1)*2)-1)-(`MANTISSA+1)];
 			
-			if ( tmp[`MANTISSA+1] == 1'b1)
-			begin
-			
-				tmp =  tmp >> 1;
-				f_exp = r_exp + 1'b1;
+			if(s_result[9])begin
+				tmp = s_result[((`MANTISSA+1)*2)-1:(((`MANTISSA+1)*2)-1)-(`MANTISSA+1)] + 'b1;				
+				if ( tmp[`MANTISSA+1] == 1'b1)
+				begin
 				
-				if(r_exp == 5'b11110)
-					error = {2'b01,sign};
-					$display("Overflow error rounding %b",tmp[`MANTISSA+1]);
+					tmp =  tmp >> 1;
+					f_exp = r_exp + 1'b1;
+					
+					if(r_exp == 5'b11110)
+						error = {2'b01,sign};
+						$display("Overflow error rounding %b",tmp[`MANTISSA+1]);
+				end
 			end
+			f_result = tmp[`MANTISSA-1:0];
+			
+			temp1 = {sign, f_exp, f_result};
 		end
-		f_result = tmp[`MANTISSA-1:0];
-		if(dual)begin
-			roundstate <= normstate; 
-		end else begin
-			roundstate <= 2'b00; 
+		else begin
+			temp1 = {16'b0};
 		end
-		
-		case({dual,roundstate})
-			3'b100: begin
-							temp1 = {sign, f_exp, f_result};
-							
-					  end
-			3'b101: begin
-							temp2 = {sign, f_exp, f_result};
-							temp0 = 0;
-					  end
-			3'b110: begin
-							temp0 = 0;
-					  end
-			default:begin
-							temp0 = {sign, f_exp, f_result};
-							temp2 = 0;
-							temp1 = 0;
-					  end
-		endcase
 	end
+		
 endmodule
 
 module AdderSubtractorTopModule(
@@ -783,7 +782,7 @@ module AdderSubtractorTopModule(
 	wire [`MANTISSA+4:0] rightshifted;
 	wire [`MANTISSA+4:0] a2,b2,sum;
 	wire [`EXP-1:0] bigexp;
-	assign Operator = OPCODE[0];
+	assign Operator = OPCODE[0] || (OPCODE == 5'b01010);
 	assign sign_a = A[`W-1];
 	assign exp_a = A[`W-2:`MANTISSA];
 	assign mant_a = {(|exp_a)?1'b1:1'b0,A[`MANTISSA-1:0]};
@@ -878,7 +877,7 @@ module AdderSubtractorTopModule(
 			end
 		end else begin
 			normsum = tempsum[`MANTISSA+4:3];
-			normexp = tempexp;
+			normexp = (OPCODE == 5'b01000 || OPCODE == 5'b01010)?(tempexp-1'b1):tempexp;
 		end
 		roundedfract = normsum[`MANTISSA-1:0];
 		flag = 1'b1;
