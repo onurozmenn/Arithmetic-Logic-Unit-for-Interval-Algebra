@@ -1,7 +1,7 @@
 ##############################################################
 #
 # Xilinx Core Generator version 14.7
-# Date: Tue Mar 18 09:57:13 2025
+# Date: Tue Apr 15 11:11:17 2025
 #
 ##############################################################
 #
@@ -80,7 +80,7 @@ CSET exclude_from_data_storage_6=false
 CSET exclude_from_data_storage_7=false
 CSET exclude_from_data_storage_8=false
 CSET exclude_from_data_storage_9=false
-CSET match_type_1=basic_with_edges
+CSET match_type_1=extended_with_edges
 CSET match_type_10=basic
 CSET match_type_11=basic
 CSET match_type_12=basic
@@ -138,4 +138,4 @@ CSET use_rpms=true
 MISC pkg_timestamp=2013-10-13T14:13:15Z
 # END Extra information
 GENERATE
-# CRC: 7e27383a
+# CRC: 39cf81be

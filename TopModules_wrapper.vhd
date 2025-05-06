@@ -12,7 +12,8 @@ entity TopModules_wrapper is
            fmt         : in  STD_ULOGIC_VECTOR(1 downto 0);
            rm          : in  STD_ULOGIC_VECTOR(2 downto 0);
            result      : out STD_ULOGIC_VECTOR(31 downto 0);
-           flag       : out STD_ULOGIC
+           flag       : out STD_ULOGIC;
+           dual       : out STD_ULOGIC
 			  );
 end TopModules_wrapper;
 
@@ -27,7 +28,8 @@ architecture Behavioral of TopModules_wrapper is
             fmt         : in  std_ulogic_vector(1 downto 0);
             rm          : in  std_ulogic_vector(2 downto 0);
             result      : out std_ulogic_vector(31 downto 0);
-            flag       : out std_ulogic
+            flag       : out std_ulogic;
+            dual       : out std_ulogic
         );
     end component;
 

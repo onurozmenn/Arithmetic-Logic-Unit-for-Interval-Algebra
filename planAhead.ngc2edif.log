@@ -63,3 +63,274 @@ WARNING:NetListWriters:306 - Signal bus
 Writing EDIF netlist file neorv32_test_setup_bootloader.edif ...
 ngc2edif: Total memory usage is 110336 kilobytes
 
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design neorv32_test_setup_bootloader_cs.ngc ...
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/iDOUT_dly<2 : 0> on block ila_pro_0 is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/iDOUT_dly<4 : 0> on block ila_pro_0 is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus U0/U_ICON/iCORE_ID_SEL<15 : 0> on block
+   icon_pro is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/io_system.neorv32_uart0_enabled.neorv32_uart0_inst/bus_rsp_o
+   _data<31 : 0> on block neorv32_test_setup_bootloader is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus neorv32_top_inst/clk_gen<4 : 0> on block
+   neorv32_test_setup_bootloader is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_ins
+   t/issue_engine_data<33 : 1> on block neorv32_test_setup_bootloader is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_ins
+   t/n0976<6 : 0> on block neorv32_test_setup_bootloader is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_ins
+   t/cnt_nxt<31 : 0> on block neorv32_test_setup_bootloader is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_ins
+   t/trap_ctrl_irq_buf<11 : 0> on block neorv32_test_setup_bootloader is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_ins
+   t/trap_ctrl_irq_pnd<11 : 0> on block neorv32_test_setup_bootloader is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_ins
+   t/csr_mtvec<31 : 0> on block neorv32_test_setup_bootloader is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_ins
+   t/trap_ctrl_exc_buf<8 : 0> on block neorv32_test_setup_bootloader is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
+   orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
+   divdown/subs/carry<3 : 1> on block neorv32_test_setup_bootloader is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
+   orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
+   divdown/subs/Madd_n0008_Madd_cy<2 : 0> on block neorv32_test_setup_bootloader
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
+   orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
+   divdown/div_normalized/Msub_GND_225_o_i2[31]_sub_24_OUT<4:0>_lut<3 : 1> on
+   block neorv32_test_setup_bootloader is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
+   orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
+   divup/subs/carry<3 : 1> on block neorv32_test_setup_bootloader is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
+   orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
+   divup/subs/Madd_n0008_Madd_cy<2 : 0> on block neorv32_test_setup_bootloader
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
+   orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
+   multup/roundmul/Madd_s_result[21]_GND_105_o_add_0_OUT_cy<9 : 7> on block
+   neorv32_test_setup_bootloader is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
+   orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
+   multdown/roundmul/Madd_s_result[21]_GND_105_o_add_0_OUT_cy<10 : 8> on block
+   neorv32_test_setup_bootloader is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
+   orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
+   multup/roundmul/tmp<7 : 0> on block neorv32_test_setup_bootloader is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
+   orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
+   islem/GND_24_o_GND_24_o_mux_35_OUT<2 : 0> on block
+   neorv32_test_setup_bootloader is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
+   orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
+   adderup/Madd_tempexp[4]_GND_30_o_add_62_OUT_cy<2 : 0> on block
+   neorv32_test_setup_bootloader is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
+   orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
+   adderup/Mmux_diff_rs_lut<3 : 0> on block neorv32_test_setup_bootloader is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
+   orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
+   adderup/Msub_GND_30_o_GND_30_o_sub_51_OUT<4:0>_cy<2 : 0> on block
+   neorv32_test_setup_bootloader is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
+   orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
+   adderup/Madd_bigexp[4]_GND_30_o_add_24_OUT_cy<2 : 0> on block
+   neorv32_test_setup_bootloader is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
+   orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
+   adderup/lowfract<10 : 3> on block neorv32_test_setup_bootloader is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
+   orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
+   adderdown/Madd_tempexp[4]_GND_30_o_add_62_OUT_cy<2 : 0> on block
+   neorv32_test_setup_bootloader is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
+   orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
+   adderdown/Madd_bigexp[4]_GND_30_o_add_24_OUT_cy<2 : 0> on block
+   neorv32_test_setup_bootloader is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
+   orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
+   adderdown/lowfract<10 : 3> on block neorv32_test_setup_bootloader is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
+   orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
+   divdown/div/a[10]_a[10]_mux_31_OUT<11 : 2> on block
+   neorv32_test_setup_bootloader is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
+   orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
+   divdown/div/a[10]_a[10]_mux_28_OUT<11 : 2> on block
+   neorv32_test_setup_bootloader is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
+   orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
+   divdown/div/a[10]_a[10]_mux_25_OUT<11 : 2> on block
+   neorv32_test_setup_bootloader is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
+   orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
+   divdown/div/a[10]_a[10]_mux_22_OUT<11 : 2> on block
+   neorv32_test_setup_bootloader is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
+   orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
+   divdown/div/a[10]_a[10]_mux_19_OUT<11 : 2> on block
+   neorv32_test_setup_bootloader is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
+   orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
+   divdown/div/a[10]_a[10]_mux_16_OUT<11 : 2> on block
+   neorv32_test_setup_bootloader is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
+   orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
+   divdown/div/a[10]_a[10]_mux_13_OUT<11 : 2> on block
+   neorv32_test_setup_bootloader is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
+   orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
+   divdown/div/a[10]_a[10]_mux_10_OUT<11 : 2> on block
+   neorv32_test_setup_bootloader is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
+   orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
+   divdown/div/a[10]_a[10]_mux_7_OUT<11 : 2> on block
+   neorv32_test_setup_bootloader is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
+   orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
+   divdown/div/a[10]_GND_222_o_mux_4_OUT<11 : 1> on block
+   neorv32_test_setup_bootloader is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
+   orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
+   divup/div/a[10]_a[10]_mux_31_OUT<11 : 2> on block
+   neorv32_test_setup_bootloader is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
+   orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
+   divup/div/a[10]_a[10]_mux_28_OUT<11 : 2> on block
+   neorv32_test_setup_bootloader is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
+   orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
+   divup/div/a[10]_a[10]_mux_25_OUT<11 : 2> on block
+   neorv32_test_setup_bootloader is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
+   orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
+   divup/div/a[10]_a[10]_mux_22_OUT<11 : 2> on block
+   neorv32_test_setup_bootloader is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
+   orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
+   divup/div/a[10]_a[10]_mux_19_OUT<11 : 2> on block
+   neorv32_test_setup_bootloader is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
+   orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
+   divup/div/a[10]_a[10]_mux_16_OUT<11 : 2> on block
+   neorv32_test_setup_bootloader is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
+   orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
+   divup/div/a[10]_a[10]_mux_13_OUT<11 : 2> on block
+   neorv32_test_setup_bootloader is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
+   orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
+   divup/div/a[10]_a[10]_mux_10_OUT<11 : 2> on block
+   neorv32_test_setup_bootloader is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
+   orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
+   divup/div/a[10]_a[10]_mux_7_OUT<11 : 2> on block
+   neorv32_test_setup_bootloader is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
+   orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
+   divup/div/a[10]_GND_222_o_mux_4_OUT<11 : 1> on block
+   neorv32_test_setup_bootloader is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   neorv32_top_inst/io_system.neorv32_uart0_enabled.neorv32_uart0_inst/GND_732_o
+   _GND_732_o_mux_8_OUT<31 : 0> on block neorv32_test_setup_bootloader is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file neorv32_test_setup_bootloader_cs.edif ...
+ngc2edif: Total memory usage is 124348 kilobytes
+

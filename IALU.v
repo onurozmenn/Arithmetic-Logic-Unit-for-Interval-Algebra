@@ -14,13 +14,17 @@ module IALU (
 	input  [ 2:0]  rm, 
 	output [ 3:0]  stateCross,
 	output reg [`TOTALW-1:0]  result,
-	output reg flag
+	output reg flag,
+	output dual
 );
 	wire [  3:0] condition;
-	wire [`W-1:0] ANSU, ANSL;
+	wire [`W-1:0] ANSUDIV, ANSLDIV;
+	wire [`W-1:0] ANSUMUL, ANSLMUL;
 	wire [`W-1:0] ANSLADD, ANSUADD;
-	wire flagadd1, flagadd2, flagt1, flagt2;
-	reg flagadd1_reg, flagadd2_reg, flagt1_reg, flagt2_reg;
+	wire flagadd1, flagadd2, flagmul1, flagmul2, flagdiv1, flagdiv2;
+	reg flagadd1_reg, flagadd2_reg, flagdiv1_reg, flagdiv2_reg, flagmul1_reg, flagmul2_reg;
+	
+	reg [1:0] fdual = 0;
 	
 	wire [`W-1:0] F1, F2, S1, S2;
 	reg stateCrossRes = 1'b0;
@@ -40,26 +44,31 @@ module IALU (
 	);
 	AdderSubtractorTopModule adderdown(F1, S1, funct, ANSLADD, flagadd1);
 	AdderSubtractorTopModule adderup  (F2, S2, funct, ANSUADD, flagadd2);							 				
-	MultiplierTopModule #(.updown(0)) multdown (clk, F1, S1, F2, S2, funct, dual, ANSL, flagt1); 
-	MultiplierTopModule #(.updown(1)) multup   (clk, F2, S2, F1, S1, funct, dual, ANSU, flagt2); 
-	DividerTopModule divdown(F1, S1, funct, ANSL, flagt1);
-	DividerTopModule divup(F2, S2, funct, ANSU, flagt2);
+	MultiplierTopModule #(.updown(0)) multdown (clk, F1, S1, F2, S2, funct, dual, ANSLMUL, flagmul1); 
+	MultiplierTopModule #(.updown(1)) multup   (clk, F2, S2, F1, S1, funct, dual, ANSUMUL, flagmul2); 
+	DividerTopModule divdown(F1, S1, funct, ANSLDIV, flagdiv1);
+	DividerTopModule divup(F2, S2, funct, ANSUDIV, flagdiv2);
 	// Register flags to handle asynchronous setting
 	
 	always @(posedge clk or posedge rst) begin
 		if (rst) begin
 			flagadd1_reg <= 1'b0;
 			flagadd2_reg <= 1'b0;
-			flagt1_reg <= 1'b0;
-			flagt2_reg <= 1'b0;
+			flagdiv1_reg <= 1'b0;
+			flagdiv2_reg <= 1'b0;
+			flagmul1_reg <= 1'b0;
+			flagmul2_reg <= 1'b0;
 			result <= 32'b0;
 			flag <= 1'b0;
+			fdual <= 2'b0;
 		end else begin
 			// Register flags when they become 1
 			if (flagadd1) flagadd1_reg <= 1'b1;
 			if (flagadd2) flagadd2_reg <= 1'b1;
-			if (flagt1) flagt1_reg <= 1'b1;
-			if (flagt2) flagt2_reg <= 1'b1;
+			if (flagdiv1) flagdiv1_reg <= 1'b1;
+			if (flagdiv2) flagdiv2_reg <= 1'b1;
+			if (flagmul1) flagmul1_reg <= 1'b1;
+			if (flagmul2) flagmul2_reg <= 1'b1;
 			
 			// Handle add operations
 			if (flagadd1_reg && flagadd2_reg) begin
@@ -72,24 +81,41 @@ module IALU (
 				end
 			end
 			
-			// Handle multiply/divide operations
-			if (flagt1_reg && flagt2_reg) begin
-				if (funct != 5'b00001 && funct != 5'b00000) begin
-					result <= {ANSL, ANSU};
+			// Handle multiply operations
+			if (flagmul1_reg && flagmul2_reg) begin
+				if (funct == 5'b00010) begin
+					result <= {ANSLMUL, ANSUMUL};
 					flag <= 1'b1;
 					// Reset flags after capturing result
-					flagt1_reg <= 1'b0;
-					flagt2_reg <= 1'b0;
+					flagmul1_reg <= 1'b0;
+					flagmul2_reg <= 1'b0;
 				end
 			end
-			
+			// Handle divide operations
+			if (flagdiv1_reg && flagdiv2_reg) begin
+				if (funct == 5'b00011) begin
+					result <= {ANSLDIV, ANSUDIV};
+					if (dual == 1'b1 && fdual == 2'b00) begin
+						fdual <= 2'b01;
+					end else if (dual == 1'b1 && fdual == 2'b01) begin
+						fdual <= 2'b10;
+					end else if (dual == 1'b1 && fdual == 2'b10) begin
+						fdual <= 2'b11;
+					end else begin					
+						flag <= 1'b1;
+					end
+					// Reset flags after capturing result
+					flagdiv1_reg <= 1'b0;
+					flagdiv2_reg <= 1'b0;
+				end
+			end
 			// Handle other operation results
 			if (funct[4:3] == 2'b10) begin
 				result <= stateCrossRes;
 			end
 			if (flag) begin
 				flag <= 1'b0;
-				result <= 32'bz;
+				result <= dual?{ANSLMUL, ANSUMUL}: 32'bz;
 			end
 		end
 	end
@@ -113,7 +139,6 @@ module ProcessRedirectorModule(
 		wire L_BL_0;
 		wire ready;
 		wire [3:0] error;
-		
 		ZeroComparatorG cmp_AU_0(.A(AU), .G(G_AU_0));
 		ZeroComparatorL cmp_AL_0(.A(AL), .L(L_AL_0));
 		ZeroComparatorG cmp_BU_0(.A(BU), .G(G_BU_0));
@@ -184,7 +209,7 @@ module ProcessRedirectorModule(
 					S1 = (condition != 4'b1110 & condition != 4'b1111) ? (condition[2] ? BU : BL) : BU;
 					F2 = (condition != 4'b1110 & condition != 4'b1111) ? (condition[1] ? AU : AL) : AU;
 					S2 = (condition != 4'b1110 & condition != 4'b1111) ? (condition[0] ? BU : BL) : BL;
-					flag = 1;
+					flag = 1'b1;
 				end  // !! GERI KALAN OPCODE LAR
 		end 
 	end
@@ -405,10 +430,10 @@ module DividerTopModule(input [`W-1:0] n1,n2,
 	 Four_Bit_Substractor_Div subs(.A(exp1),.B(exp2),.Sum(exp_result));
 	 Div_Normalization div_normalized(.exp_result(exp_result), .frac_result(div_result),.flagin(flagin), .final_exp(f_exp),.final_frac(f_frac), .flagout(flag));
 	 always @(*)begin
-		flagout = (OPCODE==5'b0011)?flag:1'bz;
+		flagout = flag;
 	 
 	 end
-	 assign result = (OPCODE==5'b00011)?{s1^s2,f_exp,f_frac}:{`W{1'bz}}; 
+	 assign result = {s1^s2,f_exp,f_frac}; 
 endmodule
 
 module Div_Normalization(input [`EXP-1:0] exp_result,
@@ -438,15 +463,15 @@ module Div_Normalization(input [`EXP-1:0] exp_result,
 		end 
 		
 		if(tmp[0])begin
-			tmp = tmp+1;
+			tmp = tmp+1'b1;
 		end
 		
 		final_frac = tmp[`MANTISSA:1];
 		if(~tmp[`MANTISSA+1])begin
-			final_exp = final_exp-1;		
+			final_exp = final_exp-1'b1;		
 			final_frac = 0;
 		end	
-		flagout = flagin? 0:1;
+		flagout = flagin? 0:1'b1;
 	end
 endmodule
 
@@ -538,7 +563,8 @@ module Four_Bit_Substractor_Div(input [`EXP-1:0] A,B,
 	   assign Sum = {cout,t_sum} + (`W-1);
 endmodule
 
-module MultiplierTopModule #(parameter updown = 0)(input clk,
+module MultiplierTopModule #(parameter updown = 0)(
+	   input clk,
 		input [`W-1:0] A,
 		input [`W-1:0] B,
 		input [`W-1:0] C,
@@ -566,40 +592,39 @@ module MultiplierTopModule #(parameter updown = 0)(input clk,
 
 		always@(*)begin
 			
-			flag <= (OPCODE==5'b00010)?1'b0:1'bz;
-
+			flag = 1'b0;
 			case({dual,state})
 				3'b100:begin
-						flag <= (OPCODE==5'b00010)?1'b0:1'bz;
-						E <= 0;
-						s1 <= (~updown[0])?A[`W-1]:C[`W-1];
-						s2 <= B[`W-1];
-						exp1 <= (~updown[0])?A[`W-2:`MANTISSA]:C[`W-2:`MANTISSA];
-						exp2 <= B[`W-2:`MANTISSA];
-						fract1 <= (~updown[0])?A[`MANTISSA-1:0]:C[`MANTISSA-1:0];
-						fract2 <= B[`MANTISSA-1:0];
+						flag = 1'b0;
+						E = 0;
+						s1 = (~updown[0])?A[`W-1]:C[`W-1];
+						s2 = B[`W-1];
+						exp1 = (~updown[0])?A[`W-2:`MANTISSA]:C[`W-2:`MANTISSA];
+						exp2 = B[`W-2:`MANTISSA];
+						fract1 = (~updown[0])?A[`MANTISSA-1:0]:C[`MANTISSA-1:0];
+						fract2 = B[`MANTISSA-1:0];
 				end
 				3'b101:begin
-						s1 <= (~updown[0])?C[`W-1]:A[`W-1];
-						s2 <= D[`W-1];
-						exp1 <= (~updown[0])?C[`W-2:`MANTISSA]:A[`W-2:`MANTISSA];
-						exp2 <= D[`W-2:`MANTISSA];
-						fract1 <= (~updown[0])?C[`MANTISSA-1:0]:A[`MANTISSA-1:0];
-						fract2 <= D[`MANTISSA-1:0];
+						s1 = (~updown[0])?C[`W-1]:A[`W-1];
+						s2 = D[`W-1];
+						exp1 = (~updown[0])?C[`W-2:`MANTISSA]:A[`W-2:`MANTISSA];
+						exp2 = D[`W-2:`MANTISSA];
+						fract1 = (~updown[0])?C[`MANTISSA-1:0]:A[`MANTISSA-1:0];
+						fract2 = D[`MANTISSA-1:0];
 				end
 				3'b110:begin
-					flag <= (OPCODE==5'b00010)?1'b1:1'bz;
-					E <= (OPCODE==5'b00010)?(temp1gtemp2?temp1:temp2):{`W{1'bz}};
+					E = (temp1gtemp2?temp1:temp2);
+					flag = 1'b1;
 				end
 				default:begin
-					s1 <= A[`W-1];
-					s2 <= B[`W-1];
-					exp1 <= A[`W-2:`MANTISSA];
-					exp2 <= B[`W-2:`MANTISSA];
-					fract1 <= A[`MANTISSA-1:0];
-					fract2 <= B[`MANTISSA-1:0];
-					E <= (OPCODE==5'b00010)?(temp0):{`W{1'bz}};
-					flag <= (OPCODE==5'b00010)?1'b1:1'bz;
+					s1 = A[`W-1];
+					s2 = B[`W-1];
+					exp1 = A[`W-2:`MANTISSA];
+					exp2 = B[`W-2:`MANTISSA];
+					fract1 = A[`MANTISSA-1:0];
+					fract2 = B[`MANTISSA-1:0];
+					E = temp0;
+					flag = 1'b1;
 				end
 			endcase
 		end	
@@ -628,7 +653,7 @@ module MultiplierTopModule #(parameter updown = 0)(input clk,
 		assign mult_fract = {1'b1,fract1}*{1'b1,fract2};
 		NormalizeMul normmul(mult_fract, mult_sumexp2, s1^s2, norm_res, norm_exp, dual, state, normstate, ch);
 		RoundingMul roundmul(norm_res, norm_exp, s1^s2, temp0, temp1, temp2, dual, normstate, roundstate, ch);
-		Comparator #(.ws(0))comp(.A(temp1[`W-1:0]), .B(temp2[`W-1:0]), .G(temp1gtemp2));
+		Comparator #(.ws(0))comp(.A(temp1), .B(temp2), .G(temp1gtemp2));
 endmodule
 
 module NormalizeMul(

@@ -11,46 +11,46 @@ Target Device  : xc6slx45
 Target Package : csg324
 Target Speed   : -2
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Mon Mar 24 20:13:22 2025
+Mapped Date    : Tue Apr 15 14:34:29 2025
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:   16
+Number of warnings:   14
 Slice Logic Utilization:
-  Number of Slice Registers:                 3,545 out of  54,576    6%
-    Number used as Flip Flops:               3,335
-    Number used as Latches:                    210
+  Number of Slice Registers:                 3,503 out of  54,576    6%
+    Number used as Flip Flops:               3,327
+    Number used as Latches:                    176
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                      5,391 out of  27,288   19%
-    Number used as logic:                    5,264 out of  27,288   19%
-      Number using O6 output only:           4,005
-      Number using O5 output only:             168
-      Number using O5 and O6:                1,091
+  Number of Slice LUTs:                      5,275 out of  27,288   19%
+    Number used as logic:                    5,145 out of  27,288   18%
+      Number using O6 output only:           3,958
+      Number using O5 output only:             169
+      Number using O5 and O6:                1,018
       Number used as ROM:                        0
     Number used as Memory:                      88 out of   6,408    1%
       Number used as Dual Port RAM:              0
       Number used as Single Port RAM:            0
       Number used as Shift Register:            88
-        Number using O6 output only:            70
+        Number using O6 output only:            50
         Number using O5 output only:             1
-        Number using O5 and O6:                 17
-    Number used exclusively as route-thrus:     39
-      Number with same-slice register load:     29
+        Number using O5 and O6:                 37
+    Number used exclusively as route-thrus:     42
+      Number with same-slice register load:     32
       Number with same-slice carry load:        10
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                 2,010 out of   6,822   29%
-  Number of MUXCYs used:                     1,264 out of  13,644    9%
-  Number of LUT Flip Flop pairs used:        6,549
-    Number with an unused Flip Flop:         3,244 out of   6,549   49%
-    Number with an unused LUT:               1,158 out of   6,549   17%
-    Number of fully used LUT-FF pairs:       2,147 out of   6,549   32%
-    Number of unique control sets:             153
+  Number of occupied Slices:                 2,065 out of   6,822   30%
+  Number of MUXCYs used:                     1,240 out of  13,644    9%
+  Number of LUT Flip Flop pairs used:        6,480
+    Number with an unused Flip Flop:         3,231 out of   6,480   49%
+    Number with an unused LUT:               1,205 out of   6,480   18%
+    Number of fully used LUT-FF pairs:       2,044 out of   6,480   31%
+    Number of unique control sets:             151
     Number of slice register sites lost
-      to control set restrictions:             478 out of  54,576    1%
+      to control set restrictions:             452 out of  54,576    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -88,11 +88,11 @@ Specific Feature Utilization:
   Number of SUSPEND_SYNCs:                       0 out of       1    0%
 
   Number of RPM macros:            9
-Average Fanout of Non-Clock Nets:                4.09
+Average Fanout of Non-Clock Nets:                4.12
 
-Peak Memory Usage:  831 MB
-Total REAL time to MAP completion:  27 secs 
-Total CPU time to MAP completion:   27 secs 
+Peak Memory Usage:  829 MB
+Total REAL time to MAP completion:  28 secs 
+Total CPU time to MAP completion:   28 secs 
 
 Table of Contents
 -----------------
@@ -122,12 +122,6 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
    orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
-   multup/roundmul/_n0150 is sourced by a combinatorial pin. This is not good
-   design practice. Use the CE pin to control the loading of data into the
-   flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
-   orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
    divdown/div_result<11> is sourced by a combinatorial pin. This is not good
    design practice. Use the CE pin to control the loading of data into the
    flip-flop.
@@ -140,44 +134,38 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
    orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
-   multup/roundmul/_n0166 is sourced by a combinatorial pin. This is not good
-   design practice. Use the CE pin to control the loading of data into the
-   flip-flop.
+   flagmul1 is sourced by a combinatorial pin. This is not good design practice.
+   Use the CE pin to control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net icon_control0<13> is
    sourced by a combinatorial pin. This is not good design practice. Use the CE
    pin to control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
    orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
-   multdown/roundmul/_n0166 is sourced by a combinatorial pin. This is not good
+   multdown/roundmul/_n0459 is sourced by a combinatorial pin. This is not good
    design practice. Use the CE pin to control the loading of data into the
    flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
    orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
-   multup/_n0232 is sourced by a combinatorial pin. This is not good design
-   practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
-   orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
-   multdown/roundmul/_n0150 is sourced by a combinatorial pin. This is not good
+   multup/roundmul/_n0459 is sourced by a combinatorial pin. This is not good
    design practice. Use the CE pin to control the loading of data into the
    flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
    orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
-   multdown/_n0140 is sourced by a combinatorial pin. This is not good design
-   practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
-   orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
-   multup/roundmul/_n0181 is sourced by a combinatorial pin. This is not good
+   multup/roundmul/_n0686 is sourced by a combinatorial pin. This is not good
    design practice. Use the CE pin to control the loading of data into the
    flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
    orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
-   multdown/roundmul/_n0181 is sourced by a combinatorial pin. This is not good
+   flagmul2 is sourced by a combinatorial pin. This is not good design practice.
+   Use the CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
+   orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
+   multdown/roundmul/_n0686 is sourced by a combinatorial pin. This is not good
    design practice. Use the CE pin to control the loading of data into the
    flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
@@ -189,13 +177,13 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
    orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
-   multdown/normmul/state[1]_PWR_126_o_Mux_7_o is sourced by a combinatorial
-   pin. This is not good design practice. Use the CE pin to control the loading
-   of data into the flip-flop.
+   multdown/normmul/state[1]_PWR_93_o_Mux_7_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/ne
    orv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/
-   multup/normmul/state[1]_PWR_126_o_Mux_7_o is sourced by a combinatorial pin.
+   multup/normmul/state[1]_PWR_93_o_Mux_7_o is sourced by a combinatorial pin.
    This is not good design practice. Use the CE pin to control the loading of
    data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
@@ -231,8 +219,8 @@ INFO:Pack:1650 - Map created a placed design.
 Section 4 - Removed Logic Summary
 ---------------------------------
   45 block(s) removed
-  58 block(s) optimized away
-  30 signal(s) removed
+  51 block(s) optimized away
+  29 signal(s) removed
 
 Section 5 - Removed Logic
 -------------------------
@@ -342,10 +330,6 @@ removed.
 removed.
  Sourceless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[3].U_LCE" (ROM)
 removed.
-The signal
-"U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I
-_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_NE0.U
-_GAND_SRL_SET/SRL_Q_O" is sourceless and has been removed.
 Unused block "U_icon_pro/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[11].U_LUT" (ROM)
 removed.
 Unused block "U_icon_pro/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[12].U_LUT" (ROM)
@@ -416,34 +400,6 @@ VCC
 AND.U_CS_GAND_SRL/I_S6.U_CS_GAND_SRL_S6/I_USE_RPM_NE0.U_GAND_SRL_SET/XST_VCC
 LUT4 		U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/F_SSTAT[6].I_STAT.U_STAT
    optimized to 0
-GND
-		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/
-I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_NE0.
-U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[0].U_GAND_SRL_SLICE/XST_GND
-VCC
-		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/
-I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_NE0.
-U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[0].U_GAND_SRL_SLICE/XST_VCC
-GND
-		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/
-I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_NE0.
-U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[1].U_GAND_SRL_SLICE/XST_GND
-GND
-		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/
-I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_NE0.
-U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[2].U_GAND_SRL_SLICE/XST_GND
-GND
-		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/
-I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_NE0.
-U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[3].U_GAND_SRL_SLICE/XST_GND
-GND
-		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/
-I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_NE0.
-U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[4].U_GAND_SRL_SLICE/XST_GND
-VCC
-		U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/
-I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_NE0.
-U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[4].U_GAND_SRL_SLICE/XST_VCC
 GND 		U_ila_pro_0/XST_GND
 VCC 		U_ila_pro_0/XST_VCC
 GND 		XST_GND
@@ -486,9 +442,8 @@ U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_CMPRESET_MSET
 U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_NS0_MSET
 U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_NS1_MSET
 U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_SCRST_MSET
-U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_
-CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_NE0.U_
-GAND_SRL_SET/MSET
+U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_VARX.U_match/I_S
+RL32.U_VARX_SRL32/U_G_MSET
 
 Section 8 - Guide Report
 ------------------------

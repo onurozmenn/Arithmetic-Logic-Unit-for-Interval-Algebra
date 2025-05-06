@@ -70,7 +70,8 @@ component TopModules_wrapper
            fmt         : in  STD_ULOGIC_VECTOR(1 downto 0);
            rm          : in  STD_ULOGIC_VECTOR(2 downto 0);
            result      : out STD_ULOGIC_VECTOR(31 downto 0);
-           flag       : out STD_ULOGIC
+           flag         : out STD_ULOGIC;
+           dual        : out STD_ULOGIC
          );
 end component;
   -- key storage (accessed via CFU CSRs) --
@@ -100,6 +101,7 @@ end component;
   signal ialu_rm         : std_ulogic_vector(2 downto 0);
   signal ialu_result     : std_ulogic_vector(31 downto 0);
   signal ialu_flag      : std_ulogic;
+  signal ialu_dual      : std_ulogic;
 
 begin
 	 
@@ -132,7 +134,9 @@ begin
 		 fmt         => ialu_fmt,              -- fmt'i 'fmt'ye bala
 		 rm          => ialu_rm,         -- funct3_i'yi 'rm'ye bala
 		 result      => ialu_result,     -- ilem sonucu
-		 flag         => ialu_flag      -- flag1 k
+		 flag         => ialu_flag,      -- flag1 k
+		 dual 		 => ialu_dual      -- flag1 k
+		 
 		   );
 
 

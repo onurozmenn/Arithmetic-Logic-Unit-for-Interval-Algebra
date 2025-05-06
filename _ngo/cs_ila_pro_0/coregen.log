@@ -1,9 +1,7 @@
-WARNING:coreutil:996 - User repository index
-   '/home/onur/Desktop/IAL2/xil_index.xml' does not exist.
-INFO:coreutil:887 - Saved User repository '/home/onur/Desktop/IAL2/' state to
-   index file '/home/onur/Desktop/IAL2/xil_index.xml'.
-INFO:coreutil:889 - Saved user repository '/home/onur/Desktop/IAL2/' state to
-   index file '/home/onur/Desktop/IAL2/xil_index.xml'.
+WARNING:coreutil:995 - User repository directory path '/home/onur/Desktop/IAL2/'
+   does not exist.
+WARNING:coreutil:882 - Repository directory '/home/onur/Desktop/IAL2/' does not
+   match index file entry ''.
 INFO:encore:314 - Created non-GUI application for batch mode execution.
 Wrote CGP file for project 'coregen'.
 INFO:sim:172 - Generating IP...
