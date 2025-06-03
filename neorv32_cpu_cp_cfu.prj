@@ -1,0 +1,4 @@
+verilog work "IALU.v"
+vhdl work "TopModules_wrapper.vhd"
+vhdl neorv32 "neorv32_package.vhd"
+vhdl neorv32 "neorv32_cpu_cp_cfu.vhd"

@@ -71,6 +71,7 @@ component TopModules_wrapper
            rm          : in  STD_ULOGIC_VECTOR(2 downto 0);
            result      : out STD_ULOGIC_VECTOR(31 downto 0);
            flag         : out STD_ULOGIC;
+           error       : out STD_ULOGIC_VECTOR(2 downto 0);
            dual        : out STD_ULOGIC
          );
 end component;
@@ -88,6 +89,7 @@ end component;
     bl  : std_ulogic_vector(15 downto 0); -- input operand a
     bu  : std_ulogic_vector(15 downto 0); -- input operand b
     res  : std_ulogic_vector(31 downto 0); -- operation results
+    err  : std_ulogic_vector(2 downto 0); -- operation results
   end record;
   signal xfint : xfint_t;
   
@@ -100,29 +102,25 @@ end component;
   signal ialu_fmt        : std_ulogic_vector(1 downto 0);
   signal ialu_rm         : std_ulogic_vector(2 downto 0);
   signal ialu_result     : std_ulogic_vector(31 downto 0);
-  signal ialu_flag      : std_ulogic;
-  signal ialu_dual      : std_ulogic;
-
+  signal ialu_flag        : std_ulogic;
+  signal ialu_error     : std_ulogic_vector(2 downto 0);
+  signal ialu_dual       : std_ulogic;
+  signal error_reg : std_ulogic_vector(2 downto 0);
 begin
 	 
   funct5 <= funct7_i(6 downto 2);
   fmt    <= funct7_i(1 downto 0);
   -- CFU-Internal Control and Status Registers (CFU-CSRs): 128-Bit Key Storage --------------
   -- -------------------------------------------------------------------------------------------
-  -- synchronous write access --
-  csr_write_access: process(rstn_i, clk_i)
-  begin
-    if (rstn_i = '0') then
-      key_mem <= (others => (others => '0'));
-    elsif rising_edge(clk_i) then
-      if (csr_we_i = '1') then -- CSR write enable
-        key_mem(to_integer(unsigned(csr_addr_i))) <= csr_wdata_i; -- write to CSR address
-      end if;
-    end if;
-  end process csr_write_access;
+
+	-- CSR okuma ilemi iin kombinasyonel process:
+	csr_read: process(csr_addr_i, key_mem, error_reg)
+	begin
+		csr_rdata_o <= (31 downto 3 => '0') & error_reg;
+	end process csr_read;
 
   -- asynchronous read access --
-  csr_rdata_o <= key_mem(to_integer(unsigned(csr_addr_i)));
+  --csr_rdata_o <= key_mem(to_integer(unsigned(csr_addr_i)));
   -- Instantiate TopModules_wrapper
 	TopModules_inst : TopModules_wrapper
 	  port map (
@@ -134,13 +132,13 @@ begin
 		 fmt         => ialu_fmt,              -- fmt'i 'fmt'ye bala
 		 rm          => ialu_rm,         -- funct3_i'yi 'rm'ye bala
 		 result      => ialu_result,     -- ilem sonucu
-		 flag         => ialu_flag,      -- flag1 k
-		 dual 		 => ialu_dual      -- flag1 k
+		 flag         => ialu_flag,      -- flag
+		 error       => ialu_error,      -- error
+		 dual 		 => ialu_dual      -- dual
 		 
 		   );
 
 
-  -- CORE ------------------------------------------------------------------
   -- CORE ------------------------------------------------------------------
   xfint_core: process(rstn_i, clk_i)
   begin
@@ -151,6 +149,7 @@ begin
       xfint.bl   <= (others => '0');
       xfint.bu   <= (others => '0');
       xfint.res  <= (others => '0');
+      xfint.err  <= (others => '0');
       ialu_rst   <= '1'; -- Reset the IALU initially
     elsif rising_edge(clk_i) then
         -- "operation-done" shift register: module has 2 cycles latency --
@@ -164,7 +163,7 @@ begin
           xfint.au      <= rs1_i(15 downto  0); -- buffer input operand rs1 (for improved physical timing)
           xfint.bl      <= rs2_i(31 downto 16); -- buffer input operand rs2 (for improved physical timing)
           xfint.bu      <= rs2_i(15 downto  0); -- buffer input operand rs2 (for improved physical timing)
-
+			 
 
           -- Connect inputs to IALU
           ialu_a     <= rs1_i; -- Pass rs1_i to IALU input a
@@ -176,13 +175,14 @@ begin
         end if;
 
 		  if (ialu_flag = '1') then
-			 xfint.done(0) <= '1'; -- trigger operation
-			 
+			   xfint.done(0) <= '1'; -- trigger operation
 		  end if;
         -- data processing --
         if (xfint.done(1) = '1') then -- second-stage execution trigger
-          -- Use the result from IALU
+            -- Use the result from IALU
 				xfint.res <= ialu_result; -- Store the result from IALU
+				error_reg <= ialu_error; -- BURAYA TAI!
+
             ialu_rst   <= '1'; -- Deassert reset for IALU
 
         end if;
@@ -205,6 +205,7 @@ begin
         when rm1 | rm2 | rm3 | rm4 | rm5 | rm6 | rm7 | rm8 => -- xtea encryption/decryption
           result_o <= xfint.res; -- processing result
           valid_o  <= xfint.done(2); -- multi-cycle processing done when set
+			 
         when others => -- all unspecified operations
           result_o <= (others => '0'); -- no logic implemented
           valid_o  <= '0'; -- this will cause an illegal instruction exception after timeout

@@ -68,6 +68,9 @@
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="neorv32_cpu_cp_cfu.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="neorv32_cpu_cp_cfu.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="neorv32_cpu_cp_cfu.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="neorv32_cpu_cp_cfu_stx_beh.prj"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="neorv32_test_setup_bootloader.bgn" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="neorv32_test_setup_bootloader.bit" xil_pn:subbranch="FPGAConfiguration"/>
@@ -208,7 +211,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1746545362" xil_pn:in_ck="-8312234578811187506" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="1026057575128845134" xil_pn:start_ts="1746545313">
+    <transform xil_pn:end_ts="1748961590" xil_pn:in_ck="-8312234578811187506" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="1026057575128845134" xil_pn:start_ts="1748961548">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -231,7 +234,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1746545367" xil_pn:in_ck="-6113061062449914109" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-7292699397265610272" xil_pn:start_ts="1746545362">
+    <transform xil_pn:end_ts="1748961595" xil_pn:in_ck="-6113061062449914109" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-7292699397265610272" xil_pn:start_ts="1748961590">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_ngo"/>
@@ -240,9 +243,11 @@
       <outfile xil_pn:name="neorv32_test_setup_bootloader.ngd"/>
       <outfile xil_pn:name="neorv32_test_setup_bootloader_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1746545460" xil_pn:in_ck="-7771245764649816900" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="-398923363910175968" xil_pn:start_ts="1746545367">
+    <transform xil_pn:end_ts="1748961684" xil_pn:in_ck="-7771245764649816900" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="-398923363910175968" xil_pn:start_ts="1748961595">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
       <outfile xil_pn:name="neorv32_test_setup_bootloader.pcf"/>
       <outfile xil_pn:name="neorv32_test_setup_bootloader_map.map"/>
@@ -253,7 +258,7 @@
       <outfile xil_pn:name="neorv32_test_setup_bootloader_summary.xml"/>
       <outfile xil_pn:name="neorv32_test_setup_bootloader_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1746545509" xil_pn:in_ck="-6208175574059913675" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-3829590541433901613" xil_pn:start_ts="1746545460">
+    <transform xil_pn:end_ts="1748961735" xil_pn:in_ck="-6208175574059913675" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-3829590541433901613" xil_pn:start_ts="1748961684">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
@@ -267,10 +272,12 @@
       <outfile xil_pn:name="neorv32_test_setup_bootloader_pad.txt"/>
       <outfile xil_pn:name="neorv32_test_setup_bootloader_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1746545526" xil_pn:in_ck="-7944541207627844277" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1746545509">
+    <transform xil_pn:end_ts="1748961752" xil_pn:in_ck="-7944541207627844277" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1748961735">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="neorv32_test_setup_bootloader.bgn"/>
       <outfile xil_pn:name="neorv32_test_setup_bootloader.bit"/>
@@ -286,10 +293,11 @@
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="InputChanged"/>
     </transform>
-    <transform xil_pn:end_ts="1746537816" xil_pn:in_ck="-7944541207627857131" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="8482462020707587906" xil_pn:start_ts="1746537814">
-      <status xil_pn:value="SuccessfullyRun"/>
+    <transform xil_pn:end_ts="1748960555" xil_pn:in_ck="-7944541207627857131" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="8482462020707587906" xil_pn:start_ts="1748960553">
+      <status xil_pn:value="AbortedRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForced"/>
       <status xil_pn:value="InputChanged"/>
     </transform>
     <transform xil_pn:end_ts="1744715790" xil_pn:in_ck="-7944541207627857131" xil_pn:name="TRAN_analyzeDesignUsingChipscope" xil_pn:prop_ck="-7292699397265610272" xil_pn:start_ts="1744715790">
@@ -300,7 +308,7 @@
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="InputRemoved"/>
     </transform>
-    <transform xil_pn:end_ts="1746545509" xil_pn:in_ck="7530070616202962104" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1746545502">
+    <transform xil_pn:end_ts="1748961735" xil_pn:in_ck="7530070616202962104" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1748961728">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
