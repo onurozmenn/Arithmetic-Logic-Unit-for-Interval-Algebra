@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.02 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.02 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
 Reading design: neorv32_test_setup_bootloader.prj
@@ -359,62 +359,60 @@ Elaborating module <ZeroComparatorL>.
 Elaborating module <CrossComparator>.
 
 Elaborating module <Comparator>.
-WARNING:HDLCompiler:1127 - "/home/onur/Desktop/Neorv/IALU.v" Line 298: Assignment to L ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/onur/Desktop/Neorv/IALU.v" Line 367: Assignment to L ignored, since the identifier is never used
 
 Elaborating module <ErrorDetector>.
-WARNING:HDLCompiler:1127 - "/home/onur/Desktop/Neorv/IALU.v" Line 198: Assignment to flag ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/onur/Desktop/Neorv/IALU.v" Line 64: Assignment to condition ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/onur/Desktop/Neorv/IALU.v" Line 249: Assignment to flag ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/onur/Desktop/Neorv/IALU.v" Line 92: Assignment to condition ignored, since the identifier is never used
 
 Elaborating module <AdderSubtractorTopModule>.
 
 Elaborating module <AdderSignFunction>.
-"/home/onur/Desktop/Neorv/IALU.v" Line 572. $display Sonu 0 iaret yok
-WARNING:HDLCompiler:91 - "/home/onur/Desktop/Neorv/IALU.v" Line 914: Signal <finalsign> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:413 - "/home/onur/Desktop/Neorv/IALU.v" Line 937: Result of 10-bit expression is truncated to fit in 5-bit target.
-WARNING:HDLCompiler:1016 - "/home/onur/Desktop/Neorv/IALU.v" Line 768: Port E is not connected to this instance
+WARNING:HDLCompiler:91 - "/home/onur/Desktop/Neorv/IALU.v" Line 1059: Signal <finalsign> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "/home/onur/Desktop/Neorv/IALU.v" Line 1080: Result of 10-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:1016 - "/home/onur/Desktop/Neorv/IALU.v" Line 891: Port E is not connected to this instance
 
 Elaborating module <MultiplierTopModule(updown=0)>.
-WARNING:HDLCompiler:91 - "/home/onur/Desktop/Neorv/IALU.v" Line 755: Signal <c_sumexp> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:413 - "/home/onur/Desktop/Neorv/IALU.v" Line 755: Result of 32-bit expression is truncated to fit in 5-bit target.
-WARNING:HDLCompiler:91 - "/home/onur/Desktop/Neorv/IALU.v" Line 760: Signal <c_sumexp2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:413 - "/home/onur/Desktop/Neorv/IALU.v" Line 760: Result of 32-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:91 - "/home/onur/Desktop/Neorv/IALU.v" Line 869: Signal <c_sumexp> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "/home/onur/Desktop/Neorv/IALU.v" Line 869: Result of 32-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:91 - "/home/onur/Desktop/Neorv/IALU.v" Line 875: Signal <c_sumexp2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "/home/onur/Desktop/Neorv/IALU.v" Line 875: Result of 32-bit expression is truncated to fit in 5-bit target.
 
 Elaborating module <NormalizeMul>.
 
 Elaborating module <NormalizeMul(duality=1)>.
 
 Elaborating module <RoundingMul>.
-WARNING:HDLCompiler:413 - "/home/onur/Desktop/Neorv/IALU.v" Line 822: Result of 13-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:413 - "/home/onur/Desktop/Neorv/IALU.v" Line 948: Result of 13-bit expression is truncated to fit in 12-bit target.
 
 Elaborating module <RoundingMul(duality=1)>.
-WARNING:HDLCompiler:413 - "/home/onur/Desktop/Neorv/IALU.v" Line 822: Result of 13-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:413 - "/home/onur/Desktop/Neorv/IALU.v" Line 948: Result of 13-bit expression is truncated to fit in 12-bit target.
 
 Elaborating module <Comparator(ws=0)>.
-WARNING:HDLCompiler:1127 - "/home/onur/Desktop/Neorv/IALU.v" Line 298: Assignment to L ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/onur/Desktop/Neorv/IALU.v" Line 367: Assignment to L ignored, since the identifier is never used
 
 Elaborating module <MultiplierTopModule(updown=1)>.
-WARNING:HDLCompiler:91 - "/home/onur/Desktop/Neorv/IALU.v" Line 755: Signal <c_sumexp> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:413 - "/home/onur/Desktop/Neorv/IALU.v" Line 755: Result of 32-bit expression is truncated to fit in 5-bit target.
-WARNING:HDLCompiler:91 - "/home/onur/Desktop/Neorv/IALU.v" Line 760: Signal <c_sumexp2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:413 - "/home/onur/Desktop/Neorv/IALU.v" Line 760: Result of 32-bit expression is truncated to fit in 5-bit target.
-WARNING:HDLCompiler:1016 - "/home/onur/Desktop/Neorv/IALU.v" Line 506: Port cout is not connected to this instance
+WARNING:HDLCompiler:91 - "/home/onur/Desktop/Neorv/IALU.v" Line 869: Signal <c_sumexp> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "/home/onur/Desktop/Neorv/IALU.v" Line 869: Result of 32-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:91 - "/home/onur/Desktop/Neorv/IALU.v" Line 875: Signal <c_sumexp2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "/home/onur/Desktop/Neorv/IALU.v" Line 875: Result of 32-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:1016 - "/home/onur/Desktop/Neorv/IALU.v" Line 600: Port cout is not connected to this instance
 
 Elaborating module <DividerTopModule>.
-"/home/onur/Desktop/Neorv/IALU.v" Line 493. $display diffa 0
-"/home/onur/Desktop/Neorv/IALU.v" Line 497. $display diffb 0
 
 Elaborating module <Four_Bit_Divider>.
-WARNING:HDLCompiler:413 - "/home/onur/Desktop/Neorv/IALU.v" Line 360: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/onur/Desktop/Neorv/IALU.v" Line 429: Result of 32-bit expression is truncated to fit in 1-bit target.
 
 Elaborating module <Four_Bit_Substractor_Div>.
 
 Elaborating module <FullAdder>.
-WARNING:HDLCompiler:413 - "/home/onur/Desktop/Neorv/IALU.v" Line 623: Result of 7-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "/home/onur/Desktop/Neorv/IALU.v" Line 731: Result of 7-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "/home/onur/Desktop/Neorv/IALU.v" Line 736: Result of 6-bit expression is truncated to fit in 1-bit target.
 
 Elaborating module <Div_Normalization>.
-WARNING:HDLCompiler:413 - "/home/onur/Desktop/Neorv/IALU.v" Line 534: Result of 32-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "/home/onur/Desktop/Neorv/IALU.v" Line 637: Result of 32-bit expression is truncated to fit in 5-bit target.
 Back to vhdl to continue elaboration
-INFO:HDLCompiler:679 - "/home/onur/Desktop/Neorv/neorv32_cpu_cp_cfu.vhd" Line 154. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/home/onur/Desktop/Neorv/neorv32_cpu_cp_cfu.vhd" Line 153. Case statement is complete. others clause is never selected
 
 Elaborating entity <neorv32_cpu_lsu> (architecture <neorv32_cpu_lsu_rtl>) from library <neorv32>.
 
@@ -1151,8 +1149,8 @@ INFO:Xst:3210 - "/home/onur/Desktop/Neorv/neorv32_cpu_control.vhd" line 387: Out
     Found 32-bit adder for signal <cnt_hi[2][31]_GND_10_o_add_584_OUT> created at line 1959.
     Found 33-bit adder for signal <cnt_nxt<2>> created at line 1965.
     Found 4x1-bit Read Only RAM for signal <exe_engine_ir[14]_GND_10_o_Mux_321_o>
-    Found 8x5-bit Read Only RAM for signal <_n4584>
-    Found 8x2-bit Read Only RAM for signal <_n4593>
+    Found 8x5-bit Read Only RAM for signal <_n3582>
+    Found 8x2-bit Read Only RAM for signal <_n3591>
     Found 32-bit 3-to-1 multiplexer for signal <csr_wdata> created at line 1359.
     WARNING:Xst:2404 -  FFs/Latches <ctrl_lsu_amo<0:0>> (without init value) have a constant value of 0 in block <neorv32_cpu_control>.
     WARNING:Xst:2404 -  FFs/Latches <csr_mstatus_mpp<0:0>> (without init value) have a constant value of 1 in block <neorv32_cpu_control>.
@@ -1451,7 +1449,7 @@ Synthesizing Unit <IALU>.
     Related source file is "/home/onur/Desktop/Neorv/IALU.v".
 WARNING:Xst:647 - Input <fmt> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <rm> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "/home/onur/Desktop/Neorv/IALU.v" line 54: Output port <condition> of the instance <islem> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/onur/Desktop/Neorv/IALU.v" line 82: Output port <condition> of the instance <islem> is unconnected or connected to loadless signal.
     Found 1-bit register for signal <flag_clk_DFF_295>.
     Found 1-bit register for signal <flag_clk_DFF_296>.
     Found 1-bit register for signal <flag_clk_DFF_297>.
@@ -1507,44 +1505,44 @@ INFO:Xst:3210 - "/home/onur/Desktop/Neorv/IALU.v" line 54: Output port <conditio
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 3-bit 3-to-1 multiplexer for signal <_n0337> created at line 32.
-    Found 1-bit tristate buffer for signal <result<31>> created at line 77
-    Found 1-bit tristate buffer for signal <result<30>> created at line 77
-    Found 1-bit tristate buffer for signal <result<29>> created at line 77
-    Found 1-bit tristate buffer for signal <result<28>> created at line 77
-    Found 1-bit tristate buffer for signal <result<27>> created at line 77
-    Found 1-bit tristate buffer for signal <result<26>> created at line 77
-    Found 1-bit tristate buffer for signal <result<25>> created at line 77
-    Found 1-bit tristate buffer for signal <result<24>> created at line 77
-    Found 1-bit tristate buffer for signal <result<23>> created at line 77
-    Found 1-bit tristate buffer for signal <result<22>> created at line 77
-    Found 1-bit tristate buffer for signal <result<21>> created at line 77
-    Found 1-bit tristate buffer for signal <result<20>> created at line 77
-    Found 1-bit tristate buffer for signal <result<19>> created at line 77
-    Found 1-bit tristate buffer for signal <result<18>> created at line 77
-    Found 1-bit tristate buffer for signal <result<17>> created at line 77
-    Found 1-bit tristate buffer for signal <result<16>> created at line 77
-    Found 1-bit tristate buffer for signal <result<15>> created at line 77
-    Found 1-bit tristate buffer for signal <result<14>> created at line 77
-    Found 1-bit tristate buffer for signal <result<13>> created at line 77
-    Found 1-bit tristate buffer for signal <result<12>> created at line 77
-    Found 1-bit tristate buffer for signal <result<11>> created at line 77
-    Found 1-bit tristate buffer for signal <result<10>> created at line 77
-    Found 1-bit tristate buffer for signal <result<9>> created at line 77
-    Found 1-bit tristate buffer for signal <result<8>> created at line 77
-    Found 1-bit tristate buffer for signal <result<7>> created at line 77
-    Found 1-bit tristate buffer for signal <result<6>> created at line 77
-    Found 1-bit tristate buffer for signal <result<5>> created at line 77
-    Found 1-bit tristate buffer for signal <result<4>> created at line 77
-    Found 1-bit tristate buffer for signal <result<3>> created at line 77
-    Found 1-bit tristate buffer for signal <result<2>> created at line 77
-    Found 1-bit tristate buffer for signal <result<1>> created at line 77
-    Found 1-bit tristate buffer for signal <result<0>> created at line 77
-    Found 3-bit comparator equal for signal <stateCross[2]_funct[2]_equal_58_o> created at line 161
+    Found 3-bit 3-to-1 multiplexer for signal <_n0562> created at line 53.
+    Found 1-bit tristate buffer for signal <result<31>> created at line 112
+    Found 1-bit tristate buffer for signal <result<30>> created at line 112
+    Found 1-bit tristate buffer for signal <result<29>> created at line 112
+    Found 1-bit tristate buffer for signal <result<28>> created at line 112
+    Found 1-bit tristate buffer for signal <result<27>> created at line 112
+    Found 1-bit tristate buffer for signal <result<26>> created at line 112
+    Found 1-bit tristate buffer for signal <result<25>> created at line 112
+    Found 1-bit tristate buffer for signal <result<24>> created at line 112
+    Found 1-bit tristate buffer for signal <result<23>> created at line 112
+    Found 1-bit tristate buffer for signal <result<22>> created at line 112
+    Found 1-bit tristate buffer for signal <result<21>> created at line 112
+    Found 1-bit tristate buffer for signal <result<20>> created at line 112
+    Found 1-bit tristate buffer for signal <result<19>> created at line 112
+    Found 1-bit tristate buffer for signal <result<18>> created at line 112
+    Found 1-bit tristate buffer for signal <result<17>> created at line 112
+    Found 1-bit tristate buffer for signal <result<16>> created at line 112
+    Found 1-bit tristate buffer for signal <result<15>> created at line 112
+    Found 1-bit tristate buffer for signal <result<14>> created at line 112
+    Found 1-bit tristate buffer for signal <result<13>> created at line 112
+    Found 1-bit tristate buffer for signal <result<12>> created at line 112
+    Found 1-bit tristate buffer for signal <result<11>> created at line 112
+    Found 1-bit tristate buffer for signal <result<10>> created at line 112
+    Found 1-bit tristate buffer for signal <result<9>> created at line 112
+    Found 1-bit tristate buffer for signal <result<8>> created at line 112
+    Found 1-bit tristate buffer for signal <result<7>> created at line 112
+    Found 1-bit tristate buffer for signal <result<6>> created at line 112
+    Found 1-bit tristate buffer for signal <result<5>> created at line 112
+    Found 1-bit tristate buffer for signal <result<4>> created at line 112
+    Found 1-bit tristate buffer for signal <result<3>> created at line 112
+    Found 1-bit tristate buffer for signal <result<2>> created at line 112
+    Found 1-bit tristate buffer for signal <result<1>> created at line 112
+    Found 1-bit tristate buffer for signal <result<0>> created at line 112
+    Found 3-bit comparator equal for signal <stateCross[2]_funct[2]_equal_58_o> created at line 199
     Summary:
 	inferred  71 D-type flip-flop(s).
 	inferred   1 Comparator(s).
-	inferred  30 Multiplexer(s).
+	inferred  33 Multiplexer(s).
 	inferred  32 Tristate(s).
 	inferred   1 Finite State Machine(s).
 Unit <IALU> synthesized.
@@ -1580,11 +1578,11 @@ Unit <CrossComparator> synthesized.
 Synthesizing Unit <Comparator>.
     Related source file is "/home/onur/Desktop/Neorv/IALU.v".
         ws = 1
-    Found 16-bit comparator equal for signal <E> created at line 303
-    Found 1-bit comparator not equal for signal <n0007> created at line 305
-    Found 5-bit comparator greater for signal <B_EXP[4]_A_EXP[4]_LessThan_7_o> created at line 312
-    Found 5-bit comparator greater for signal <A_EXP[4]_B_EXP[4]_LessThan_8_o> created at line 316
-    Found 10-bit comparator greater for signal <B_FRACT[9]_A_FRACT[9]_LessThan_9_o> created at line 321
+    Found 16-bit comparator equal for signal <E> created at line 373
+    Found 1-bit comparator not equal for signal <n0007> created at line 375
+    Found 5-bit comparator greater for signal <B_EXP[4]_A_EXP[4]_LessThan_7_o> created at line 381
+    Found 5-bit comparator greater for signal <A_EXP[4]_B_EXP[4]_LessThan_8_o> created at line 384
+    Found 10-bit comparator greater for signal <B_FRACT[9]_A_FRACT[9]_LessThan_9_o> created at line 388
     Summary:
 	inferred   5 Comparator(s).
 	inferred   5 Multiplexer(s).
@@ -1598,27 +1596,27 @@ Unit <ErrorDetector> synthesized.
 
 Synthesizing Unit <AdderSubtractorTopModule>.
     Related source file is "/home/onur/Desktop/Neorv/IALU.v".
-    Found 5-bit subtractor for signal <exp_a[4]_exp_b[4]_sub_7_OUT> created at line 882.
-    Found 5-bit subtractor for signal <exp_b[4]_exp_a[4]_sub_8_OUT> created at line 882.
-    Found 16-bit subtractor for signal <GND_33_o_GND_33_o_sub_23_OUT> created at line 902.
-    Found 16-bit subtractor for signal <GND_33_o_GND_33_o_sub_24_OUT> created at line 902.
-    Found 15-bit subtractor for signal <sum[14]_unary_minus_27_OUT> created at line 906.
-    Found 5-bit subtractor for signal <chexpe> created at line 990.
-    Found 16-bit adder for signal <n0189> created at line 902.
-    Found 15-bit adder for signal <sum[14]_GND_33_o_add_29_OUT> created at line 910.
-    Found 5-bit adder for signal <bigexp[4]_GND_33_o_add_31_OUT> created at line 912.
-    Found 12-bit adder for signal <tempsum[14]_GND_33_o_add_69_OUT> created at line 957.
-    Found 5-bit adder for signal <tempexp[4]_GND_33_o_add_71_OUT> created at line 962.
-    Found 5-bit subtractor for signal <GND_33_o_GND_33_o_sub_59_OUT<4:0>> created at line 937.
-    Found 15-bit shifter logical right for signal <rightshifted> created at line 868
-    Found 15-bit shifter logical left for signal <sum[14]_sum[14]_shift_left_57_OUT> created at line 936
+    Found 5-bit subtractor for signal <exp_a[4]_exp_b[4]_sub_7_OUT> created at line 1012.
+    Found 5-bit subtractor for signal <exp_b[4]_exp_a[4]_sub_8_OUT> created at line 1012.
+    Found 16-bit subtractor for signal <GND_33_o_GND_33_o_sub_23_OUT> created at line 1042.
+    Found 16-bit subtractor for signal <GND_33_o_GND_33_o_sub_24_OUT> created at line 1042.
+    Found 15-bit subtractor for signal <sum[14]_unary_minus_27_OUT> created at line 1049.
+    Found 5-bit subtractor for signal <chexpe> created at line 1114.
+    Found 16-bit adder for signal <n0189> created at line 1042.
+    Found 15-bit adder for signal <sum[14]_GND_33_o_add_29_OUT> created at line 1055.
+    Found 5-bit adder for signal <bigexp[4]_GND_33_o_add_31_OUT> created at line 1057.
+    Found 12-bit adder for signal <tempsum[14]_GND_33_o_add_67_OUT> created at line 1092.
+    Found 5-bit adder for signal <tempexp[4]_GND_33_o_add_69_OUT> created at line 1097.
+    Found 5-bit subtractor for signal <GND_33_o_GND_33_o_sub_59_OUT<4:0>> created at line 1080.
+    Found 15-bit shifter logical right for signal <rightshifted> created at line 991
+    Found 15-bit shifter logical left for signal <sum[14]_sum[14]_shift_left_57_OUT> created at line 1079
 WARNING:Xst:737 - Found 1-bit latch for signal <errora<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <errora<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <errorb<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <errorb<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <errorb<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <errora<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 5-bit comparator lessequal for signal <n0028> created at line 881
+    Found 5-bit comparator lessequal for signal <n0028> created at line 1011
     Summary:
 	inferred   9 Adder/Subtractor(s).
 	inferred   6 Latch(s).
@@ -1630,8 +1628,8 @@ Unit <AdderSubtractorTopModule> synthesized.
 Synthesizing Unit <AdderSignFunction>.
     Related source file is "/home/onur/Desktop/Neorv/IALU.v".
 WARNING:Xst:737 - Found 1-bit latch for signal <s>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 15-bit comparator greater for signal <fract2[14]_fract1[14]_LessThan_7_o> created at line 584
-    Found 15-bit comparator greater for signal <fract1[14]_fract2[14]_LessThan_8_o> created at line 587
+    Found 15-bit comparator greater for signal <fract2[14]_fract1[14]_LessThan_7_o> created at line 690
+    Found 15-bit comparator greater for signal <fract1[14]_fract2[14]_LessThan_8_o> created at line 693
     Summary:
 	inferred   1 Latch(s).
 	inferred   2 Comparator(s).
@@ -1643,16 +1641,16 @@ Synthesizing Unit <MultiplierTopModule_1>.
         updown = 0
 WARNING:Xst:647 - Input <OPCODE> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "/home/onur/Desktop/Neorv/IALU.v" line 768: Output port <E> of the instance <comp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/onur/Desktop/Neorv/IALU.v" line 768: Output port <flag> of the instance <comp> is unconnected or connected to loadless signal.
-    Found 6-bit subtractor for signal <biased_exp1> created at line 720.
-    Found 6-bit subtractor for signal <biased_exp2> created at line 721.
-    Found 6-bit adder for signal <real_exp_sum1> created at line 713.
-    Found 6-bit adder for signal <real_exp_sum2> created at line 714.
-    Found 5-bit subtractor for signal <mult_sumexp2> created at line 663.
-    Found 5-bit subtractor for signal <mult_sumexp4> created at line 663.
-    Found 11x11-bit multiplier for signal <mult_fract> created at line 762.
-    Found 11x11-bit multiplier for signal <mult_fract2> created at line 763.
+INFO:Xst:3210 - "/home/onur/Desktop/Neorv/IALU.v" line 891: Output port <E> of the instance <comp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/onur/Desktop/Neorv/IALU.v" line 891: Output port <flag> of the instance <comp> is unconnected or connected to loadless signal.
+    Found 6-bit subtractor for signal <biased_exp1> created at line 832.
+    Found 6-bit subtractor for signal <biased_exp2> created at line 833.
+    Found 6-bit adder for signal <real_exp_sum1> created at line 825.
+    Found 6-bit adder for signal <real_exp_sum2> created at line 826.
+    Found 5-bit subtractor for signal <mult_sumexp2> created at line 771.
+    Found 5-bit subtractor for signal <mult_sumexp4> created at line 771.
+    Found 11x11-bit multiplier for signal <mult_fract> created at line 879.
+    Found 11x11-bit multiplier for signal <mult_fract2> created at line 880.
 WARNING:Xst:737 - Found 1-bit latch for signal <s4>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <exp3<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <exp3<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -1685,10 +1683,10 @@ WARNING:Xst:737 - Found 1-bit latch for signal <fract4<2>>. Latches may be gener
 WARNING:Xst:737 - Found 1-bit latch for signal <fract4<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <fract4<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <s3>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 6-bit comparator lessequal for signal <n0076> created at line 724
-    Found 6-bit comparator lessequal for signal <n0078> created at line 725
-    Found 6-bit comparator lessequal for signal <n0080> created at line 727
-    Found 6-bit comparator lessequal for signal <n0082> created at line 728
+    Found 6-bit comparator lessequal for signal <n0076> created at line 836
+    Found 6-bit comparator lessequal for signal <n0078> created at line 837
+    Found 6-bit comparator lessequal for signal <n0080> created at line 839
+    Found 6-bit comparator lessequal for signal <n0082> created at line 840
     Summary:
 	inferred   2 Multiplier(s).
 	inferred   6 Adder/Subtractor(s).
@@ -1701,7 +1699,7 @@ Synthesizing Unit <NormalizeMul>.
     Related source file is "/home/onur/Desktop/Neorv/IALU.v".
         duality = 0
 WARNING:Xst:647 - Input <dual> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 5-bit adder for signal <s_exp[4]_GND_78_o_add_1_OUT> created at line 789.
+    Found 5-bit adder for signal <s_exp[4]_GND_78_o_add_1_OUT> created at line 914.
 WARNING:Xst:737 - Found 1-bit latch for signal <error<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <error<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <error<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -1714,7 +1712,7 @@ Unit <NormalizeMul> synthesized.
 Synthesizing Unit <NormalizeMul_1>.
     Related source file is "/home/onur/Desktop/Neorv/IALU.v".
         duality = 1
-    Found 5-bit adder for signal <s_exp[4]_GND_82_o_add_1_OUT> created at line 789.
+    Found 5-bit adder for signal <s_exp[4]_GND_82_o_add_1_OUT> created at line 914.
 WARNING:Xst:737 - Found 1-bit latch for signal <error<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <error<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <error<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -1729,8 +1727,8 @@ Synthesizing Unit <RoundingMul>.
         duality = 0
 WARNING:Xst:647 - Input <s_result<8:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <dual> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 12-bit adder for signal <s_result[21]_GND_86_o_add_1_OUT> created at line 822.
-    Found 5-bit adder for signal <r_exp[4]_GND_86_o_add_3_OUT> created at line 827.
+    Found 12-bit adder for signal <s_result[21]_GND_86_o_add_1_OUT> created at line 948.
+    Found 5-bit adder for signal <r_exp[4]_GND_86_o_add_3_OUT> created at line 953.
 WARNING:Xst:737 - Found 1-bit latch for signal <error<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <error<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <error<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -1744,8 +1742,8 @@ Synthesizing Unit <RoundingMul_1>.
     Related source file is "/home/onur/Desktop/Neorv/IALU.v".
         duality = 1
 WARNING:Xst:647 - Input <s_result<8:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 12-bit adder for signal <s_result[21]_GND_90_o_add_1_OUT> created at line 822.
-    Found 5-bit adder for signal <r_exp[4]_GND_90_o_add_3_OUT> created at line 827.
+    Found 12-bit adder for signal <s_result[21]_GND_90_o_add_1_OUT> created at line 948.
+    Found 5-bit adder for signal <r_exp[4]_GND_90_o_add_3_OUT> created at line 953.
 WARNING:Xst:737 - Found 1-bit latch for signal <error<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <error<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <error<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -1758,11 +1756,11 @@ Unit <RoundingMul_1> synthesized.
 Synthesizing Unit <Comparator_1>.
     Related source file is "/home/onur/Desktop/Neorv/IALU.v".
         ws = 0
-    Found 16-bit comparator equal for signal <E> created at line 303
-    Found 1-bit comparator not equal for signal <n0007> created at line 305
-    Found 5-bit comparator greater for signal <B_EXP[4]_A_EXP[4]_LessThan_7_o> created at line 331
-    Found 5-bit comparator greater for signal <A_EXP[4]_B_EXP[4]_LessThan_8_o> created at line 334
-    Found 10-bit comparator greater for signal <B_FRACT[9]_A_FRACT[9]_LessThan_9_o> created at line 338
+    Found 16-bit comparator equal for signal <E> created at line 373
+    Found 1-bit comparator not equal for signal <n0007> created at line 375
+    Found 5-bit comparator greater for signal <B_EXP[4]_A_EXP[4]_LessThan_7_o> created at line 398
+    Found 5-bit comparator greater for signal <A_EXP[4]_B_EXP[4]_LessThan_8_o> created at line 400
+    Found 10-bit comparator greater for signal <B_FRACT[9]_A_FRACT[9]_LessThan_9_o> created at line 403
     Summary:
 	inferred   5 Comparator(s).
 	inferred   4 Multiplexer(s).
@@ -1773,16 +1771,16 @@ Synthesizing Unit <MultiplierTopModule_2>.
         updown = 1
 WARNING:Xst:647 - Input <OPCODE> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "/home/onur/Desktop/Neorv/IALU.v" line 768: Output port <E> of the instance <comp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/onur/Desktop/Neorv/IALU.v" line 768: Output port <flag> of the instance <comp> is unconnected or connected to loadless signal.
-    Found 6-bit subtractor for signal <biased_exp1> created at line 720.
-    Found 6-bit subtractor for signal <biased_exp2> created at line 721.
-    Found 6-bit adder for signal <real_exp_sum1> created at line 713.
-    Found 6-bit adder for signal <real_exp_sum2> created at line 714.
-    Found 5-bit subtractor for signal <mult_sumexp2> created at line 663.
-    Found 5-bit subtractor for signal <mult_sumexp4> created at line 663.
-    Found 11x11-bit multiplier for signal <mult_fract> created at line 762.
-    Found 11x11-bit multiplier for signal <mult_fract2> created at line 763.
+INFO:Xst:3210 - "/home/onur/Desktop/Neorv/IALU.v" line 891: Output port <E> of the instance <comp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/onur/Desktop/Neorv/IALU.v" line 891: Output port <flag> of the instance <comp> is unconnected or connected to loadless signal.
+    Found 6-bit subtractor for signal <biased_exp1> created at line 832.
+    Found 6-bit subtractor for signal <biased_exp2> created at line 833.
+    Found 6-bit adder for signal <real_exp_sum1> created at line 825.
+    Found 6-bit adder for signal <real_exp_sum2> created at line 826.
+    Found 5-bit subtractor for signal <mult_sumexp2> created at line 771.
+    Found 5-bit subtractor for signal <mult_sumexp4> created at line 771.
+    Found 11x11-bit multiplier for signal <mult_fract> created at line 879.
+    Found 11x11-bit multiplier for signal <mult_fract2> created at line 880.
 WARNING:Xst:737 - Found 1-bit latch for signal <s4>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <exp3<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <exp3<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -1815,10 +1813,10 @@ WARNING:Xst:737 - Found 1-bit latch for signal <fract4<2>>. Latches may be gener
 WARNING:Xst:737 - Found 1-bit latch for signal <fract4<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <fract4<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <s3>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 6-bit comparator lessequal for signal <n0076> created at line 724
-    Found 6-bit comparator lessequal for signal <n0078> created at line 725
-    Found 6-bit comparator lessequal for signal <n0080> created at line 727
-    Found 6-bit comparator lessequal for signal <n0082> created at line 728
+    Found 6-bit comparator lessequal for signal <n0076> created at line 836
+    Found 6-bit comparator lessequal for signal <n0078> created at line 837
+    Found 6-bit comparator lessequal for signal <n0080> created at line 839
+    Found 6-bit comparator lessequal for signal <n0082> created at line 840
     Summary:
 	inferred   2 Multiplier(s).
 	inferred   6 Adder/Subtractor(s).
@@ -1830,7 +1828,7 @@ Unit <MultiplierTopModule_2> synthesized.
 Synthesizing Unit <DividerTopModule>.
     Related source file is "/home/onur/Desktop/Neorv/IALU.v".
 WARNING:Xst:647 - Input <OPCODE> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "/home/onur/Desktop/Neorv/IALU.v" line 506: Output port <cout> of the instance <subs> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/onur/Desktop/Neorv/IALU.v" line 600: Output port <cout> of the instance <subs> is unconnected or connected to loadless signal.
 WARNING:Xst:737 - Found 1-bit latch for signal <error<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <error<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
     Summary:
@@ -1840,19 +1838,19 @@ Unit <DividerTopModule> synthesized.
 
 Synthesizing Unit <Four_Bit_Divider>.
     Related source file is "/home/onur/Desktop/Neorv/IALU.v".
-    Found 12-bit subtractor for signal <div_result> created at line 363.
-    Found 12-bit subtractor for signal <n0031> created at line 363.
-    Found 12-bit subtractor for signal <n0032> created at line 363.
-    Found 12-bit subtractor for signal <n0033> created at line 363.
-    Found 12-bit subtractor for signal <n0034> created at line 363.
-    Found 12-bit subtractor for signal <n0035> created at line 363.
-    Found 12-bit subtractor for signal <n0036> created at line 363.
-    Found 12-bit subtractor for signal <n0037> created at line 363.
-    Found 12-bit subtractor for signal <n0038> created at line 363.
-    Found 12-bit subtractor for signal <n0039> created at line 363.
-    Found 12-bit subtractor for signal <n> created at line 363.
-    Found 11-bit subtractor for signal <GND_132_o_GND_132_o_sub_4_OUT<10:0>> created at line 361.
-    Found 11-bit comparator lessequal for signal <n0000> created at line 360
+    Found 12-bit subtractor for signal <div_result> created at line 435.
+    Found 12-bit subtractor for signal <n0031> created at line 435.
+    Found 12-bit subtractor for signal <n0032> created at line 435.
+    Found 12-bit subtractor for signal <n0033> created at line 435.
+    Found 12-bit subtractor for signal <n0034> created at line 435.
+    Found 12-bit subtractor for signal <n0035> created at line 435.
+    Found 12-bit subtractor for signal <n0036> created at line 435.
+    Found 12-bit subtractor for signal <n0037> created at line 435.
+    Found 12-bit subtractor for signal <n0038> created at line 435.
+    Found 12-bit subtractor for signal <n0039> created at line 435.
+    Found 12-bit subtractor for signal <n> created at line 435.
+    Found 11-bit subtractor for signal <GND_132_o_GND_132_o_sub_4_OUT<10:0>> created at line 431.
+    Found 11-bit comparator lessequal for signal <n0000> created at line 429
     Summary:
 	inferred  12 Adder/Subtractor(s).
 	inferred   1 Comparator(s).
@@ -1861,11 +1859,11 @@ Unit <Four_Bit_Divider> synthesized.
 
 Synthesizing Unit <Four_Bit_Substractor_Div>.
     Related source file is "/home/onur/Desktop/Neorv/IALU.v".
-    Found 6-bit subtractor for signal <real_result> created at line 627.
-    Found 6-bit adder for signal <n0014> created at line 623.
-    Found 6-bit adder for signal <Sum2> created at line 630.
-    Found 6-bit comparator greater for signal <Sum2[5]_GND_133_o_LessThan_4_o> created at line 634
-    Found 6-bit comparator greater for signal <GND_133_o_Sum2[5]_LessThan_5_o> created at line 635
+    Found 6-bit subtractor for signal <n0019> created at line 736.
+    Found 6-bit adder for signal <n0015> created at line 731.
+    Found 5-bit adder for signal <n0029[4:0]> created at line 739.
+    Found 6-bit comparator greater for signal <Sum2[5]_GND_133_o_LessThan_4_o> created at line 743
+    Found 6-bit comparator greater for signal <GND_133_o_Sum2[5]_LessThan_5_o> created at line 744
     Summary:
 	inferred   3 Adder/Subtractor(s).
 	inferred   2 Comparator(s).
@@ -1879,10 +1877,10 @@ Unit <FullAdder> synthesized.
 
 Synthesizing Unit <Div_Normalization>.
     Related source file is "/home/onur/Desktop/Neorv/IALU.v".
-    Found 5-bit subtractor for signal <exp_result[4]_GND_135_o_sub_30_OUT> created at line 543.
-    Found 12-bit adder for signal <frac_result[11]_GND_135_o_add_27_OUT> created at line 538.
-    Found 5-bit subtractor for signal <GND_135_o_i2[31]_sub_24_OUT<4:0>> created at line 534.
-    Found 12-bit shifter logical left for signal <frac_result[11]_i2[31]_shift_left_22_OUT> created at line 533
+    Found 5-bit subtractor for signal <exp_result[4]_GND_135_o_sub_30_OUT> created at line 647.
+    Found 12-bit adder for signal <frac_result[11]_GND_135_o_add_27_OUT> created at line 641.
+    Found 5-bit subtractor for signal <GND_135_o_i2[31]_sub_24_OUT<4:0>> created at line 637.
+    Found 12-bit shifter logical left for signal <frac_result[11]_i2[31]_shift_left_22_OUT> created at line 636
 WARNING:Xst:737 - Found 1-bit latch for signal <i2<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <i2<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <i2<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -2555,9 +2553,9 @@ Macro Statistics
  33-bit addsub                                         : 2
  33-bit subtractor                                     : 1
  4-bit subtractor                                      : 2
- 5-bit adder                                           : 13
+ 5-bit adder                                           : 15
  5-bit subtractor                                      : 16
- 6-bit adder                                           : 8
+ 6-bit adder                                           : 6
  6-bit subtractor                                      : 6
 # Registers                                            : 306
  1-bit register                                        : 172
@@ -2595,8 +2593,8 @@ Macro Statistics
  5-bit comparator lessequal                            : 2
  6-bit comparator greater                              : 4
  6-bit comparator lessequal                            : 8
-# Multiplexers                                         : 730
- 1-bit 2-to-1 multiplexer                              : 350
+# Multiplexers                                         : 733
+ 1-bit 2-to-1 multiplexer                              : 354
  1-bit 3-to-1 multiplexer                              : 12
  1-bit 4-to-1 multiplexer                              : 1
  1-bit 6-to-1 multiplexer                              : 1
@@ -2611,7 +2609,7 @@ Macro Statistics
  22-bit 2-to-1 multiplexer                             : 6
  3-bit 2-to-1 multiplexer                              : 44
  3-bit 3-to-1 multiplexer                              : 1
- 32-bit 2-to-1 multiplexer                             : 96
+ 32-bit 2-to-1 multiplexer                             : 95
  32-bit 3-to-1 multiplexer                             : 3
  32-bit 32-to-1 multiplexer                            : 3
  32-bit 4-to-1 multiplexer                             : 1
@@ -2646,7 +2644,7 @@ INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmet
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-INFO:Xst:2261 - The FF/Latch <flag_clk_DFF_295> in Unit <IALU_inst> is equivalent to the following 31 FFs/Latches, which will be removed : <flag_clk_DFF_296> <flag_clk_DFF_299> <flag_clk_DFF_297> <flag_clk_DFF_298> <flag_clk_DFF_302> <flag_clk_DFF_300> <flag_clk_DFF_301> <flag_clk_DFF_305> <flag_clk_DFF_303> <flag_clk_DFF_304> <flag_clk_DFF_306> <flag_clk_DFF_307> <flag_clk_DFF_308> <flag_clk_DFF_309> <flag_clk_DFF_312> <flag_clk_DFF_310> <flag_clk_DFF_311> <flag_clk_DFF_315> <flag_clk_DFF_313> <flag_clk_DFF_314> <flag_clk_DFF_318> <flag_clk_DFF_316> <flag_clk_DFF_317> <flag_clk_DFF_319> <flag_clk_DFF_320> <flag_clk_DFF_321> <flag_clk_DFF_322> <flag_clk_DFF_325> <flag_clk_DFF_323> <flag_clk_DFF_324> <flag_clk_DFF_294> 
+INFO:Xst:2261 - The FF/Latch <flag_clk_DFF_295> in Unit <IALU_inst> is equivalent to the following 31 FFs/Latches, which will be removed : <flag_clk_DFF_296> <flag_clk_DFF_299> <flag_clk_DFF_297> <flag_clk_DFF_298> <flag_clk_DFF_300> <flag_clk_DFF_301> <flag_clk_DFF_302> <flag_clk_DFF_303> <flag_clk_DFF_306> <flag_clk_DFF_304> <flag_clk_DFF_305> <flag_clk_DFF_307> <flag_clk_DFF_308> <flag_clk_DFF_309> <flag_clk_DFF_310> <flag_clk_DFF_313> <flag_clk_DFF_311> <flag_clk_DFF_312> <flag_clk_DFF_316> <flag_clk_DFF_314> <flag_clk_DFF_315> <flag_clk_DFF_319> <flag_clk_DFF_317> <flag_clk_DFF_318> <flag_clk_DFF_320> <flag_clk_DFF_321> <flag_clk_DFF_322> <flag_clk_DFF_323> <flag_clk_DFF_294> <flag_clk_DFF_324> <flag_clk_DFF_325> 
 INFO:Xst:2261 - The FF/Latch <rx_engine_state_1> in Unit <io_system.neorv32_uart0_enabled.neorv32_uart0_inst> is equivalent to the following FF/Latch, which will be removed : <tx_engine_state_2> 
 WARNING:Xst:1710 - FF/Latch <errorb_1> (without init value) has a constant value of 1 in block <adderup>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <errorb_2> (without init value) has a constant value of 0 in block <adderup>. This FF/Latch will be trimmed during the optimization process.
@@ -2769,7 +2767,7 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_exe_engine_ir[14]_GND_10_o_Mux_321_o
     |     diA            | connected to signal <GND>           |          |
     |     doA            | connected to internal node          |          |
     -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n4584> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n3582> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -2780,7 +2778,7 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n4584> will be implemented on LUTs 
     |     diA            | connected to signal <GND>           |          |
     |     doA            | connected to internal node          |          |
     -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n4593> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n3591> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -3068,6 +3066,7 @@ Macro Statistics
 # Multipliers                                          : 4
  11x11-bit multiplier                                  : 4
 # Adders/Subtractors                                   : 94
+ 1-bit subtractor                                      : 2
  10-bit subtractor                                     : 2
  11-bit subtractor                                     : 2
  12-bit adder                                          : 8
@@ -3082,10 +3081,10 @@ Macro Statistics
  33-bit adder                                          : 3
  33-bit addsub                                         : 2
  33-bit subtractor                                     : 1
- 5-bit adder                                           : 14
+ 5-bit adder                                           : 16
  5-bit subtractor                                      : 14
- 6-bit adder                                           : 6
- 6-bit subtractor                                      : 6
+ 6-bit adder                                           : 4
+ 6-bit subtractor                                      : 4
 # Counters                                             : 13
  1-bit up counter                                      : 4
  10-bit up counter                                     : 1
@@ -3113,8 +3112,8 @@ Macro Statistics
  5-bit comparator lessequal                            : 2
  6-bit comparator greater                              : 4
  6-bit comparator lessequal                            : 8
-# Multiplexers                                         : 853
- 1-bit 2-to-1 multiplexer                              : 500
+# Multiplexers                                         : 856
+ 1-bit 2-to-1 multiplexer                              : 504
  1-bit 3-to-1 multiplexer                              : 12
  1-bit 4-to-1 multiplexer                              : 1
  1-bit 6-to-1 multiplexer                              : 1
@@ -3129,7 +3128,7 @@ Macro Statistics
  22-bit 2-to-1 multiplexer                             : 6
  3-bit 2-to-1 multiplexer                              : 36
  3-bit 3-to-1 multiplexer                              : 1
- 32-bit 2-to-1 multiplexer                             : 89
+ 32-bit 2-to-1 multiplexer                             : 88
  32-bit 3-to-1 multiplexer                             : 3
  32-bit 32-to-1 multiplexer                            : 3
  32-bit 4-to-1 multiplexer                             : 1
@@ -3189,7 +3188,7 @@ INFO:Xst:2261 - The FF/Latch <sreg_sys_0> in Unit <neorv32_sys_reset> is equival
 INFO:Xst:2261 - The FF/Latch <sreg_sys_1> in Unit <neorv32_sys_reset> is equivalent to the following FF/Latch, which will be removed : <sreg_ext_1> 
 INFO:Xst:2261 - The FF/Latch <sreg_sys_2> in Unit <neorv32_sys_reset> is equivalent to the following FF/Latch, which will be removed : <sreg_ext_2> 
 INFO:Xst:2261 - The FF/Latch <sreg_sys_3> in Unit <neorv32_sys_reset> is equivalent to the following FF/Latch, which will be removed : <sreg_ext_3> 
-INFO:Xst:2261 - The FF/Latch <flag_clk_DFF_295> in Unit <IALU> is equivalent to the following 31 FFs/Latches, which will be removed : <flag_clk_DFF_296> <flag_clk_DFF_299> <flag_clk_DFF_297> <flag_clk_DFF_298> <flag_clk_DFF_300> <flag_clk_DFF_301> <flag_clk_DFF_302> <flag_clk_DFF_303> <flag_clk_DFF_306> <flag_clk_DFF_304> <flag_clk_DFF_305> <flag_clk_DFF_307> <flag_clk_DFF_308> <flag_clk_DFF_309> <flag_clk_DFF_310> <flag_clk_DFF_313> <flag_clk_DFF_311> <flag_clk_DFF_312> <flag_clk_DFF_314> <flag_clk_DFF_315> <flag_clk_DFF_316> <flag_clk_DFF_317> <flag_clk_DFF_320> <flag_clk_DFF_318> <flag_clk_DFF_319> <flag_clk_DFF_321> <flag_clk_DFF_322> <flag_clk_DFF_323> <flag_clk_DFF_324> <flag_clk_DFF_325> <flag_clk_DFF_294> 
+INFO:Xst:2261 - The FF/Latch <flag_clk_DFF_295> in Unit <IALU> is equivalent to the following 31 FFs/Latches, which will be removed : <flag_clk_DFF_296> <flag_clk_DFF_297> <flag_clk_DFF_300> <flag_clk_DFF_298> <flag_clk_DFF_299> <flag_clk_DFF_301> <flag_clk_DFF_302> <flag_clk_DFF_303> <flag_clk_DFF_304> <flag_clk_DFF_307> <flag_clk_DFF_305> <flag_clk_DFF_306> <flag_clk_DFF_308> <flag_clk_DFF_309> <flag_clk_DFF_310> <flag_clk_DFF_311> <flag_clk_DFF_314> <flag_clk_DFF_312> <flag_clk_DFF_313> <flag_clk_DFF_315> <flag_clk_DFF_316> <flag_clk_DFF_317> <flag_clk_DFF_318> <flag_clk_DFF_321> <flag_clk_DFF_319> <flag_clk_DFF_320> <flag_clk_DFF_322> <flag_clk_DFF_323> <flag_clk_DFF_324> <flag_clk_DFF_325> <flag_clk_DFF_294> 
 INFO:Xst:2261 - The FF/Latch <rx_engine_state_1> in Unit <neorv32_uart> is equivalent to the following FF/Latch, which will be removed : <tx_engine_state_2> 
 INFO:Xst:2261 - The FF/Latch <trap_ctrl_irq_pnd_2> in Unit <neorv32_cpu_control> is equivalent to the following 13 FFs/Latches, which will be removed : <trap_ctrl_irq_pnd_3> <trap_ctrl_irq_pnd_4> <trap_ctrl_irq_pnd_7> <trap_ctrl_irq_pnd_8> <trap_ctrl_irq_pnd_9> <trap_ctrl_irq_pnd_10> <trap_ctrl_irq_pnd_12> <trap_ctrl_irq_pnd_13> <trap_ctrl_irq_pnd_14> <trap_ctrl_irq_pnd_15> <trap_ctrl_irq_pnd_16> <trap_ctrl_irq_pnd_17> <trap_ctrl_irq_pnd_18> 
 WARNING:Xst:1710 - FF/Latch <trap_ctrl_irq_pnd_2> (without init value) has a constant value of 0 in block <neorv32_cpu_control>. This FF/Latch will be trimmed during the optimization process.
@@ -3272,6 +3271,7 @@ WARNING:Xst:2677 - Node <roundmul2/error_0> of sequential type is unconnected in
 WARNING:Xst:2677 - Node <normmul2/error_0> of sequential type is unconnected in block <MultiplierTopModule_2>.
 WARNING:Xst:2677 - Node <roundmul/error_0> of sequential type is unconnected in block <MultiplierTopModule_2>.
 WARNING:Xst:2677 - Node <roundmul2/error_0> of sequential type is unconnected in block <MultiplierTopModule_2>.
+WARNING:Xst:1710 - FF/Latch <error_2> (without init value) has a constant value of 0 in block <DividerTopModule>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <bus_rsp_o_data_31> (without init value) has a constant value of 0 in block <neorv32_gpio>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <bus_rsp_o_data_30> (without init value) has a constant value of 0 in block <neorv32_gpio>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <bus_rsp_o_data_29> (without init value) has a constant value of 0 in block <neorv32_gpio>. This FF/Latch will be trimmed during the optimization process.
@@ -3300,6 +3300,7 @@ WARNING:Xst:1710 - FF/Latch <bus_rsp_o_data_27> (without init value) has a const
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <bus_rsp_o_data_28> (without init value) has a constant value of 0 in block <neorv32_uart>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <bus_rsp_o_data_29> (without init value) has a constant value of 0 in block <neorv32_uart>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <inst_LPM_FF> in Unit <neorv32_imem> is equivalent to the following 3 FFs/Latches, which will be removed : <inst_LPM_FF1> <inst_LPM_FF2> <inst_LPM_FF3> 
+WARNING:Xst:1710 - FF/Latch <error_1> (without init value) has a constant value of 0 in block <DividerTopModule>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <error_2> (without init value) has a constant value of 0 in block <ProcessRedirectorModule>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
    incompatible with the Spartan6 architecture. The two primary causes of this is
@@ -3322,11 +3323,6 @@ WARNING:Xst:3002 - This design contains one or more registers/latches that are d
              (timing simulation highly recommended when using this option)
 
   Please refer to http://www.xilinx.com search string "Spartan6 asynchronous set/reset" for more details.
-
-  List of register instances with asynchronous set and reset:
-    error_2 in unit <DividerTopModule>
-    error_1 in unit <DividerTopModule>
-
 
   List of register instances with asynchronous set or reset and opposite initialization value:
     exe_engine_state_FSM_FFd4 in unit <neorv32_cpu_control>
@@ -3408,7 +3404,8 @@ Optimizing unit <neorv32_uart> ...
 Optimizing unit <neorv32_fifo_2> ...
 
 Optimizing unit <neorv32_sysinfo> ...
-WARNING:Xst:1710 - FF/Latch <neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/host_rsp_o_err> (without init value) has a constant value of 0 in block <neorv32_test_setup_bootloader>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/error_reg_2> (without init value) has a constant value of 0 in block <neorv32_test_setup_bootloader>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/host_rsp_o_err> (without init value) has a constant value of 0 in block <neorv32_test_setup_bootloader>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/ctrl_if_fence> of sequential type is unconnected in block <neorv32_test_setup_bootloader>.
 WARNING:Xst:2677 - Node <neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/ctrl_alu_cp_fpu> of sequential type is unconnected in block <neorv32_test_setup_bootloader>.
 WARNING:Xst:2677 - Node <neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_lsu_inst/dbus_req_o_amoop_3> of sequential type is unconnected in block <neorv32_test_setup_bootloader>.
@@ -3546,13 +3543,9 @@ INFO:Xst:2261 - The FF/Latch <neorv32_top_inst/soc_generators.neorv32_sys_clock_
 Found area constraint ratio of 100 (+ 5) on block neorv32_test_setup_bootloader, actual ratio is 25.
 WARNING:Xst:1426 - The value init of the FF/Latch neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/exe_engine_state_FSM_FFd4_LD hinder the constant cleaning in the block neorv32_test_setup_bootloader.
    You should achieve better results by setting this init to 1.
-FlipFlop neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/ialu_a_15 has been replicated 2 time(s)
 FlipFlop neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/ialu_a_31 has been replicated 2 time(s)
-FlipFlop neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/ialu_b_1 has been replicated 2 time(s)
-FlipFlop neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/ialu_b_16 has been replicated 2 time(s)
+FlipFlop neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/ialu_b_1 has been replicated 3 time(s)
 FlipFlop neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/ialu_b_17 has been replicated 2 time(s)
-FlipFlop neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/ialu_b_25 has been replicated 3 time(s)
-FlipFlop neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/ialu_b_31 has been replicated 4 time(s)
 FlipFlop neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/ialu_funct_0 has been replicated 3 time(s)
 FlipFlop neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/ialu_funct_1 has been replicated 3 time(s)
 FlipFlop neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/ialu_funct_2 has been replicated 2 time(s)
@@ -3565,8 +3558,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 2793
- Flip-Flops                                            : 2793
+# Registers                                            : 2782
+ Flip-Flops                                            : 2782
 
 =========================================================================
 
@@ -3589,27 +3582,27 @@ Top Level Output File Name         : neorv32_test_setup_bootloader.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 7871
+# BELS                             : 7794
 #      GND                         : 1
-#      INV                         : 112
+#      INV                         : 111
 #      LUT1                        : 122
-#      LUT2                        : 358
-#      LUT3                        : 824
-#      LUT4                        : 766
-#      LUT5                        : 1024
-#      LUT6                        : 2703
+#      LUT2                        : 351
+#      LUT3                        : 804
+#      LUT4                        : 792
+#      LUT5                        : 992
+#      LUT6                        : 2658
 #      MUXCY                       : 1008
-#      MUXF7                       : 117
+#      MUXF7                       : 119
 #      VCC                         : 1
 #      XORCY                       : 835
-# FlipFlops/Latches                : 2860
+# FlipFlops/Latches                : 2845
 #      FD                          : 69
-#      FDC                         : 619
-#      FDCE                        : 859
-#      FDE                         : 1206
-#      FDP                         : 5
-#      FDPE                        : 35
-#      LD                          : 58
+#      FDC                         : 632
+#      FDCE                        : 845
+#      FDE                         : 1196
+#      FDP                         : 6
+#      FDPE                        : 34
+#      LD                          : 54
 #      LDE                         : 1
 #      LDE_1                       : 8
 # RAMS                             : 74
@@ -3630,16 +3623,16 @@ Selected Device : 6slx45csg324-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            2860  out of  54576     5%  
- Number of Slice LUTs:                 5909  out of  27288    21%  
-    Number used as Logic:              5909  out of  27288    21%  
+ Number of Slice Registers:            2845  out of  54576     5%  
+ Number of Slice LUTs:                 5830  out of  27288    21%  
+    Number used as Logic:              5830  out of  27288    21%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   7280
-   Number with an unused Flip Flop:    4420  out of   7280    60%  
-   Number with an unused LUT:          1371  out of   7280    18%  
-   Number of fully used LUT-FF pairs:  1489  out of   7280    20%  
-   Number of unique control sets:       104
+ Number of LUT Flip Flop pairs used:   7200
+   Number with an unused Flip Flop:    4355  out of   7200    60%  
+   Number with an unused LUT:          1370  out of   7200    19%  
+   Number of fully used LUT-FF pairs:  1475  out of   7200    20%  
+   Number of unique control sets:        86
 
 IO Utilization: 
  Number of IOs:                          12
@@ -3672,22 +3665,18 @@ Clock Information:
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
 Clock Signal                                                                                                                                                                                                                                                                                                                                                                                                           | Clock buffer(FF name)                                                                                                                                                                         | Load  |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
-clk_i                                                                                                                                                                                                                                                                                                                                                                                                                  | BUFGP                                                                                                                                                                                         | 2867  |
+clk_i                                                                                                                                                                                                                                                                                                                                                                                                                  | BUFGP                                                                                                                                                                                         | 2856  |
 neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/islem/errore[2]_reduce_or_1_o(neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/islem/out1:O)                                                        | NONE(*)(neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/islem/error_1)              | 2     |
 neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/adderup/Mmux_n020561(neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/adderup/Mmux_n020561:O)                                                       | NONE(*)(neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/adderup/errora_0)           | 1     |
 neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/adderdown/signFunc/operator_s1_MUX_642_o(neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/adderdown/signFunc/Mmux_operator_s1_MUX_642_o11:O)        | NONE(*)(neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/adderdown/signFunc/s)       | 1     |
 neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/adderup/signFunc/operator_s1_MUX_642_o(neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/adderup/signFunc/Mmux_operator_s1_MUX_642_o11:O)            | NONE(*)(neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/adderup/signFunc/s)         | 1     |
 neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/dual(neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/islem/Mmux_dual11:O)                                                                          | BUFG(*)(neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multdown/fract4_0)          | 48    |
 neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multup/normmul/m_result[21]_s_exp[4]_Mux_8_o(neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multup/normmul/Mmux_m_result[21]_s_exp[4]_Mux_8_o11:O)| NONE(*)(neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multup/normmul/error_0)     | 1     |
-neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_result<11>(neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Mcompar_b[10]_a[10]_LessThan_1_o_cy<4>:O)                           | NONE(*)(neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_normalized/i2_1)  | 4     |
-neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divdown/div_result<11>(neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divdown/div/Mcompar_b[10]_a[10]_LessThan_1_o_cy<4>:O)                       | NONE(*)(neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divdown/div_normalized/i2_1)| 4     |
+neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_normalized/Mmux_final_frac11(neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Mcompar_b[10]_a[10]_LessThan_1_o_cy<4>:O)         | NONE(*)(neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_normalized/i2_1)  | 4     |
+neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divdown/div_normalized/Mmux_final_frac11(neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divdown/div/Mcompar_b[10]_a[10]_LessThan_1_o_cy<4>:O)     | NONE(*)(neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divdown/div_normalized/i2_1)| 4     |
 neorv32_top_inst/soc_generators.neorv32_sys_reset_inst/rstn_ext_o                                                                                                                                                                                                                                                                                                                                                      | NONE(neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/exe_engine_state_FSM_FFd4_LD)                                                                             | 1     |
-neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/error_2_G(neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/error_2_G:O)                                                                 | NONE(*)(neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/error_2)              | 1     |
-neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/error_1_G(neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/error_1_G:O)                                                                 | NONE(*)(neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/error_1)              | 1     |
-neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divdown/error_2_G(neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divdown/error_2_G:O)                                                             | NONE(*)(neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divdown/error_2)            | 1     |
-neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divdown/error_1_G(neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divdown/error_1_G:O)                                                             | NONE(*)(neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divdown/error_1)            | 1     |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
-(*) These 12 clock signal(s) are generated by combinatorial logic,
+(*) These 8 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
@@ -3700,7 +3689,7 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 58.739ns (Maximum Frequency: 17.024MHz)
+   Minimum period: 56.513ns (Maximum Frequency: 17.695MHz)
    Minimum input arrival time before clock: 3.563ns
    Maximum output required time after clock: 4.162ns
    Maximum combinational path delay: No path found
@@ -3711,33 +3700,32 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk_i'
-  Clock period: 58.739ns (frequency: 17.024MHz)
-  Total number of paths / destination ports: 2850654632667114238902272 / 7799
+  Clock period: 56.513ns (frequency: 17.695MHz)
+  Total number of paths / destination ports: 2870543897628687676211200 / 7762
 -------------------------------------------------------------------------
-Delay:               58.739ns (Levels of Logic = 143)
-  Source:            neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/ialu_b_22 (FF)
+Delay:               56.513ns (Levels of Logic = 141)
+  Source:            neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/ialu_a_6 (FF)
   Destination:       neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/result_14 (FF)
   Source Clock:      clk_i rising
   Destination Clock: clk_i rising
 
-  Data Path: neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/ialu_b_22 to neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/result_14
+  Data Path: neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/ialu_a_6 to neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/result_14
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q             16   0.525   1.637  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/ialu_b_22 (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/ialu_b_22)
-     LUT6:I0->O           10   0.254   1.008  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/islem/cmp_BL_0/L3 (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/islem/cmp_BL_0/L2)
-     LUT6:I5->O           19   0.254   1.261  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/islem/cmp_BL_0/L4 (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/islem/L_BL_0)
-     LUT6:I5->O            3   0.254   0.874  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/islem/GND_24_o_GND_24_o_AND_494_o1 (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/islem/GND_24_o_GND_24_o_AND_494_o)
-     LUT6:I4->O           21   0.250   1.310  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/islem/Mmux_GND_24_o_GND_24_o_mux_40_OUT22_SW1 (N480)
-     LUT6:I5->O            1   0.254   0.790  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/islem/Mmux_S211_SW2 (N571)
-     LUT5:I3->O           11   0.250   1.039  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/islem/Mmux_S211_SW3_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0 (N3272)
-     LUT6:I5->O            6   0.254   1.152  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/islem/Mmux_S211 (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/S2<0>)
+     FDE:C->Q             12   0.525   1.524  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/ialu_a_6 (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/ialu_a_6)
+     LUT6:I0->O            1   0.254   0.790  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/islem/cmp_AU_0/G3 (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/islem/cmp_AU_0/G2)
+     LUT6:I4->O           11   0.250   1.315  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/islem/cmp_AU_0/G4 (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/islem/G_AU_0)
+     LUT6:I2->O            4   0.254   0.912  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/islem/Mmux_GND_24_o_GND_24_o_mux_40_OUT21 (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/islem/Mmux_GND_24_o_GND_24_o_mux_40_OUT2)
+     LUT6:I4->O            9   0.250   0.976  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/islem/Mmux_GND_24_o_GND_24_o_mux_40_OUT22_SW1_1 (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/islem/Mmux_GND_24_o_GND_24_o_mux_40_OUT22_SW1)
+     LUT6:I5->O           11   0.254   1.147  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/islem/Mmux_S211_SW2 (N604)
+     LUT6:I4->O            7   0.250   1.186  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/islem/Mmux_S211 (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/S2<0>)
      LUT4:I0->O            1   0.254   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Mcompar_b[10]_a[10]_LessThan_1_o_lut<0> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Mcompar_b[10]_a[10]_LessThan_1_o_lut<0>)
      MUXCY:S->O            1   0.215   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Mcompar_b[10]_a[10]_LessThan_1_o_cy<0> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Mcompar_b[10]_a[10]_LessThan_1_o_cy<0>)
      MUXCY:CI->O           1   0.023   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Mcompar_b[10]_a[10]_LessThan_1_o_cy<1> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Mcompar_b[10]_a[10]_LessThan_1_o_cy<1>)
      MUXCY:CI->O           1   0.023   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Mcompar_b[10]_a[10]_LessThan_1_o_cy<2> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Mcompar_b[10]_a[10]_LessThan_1_o_cy<2>)
      MUXCY:CI->O           1   0.023   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Mcompar_b[10]_a[10]_LessThan_1_o_cy<3> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Mcompar_b[10]_a[10]_LessThan_1_o_cy<3>)
-     MUXCY:CI->O          77   0.023   2.031  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Mcompar_b[10]_a[10]_LessThan_1_o_cy<4> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_result<11>)
+     MUXCY:CI->O          91   0.023   2.139  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Mcompar_b[10]_a[10]_LessThan_1_o_cy<4> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_normalized/Mmux_final_frac11)
      LUT3:I2->O            2   0.254   0.725  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Mmux_a[10]_GND_132_o_mux_4_OUT41 (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/a[10]_GND_132_o_mux_4_OUT<2>)
      MUXCY:DI->O           1   0.181   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_div_result_cy<2> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_div_result_cy<2>)
      MUXCY:CI->O           1   0.023   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_div_result_cy<3> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_div_result_cy<3>)
@@ -3759,7 +3747,7 @@ Delay:               58.739ns (Levels of Logic = 143)
      MUXCY:CI->O           1   0.023   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0031_cy<8> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0031_cy<8>)
      MUXCY:CI->O           1   0.023   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0031_cy<9> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0031_cy<9>)
      MUXCY:CI->O           0   0.023   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0031_cy<10> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0031_cy<10>)
-     XORCY:CI->O          56   0.206   1.868  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0031_xor<11> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_result<9>)
+     XORCY:CI->O          53   0.206   1.844  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0031_xor<11> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_result<9>)
      LUT4:I3->O            2   0.254   0.725  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Mmux_a[10]_a[10]_mux_10_OUT41 (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/a[10]_a[10]_mux_10_OUT<2>)
      MUXCY:DI->O           1   0.181   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0032_cy<2> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0032_cy<2>)
      MUXCY:CI->O           1   0.023   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0032_cy<3> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0032_cy<3>)
@@ -3770,7 +3758,7 @@ Delay:               58.739ns (Levels of Logic = 143)
      MUXCY:CI->O           1   0.023   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0032_cy<8> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0032_cy<8>)
      MUXCY:CI->O           1   0.023   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0032_cy<9> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0032_cy<9>)
      MUXCY:CI->O           0   0.023   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0032_cy<10> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0032_cy<10>)
-     XORCY:CI->O          57   0.206   1.875  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0032_xor<11> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_result<8>)
+     XORCY:CI->O          54   0.206   1.852  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0032_xor<11> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_result<8>)
      LUT4:I3->O            2   0.254   0.725  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Mmux_a[10]_a[10]_mux_13_OUT41 (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/a[10]_a[10]_mux_13_OUT<2>)
      MUXCY:DI->O           1   0.181   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0033_cy<2> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0033_cy<2>)
      MUXCY:CI->O           1   0.023   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0033_cy<3> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0033_cy<3>)
@@ -3781,7 +3769,7 @@ Delay:               58.739ns (Levels of Logic = 143)
      MUXCY:CI->O           1   0.023   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0033_cy<8> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0033_cy<8>)
      MUXCY:CI->O           1   0.023   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0033_cy<9> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0033_cy<9>)
      MUXCY:CI->O           0   0.023   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0033_cy<10> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0033_cy<10>)
-     XORCY:CI->O          64   0.206   1.930  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0033_xor<11> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_result<7>)
+     XORCY:CI->O          63   0.206   1.922  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0033_xor<11> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_result<7>)
      LUT5:I4->O            3   0.254   0.765  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Mmux_a[10]_a[10]_mux_16_OUT61 (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/a[10]_a[10]_mux_16_OUT<4>)
      MUXCY:DI->O           1   0.181   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0034_cy<4> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0034_cy<4>)
      MUXCY:CI->O           1   0.023   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0034_cy<5> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0034_cy<5>)
@@ -3790,7 +3778,7 @@ Delay:               58.739ns (Levels of Logic = 143)
      MUXCY:CI->O           1   0.023   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0034_cy<8> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0034_cy<8>)
      MUXCY:CI->O           1   0.023   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0034_cy<9> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0034_cy<9>)
      MUXCY:CI->O           0   0.023   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0034_cy<10> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0034_cy<10>)
-     XORCY:CI->O          67   0.206   1.953  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0034_xor<11> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_result<6>)
+     XORCY:CI->O          68   0.206   1.961  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0034_xor<11> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_result<6>)
      LUT6:I5->O            3   0.254   0.765  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Mmux_a[10]_a[10]_mux_19_OUT51 (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/a[10]_a[10]_mux_19_OUT<3>)
      MUXCY:DI->O           1   0.181   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0035_cy<3> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0035_cy<3>)
      MUXCY:CI->O           1   0.023   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0035_cy<4> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0035_cy<4>)
@@ -3800,7 +3788,7 @@ Delay:               58.739ns (Levels of Logic = 143)
      MUXCY:CI->O           1   0.023   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0035_cy<8> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0035_cy<8>)
      MUXCY:CI->O           1   0.023   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0035_cy<9> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0035_cy<9>)
      MUXCY:CI->O           0   0.023   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0035_cy<10> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0035_cy<10>)
-     XORCY:CI->O          58   0.206   1.883  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0035_xor<11> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_result<5>)
+     XORCY:CI->O          60   0.206   1.899  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0035_xor<11> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_result<5>)
      LUT2:I1->O            1   0.254   0.681  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/a[10]_a[10]_mux_22_OUT<1>_mand11 (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/a[10]_a[10]_mux_22_OUT<1>_mand1)
      MUXCY:DI->O           1   0.181   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0036_cy<1> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0036_cy<1>)
      MUXCY:CI->O           1   0.023   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0036_cy<2> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0036_cy<2>)
@@ -3812,7 +3800,7 @@ Delay:               58.739ns (Levels of Logic = 143)
      MUXCY:CI->O           1   0.023   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0036_cy<8> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0036_cy<8>)
      MUXCY:CI->O           1   0.023   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0036_cy<9> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0036_cy<9>)
      MUXCY:CI->O           0   0.023   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0036_cy<10> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0036_cy<10>)
-     XORCY:CI->O          58   0.206   1.883  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0036_xor<11> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_result<4>)
+     XORCY:CI->O          59   0.206   1.891  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0036_xor<11> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_result<4>)
      LUT6:I5->O            3   0.254   0.765  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Mmux_a[10]_a[10]_mux_25_OUT51 (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/a[10]_a[10]_mux_25_OUT<3>)
      MUXCY:DI->O           1   0.181   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0037_cy<3> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0037_cy<3>)
      MUXCY:CI->O           1   0.023   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0037_cy<4> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0037_cy<4>)
@@ -3822,7 +3810,7 @@ Delay:               58.739ns (Levels of Logic = 143)
      MUXCY:CI->O           1   0.023   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0037_cy<8> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0037_cy<8>)
      MUXCY:CI->O           1   0.023   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0037_cy<9> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0037_cy<9>)
      MUXCY:CI->O           0   0.023   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0037_cy<10> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0037_cy<10>)
-     XORCY:CI->O          68   0.206   1.961  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0037_xor<11> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_result<3>)
+     XORCY:CI->O          70   0.206   1.976  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0037_xor<11> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_result<3>)
      LUT4:I3->O            2   0.254   0.725  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Mmux_a[10]_a[10]_mux_28_OUT41 (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/a[10]_a[10]_mux_28_OUT<2>)
      MUXCY:DI->O           1   0.181   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0038_cy<2> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0038_cy<2>)
      MUXCY:CI->O           1   0.023   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0038_cy<3> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0038_cy<3>)
@@ -3833,7 +3821,7 @@ Delay:               58.739ns (Levels of Logic = 143)
      MUXCY:CI->O           1   0.023   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0038_cy<8> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0038_cy<8>)
      MUXCY:CI->O           1   0.023   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0038_cy<9> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0038_cy<9>)
      MUXCY:CI->O           0   0.023   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0038_cy<10> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0038_cy<10>)
-     XORCY:CI->O          77   0.206   2.031  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0038_xor<11> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_result<2>)
+     XORCY:CI->O          80   0.206   2.054  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0038_xor<11> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_result<2>)
      LUT3:I2->O            1   0.254   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0039_lut<1> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0039_lut<1>)
      MUXCY:S->O            1   0.215   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0039_cy<1> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0039_cy<1>)
      MUXCY:CI->O           1   0.023   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0039_cy<2> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0039_cy<2>)
@@ -3845,7 +3833,7 @@ Delay:               58.739ns (Levels of Logic = 143)
      MUXCY:CI->O           1   0.023   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0039_cy<8> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0039_cy<8>)
      MUXCY:CI->O           1   0.023   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0039_cy<9> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0039_cy<9>)
      MUXCY:CI->O           0   0.023   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0039_cy<10> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0039_cy<10>)
-     XORCY:CI->O          54   0.206   1.852  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0039_xor<11> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_result<1>)
+     XORCY:CI->O          56   0.206   1.868  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n0039_xor<11> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_result<1>)
      LUT3:I2->O            1   0.254   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n_lut<1> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n_lut<1>)
      MUXCY:S->O            1   0.215   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n_cy<1> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n_cy<1>)
      MUXCY:CI->O           1   0.023   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n_cy<2> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n_cy<2>)
@@ -3857,21 +3845,20 @@ Delay:               58.739ns (Levels of Logic = 143)
      MUXCY:CI->O           1   0.023   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n_cy<8> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n_cy<8>)
      MUXCY:CI->O           1   0.023   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n_cy<9> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n_cy<9>)
      MUXCY:CI->O           0   0.023   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n_cy<10> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n_cy<10>)
-     XORCY:CI->O          72   0.206   1.992  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n_xor<11> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_result<0>)
-     LUT6:I5->O            4   0.254   1.032  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_normalized/Mmux_final_frac10221 (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_normalized/Mmux_final_frac1022)
-     LUT6:I3->O            2   0.235   0.726  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_normalized/Mmux_final_frac912 (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_normalized/Mmux_final_frac912)
-     LUT5:I4->O            1   0.254   0.682  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_normalized/Mmux_final_frac914_SW0 (N390)
+     XORCY:CI->O          73   0.206   1.999  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div/Msub_n_xor<11> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_result<0>)
+     LUT6:I5->O           10   0.254   1.008  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_normalized/Mmux_i2[31]_PWR_120_o_MUX_1257_o125 (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_normalized/Mmux_i2[31]_PWR_120_o_MUX_1257_o12)
+     LUT6:I5->O            2   0.254   0.726  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_normalized/Mmux_final_frac912 (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_normalized/Mmux_final_frac912)
+     LUT5:I4->O            1   0.254   0.682  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_normalized/Mmux_final_frac914_SW0 (N404)
      LUT6:I5->O            1   0.254   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_normalized/Mmux_n0159121 (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_normalized/n0159<9>)
      MUXCY:S->O            1   0.215   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_normalized/Madd_frac_result[11]_GND_135_o_add_27_OUT_cy<9> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_normalized/Madd_frac_result[11]_GND_135_o_add_27_OUT_cy<9>)
      MUXCY:CI->O           0   0.023   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_normalized/Madd_frac_result[11]_GND_135_o_add_27_OUT_cy<10> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_normalized/Madd_frac_result[11]_GND_135_o_add_27_OUT_cy<10>)
-     XORCY:CI->O          22   0.206   1.334  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_normalized/Madd_frac_result[11]_GND_135_o_add_27_OUT_xor<11> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_normalized/frac_result[11]_GND_135_o_add_27_OUT<11>)
-     LUT6:I5->O            1   0.254   0.910  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/Mmux_n03121213 (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/Mmux_n03121212)
-     LUT6:I3->O            1   0.235   0.682  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/Mmux_n03121214 (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/Mmux_n03121213)
-     LUT5:I4->O            1   0.254   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/Mmux_n03121215 (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/n0312<14>)
-     FDC:D                     0.074          neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/result_14
+     XORCY:CI->O          24   0.206   1.380  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_normalized/Madd_frac_result[11]_GND_135_o_add_27_OUT_xor<11> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_normalized/frac_result[11]_GND_135_o_add_27_OUT<11>)
+     LUT3:I2->O            1   0.254   0.910  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_normalized/Mmux_final_exp411 (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_normalized/Mmux_final_exp41)
+     LUT6:I3->O            1   0.235   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/Mmux_n0312412 (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/n0312<10>)
+     FDC:D                     0.074          neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/result_10
     ----------------------------------------
-    Total                     58.739ns (14.257ns logic, 44.482ns route)
-                                       (24.3% logic, 75.7% route)
+    Total                     56.513ns (13.764ns logic, 42.748ns route)
+                                       (24.4% logic, 75.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_i'
@@ -3922,20 +3909,16 @@ Clock to Setup on destination clock clk_i
                                                                                                                                                                                                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                                                                                                                                                                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+---------+---------+---------+
-clk_i                                                                                                                                                                                                 |   58.739|         |         |         |
+clk_i                                                                                                                                                                                                 |   56.513|         |         |         |
 neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/adderdown/signFunc/operator_s1_MUX_642_o    |         |    3.061|         |         |
 neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/adderup/Mmux_n020561                        |         |    1.695|         |         |
 neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/adderup/signFunc/operator_s1_MUX_642_o      |         |    6.264|         |         |
-neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divdown/div_result<11>                      |         |   11.490|         |         |
-neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divdown/error_1_G                           |         |    2.840|         |         |
-neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divdown/error_2_G                           |         |    1.800|         |         |
-neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_result<11>                        |         |   11.548|         |         |
-neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/error_1_G                             |         |    1.911|         |         |
-neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/error_2_G                             |         |    2.780|         |         |
-neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/dual                                        |         |   26.130|         |         |
-neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/islem/errore[2]_reduce_or_1_o               |         |    3.605|         |         |
+neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divdown/div_normalized/Mmux_final_frac11    |         |   11.026|         |         |
+neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_normalized/Mmux_final_frac11      |         |   11.094|         |         |
+neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/dual                                        |         |   26.655|         |         |
+neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/islem/errore[2]_reduce_or_1_o               |         |    3.565|         |         |
 neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multup/normmul/m_result[21]_s_exp[4]_Mux_8_o|         |    1.867|         |         |
-neorv32_top_inst/soc_generators.neorv32_sys_reset_inst/rstn_ext_o                                                                                                                                     |   10.752|         |         |         |
+neorv32_top_inst/soc_generators.neorv32_sys_reset_inst/rstn_ext_o                                                                                                                                     |   10.736|         |         |         |
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/adderdown/signFunc/operator_s1_MUX_642_o
@@ -3943,7 +3926,7 @@ Clock to Setup on destination clock neorv32_top_inst/core_complex_gen[0].neorv32
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk_i          |         |         |   25.936|         |
+clk_i          |         |         |   25.764|         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/adderup/Mmux_n020561
@@ -3951,7 +3934,7 @@ Clock to Setup on destination clock neorv32_top_inst/core_complex_gen[0].neorv32
                                                                                                                                                                                                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                                                                                                                                                                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+---------+---------+---------+
-clk_i                                                                                                                                                                                           |         |         |   18.904|         |
+clk_i                                                                                                                                                                                           |         |         |   18.736|         |
 neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/adderup/signFunc/operator_s1_MUX_642_o|         |         |    1.342|         |
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+---------+---------+---------+
 
@@ -3960,55 +3943,23 @@ Clock to Setup on destination clock neorv32_top_inst/core_complex_gen[0].neorv32
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk_i          |         |         |   25.702|         |
+clk_i          |         |         |   24.439|         |
 ---------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divdown/div_result<11>
+Clock to Setup on destination clock neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divdown/div_normalized/Mmux_final_frac11
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk_i          |         |         |   52.583|         |
+clk_i          |         |         |   51.411|         |
 ---------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divdown/error_1_G
+Clock to Setup on destination clock neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_normalized/Mmux_final_frac11
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk_i          |         |         |   18.139|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divdown/error_2_G
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk_i          |         |         |   18.114|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_result<11>
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk_i          |         |         |   52.929|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/error_1_G
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk_i          |         |         |   17.766|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/error_2_G
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk_i          |         |         |   17.741|         |
+clk_i          |         |         |   51.597|         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/dual
@@ -4016,7 +3967,7 @@ Clock to Setup on destination clock neorv32_top_inst/core_complex_gen[0].neorv32
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk_i          |         |         |   10.834|         |
+clk_i          |         |         |   10.434|         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/islem/errore[2]_reduce_or_1_o
@@ -4024,7 +3975,7 @@ Clock to Setup on destination clock neorv32_top_inst/core_complex_gen[0].neorv32
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk_i          |         |         |    5.680|         |
+clk_i          |         |         |    5.651|         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multup/normmul/m_result[21]_s_exp[4]_Mux_8_o
@@ -4032,21 +3983,21 @@ Clock to Setup on destination clock neorv32_top_inst/core_complex_gen[0].neorv32
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk_i          |         |         |   11.949|         |
+clk_i          |         |         |   11.549|         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 40.00 secs
-Total CPU time to Xst completion: 39.68 secs
+Total REAL time to Xst completion: 33.00 secs
+Total CPU time to Xst completion: 33.50 secs
  
 --> 
 
 
-Total memory usage is 548028 kilobytes
+Total memory usage is 546500 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  689 (   0 filtered)
+Number of warnings :  693 (   0 filtered)
 Number of infos    :  417 (   0 filtered)
 

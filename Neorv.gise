@@ -211,7 +211,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1749930526" xil_pn:in_ck="-8312234578811187506" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="1026057575128845134" xil_pn:start_ts="1749930484">
+    <transform xil_pn:end_ts="1749932906" xil_pn:in_ck="-8312234578811187506" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="1026057575128845134" xil_pn:start_ts="1749932871">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -233,7 +233,7 @@
       <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1749820364" xil_pn:in_ck="-6113061062449914109" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-7292699397265610272" xil_pn:start_ts="1749820359">
-      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="AbortedRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="InputChanged"/>
