@@ -26,23 +26,27 @@ module IALU (
 	wire flagadd1, flagadd2, flagmul1, flagmul2, flagdiv1, flagdiv2;
 	reg flagadd1_reg, flagadd2_reg, flagdiv1_reg, flagdiv2_reg, flagmul1_reg, flagmul2_reg;
 	always @(*) begin
-		 case (funct)
-			  5'b00000, 5'b00001: begin // Toplama/karma
-					error <= (|err_wau != 1'b0) ? err_wau :
-								(|err_wal != 1'b0) ? err_wal : 3'b000;
-			  end
-			  5'b00010: begin // arpma
-					error <= (|err_wmu != 1'b0) ? err_wmu :
-								(|err_wml != 1'b0) ? err_wml : 3'b000;
-			  end
-			  5'b00011: begin // Blme
-					error <= (|err_wdu != 1'b0) ? err_wdu :
-								(|err_wdl != 1'b0) ? err_wdl : 3'b000;
-			  end
-			  default: begin
-					error <= 3'b000; // lem yok  Error sfr
-			  end
-		 endcase
+		 if(|err_w)begin
+			 error <= err_w;
+		 end else begin
+			 case (funct)
+				  5'b00000, 5'b00001: begin // Toplama/karma
+						error <= (|err_wau != 1'b0) ? err_wau :
+									(|err_wal != 1'b0) ? err_wal : 3'b000;
+				  end
+				  5'b00010: begin // arpma
+						error <= (|err_wmu != 1'b0) ? err_wmu :
+									(|err_wml != 1'b0) ? err_wml : 3'b000;
+				  end
+				  5'b00011: begin // Blme
+						error <= (|err_wdu != 1'b0) ? err_wdu :
+									(|err_wdl != 1'b0) ? err_wdl : 3'b000;
+				  end
+				  default: begin
+						error <= 3'b000; // lem yok  Error sfr
+				  end
+			endcase
+		end
 	end
 
 	reg [1:0] fdual = 0;
@@ -102,7 +106,7 @@ module IALU (
 				end
 				
 				if (funct == 5'b01001 || funct == 5'b01000 || funct == 5'b01010) begin
-					result <= {{16{1'b1}}, ANSUADD};
+					result <= {{16{1'b0}}, ANSUADD};
 					flag <= 1'b1;
 					// Reset flags after capturing result
 					flagadd1_reg <= 1'b0;
@@ -111,12 +115,12 @@ module IALU (
 			end
 			
 			if (funct == 5'b01011 ) begin
-				result <= {{16{1'b1}}, a[`TOTALW-1:`W]};
+				result <= {{16{1'b0}}, a[`TOTALW-1:`W]};
 				flag <= 1'b1;
 				// Reset flags after capturing result
 			end
 			if (funct == 5'b01100) begin
-				result <= {{16{1'b1}}, a[ 	    `W-1:0]};
+				result <= {{16{1'b0}}, a[ 	    `W-1:0]};
 				flag <= 1'b1;
 				// Reset flags after capturing result
 			end
@@ -151,10 +155,10 @@ module IALU (
 			// Handle other operation results
 			if (funct[4:3] == 2'b10) begin
 				if(funct == 5'b10000)begin
-					result <= {{28{1'b1}},stateCross};
+					result <= {{28{1'b0}},stateCross};
 					flag <= 1'b1;
 				end else begin
-					result <= {{31{1'b1}},((stateCross[2:0] == funct[2:0]) && (stateCross[3] == 1'b0)?1'b1:1'b0)};
+					result <= {{31{1'b0}},((stateCross[2:0] == funct[2:0]) && (stateCross[3] == 1'b0)?1'b1:1'b0)};
 					flag <= 1'b1;
 				end
 			end
@@ -179,8 +183,7 @@ module ProcessRedirectorModule(
 		output reg [2:0] error
 		);
 		wire [2:0] errore;
-		wire errordiv;
-		/* output */ reg flag = 0;
+		reg flag = 0;
 		wire G_AU_0;
 		wire G_BU_0;
 		wire L_AL_0;
@@ -191,9 +194,10 @@ module ProcessRedirectorModule(
 		ZeroComparatorG cmp_BU_0(.A(BU), .G(G_BU_0));
 		ZeroComparatorL cmp_BL_0(.A(BL), .L(L_BL_0));
 		CrossComparator cross_comp(.AU(AU), .AL(AL), .BU(BU), .BL(BL), .state(stateCross));
-		ErrorDetector errdet(.AU(AU[`W-2:0]), .AL(AL[`W-2:0]), .BU(BU[`W-2:0]), .BL(BL[`W-2:0]), .error(errore), .ready(ready));
-		assign errordiv = &condition;
+		ErrorDetector errdet(.AU(AU[`W-2:0]), .AL(AL[`W-2:0]), .BU(BU[`W-2:0]), .BL(BL[`W-2:0]), .error(errore));
+		reg errordiv = 1'b0;
 		always @(*) begin
+			errordiv = 1'b0;
 			dual = 1'b0;
 			condition = 4'b0000;
 			flag = 0;
@@ -206,74 +210,73 @@ module ProcessRedirectorModule(
 			end else if(errordiv) begin
 				error = {3'b110};
 			end
-			if(ready)begin
-				if(OPCODE[4:2] == 3'b000) begin
-					if(OPCODE[1:0] == 2'b10 || OPCODE[1:0] == 2'b11) begin
-						// Durum 1: AL >= 0 && BL >= 0 // 
-						if (!L_AL_0 && !L_BL_0) begin
-							condition = (OPCODE == 4'b0010) ? 4'b0011 : 4'b0110;
-						end
-						// Durum 2: AL >= 0 && BL < 0 < BU
-						else if (!L_AL_0 && L_BL_0 && G_BU_0) begin
-							condition = (OPCODE == 5'b00010) ? 4'b1011 : 4'b1111;
-						end
-						// Durum 3: AL >= 0 && BU <= 0
-						else if (!L_AL_0 && !G_BU_0) begin
-							condition = (OPCODE == 5'b00010) ? 4'b1001 : 4'b1100;
-						end
-						// Durum 4: AL < 0 < AU && BL >= 0
-						else if (L_AL_0 && G_AU_0 && !L_BL_0) begin
-							condition = (OPCODE == 5'b00010) ? 4'b0111 : 4'b0010;
-						end
-						// Durum 5: AL < 0 < AU && BU <= 0
-						else if (L_AL_0 && G_AU_0 && !G_BU_0) begin
-							condition = (OPCODE == 5'b00010) ? 4'b1000 : 4'b1101;
-						end
-						// Durum 6: AU <= 0 && BL >= 0
-						else if (!G_AU_0 && !L_BL_0) begin
-							condition = (OPCODE == 5'b00010) ? 4'b0110 : 4'b0011;
-						end
-						// Durum 7: AU <= 0 && BL < 0 < BU
-						else if (!G_AU_0 && L_BL_0 && G_BU_0) begin
-							condition = (OPCODE == 5'b00010) ? 4'b0100 : 4'b1111;
-						end
-						// Durum 8: AU <= 0 && BU <= 0
-						else if (!G_AU_0 && !G_BU_0 ) begin
-							condition = (OPCODE == 5'b00010) ? 4'b1100 : 4'b1001;
-						end
-						// Durum 9: AL < 0 < AU && BL < 0 < BU
-						else if (L_AL_0 && G_AU_0 && L_BL_0 && G_BU_0) begin
-							condition = (OPCODE == 5'b00010) ? 4'b1110 : 4'b1111;
-							dual = (OPCODE == 5'b00010);
-						end 
-						// Durumsuz
-						else begin
-							condition = 4'b0000;
-						end
-						
-					end else if (OPCODE[1:0] == 2'b01) begin //cikartma
-						condition = (stateCross == 4'b0111) ?  4'b0011 : 4'b0110;
-					end else begin //Toplama
-						condition = 4'b0011;
+			if(OPCODE[4:2] == 3'b000) begin
+				if(OPCODE[1:0] == 2'b10 || OPCODE[1:0] == 2'b11) begin
+					// Durum 1: AL >= 0 && BL >= 0 // 
+					if (!L_AL_0 && !L_BL_0) begin
+						condition = (OPCODE == 4'b0010) ? 4'b0011 : 4'b0110;
+					end
+					// Durum 2: AL >= 0 && BL < 0 < BU
+					else if (!L_AL_0 && L_BL_0 && G_BU_0) begin
+						condition = (OPCODE == 5'b00010) ? 4'b1011 : 4'b1111;
+						errordiv = (OPCODE == 5'b00010) ? 1'b0 : 1'b1;
+					end
+					// Durum 3: AL >= 0 && BU <= 0
+					else if (!L_AL_0 && !G_BU_0) begin
+						condition = (OPCODE == 5'b00010) ? 4'b1001 : 4'b1100;
+					end
+					// Durum 4: AL < 0 < AU && BL >= 0
+					else if (L_AL_0 && G_AU_0 && !L_BL_0) begin
+						condition = (OPCODE == 5'b00010) ? 4'b0111 : 4'b0010;
+					end
+					// Durum 5: AL < 0 < AU && BU <= 0
+					else if (L_AL_0 && G_AU_0 && !G_BU_0) begin
+						condition = (OPCODE == 5'b00010) ? 4'b1000 : 4'b1101;
+					end
+					// Durum 6: AU <= 0 && BL >= 0
+					else if (!G_AU_0 && !L_BL_0) begin
+						condition = (OPCODE == 5'b00010) ? 4'b0110 : 4'b0011;
+					end
+					// Durum 7: AU <= 0 && BL < 0 < BU
+					else if (!G_AU_0 && L_BL_0 && G_BU_0) begin
+						condition = (OPCODE == 5'b00010) ? 4'b0100 : 4'b1111;
+						errordiv = (OPCODE == 5'b00010) ? 1'b0 : 1'b1;
+					end
+					// Durum 8: AU <= 0 && BU <= 0
+					else if (!G_AU_0 && !G_BU_0 ) begin
+						condition = (OPCODE == 5'b00010) ? 4'b1100 : 4'b1001;
+					end
+					// Durum 9: AL < 0 < AU && BL < 0 < BU
+					else if (L_AL_0 && G_AU_0 && L_BL_0 && G_BU_0) begin
+						condition = (OPCODE == 5'b00010) ? 4'b1110 : 4'b1111;
+						errordiv = (OPCODE == 5'b00010) ? 1'b0 : 1'b1;
+						dual = (OPCODE == 5'b00010);
+					end 
+					// Durumsuz
+					else begin
+						condition = 4'b0000;
 					end
 					
-					F1 = (condition != 4'b1110 & condition != 4'b1111) ? (condition[3] ? AU : AL) : AL;
-					S1 = (condition != 4'b1110 & condition != 4'b1111) ? (condition[2] ? BU : BL) : BU;
-					F2 = (condition != 4'b1110 & condition != 4'b1111) ? (condition[1] ? AU : AL) : AU;
-					S2 = (condition != 4'b1110 & condition != 4'b1111) ? (condition[0] ? BU : BL) : BL;
-					flag = 1'b1;
-				end else if (OPCODE[4:3] == 2'b01)begin
-					
-					if(OPCODE[2:0] == 3'b000 || OPCODE[2:0] == 3'b001 || OPCODE[2:0] == 3'b010) begin
-						F1 = 16'b0;
-						S1 = 16'b0;
-						F2 = AU;
-						S2 = AL;
-					end
-					
+				end else if (OPCODE[1:0] == 2'b01) begin //cikartma
+					condition = (stateCross == 4'b0111) ?  4'b0011 : 4'b0110;
+				end else begin //Toplama
+					condition = 4'b0011;
 				end
-		end 
-	end
+				
+				F1 = (condition != 4'b1110 & condition != 4'b1111) ? (condition[3] ? AU : AL) : AL;
+				S1 = (condition != 4'b1110 & condition != 4'b1111) ? (condition[2] ? BU : BL) : BU;
+				F2 = (condition != 4'b1110 & condition != 4'b1111) ? (condition[1] ? AU : AL) : AU;
+				S2 = (condition != 4'b1110 & condition != 4'b1111) ? (condition[0] ? BU : BL) : BL;
+				flag = 1'b1;
+			end else if (OPCODE[4:3] == 2'b01)begin
+				if(OPCODE[2:0] == 3'b000 || OPCODE[2:0] == 3'b001 || OPCODE[2:0] == 3'b010) begin
+					F1 = 16'b0;
+					S1 = 16'b0;
+					F2 = AU;
+					S2 = AL;
+				end
+			end
+	 end
 endmodule
 
 module Comparator
@@ -375,11 +378,8 @@ module ErrorDetector(
     input [`W-2:0] AL,
     input [`W-2:0] BU,
     input [`W-2:0] BL,
-    output reg [2:0] error,
-	 output ready
+    output reg [2:0] error
     );
-	
-	 assign ready = (error == 3'b000) ? 1'b1 : 1'b0;
 	 
 	 always @(*)begin
 		error = 3'b000;
@@ -572,7 +572,7 @@ always @ (fract1,fract2,s1,s2,operator)begin
 				s=s2;
 			end else begin//Zero
 				error = {3'b001};
-				//$display("Sonu 0 iaret yok");
+				$display("Sonu 0 iaret yok");
 			end
 		end
 	end
@@ -727,11 +727,11 @@ module MultiplierTopModule #(parameter updown = 0)(
 		assign biased_exp2 = real_exp_sum2 - 6'd15;
 
 		// Overflow / Underflow kontrol
-		assign c_controlo1 = (biased_exp1 >= 6'sd23); // +Overflow threshold
-		assign c_controlu1 = (biased_exp1 <= 6'sd7);  // Underflow threshold
-
-		assign c_controlo2 = (biased_exp2 >= 6'sd23);
-		assign c_controlu2 = (biased_exp2 <= 6'sd7);
+		assign c_controlo1 = (biased_exp1 >= 6'd30); // +Overflow threshold
+		assign c_controlu1 = (biased_exp1 <= 6'd1);  // Underflow threshold
+		
+		assign c_controlo2 = (biased_exp2 >= 6'd30);
+		assign c_controlu2 = (biased_exp2 <= 6'd1);
 
 		// Error karar mant (combinational)
 		always @(*) begin
@@ -743,8 +743,8 @@ module MultiplierTopModule #(parameter updown = 0)(
 				  error = error_wra;
 			 end else if (|error_wrb) begin
 				  error = error_wrb;
-			 end else if (c_controlo1 || c_controlo2 || c_controlu1 || c_controlu2) begin
-				  case ({(c_controlo1 || c_controlo2), (c_controlu1 || c_controlu2)})
+			 end else if (c_controlo1 || (c_controlo2 && dual) || c_controlu1 || (c_controlu2 && dual)) begin
+				  case ({(c_controlo1 || (c_controlo2 && dual)), (c_controlu1 || (c_controlu2 && dual))})
 						2'b00: error = 3'b000; // No error
 						2'b01: error = 3'b100; // Underflow
 						2'b10: error = 3'b010; // +Infinity Overflow
@@ -984,12 +984,19 @@ module AdderSubtractorTopModule(
 			end
 		end else begin
 			normsum = tempsum[`MANTISSA+4:3];
-			normexp = (OPCODE == 5'b01000 || OPCODE == 5'b01010)?(tempexp-1'b1):tempexp;
+			normexp = tempexp;
 		end
+		
 		roundedfract = normsum[`MANTISSA-1:0];
 		flag = 1'b1;
 		ress = {finalsign, normexp, roundedfract};
 
 	end
-	assign C = ress;
+	wire [4:0] chexpe;
+	assign chexpe = ress[14:10] - 5'b00001;
+	wire [4:0] chexp;
+	assign chexp	= ress[14:10];
+	wire [15:0] ressg;
+	assign ressg = (OPCODE == 5'b01000 || OPCODE == 5'b01010)?{ress[15], chexpe, ress[9:0]}:{ress[15], chexp, ress[9:0]};
+	assign C = ressg;
 endmodule

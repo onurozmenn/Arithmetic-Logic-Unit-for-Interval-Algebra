@@ -5,16 +5,13 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 296: Assignment to <arg fmt="%s" index="1">L</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 299: Assignment to <arg fmt="%s" index="1">L</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 196: Assignment to <arg fmt="%s" index="1">flag</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 199: Assignment to <arg fmt="%s" index="1">flag</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 60: Assignment to <arg fmt="%s" index="1">condition</arg> ignored, since the identifier is never used
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 63: Assignment to <arg fmt="%s" index="1">err_w</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 64: Assignment to <arg fmt="%s" index="1">condition</arg> ignored, since the identifier is never used
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="91" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 920: Signal &lt;<arg fmt="%s" index="1">finalsign</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
@@ -44,7 +41,7 @@
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 828: Result of <arg fmt="%d" index="1">13</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">12</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 296: Assignment to <arg fmt="%s" index="1">L</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 299: Assignment to <arg fmt="%s" index="1">L</arg> ignored, since the identifier is never used
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="91" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 761: Signal &lt;<arg fmt="%s" index="1">c_sumexp</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
@@ -62,7 +59,7 @@
 <msg type="warning" file="HDLCompiler" num="1016" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 508: Port <arg fmt="%s" index="1">cout</arg> is not connected to this instance
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 358: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 361: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/onur/Desktop/Neorv/IALU.v" Line 626: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
@@ -1481,10 +1478,7 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">rm</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/onur/Desktop/Neorv/IALU.v</arg>&quot; line <arg fmt="%s" index="2">50</arg>: Output port &lt;<arg fmt="%s" index="3">condition</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">islem</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/onur/Desktop/Neorv/IALU.v</arg>&quot; line <arg fmt="%s" index="2">50</arg>: Output port &lt;<arg fmt="%s" index="3">error</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">islem</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/onur/Desktop/Neorv/IALU.v</arg>&quot; line <arg fmt="%s" index="2">54</arg>: Output port &lt;<arg fmt="%s" index="3">condition</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">islem</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">error&lt;1&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -2351,16 +2345,16 @@
 <msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">flag_clk_DFF_295</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">IALU_inst</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">31 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;flag_clk_DFF_296&gt; &lt;flag_clk_DFF_299&gt; &lt;flag_clk_DFF_297&gt; &lt;flag_clk_DFF_298&gt; &lt;flag_clk_DFF_300&gt; &lt;flag_clk_DFF_301&gt; &lt;flag_clk_DFF_302&gt; &lt;flag_clk_DFF_303&gt; &lt;flag_clk_DFF_306&gt; &lt;flag_clk_DFF_304&gt; &lt;flag_clk_DFF_305&gt; &lt;flag_clk_DFF_307&gt; &lt;flag_clk_DFF_308&gt; &lt;flag_clk_DFF_309&gt; &lt;flag_clk_DFF_310&gt; &lt;flag_clk_DFF_313&gt; &lt;flag_clk_DFF_311&gt; &lt;flag_clk_DFF_312&gt; &lt;flag_clk_DFF_316&gt; &lt;flag_clk_DFF_314&gt; &lt;flag_clk_DFF_315&gt; &lt;flag_clk_DFF_319&gt; &lt;flag_clk_DFF_317&gt; &lt;flag_clk_DFF_318&gt; &lt;flag_clk_DFF_320&gt; &lt;flag_clk_DFF_321&gt; &lt;flag_clk_DFF_322&gt; &lt;flag_clk_DFF_323&gt; &lt;flag_clk_DFF_294&gt; &lt;flag_clk_DFF_324&gt; &lt;flag_clk_DFF_325&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">flag_clk_DFF_295</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">IALU_inst</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">31 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;flag_clk_DFF_296&gt; &lt;flag_clk_DFF_299&gt; &lt;flag_clk_DFF_297&gt; &lt;flag_clk_DFF_298&gt; &lt;flag_clk_DFF_302&gt; &lt;flag_clk_DFF_300&gt; &lt;flag_clk_DFF_301&gt; &lt;flag_clk_DFF_305&gt; &lt;flag_clk_DFF_303&gt; &lt;flag_clk_DFF_304&gt; &lt;flag_clk_DFF_306&gt; &lt;flag_clk_DFF_307&gt; &lt;flag_clk_DFF_308&gt; &lt;flag_clk_DFF_309&gt; &lt;flag_clk_DFF_312&gt; &lt;flag_clk_DFF_310&gt; &lt;flag_clk_DFF_311&gt; &lt;flag_clk_DFF_315&gt; &lt;flag_clk_DFF_313&gt; &lt;flag_clk_DFF_314&gt; &lt;flag_clk_DFF_318&gt; &lt;flag_clk_DFF_316&gt; &lt;flag_clk_DFF_317&gt; &lt;flag_clk_DFF_319&gt; &lt;flag_clk_DFF_320&gt; &lt;flag_clk_DFF_321&gt; &lt;flag_clk_DFF_322&gt; &lt;flag_clk_DFF_325&gt; &lt;flag_clk_DFF_323&gt; &lt;flag_clk_DFF_324&gt; &lt;flag_clk_DFF_294&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">rx_engine_state_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">io_system.neorv32_uart0_enabled.neorv32_uart0_inst</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;tx_engine_state_2&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">errorb_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">adderup</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">errorb_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">adderup</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">errorb_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">adderup</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">errorb_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">adderup</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">errora_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">adderup</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -2492,10 +2486,10 @@
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">csr_mtvec_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_cpu_control_inst</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">errorb_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">adderdown</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">errorb_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">adderdown</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">errorb_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">adderdown</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">errorb_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">adderdown</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">errora_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">adderdown</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -2599,10 +2593,10 @@
 <msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_exe_engine_ir[14]_GND_10_o_Mux_321_o</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
 </msg>
 
-<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram__n4081</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram__n3580</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
 </msg>
 
-<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram__n4090</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram__n3589</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
 </msg>
 
 <msg type="info" file="Xst" num="3217" delta="old" >HDL ADVISOR - Register &lt;<arg fmt="%s" index="1">dbus_req_o_amoop</arg>&gt; currently described with an asynchronous reset, could be combined with distributed RAM &lt;<arg fmt="%s" index="2">Mram_amo_cmd</arg>&gt; for implementation on block RAM resources if you made this reset synchronous instead.
@@ -2612,304 +2606,307 @@
 
 <msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Mram_mem_ram_b0</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
 
-<msg type="info" file="Xst" num="3226" delta="new" >The RAM &lt;<arg fmt="%s" index="1">Mram_mem_ram_b2</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Mram_mem_ram_b2</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
 
-<msg type="info" file="Xst" num="3226" delta="new" >The RAM &lt;<arg fmt="%s" index="1">Mram_mem_ram_b3</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Mram_mem_ram_b3</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
 
-<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_irq_trig&lt;0&gt;</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_irq_trig&lt;0&gt;</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
 </msg>
 
-<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_irq_trig&lt;1&gt;</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_irq_trig&lt;1&gt;</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
 </msg>
 
-<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_irq_trig&lt;2&gt;</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_irq_trig&lt;2&gt;</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
 </msg>
 
-<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_irq_trig&lt;3&gt;</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_irq_trig&lt;3&gt;</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
 </msg>
 
-<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_irq_trig&lt;4&gt;</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_irq_trig&lt;4&gt;</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
 </msg>
 
-<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_irq_trig&lt;5&gt;</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_irq_trig&lt;5&gt;</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
 </msg>
 
-<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_irq_trig&lt;6&gt;</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_irq_trig&lt;6&gt;</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
 </msg>
 
-<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_irq_trig&lt;7&gt;</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_irq_trig&lt;7&gt;</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
 </msg>
 
 <msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Mram_mem_ram_b1</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
 
 <msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Mram_mem_ram_b0</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
 
-<msg type="info" file="Xst" num="3226" delta="new" >The RAM &lt;<arg fmt="%s" index="1">Mram_mem_ram_b2</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Mram_mem_ram_b2</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
 
-<msg type="info" file="Xst" num="3226" delta="new" >The RAM &lt;<arg fmt="%s" index="1">Mram_mem_ram_b3</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Mram_mem_ram_b3</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exe_engine_pc_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_cpu_control</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">exe_engine_pc_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_cpu_control</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">csr_mepc_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_cpu_control</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">csr_mepc_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_cpu_control</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exe_engine_pc2_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_cpu_control</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">exe_engine_pc2_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_cpu_control</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">trap_ctrl_exc_buf_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_cpu_control</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">trap_ctrl_exc_buf_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_cpu_control</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">trap_ctrl_exc_buf_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_cpu_control</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">trap_ctrl_exc_buf_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_cpu_control</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">trap_ctrl_exc_buf_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_cpu_control</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">trap_ctrl_exc_buf_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_cpu_control</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">trap_ctrl_irq_buf_19</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_cpu_control</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">trap_ctrl_irq_buf_19</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_cpu_control</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">trap_ctrl_irq_buf_20</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_cpu_control</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">trap_ctrl_irq_buf_20</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_cpu_control</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">csr_mtvec_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_cpu_control</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">csr_mtvec_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_cpu_control</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">trap_ctrl_env_entered</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_cpu_control</arg>&gt;.
+<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">trap_ctrl_env_entered</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_cpu_control</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">errorb_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">AdderSubtractorTopModule</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">errorb_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">AdderSubtractorTopModule</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">errorb_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">AdderSubtractorTopModule</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">errorb_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">AdderSubtractorTopModule</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">errora_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">AdderSubtractorTopModule</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">errora_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">AdderSubtractorTopModule</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">errora_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">AdderSubtractorTopModule</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">errora_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">AdderSubtractorTopModule</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">normmul/error_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MultiplierTopModule_1</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">normmul/error_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MultiplierTopModule_1</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">normmul/error_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">MultiplierTopModule_1</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">normmul/error_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">MultiplierTopModule_1</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">normmul2/error_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">MultiplierTopModule_1</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">normmul2/error_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">MultiplierTopModule_1</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">normmul2/error_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MultiplierTopModule_1</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">normmul2/error_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MultiplierTopModule_1</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">error_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">RoundingMul</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">error_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">RoundingMul</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">error_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">RoundingMul</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">error_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">RoundingMul</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">error_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">RoundingMul_1</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">error_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">RoundingMul_1</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">error_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">RoundingMul_1</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">error_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">RoundingMul_1</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">normmul/error_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MultiplierTopModule_2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">normmul/error_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MultiplierTopModule_2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">normmul/error_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">MultiplierTopModule_2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">normmul/error_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">MultiplierTopModule_2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">normmul2/error_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">MultiplierTopModule_2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">normmul2/error_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">MultiplierTopModule_2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">normmul2/error_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MultiplierTopModule_2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">normmul2/error_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MultiplierTopModule_2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">div_normalized/i2_30</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">DividerTopModule</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">div_normalized/i2_30</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">DividerTopModule</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">tx_engine_cts_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_uart</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">tx_engine_cts_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_uart</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">tx_engine_cts_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_uart</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">tx_engine_cts_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_uart</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">sreg_sys_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_sys_reset</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;sreg_ext_0&gt; &lt;xrstn_wdt_o&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">sreg_sys_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_sys_reset</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;sreg_ext_0&gt; &lt;xrstn_wdt_o&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">sreg_sys_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_sys_reset</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;sreg_ext_1&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">sreg_sys_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_sys_reset</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;sreg_ext_1&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">sreg_sys_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_sys_reset</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;sreg_ext_2&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">sreg_sys_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_sys_reset</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;sreg_ext_2&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">sreg_sys_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_sys_reset</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;sreg_ext_3&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">sreg_sys_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_sys_reset</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;sreg_ext_3&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">flag_clk_DFF_295</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">IALU</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">31 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;flag_clk_DFF_296&gt; &lt;flag_clk_DFF_297&gt; &lt;flag_clk_DFF_300&gt; &lt;flag_clk_DFF_298&gt; &lt;flag_clk_DFF_299&gt; &lt;flag_clk_DFF_301&gt; &lt;flag_clk_DFF_302&gt; &lt;flag_clk_DFF_303&gt; &lt;flag_clk_DFF_304&gt; &lt;flag_clk_DFF_307&gt; &lt;flag_clk_DFF_305&gt; &lt;flag_clk_DFF_306&gt; &lt;flag_clk_DFF_308&gt; &lt;flag_clk_DFF_309&gt; &lt;flag_clk_DFF_310&gt; &lt;flag_clk_DFF_311&gt; &lt;flag_clk_DFF_314&gt; &lt;flag_clk_DFF_312&gt; &lt;flag_clk_DFF_313&gt; &lt;flag_clk_DFF_315&gt; &lt;flag_clk_DFF_316&gt; &lt;flag_clk_DFF_317&gt; &lt;flag_clk_DFF_318&gt; &lt;flag_clk_DFF_321&gt; &lt;flag_clk_DFF_319&gt; &lt;flag_clk_DFF_320&gt; &lt;flag_clk_DFF_322&gt; &lt;flag_clk_DFF_323&gt; &lt;flag_clk_DFF_324&gt; &lt;flag_clk_DFF_325&gt; &lt;flag_clk_DFF_294&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">flag_clk_DFF_295</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">IALU</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">31 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;flag_clk_DFF_296&gt; &lt;flag_clk_DFF_299&gt; &lt;flag_clk_DFF_297&gt; &lt;flag_clk_DFF_298&gt; &lt;flag_clk_DFF_300&gt; &lt;flag_clk_DFF_301&gt; &lt;flag_clk_DFF_302&gt; &lt;flag_clk_DFF_303&gt; &lt;flag_clk_DFF_306&gt; &lt;flag_clk_DFF_304&gt; &lt;flag_clk_DFF_305&gt; &lt;flag_clk_DFF_307&gt; &lt;flag_clk_DFF_308&gt; &lt;flag_clk_DFF_309&gt; &lt;flag_clk_DFF_310&gt; &lt;flag_clk_DFF_313&gt; &lt;flag_clk_DFF_311&gt; &lt;flag_clk_DFF_312&gt; &lt;flag_clk_DFF_314&gt; &lt;flag_clk_DFF_315&gt; &lt;flag_clk_DFF_316&gt; &lt;flag_clk_DFF_317&gt; &lt;flag_clk_DFF_320&gt; &lt;flag_clk_DFF_318&gt; &lt;flag_clk_DFF_319&gt; &lt;flag_clk_DFF_321&gt; &lt;flag_clk_DFF_322&gt; &lt;flag_clk_DFF_323&gt; &lt;flag_clk_DFF_324&gt; &lt;flag_clk_DFF_325&gt; &lt;flag_clk_DFF_294&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">rx_engine_state_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_uart</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;tx_engine_state_2&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">rx_engine_state_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_uart</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;tx_engine_state_2&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">trap_ctrl_irq_pnd_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_cpu_control</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">13 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;trap_ctrl_irq_pnd_3&gt; &lt;trap_ctrl_irq_pnd_4&gt; &lt;trap_ctrl_irq_pnd_7&gt; &lt;trap_ctrl_irq_pnd_8&gt; &lt;trap_ctrl_irq_pnd_9&gt; &lt;trap_ctrl_irq_pnd_10&gt; &lt;trap_ctrl_irq_pnd_12&gt; &lt;trap_ctrl_irq_pnd_13&gt; &lt;trap_ctrl_irq_pnd_14&gt; &lt;trap_ctrl_irq_pnd_15&gt; &lt;trap_ctrl_irq_pnd_16&gt; &lt;trap_ctrl_irq_pnd_17&gt; &lt;trap_ctrl_irq_pnd_18&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">trap_ctrl_irq_pnd_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_cpu_control</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">13 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;trap_ctrl_irq_pnd_3&gt; &lt;trap_ctrl_irq_pnd_4&gt; &lt;trap_ctrl_irq_pnd_7&gt; &lt;trap_ctrl_irq_pnd_8&gt; &lt;trap_ctrl_irq_pnd_9&gt; &lt;trap_ctrl_irq_pnd_10&gt; &lt;trap_ctrl_irq_pnd_12&gt; &lt;trap_ctrl_irq_pnd_13&gt; &lt;trap_ctrl_irq_pnd_14&gt; &lt;trap_ctrl_irq_pnd_15&gt; &lt;trap_ctrl_irq_pnd_16&gt; &lt;trap_ctrl_irq_pnd_17&gt; &lt;trap_ctrl_irq_pnd_18&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">trap_ctrl_irq_pnd_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_cpu_control</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">trap_ctrl_irq_pnd_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_cpu_control</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">trap_ctrl_irq_buf_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_cpu_control</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">trap_ctrl_irq_buf_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_cpu_control</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">trap_ctrl_irq_buf_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_cpu_control</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">trap_ctrl_irq_buf_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_cpu_control</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">trap_ctrl_irq_buf_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_cpu_control</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">trap_ctrl_irq_buf_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_cpu_control</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">trap_ctrl_irq_buf_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_cpu_control</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">trap_ctrl_irq_buf_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_cpu_control</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">trap_ctrl_irq_buf_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_cpu_control</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">trap_ctrl_irq_buf_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_cpu_control</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">trap_ctrl_irq_buf_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_cpu_control</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">trap_ctrl_irq_buf_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_cpu_control</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">trap_ctrl_irq_buf_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_cpu_control</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">trap_ctrl_irq_buf_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_cpu_control</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">trap_ctrl_irq_buf_12</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_cpu_control</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">trap_ctrl_irq_buf_12</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_cpu_control</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">trap_ctrl_irq_buf_13</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_cpu_control</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">trap_ctrl_irq_buf_13</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_cpu_control</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">trap_ctrl_irq_buf_14</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_cpu_control</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">trap_ctrl_irq_buf_14</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_cpu_control</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">trap_ctrl_irq_buf_15</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_cpu_control</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">trap_ctrl_irq_buf_15</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_cpu_control</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">trap_ctrl_irq_buf_16</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_cpu_control</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">trap_ctrl_irq_buf_16</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_cpu_control</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">trap_ctrl_irq_buf_17</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_cpu_control</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">trap_ctrl_irq_buf_17</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_cpu_control</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">trap_ctrl_irq_buf_18</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_cpu_control</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">trap_ctrl_irq_buf_18</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_cpu_control</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">fetch_engine_pc_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_cpu_control</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">fetch_engine_pc_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_cpu_control</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">errorb_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">AdderSubtractorTopModule</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">errorb_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">AdderSubtractorTopModule</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">normmul2/error_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplierTopModule_1</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">normmul2/error_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplierTopModule_1</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">roundmul/error_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplierTopModule_1</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">roundmul/error_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplierTopModule_1</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">roundmul2/error_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplierTopModule_1</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">roundmul2/error_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplierTopModule_1</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">normmul2/error_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplierTopModule_2</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">normmul2/error_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplierTopModule_2</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">roundmul/error_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplierTopModule_2</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">roundmul/error_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplierTopModule_2</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">roundmul2/error_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplierTopModule_2</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">roundmul2/error_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplierTopModule_2</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_31</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_gpio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_31</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_gpio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_30</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_gpio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_30</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_gpio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_29</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_gpio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_29</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_gpio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_28</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_gpio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_28</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_gpio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_27</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_gpio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_27</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_gpio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_26</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_gpio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_26</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_gpio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_25</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_gpio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_25</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_gpio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_24</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_gpio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_24</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_gpio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_23</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_gpio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_23</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_gpio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_22</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_gpio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_22</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_gpio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_21</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_gpio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_21</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_gpio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_20</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_gpio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_20</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_gpio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_19</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_gpio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_19</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_gpio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_18</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_gpio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_18</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_gpio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_17</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_gpio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_17</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_gpio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_16</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_gpio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_16</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_gpio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_15</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_gpio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_15</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_gpio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_14</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_gpio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_14</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_gpio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_13</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_gpio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_13</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_gpio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_12</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_gpio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_12</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_gpio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_11</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_gpio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_11</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_gpio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_gpio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_gpio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_gpio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_gpio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_gpio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_gpio</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_27</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_uart</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_27</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_uart</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_28</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_uart</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_28</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_uart</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_29</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_uart</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">bus_rsp_o_data_29</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_uart</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_LPM_FF</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_imem</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_LPM_FF1&gt; &lt;inst_LPM_FF2&gt; &lt;inst_LPM_FF3&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">inst_LPM_FF</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_imem</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;inst_LPM_FF1&gt; &lt;inst_LPM_FF2&gt; &lt;inst_LPM_FF3&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="3002" delta="new" >This design contains one or more registers/latches that are directly
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">error_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">ProcessRedirectorModule</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="3002" delta="old" >This design contains one or more registers/latches that are directly
 incompatible with the <arg fmt="%s" index="1">Spartan6</arg> architecture. The two primary causes of this is
 either a register or latch described with both an asynchronous set and
 asynchronous reset, or a register or latch described with an asynchronous
@@ -2930,421 +2927,412 @@ Xilinx highly recommends one of the following:
           (timing simulation highly recommended when using this option)
 </msg>
 
-<msg type="warning" file="Xst" num="2042" delta="new" >Unit <arg fmt="%s" index="1">IALU</arg>: <arg fmt="%d" index="2">32</arg> internal tristates are replaced by logic (pull-up <arg fmt="%s" index="3">yes</arg>): </msg>
+<msg type="warning" file="Xst" num="2042" delta="old" >Unit <arg fmt="%s" index="1">IALU</arg>: <arg fmt="%d" index="2">32</arg> internal tristates are replaced by logic (pull-up <arg fmt="%s" index="3">yes</arg>): </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">rstn_ext_o</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_sys_reset</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;rstn_sys_o&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">rstn_ext_o</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_sys_reset</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;rstn_sys_o&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/host_rsp_o_err</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_test_setup_bootloader</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/host_rsp_o_err</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_test_setup_bootloader</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/ctrl_if_fence</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/ctrl_if_fence</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/ctrl_alu_cp_fpu</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/ctrl_alu_cp_fpu</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_lsu_inst/dbus_req_o_amoop_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_lsu_inst/dbus_req_o_amoop_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_lsu_inst/dbus_req_o_amoop_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_lsu_inst/dbus_req_o_amoop_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_lsu_inst/dbus_req_o_amoop_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_lsu_inst/dbus_req_o_amoop_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_lsu_inst/dbus_req_o_amoop_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_lsu_inst/dbus_req_o_amoop_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_lsu_inst/dbus_req_o_amo</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_lsu_inst/dbus_req_o_amo</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_lsu_inst/dbus_req_o_debug</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_lsu_inst/dbus_req_o_debug</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_lsu_inst/dbus_req_o_priv</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_lsu_inst/dbus_req_o_priv</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/rs3_o_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/ialu_fmt_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/ialu_fmt_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/ialu_fmt_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/ialu_fmt_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/ialu_rm_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/ialu_rm_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/ialu_rm_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/ialu_rm_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/ialu_rm_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/ialu_rm_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/islem/error_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_amo</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/islem/error_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_debug</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/islem/error_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_fence</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_amo</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_priv</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_debug</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_src</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_fence</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_amoop_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_priv</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_amoop_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_src</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_amoop_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_amoop_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_amoop_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_amoop_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_ben_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_amoop_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_ben_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_amoop_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_ben_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_ben_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_ben_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_ben_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_addr_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_ben_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_addr_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_ben_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_addr_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_addr_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_addr_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_addr_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_addr_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_addr_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_addr_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_addr_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_addr_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_addr_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_addr_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_addr_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_addr_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_addr_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_addr_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_addr_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_addr_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_addr_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_addr_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_addr_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_addr_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_addr_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_addr_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_bus_io_switch_inst/neorv32_bus_reg_inst/device_req_o_addr_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_uart0_enabled.neorv32_uart0_inst/uart_rtsn_o</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/adderdown/errora_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/time_o_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multdown/normmul/error_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_uart0_enabled.neorv32_uart0_inst/uart_rtsn_o</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/fdual_FSM_FFd1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_test_setup_bootloader</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/adderdown/errora_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/fdual_FSM_FFd2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_test_setup_bootloader</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multdown/normmul/error_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt;.
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/flagdiv1_reg</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/flagdiv2_reg&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/fdual_FSM_FFd1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_test_setup_bootloader</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/flagadd1_reg</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/flagadd2_reg&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/fdual_FSM_FFd2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">neorv32_test_setup_bootloader</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_uart0_enabled.neorv32_uart0_inst/bus_rsp_o_data_20</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;neorv32_top_inst/io_system.neorv32_uart0_enabled.neorv32_uart0_inst/bus_rsp_o_data_19&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/flagdiv1_reg</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/flagdiv2_reg&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_uart0_enabled.neorv32_uart0_inst/bus_rsp_o_data_17</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;neorv32_top_inst/io_system.neorv32_uart0_enabled.neorv32_uart0_inst/bus_rsp_o_data_16&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/flagadd1_reg</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/flagadd2_reg&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/flagmul1_reg</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/flagmul2_reg&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_uart0_enabled.neorv32_uart0_inst/bus_rsp_o_data_20</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;neorv32_top_inst/io_system.neorv32_uart0_enabled.neorv32_uart0_inst/bus_rsp_o_data_19&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multdown/fract3_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multup/fract3_2&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/io_system.neorv32_uart0_enabled.neorv32_uart0_inst/bus_rsp_o_data_17</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;neorv32_top_inst/io_system.neorv32_uart0_enabled.neorv32_uart0_inst/bus_rsp_o_data_16&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multdown/s3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multup/s3&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/flagmul1_reg</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/flagmul2_reg&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multdown/exp3_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multup/exp3_1&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multdown/fract3_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multup/fract3_2&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multdown/fract3_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multup/fract3_7&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multdown/s3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multup/s3&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multdown/fract3_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multup/fract3_3&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multdown/exp3_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multup/exp3_1&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multdown/exp3_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multup/exp3_2&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multdown/fract3_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multup/fract3_7&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multdown/fract3_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multup/fract3_8&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multdown/fract3_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multup/fract3_3&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multdown/fract3_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multup/fract3_4&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multdown/exp3_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multup/exp3_2&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multdown/fract3_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multup/fract3_0&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multdown/fract3_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multup/fract3_8&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multdown/exp3_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multup/exp3_3&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multdown/fract3_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multup/fract3_4&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multdown/fract3_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multup/fract3_9&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multdown/fract3_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multup/fract3_0&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multdown/fract3_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multup/fract3_5&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multdown/exp3_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multup/exp3_3&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multdown/fract3_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multup/fract3_1&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multdown/fract3_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multup/fract3_9&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multdown/exp3_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multup/exp3_4&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multdown/fract3_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multup/fract3_5&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multdown/exp3_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multup/exp3_0&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multdown/fract3_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multup/fract3_1&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multdown/fract3_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multup/fract3_6&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multdown/exp3_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multup/exp3_4&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/soc_generators.neorv32_sys_clock_inst/en</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;neorv32_top_inst/io_system.neorv32_uart0_enabled.neorv32_uart0_inst/rx_engine_state_1&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multdown/exp3_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multup/exp3_0&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multdown/fract3_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/multup/fract3_6&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">neorv32_top_inst/soc_generators.neorv32_sys_clock_inst/en</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;neorv32_top_inst/io_system.neorv32_uart0_enabled.neorv32_uart0_inst/rx_engine_state_1&gt; </arg>
-</msg>
-
-<msg type="warning" file="Xst" num="1426" delta="new" >The value init of the FF/Latch <arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/exe_engine_state_FSM_FFd4_LD</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>.
+<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/exe_engine_state_FSM_FFd4_LD</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">neorv32_test_setup_bootloader</arg>.
 You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
 </msg>
 
-<msg type="info" file="Xst" num="2169" delta="new" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 </msg>
 
 </messages>

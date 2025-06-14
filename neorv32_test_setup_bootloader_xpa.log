@@ -1,0 +1,326 @@
+Creating log file
+/home/onur/Desktop/Neorv/neorv32_test_setup_bootloader_xpa.log.
+Loading device for application Rf_Device from file '6slx45.nph' in environment
+/opt/Xilinx/14.7/ISE_DS/ISE/.
+   "neorv32_test_setup_bootloader" is an NCD, version 3.2, device xc6slx45,
+package csg324, speed -2
+
+INFO:Power:1693 - 
+   --------------------------------------------------------------
+                         The power estimate will be calculated using PRODUCTION
+   data.
+   --------------------------------------------------------------
+
+Design load 20% completeDesign load 25% completeDesign load 30% completeDesign load 60% completeDesign load 95% completeDesign load 100% completeRunning Vector-less Activity Propagation
+......
+Finished Running Vector-less Activity Propagation
+Finished Running Vector-less Activity Propagation 0 secs 
+WARNING:Power:1337 - Clock frequency for clock net "clk_i_BUFGP" is zero.
+WARNING:Power:1337 - Clock frequency for clock net "clk_i_BUFGP/IBUFG" is zero.
+WARNING:Power:1337 - Clock frequency for clock net "neorv32_top_inst/core_complex_gen[0].neorv32_core_bus_switch_inst/rstn_i_inv" is zero.
+WARNING:Power:1337 - Clock frequency for clock net
+   "neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModul
+   es_inst/IALU_inst/adderdown/signFunc/operator_s1_MUX_642_o" is zero.
+WARNING:Power:1337 - Clock frequency for clock net
+   "neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModul
+   es_inst/IALU_inst/adderup/Mmux_n020561" is zero.
+WARNING:Power:1337 - Clock frequency for clock net
+   "neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModul
+   es_inst/IALU_inst/adderup/signFunc/operator_s1_MUX_642_o" is zero.
+WARNING:Power:1337 - Clock frequency for clock net
+   "neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModul
+   es_inst/IALU_inst/divdown/div_result<11>" is zero.
+WARNING:Power:1337 - Clock frequency for clock net
+   "neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModul
+   es_inst/IALU_inst/divdown/error_1_G" is zero.
+WARNING:Power:1337 - Clock frequency for clock net
+   "neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModul
+   es_inst/IALU_inst/divdown/error_2_G" is zero.
+WARNING:Power:1337 - Clock frequency for clock net
+   "neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModul
+   es_inst/IALU_inst/divup/div_result<11>" is zero.
+WARNING:Power:1337 - Clock frequency for clock net
+   "neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModul
+   es_inst/IALU_inst/divup/error_1_G" is zero.
+WARNING:Power:1337 - Clock frequency for clock net
+   "neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModul
+   es_inst/IALU_inst/divup/error_2_G" is zero.
+WARNING:Power:1337 - Clock frequency for clock net
+   "neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModul
+   es_inst/IALU_inst/dual" is zero.
+WARNING:Power:1337 - Clock frequency for clock net
+   "neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModul
+   es_inst/IALU_inst/dual_BUFG" is zero.
+WARNING:Power:1337 - Clock frequency for clock net
+   "neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModul
+   es_inst/IALU_inst/islem/errore[2]_reduce_or_1_o" is zero.
+WARNING:Power:1337 - Clock frequency for clock net
+   "neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModul
+   es_inst/IALU_inst/multup/normmul/m_result[21]_s_exp[4]_Mux_8_o" is zero.
+WARNING:Power:1369 - Clock frequency for one or more clocks was not found through
+   timing constraints (PCF file) or simulation data.  Without knowing the
+   clock frequency of all clocks, dynamic power information for those clock
+   domains will default to zero which may under-estimate the power for this
+   design.  To avoid this warning, provide at least one of the following:
+     1. The proper timing constraints (PERIOD) for clocks (re-implement design
+        and load the newly generated PCF file into XPower Analyzer)
+     2. A post PAR simulation-generated VCD or SAIF file indicating clock
+        frequencies
+     3. The clock frequency for clocks in the "By Type -> Clocks" view in the
+        XPower Analyzer GUI and then applying "Update Power Analysis"
+
+Design 'neorv32_test_setup_bootloader.ncd' and constraints 'neorv32_test_setup_bootloader.pcf' opened successfully
+
+
+Updating power analysis...
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/ctrl_lsu_mo_we to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/_n0234_inv to
+   1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModule
+   s_inst/IALU_inst/_n0624_inv to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModule
+   s_inst/IALU_inst/adderup/bigexp[4]_PWR_36_o_equal_33_o to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModule
+   s_inst/IALU_inst/divdown/div_normalized/frac_result[0]_frac_result[1]_OR_1168_o to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModule
+   s_inst/IALU_inst/divup/div_normalized/frac_result[0]_frac_result[1]_OR_1168_o to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModule
+   s_inst/IALU_inst/flag_funct[4]_OR_1478_o to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/_n0070_in
+   v to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/_n0074_in
+   v to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/_n0089_in
+   v to 1.00Mhz.
+WARNING:Power:90 - Can't change activity rate of net
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/ialu_rst
+   to 1.0% of clk_i_BUFGP.
+WARNING:Power:90 - Can't change activity rate of net
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/xfint_don
+   e<1> to 1.0% of clk_i_BUFGP.
+WARNING:Power:91 - Can't change frequency of net
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_muldiv_inst_true.neorv32_cpu_cp_muldiv_inst/_n0
+   195_inv to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_muldiv_inst_true.neorv32_cpu_cp_muldiv_inst/_n0
+   200_inv to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_muldiv_inst_true.neorv32_cpu_cp_muldiv_inst/div
+   _start to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_shifter_inst/_n0061_inv to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_shifter_inst/_n0067_inv to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/Mmux_trap_ctrl_instr_be13 to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/PWR_10_o_opcode[6]_equal_404_o to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/_n3409_inv
+   to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/_n3422_inv
+   to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/_n3426_inv
+   to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/_n3431_inv
+   to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/_n3439_inv
+   to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/_n3484_inv
+   to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/_n3490_inv
+   to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/_n3495_inv
+   to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/_n3499_inv
+   to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/_n3502_inv
+   to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/_n3515_inv
+   to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/_n3526_inv
+   to 1.00Mhz.
+WARNING:Power:90 - Can't change activity rate of net
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/ctrl_rf_zero_we to 1.0% of clk_i_BUFGP.
+WARNING:Power:91 - Can't change frequency of net
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/prefetch_buffer[0].prefetch_buffer_inst/_n0067_inv to
+   1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/prefetch_buffer[0].prefetch_buffer_inst/_n0071_inv to
+   1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/prefetch_buffer[0].prefetch_buffer_inst/_n0075_inv to
+   1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/prefetch_buffer[1].prefetch_buffer_inst/_n0067_inv to
+   1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/prefetch_buffer[1].prefetch_buffer_inst/_n0071_inv to
+   1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net
+   neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_control_inst/prefetch_buffer[1].prefetch_buffer_inst/_n0075_inv to
+   1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_lsu_inst/_n0170_inv to
+   1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/_n0227_inv
+   to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/_n0231_inv
+   to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/_n0235_inv
+   to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/_n0239_inv
+   to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/_n0243_inv
+   to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/_n0247_inv
+   to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/_n0251_inv
+   to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/_n0255_inv
+   to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/_n0259_inv
+   to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/_n0263_inv
+   to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/_n0267_inv
+   to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/_n0271_inv
+   to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/_n0275_inv
+   to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/_n0279_inv
+   to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/_n0283_inv
+   to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/_n0287_inv
+   to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/_n0291_inv
+   to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/_n0295_inv
+   to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/_n0299_inv
+   to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/_n0303_inv
+   to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/_n0307_inv
+   to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/_n0311_inv
+   to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/_n0315_inv
+   to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/_n0319_inv
+   to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/_n0323_inv
+   to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/_n0327_inv
+   to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/_n0331_inv
+   to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/_n0335_inv
+   to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/_n0339_inv
+   to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/_n0343_inv
+   to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_regfile_inst/_n0351_inv
+   to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/io_req_stb to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net
+   neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/neorv32_clint_mtimecmp_gen[0].neorv32_clint_mtimecmp_inst/en_i_rw_i_A
+   ND_839_o to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net
+   neorv32_top_inst/io_system.neorv32_clint_enabled.neorv32_clint_inst/neorv32_clint_swi_gen[0].neorv32_clint_swi_inst/en_i_rw_i_AND_844_o
+   to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/io_system.neorv32_gpio_enabled.neorv32_gpio_inst/_n0158_inv to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/io_system.neorv32_gpio_enabled.neorv32_gpio_inst/_n0165_inv to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/io_system.neorv32_gpio_enabled.neorv32_gpio_inst/_n0172_inv to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/io_system.neorv32_gpio_enabled.neorv32_gpio_inst/_n0179_inv to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net
+   neorv32_top_inst/io_system.neorv32_sysinfo_enabled.neorv32_sysinfo_inst/bus_req_i_stb_GND_631_o_AND_874_o to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net
+   neorv32_top_inst/io_system.neorv32_uart0_enabled.neorv32_uart0_inst/Mmux_GND_628_o_GND_628_o_MUX_2582_o11 to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/io_system.neorv32_uart0_enabled.neorv32_uart0_inst/_n0277_inv to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/io_system.neorv32_uart0_enabled.neorv32_uart0_inst/_n0286_inv to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/io_system.neorv32_uart0_enabled.neorv32_uart0_inst/_n0305_inv to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/io_system.neorv32_uart0_enabled.neorv32_uart0_inst/_n0312_inv to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/io_system.neorv32_uart0_enabled.neorv32_uart0_inst/_n0342_inv to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/io_system.neorv32_uart0_enabled.neorv32_uart0_inst/_n0393_inv to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net
+   neorv32_top_inst/io_system.neorv32_uart0_enabled.neorv32_uart0_inst/rx_engine_fifo_inst/_n0038_inv to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net
+   neorv32_top_inst/io_system.neorv32_uart0_enabled.neorv32_uart0_inst/rx_engine_fifo_inst/_n0041_inv to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/io_system.neorv32_uart0_enabled.neorv32_uart0_inst/rx_engine_fifo_inst/we
+   to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net
+   neorv32_top_inst/io_system.neorv32_uart0_enabled.neorv32_uart0_inst/tx_engine_fifo_inst/_n0038_inv to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net
+   neorv32_top_inst/io_system.neorv32_uart0_enabled.neorv32_uart0_inst/tx_engine_fifo_inst/_n0041_inv to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/io_system.neorv32_uart0_enabled.neorv32_uart0_inst/tx_engine_fifo_inst/we
+   to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/iodev_req[2]_stb to 1.00Mhz.
+WARNING:Power:91 - Can't change frequency of net neorv32_top_inst/neorv32_bus_gateway_inst/_n0113_inv to 1.00Mhz.
+Running Vector-less Activity Propagation
+......
+Finished Running Vector-less Activity Propagation
+Finished Running Vector-less Activity Propagation 0 secs 
+WARNING:Power:1337 - Clock frequency for clock net "clk_i_BUFGP" is zero.
+WARNING:Power:1337 - Clock frequency for clock net "clk_i_BUFGP/IBUFG" is zero.
+WARNING:Power:1337 - Clock frequency for clock net "neorv32_top_inst/core_complex_gen[0].neorv32_core_bus_switch_inst/rstn_i_inv" is zero.
+WARNING:Power:1337 - Clock frequency for clock net
+   "neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModul
+   es_inst/IALU_inst/adderdown/signFunc/operator_s1_MUX_642_o" is zero.
+WARNING:Power:1337 - Clock frequency for clock net
+   "neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModul
+   es_inst/IALU_inst/adderup/Mmux_n020561" is zero.
+WARNING:Power:1337 - Clock frequency for clock net
+   "neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModul
+   es_inst/IALU_inst/adderup/signFunc/operator_s1_MUX_642_o" is zero.
+WARNING:Power:1337 - Clock frequency for clock net
+   "neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModul
+   es_inst/IALU_inst/divdown/div_result<11>" is zero.
+WARNING:Power:1337 - Clock frequency for clock net
+   "neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModul
+   es_inst/IALU_inst/divdown/error_1_G" is zero.
+WARNING:Power:1337 - Clock frequency for clock net
+   "neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModul
+   es_inst/IALU_inst/divdown/error_2_G" is zero.
+WARNING:Power:1337 - Clock frequency for clock net
+   "neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModul
+   es_inst/IALU_inst/divup/div_result<11>" is zero.
+WARNING:Power:1337 - Clock frequency for clock net
+   "neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModul
+   es_inst/IALU_inst/divup/error_1_G" is zero.
+WARNING:Power:1337 - Clock frequency for clock net
+   "neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModul
+   es_inst/IALU_inst/divup/error_2_G" is zero.
+WARNING:Power:1337 - Clock frequency for clock net
+   "neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModul
+   es_inst/IALU_inst/dual" is zero.
+WARNING:Power:1337 - Clock frequency for clock net
+   "neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModul
+   es_inst/IALU_inst/dual_BUFG" is zero.
+WARNING:Power:1337 - Clock frequency for clock net
+   "neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModul
+   es_inst/IALU_inst/islem/errore[2]_reduce_or_1_o" is zero.
+WARNING:Power:1337 - Clock frequency for clock net
+   "neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModul
+   es_inst/IALU_inst/multup/normmul/m_result[21]_s_exp[4]_Mux_8_o" is zero.
+WARNING:Power:1369 - Clock frequency for one or more clocks was not found through
+   timing constraints (PCF file) or simulation data.  Without knowing the
+   clock frequency of all clocks, dynamic power information for those clock
+   domains will default to zero which may under-estimate the power for this
+   design.  To avoid this warning, provide at least one of the following:
+     1. The proper timing constraints (PERIOD) for clocks (re-implement design
+        and load the newly generated PCF file into XPower Analyzer)
+     2. A post PAR simulation-generated VCD or SAIF file indicating clock
+        frequencies
+     3. The clock frequency for clocks in the "By Type -> Clocks" view in the
+        XPower Analyzer GUI and then applying "Update Power Analysis"
+Update Power Analysis is complete.
