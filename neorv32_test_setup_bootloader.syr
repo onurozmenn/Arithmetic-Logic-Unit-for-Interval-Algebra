@@ -359,63 +359,62 @@ Elaborating module <ZeroComparatorL>.
 Elaborating module <CrossComparator>.
 
 Elaborating module <Comparator>.
-WARNING:HDLCompiler:1127 - "/home/onur/Desktop/Neorv/IALU.v" Line 299: Assignment to L ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/onur/Desktop/Neorv/IALU.v" Line 298: Assignment to L ignored, since the identifier is never used
 
 Elaborating module <ErrorDetector>.
-WARNING:HDLCompiler:1127 - "/home/onur/Desktop/Neorv/IALU.v" Line 199: Assignment to flag ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/onur/Desktop/Neorv/IALU.v" Line 198: Assignment to flag ignored, since the identifier is never used
 WARNING:HDLCompiler:1127 - "/home/onur/Desktop/Neorv/IALU.v" Line 64: Assignment to condition ignored, since the identifier is never used
 
 Elaborating module <AdderSubtractorTopModule>.
 
 Elaborating module <AdderSignFunction>.
-"/home/onur/Desktop/Neorv/IALU.v" Line 575. $display Sonu 0 iaret yok
-WARNING:HDLCompiler:91 - "/home/onur/Desktop/Neorv/IALU.v" Line 920: Signal <finalsign> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:413 - "/home/onur/Desktop/Neorv/IALU.v" Line 943: Result of 10-bit expression is truncated to fit in 5-bit target.
-WARNING:HDLCompiler:1016 - "/home/onur/Desktop/Neorv/IALU.v" Line 774: Port E is not connected to this instance
+"/home/onur/Desktop/Neorv/IALU.v" Line 572. $display Sonu 0 iaret yok
+WARNING:HDLCompiler:91 - "/home/onur/Desktop/Neorv/IALU.v" Line 914: Signal <finalsign> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "/home/onur/Desktop/Neorv/IALU.v" Line 937: Result of 10-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:1016 - "/home/onur/Desktop/Neorv/IALU.v" Line 768: Port E is not connected to this instance
 
 Elaborating module <MultiplierTopModule(updown=0)>.
-WARNING:HDLCompiler:91 - "/home/onur/Desktop/Neorv/IALU.v" Line 761: Signal <c_sumexp> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:413 - "/home/onur/Desktop/Neorv/IALU.v" Line 761: Result of 32-bit expression is truncated to fit in 5-bit target.
-WARNING:HDLCompiler:91 - "/home/onur/Desktop/Neorv/IALU.v" Line 766: Signal <c_sumexp2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:413 - "/home/onur/Desktop/Neorv/IALU.v" Line 766: Result of 32-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:91 - "/home/onur/Desktop/Neorv/IALU.v" Line 755: Signal <c_sumexp> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "/home/onur/Desktop/Neorv/IALU.v" Line 755: Result of 32-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:91 - "/home/onur/Desktop/Neorv/IALU.v" Line 760: Signal <c_sumexp2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "/home/onur/Desktop/Neorv/IALU.v" Line 760: Result of 32-bit expression is truncated to fit in 5-bit target.
 
 Elaborating module <NormalizeMul>.
 
 Elaborating module <NormalizeMul(duality=1)>.
 
 Elaborating module <RoundingMul>.
-WARNING:HDLCompiler:413 - "/home/onur/Desktop/Neorv/IALU.v" Line 828: Result of 13-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:413 - "/home/onur/Desktop/Neorv/IALU.v" Line 822: Result of 13-bit expression is truncated to fit in 12-bit target.
 
 Elaborating module <RoundingMul(duality=1)>.
-WARNING:HDLCompiler:413 - "/home/onur/Desktop/Neorv/IALU.v" Line 828: Result of 13-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:413 - "/home/onur/Desktop/Neorv/IALU.v" Line 822: Result of 13-bit expression is truncated to fit in 12-bit target.
 
 Elaborating module <Comparator(ws=0)>.
-WARNING:HDLCompiler:1127 - "/home/onur/Desktop/Neorv/IALU.v" Line 299: Assignment to L ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/onur/Desktop/Neorv/IALU.v" Line 298: Assignment to L ignored, since the identifier is never used
 
 Elaborating module <MultiplierTopModule(updown=1)>.
-WARNING:HDLCompiler:91 - "/home/onur/Desktop/Neorv/IALU.v" Line 761: Signal <c_sumexp> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:413 - "/home/onur/Desktop/Neorv/IALU.v" Line 761: Result of 32-bit expression is truncated to fit in 5-bit target.
-WARNING:HDLCompiler:91 - "/home/onur/Desktop/Neorv/IALU.v" Line 766: Signal <c_sumexp2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:413 - "/home/onur/Desktop/Neorv/IALU.v" Line 766: Result of 32-bit expression is truncated to fit in 5-bit target.
-WARNING:HDLCompiler:1016 - "/home/onur/Desktop/Neorv/IALU.v" Line 508: Port cout is not connected to this instance
+WARNING:HDLCompiler:91 - "/home/onur/Desktop/Neorv/IALU.v" Line 755: Signal <c_sumexp> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "/home/onur/Desktop/Neorv/IALU.v" Line 755: Result of 32-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:91 - "/home/onur/Desktop/Neorv/IALU.v" Line 760: Signal <c_sumexp2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "/home/onur/Desktop/Neorv/IALU.v" Line 760: Result of 32-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:1016 - "/home/onur/Desktop/Neorv/IALU.v" Line 506: Port cout is not connected to this instance
 
 Elaborating module <DividerTopModule>.
-"/home/onur/Desktop/Neorv/IALU.v" Line 495. $display diffa 0
-"/home/onur/Desktop/Neorv/IALU.v" Line 499. $display diffb 0
+"/home/onur/Desktop/Neorv/IALU.v" Line 493. $display diffa 0
+"/home/onur/Desktop/Neorv/IALU.v" Line 497. $display diffb 0
 
 Elaborating module <Four_Bit_Divider>.
-WARNING:HDLCompiler:413 - "/home/onur/Desktop/Neorv/IALU.v" Line 361: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/onur/Desktop/Neorv/IALU.v" Line 360: Result of 32-bit expression is truncated to fit in 1-bit target.
 
 Elaborating module <Four_Bit_Substractor_Div>.
 
 Elaborating module <FullAdder>.
-WARNING:HDLCompiler:413 - "/home/onur/Desktop/Neorv/IALU.v" Line 626: Result of 7-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "/home/onur/Desktop/Neorv/IALU.v" Line 623: Result of 7-bit expression is truncated to fit in 5-bit target.
 
 Elaborating module <Div_Normalization>.
-WARNING:HDLCompiler:413 - "/home/onur/Desktop/Neorv/IALU.v" Line 537: Result of 32-bit expression is truncated to fit in 5-bit target.
-WARNING:HDLCompiler:413 - "/home/onur/Desktop/Neorv/IALU.v" Line 549: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/onur/Desktop/Neorv/IALU.v" Line 534: Result of 32-bit expression is truncated to fit in 5-bit target.
 Back to vhdl to continue elaboration
-INFO:HDLCompiler:679 - "/home/onur/Desktop/Neorv/neorv32_cpu_cp_cfu.vhd" Line 209. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/home/onur/Desktop/Neorv/neorv32_cpu_cp_cfu.vhd" Line 154. Case statement is complete. others clause is never selected
 
 Elaborating entity <neorv32_cpu_lsu> (architecture <neorv32_cpu_lsu_rtl>) from library <neorv32>.
 
@@ -1086,7 +1085,7 @@ INFO:Xst:3210 - "/home/onur/Desktop/Neorv/neorv32_cpu_control.vhd" line 387: Out
     Found 12-bit register for signal <csr_addr>.
     Found 16-bit register for signal <csr_mie_firq>.
     Found 2-bit register for signal <fetch_engine_state>.
-    Found 2-bit register for signal <csr_mcountinhibit[1:0][1:0]>.
+    Found 2-bit register for signal <csr_mcountinhibit[1:0]>.
     Found 1-bit register for signal <issue_engine_align>.
     Found 1-bit register for signal <ctrl_if_fence>.
     Found 1-bit register for signal <ctrl_rf_wb_en>.
@@ -1152,8 +1151,8 @@ INFO:Xst:3210 - "/home/onur/Desktop/Neorv/neorv32_cpu_control.vhd" line 387: Out
     Found 32-bit adder for signal <cnt_hi[2][31]_GND_10_o_add_584_OUT> created at line 1959.
     Found 33-bit adder for signal <cnt_nxt<2>> created at line 1965.
     Found 4x1-bit Read Only RAM for signal <exe_engine_ir[14]_GND_10_o_Mux_321_o>
-    Found 8x5-bit Read Only RAM for signal <_n3580>
-    Found 8x2-bit Read Only RAM for signal <_n3589>
+    Found 8x5-bit Read Only RAM for signal <_n4584>
+    Found 8x2-bit Read Only RAM for signal <_n4593>
     Found 32-bit 3-to-1 multiplexer for signal <csr_wdata> created at line 1359.
     WARNING:Xst:2404 -  FFs/Latches <ctrl_lsu_amo<0:0>> (without init value) have a constant value of 0 in block <neorv32_cpu_control>.
     WARNING:Xst:2404 -  FFs/Latches <csr_mstatus_mpp<0:0>> (without init value) have a constant value of 1 in block <neorv32_cpu_control>.
@@ -1425,24 +1424,24 @@ WARNING:Xst:647 - Input <rs3_i> is never used. This port will be preserved and l
 WARNING:Xst:647 - Input <active_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <csr_we_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <rtype_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "/home/onur/Desktop/Neorv/neorv32_cpu_cp_cfu.vhd" line 125: Output port <dual> of the instance <TopModules_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/onur/Desktop/Neorv/neorv32_cpu_cp_cfu.vhd" line 97: Output port <dual> of the instance <TopModules_inst> is unconnected or connected to loadless signal.
     Found 1-bit register for signal <ialu_rst>.
     Found 32-bit register for signal <xfint_res>.
+    Found 3-bit register for signal <error_reg>.
     Found 3-bit register for signal <xfint_done>.
     Found 32-bit register for signal <ialu_a>.
     Found 32-bit register for signal <ialu_b>.
     Found 5-bit register for signal <ialu_funct>.
     Found 2-bit register for signal <ialu_fmt>.
     Found 3-bit register for signal <ialu_rm>.
-    Found 3-bit register for signal <error_reg>.
     Summary:
 	inferred 113 D-type flip-flop(s).
 Unit <neorv32_cpu_cp_cfu> synthesized.
 
 Synthesizing Unit <TopModules_wrapper>.
     Related source file is "/home/onur/Desktop/Neorv/TopModules_wrapper.vhd".
-INFO:Xst:3210 - "/home/onur/Desktop/Neorv/TopModules_wrapper.vhd" line 41: Output port <stateCross> of the instance <IALU_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/onur/Desktop/Neorv/TopModules_wrapper.vhd" line 41: Output port <dual> of the instance <IALU_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/onur/Desktop/Neorv/TopModules_wrapper.vhd" line 39: Output port <stateCross> of the instance <IALU_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/onur/Desktop/Neorv/TopModules_wrapper.vhd" line 39: Output port <dual> of the instance <IALU_inst> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <dual> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
 	no macro.
@@ -1581,11 +1580,11 @@ Unit <CrossComparator> synthesized.
 Synthesizing Unit <Comparator>.
     Related source file is "/home/onur/Desktop/Neorv/IALU.v".
         ws = 1
-    Found 16-bit comparator equal for signal <E> created at line 304
-    Found 1-bit comparator not equal for signal <n0007> created at line 306
-    Found 5-bit comparator greater for signal <B_EXP[4]_A_EXP[4]_LessThan_7_o> created at line 313
-    Found 5-bit comparator greater for signal <A_EXP[4]_B_EXP[4]_LessThan_8_o> created at line 317
-    Found 10-bit comparator greater for signal <B_FRACT[9]_A_FRACT[9]_LessThan_9_o> created at line 322
+    Found 16-bit comparator equal for signal <E> created at line 303
+    Found 1-bit comparator not equal for signal <n0007> created at line 305
+    Found 5-bit comparator greater for signal <B_EXP[4]_A_EXP[4]_LessThan_7_o> created at line 312
+    Found 5-bit comparator greater for signal <A_EXP[4]_B_EXP[4]_LessThan_8_o> created at line 316
+    Found 10-bit comparator greater for signal <B_FRACT[9]_A_FRACT[9]_LessThan_9_o> created at line 321
     Summary:
 	inferred   5 Comparator(s).
 	inferred   5 Multiplexer(s).
@@ -1599,27 +1598,27 @@ Unit <ErrorDetector> synthesized.
 
 Synthesizing Unit <AdderSubtractorTopModule>.
     Related source file is "/home/onur/Desktop/Neorv/IALU.v".
-    Found 5-bit subtractor for signal <exp_a[4]_exp_b[4]_sub_7_OUT> created at line 888.
-    Found 5-bit subtractor for signal <exp_b[4]_exp_a[4]_sub_8_OUT> created at line 888.
-    Found 16-bit subtractor for signal <GND_33_o_GND_33_o_sub_23_OUT> created at line 908.
-    Found 16-bit subtractor for signal <GND_33_o_GND_33_o_sub_24_OUT> created at line 908.
-    Found 15-bit subtractor for signal <sum[14]_unary_minus_27_OUT> created at line 912.
-    Found 5-bit subtractor for signal <chexpe> created at line 996.
-    Found 16-bit adder for signal <n0189> created at line 908.
-    Found 15-bit adder for signal <sum[14]_GND_33_o_add_29_OUT> created at line 916.
-    Found 5-bit adder for signal <bigexp[4]_GND_33_o_add_31_OUT> created at line 918.
-    Found 12-bit adder for signal <tempsum[14]_GND_33_o_add_69_OUT> created at line 963.
-    Found 5-bit adder for signal <tempexp[4]_GND_33_o_add_71_OUT> created at line 968.
-    Found 5-bit subtractor for signal <GND_33_o_GND_33_o_sub_59_OUT<4:0>> created at line 943.
-    Found 15-bit shifter logical right for signal <rightshifted> created at line 874
-    Found 15-bit shifter logical left for signal <sum[14]_sum[14]_shift_left_57_OUT> created at line 942
+    Found 5-bit subtractor for signal <exp_a[4]_exp_b[4]_sub_7_OUT> created at line 882.
+    Found 5-bit subtractor for signal <exp_b[4]_exp_a[4]_sub_8_OUT> created at line 882.
+    Found 16-bit subtractor for signal <GND_33_o_GND_33_o_sub_23_OUT> created at line 902.
+    Found 16-bit subtractor for signal <GND_33_o_GND_33_o_sub_24_OUT> created at line 902.
+    Found 15-bit subtractor for signal <sum[14]_unary_minus_27_OUT> created at line 906.
+    Found 5-bit subtractor for signal <chexpe> created at line 990.
+    Found 16-bit adder for signal <n0189> created at line 902.
+    Found 15-bit adder for signal <sum[14]_GND_33_o_add_29_OUT> created at line 910.
+    Found 5-bit adder for signal <bigexp[4]_GND_33_o_add_31_OUT> created at line 912.
+    Found 12-bit adder for signal <tempsum[14]_GND_33_o_add_69_OUT> created at line 957.
+    Found 5-bit adder for signal <tempexp[4]_GND_33_o_add_71_OUT> created at line 962.
+    Found 5-bit subtractor for signal <GND_33_o_GND_33_o_sub_59_OUT<4:0>> created at line 937.
+    Found 15-bit shifter logical right for signal <rightshifted> created at line 868
+    Found 15-bit shifter logical left for signal <sum[14]_sum[14]_shift_left_57_OUT> created at line 936
 WARNING:Xst:737 - Found 1-bit latch for signal <errora<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <errora<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <errorb<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <errorb<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <errorb<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <errora<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 5-bit comparator lessequal for signal <n0028> created at line 887
+    Found 5-bit comparator lessequal for signal <n0028> created at line 881
     Summary:
 	inferred   9 Adder/Subtractor(s).
 	inferred   6 Latch(s).
@@ -1631,8 +1630,8 @@ Unit <AdderSubtractorTopModule> synthesized.
 Synthesizing Unit <AdderSignFunction>.
     Related source file is "/home/onur/Desktop/Neorv/IALU.v".
 WARNING:Xst:737 - Found 1-bit latch for signal <s>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 15-bit comparator greater for signal <fract2[14]_fract1[14]_LessThan_7_o> created at line 587
-    Found 15-bit comparator greater for signal <fract1[14]_fract2[14]_LessThan_8_o> created at line 590
+    Found 15-bit comparator greater for signal <fract2[14]_fract1[14]_LessThan_7_o> created at line 584
+    Found 15-bit comparator greater for signal <fract1[14]_fract2[14]_LessThan_8_o> created at line 587
     Summary:
 	inferred   1 Latch(s).
 	inferred   2 Comparator(s).
@@ -1644,16 +1643,16 @@ Synthesizing Unit <MultiplierTopModule_1>.
         updown = 0
 WARNING:Xst:647 - Input <OPCODE> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "/home/onur/Desktop/Neorv/IALU.v" line 774: Output port <E> of the instance <comp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/onur/Desktop/Neorv/IALU.v" line 774: Output port <flag> of the instance <comp> is unconnected or connected to loadless signal.
-    Found 6-bit subtractor for signal <biased_exp1> created at line 726.
-    Found 6-bit subtractor for signal <biased_exp2> created at line 727.
-    Found 6-bit adder for signal <real_exp_sum1> created at line 719.
-    Found 6-bit adder for signal <real_exp_sum2> created at line 720.
-    Found 5-bit subtractor for signal <mult_sumexp2> created at line 666.
-    Found 5-bit subtractor for signal <mult_sumexp4> created at line 666.
-    Found 11x11-bit multiplier for signal <mult_fract> created at line 768.
-    Found 11x11-bit multiplier for signal <mult_fract2> created at line 769.
+INFO:Xst:3210 - "/home/onur/Desktop/Neorv/IALU.v" line 768: Output port <E> of the instance <comp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/onur/Desktop/Neorv/IALU.v" line 768: Output port <flag> of the instance <comp> is unconnected or connected to loadless signal.
+    Found 6-bit subtractor for signal <biased_exp1> created at line 720.
+    Found 6-bit subtractor for signal <biased_exp2> created at line 721.
+    Found 6-bit adder for signal <real_exp_sum1> created at line 713.
+    Found 6-bit adder for signal <real_exp_sum2> created at line 714.
+    Found 5-bit subtractor for signal <mult_sumexp2> created at line 663.
+    Found 5-bit subtractor for signal <mult_sumexp4> created at line 663.
+    Found 11x11-bit multiplier for signal <mult_fract> created at line 762.
+    Found 11x11-bit multiplier for signal <mult_fract2> created at line 763.
 WARNING:Xst:737 - Found 1-bit latch for signal <s4>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <exp3<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <exp3<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -1686,10 +1685,10 @@ WARNING:Xst:737 - Found 1-bit latch for signal <fract4<2>>. Latches may be gener
 WARNING:Xst:737 - Found 1-bit latch for signal <fract4<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <fract4<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <s3>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 6-bit comparator lessequal for signal <n0076> created at line 730
-    Found 6-bit comparator lessequal for signal <n0078> created at line 731
-    Found 6-bit comparator lessequal for signal <n0080> created at line 733
-    Found 6-bit comparator lessequal for signal <n0082> created at line 734
+    Found 6-bit comparator lessequal for signal <n0076> created at line 724
+    Found 6-bit comparator lessequal for signal <n0078> created at line 725
+    Found 6-bit comparator lessequal for signal <n0080> created at line 727
+    Found 6-bit comparator lessequal for signal <n0082> created at line 728
     Summary:
 	inferred   2 Multiplier(s).
 	inferred   6 Adder/Subtractor(s).
@@ -1702,7 +1701,7 @@ Synthesizing Unit <NormalizeMul>.
     Related source file is "/home/onur/Desktop/Neorv/IALU.v".
         duality = 0
 WARNING:Xst:647 - Input <dual> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 5-bit adder for signal <s_exp[4]_GND_78_o_add_1_OUT> created at line 795.
+    Found 5-bit adder for signal <s_exp[4]_GND_78_o_add_1_OUT> created at line 789.
 WARNING:Xst:737 - Found 1-bit latch for signal <error<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <error<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <error<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -1715,7 +1714,7 @@ Unit <NormalizeMul> synthesized.
 Synthesizing Unit <NormalizeMul_1>.
     Related source file is "/home/onur/Desktop/Neorv/IALU.v".
         duality = 1
-    Found 5-bit adder for signal <s_exp[4]_GND_82_o_add_1_OUT> created at line 795.
+    Found 5-bit adder for signal <s_exp[4]_GND_82_o_add_1_OUT> created at line 789.
 WARNING:Xst:737 - Found 1-bit latch for signal <error<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <error<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <error<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -1730,8 +1729,8 @@ Synthesizing Unit <RoundingMul>.
         duality = 0
 WARNING:Xst:647 - Input <s_result<8:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <dual> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 12-bit adder for signal <s_result[21]_GND_86_o_add_1_OUT> created at line 828.
-    Found 5-bit adder for signal <r_exp[4]_GND_86_o_add_3_OUT> created at line 833.
+    Found 12-bit adder for signal <s_result[21]_GND_86_o_add_1_OUT> created at line 822.
+    Found 5-bit adder for signal <r_exp[4]_GND_86_o_add_3_OUT> created at line 827.
 WARNING:Xst:737 - Found 1-bit latch for signal <error<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <error<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <error<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -1745,8 +1744,8 @@ Synthesizing Unit <RoundingMul_1>.
     Related source file is "/home/onur/Desktop/Neorv/IALU.v".
         duality = 1
 WARNING:Xst:647 - Input <s_result<8:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 12-bit adder for signal <s_result[21]_GND_90_o_add_1_OUT> created at line 828.
-    Found 5-bit adder for signal <r_exp[4]_GND_90_o_add_3_OUT> created at line 833.
+    Found 12-bit adder for signal <s_result[21]_GND_90_o_add_1_OUT> created at line 822.
+    Found 5-bit adder for signal <r_exp[4]_GND_90_o_add_3_OUT> created at line 827.
 WARNING:Xst:737 - Found 1-bit latch for signal <error<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <error<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <error<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -1759,11 +1758,11 @@ Unit <RoundingMul_1> synthesized.
 Synthesizing Unit <Comparator_1>.
     Related source file is "/home/onur/Desktop/Neorv/IALU.v".
         ws = 0
-    Found 16-bit comparator equal for signal <E> created at line 304
-    Found 1-bit comparator not equal for signal <n0007> created at line 306
-    Found 5-bit comparator greater for signal <B_EXP[4]_A_EXP[4]_LessThan_7_o> created at line 332
-    Found 5-bit comparator greater for signal <A_EXP[4]_B_EXP[4]_LessThan_8_o> created at line 335
-    Found 10-bit comparator greater for signal <B_FRACT[9]_A_FRACT[9]_LessThan_9_o> created at line 339
+    Found 16-bit comparator equal for signal <E> created at line 303
+    Found 1-bit comparator not equal for signal <n0007> created at line 305
+    Found 5-bit comparator greater for signal <B_EXP[4]_A_EXP[4]_LessThan_7_o> created at line 331
+    Found 5-bit comparator greater for signal <A_EXP[4]_B_EXP[4]_LessThan_8_o> created at line 334
+    Found 10-bit comparator greater for signal <B_FRACT[9]_A_FRACT[9]_LessThan_9_o> created at line 338
     Summary:
 	inferred   5 Comparator(s).
 	inferred   4 Multiplexer(s).
@@ -1774,16 +1773,16 @@ Synthesizing Unit <MultiplierTopModule_2>.
         updown = 1
 WARNING:Xst:647 - Input <OPCODE> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "/home/onur/Desktop/Neorv/IALU.v" line 774: Output port <E> of the instance <comp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/onur/Desktop/Neorv/IALU.v" line 774: Output port <flag> of the instance <comp> is unconnected or connected to loadless signal.
-    Found 6-bit subtractor for signal <biased_exp1> created at line 726.
-    Found 6-bit subtractor for signal <biased_exp2> created at line 727.
-    Found 6-bit adder for signal <real_exp_sum1> created at line 719.
-    Found 6-bit adder for signal <real_exp_sum2> created at line 720.
-    Found 5-bit subtractor for signal <mult_sumexp2> created at line 666.
-    Found 5-bit subtractor for signal <mult_sumexp4> created at line 666.
-    Found 11x11-bit multiplier for signal <mult_fract> created at line 768.
-    Found 11x11-bit multiplier for signal <mult_fract2> created at line 769.
+INFO:Xst:3210 - "/home/onur/Desktop/Neorv/IALU.v" line 768: Output port <E> of the instance <comp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/onur/Desktop/Neorv/IALU.v" line 768: Output port <flag> of the instance <comp> is unconnected or connected to loadless signal.
+    Found 6-bit subtractor for signal <biased_exp1> created at line 720.
+    Found 6-bit subtractor for signal <biased_exp2> created at line 721.
+    Found 6-bit adder for signal <real_exp_sum1> created at line 713.
+    Found 6-bit adder for signal <real_exp_sum2> created at line 714.
+    Found 5-bit subtractor for signal <mult_sumexp2> created at line 663.
+    Found 5-bit subtractor for signal <mult_sumexp4> created at line 663.
+    Found 11x11-bit multiplier for signal <mult_fract> created at line 762.
+    Found 11x11-bit multiplier for signal <mult_fract2> created at line 763.
 WARNING:Xst:737 - Found 1-bit latch for signal <s4>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <exp3<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <exp3<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -1816,10 +1815,10 @@ WARNING:Xst:737 - Found 1-bit latch for signal <fract4<2>>. Latches may be gener
 WARNING:Xst:737 - Found 1-bit latch for signal <fract4<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <fract4<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <s3>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 6-bit comparator lessequal for signal <n0076> created at line 730
-    Found 6-bit comparator lessequal for signal <n0078> created at line 731
-    Found 6-bit comparator lessequal for signal <n0080> created at line 733
-    Found 6-bit comparator lessequal for signal <n0082> created at line 734
+    Found 6-bit comparator lessequal for signal <n0076> created at line 724
+    Found 6-bit comparator lessequal for signal <n0078> created at line 725
+    Found 6-bit comparator lessequal for signal <n0080> created at line 727
+    Found 6-bit comparator lessequal for signal <n0082> created at line 728
     Summary:
 	inferred   2 Multiplier(s).
 	inferred   6 Adder/Subtractor(s).
@@ -1831,7 +1830,7 @@ Unit <MultiplierTopModule_2> synthesized.
 Synthesizing Unit <DividerTopModule>.
     Related source file is "/home/onur/Desktop/Neorv/IALU.v".
 WARNING:Xst:647 - Input <OPCODE> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "/home/onur/Desktop/Neorv/IALU.v" line 508: Output port <cout> of the instance <subs> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/onur/Desktop/Neorv/IALU.v" line 506: Output port <cout> of the instance <subs> is unconnected or connected to loadless signal.
 WARNING:Xst:737 - Found 1-bit latch for signal <error<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <error<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
     Summary:
@@ -1841,19 +1840,19 @@ Unit <DividerTopModule> synthesized.
 
 Synthesizing Unit <Four_Bit_Divider>.
     Related source file is "/home/onur/Desktop/Neorv/IALU.v".
-    Found 12-bit subtractor for signal <div_result> created at line 364.
-    Found 12-bit subtractor for signal <n0031> created at line 364.
-    Found 12-bit subtractor for signal <n0032> created at line 364.
-    Found 12-bit subtractor for signal <n0033> created at line 364.
-    Found 12-bit subtractor for signal <n0034> created at line 364.
-    Found 12-bit subtractor for signal <n0035> created at line 364.
-    Found 12-bit subtractor for signal <n0036> created at line 364.
-    Found 12-bit subtractor for signal <n0037> created at line 364.
-    Found 12-bit subtractor for signal <n0038> created at line 364.
-    Found 12-bit subtractor for signal <n0039> created at line 364.
-    Found 12-bit subtractor for signal <n> created at line 364.
-    Found 11-bit subtractor for signal <GND_132_o_GND_132_o_sub_4_OUT<10:0>> created at line 362.
-    Found 11-bit comparator lessequal for signal <n0000> created at line 361
+    Found 12-bit subtractor for signal <div_result> created at line 363.
+    Found 12-bit subtractor for signal <n0031> created at line 363.
+    Found 12-bit subtractor for signal <n0032> created at line 363.
+    Found 12-bit subtractor for signal <n0033> created at line 363.
+    Found 12-bit subtractor for signal <n0034> created at line 363.
+    Found 12-bit subtractor for signal <n0035> created at line 363.
+    Found 12-bit subtractor for signal <n0036> created at line 363.
+    Found 12-bit subtractor for signal <n0037> created at line 363.
+    Found 12-bit subtractor for signal <n0038> created at line 363.
+    Found 12-bit subtractor for signal <n0039> created at line 363.
+    Found 12-bit subtractor for signal <n> created at line 363.
+    Found 11-bit subtractor for signal <GND_132_o_GND_132_o_sub_4_OUT<10:0>> created at line 361.
+    Found 11-bit comparator lessequal for signal <n0000> created at line 360
     Summary:
 	inferred  12 Adder/Subtractor(s).
 	inferred   1 Comparator(s).
@@ -1862,11 +1861,11 @@ Unit <Four_Bit_Divider> synthesized.
 
 Synthesizing Unit <Four_Bit_Substractor_Div>.
     Related source file is "/home/onur/Desktop/Neorv/IALU.v".
-    Found 6-bit subtractor for signal <real_result> created at line 630.
-    Found 6-bit adder for signal <n0014> created at line 626.
-    Found 6-bit adder for signal <Sum2> created at line 633.
-    Found 6-bit comparator greater for signal <Sum2[5]_GND_133_o_LessThan_4_o> created at line 637
-    Found 6-bit comparator greater for signal <GND_133_o_Sum2[5]_LessThan_5_o> created at line 638
+    Found 6-bit subtractor for signal <real_result> created at line 627.
+    Found 6-bit adder for signal <n0014> created at line 623.
+    Found 6-bit adder for signal <Sum2> created at line 630.
+    Found 6-bit comparator greater for signal <Sum2[5]_GND_133_o_LessThan_4_o> created at line 634
+    Found 6-bit comparator greater for signal <GND_133_o_Sum2[5]_LessThan_5_o> created at line 635
     Summary:
 	inferred   3 Adder/Subtractor(s).
 	inferred   2 Comparator(s).
@@ -1880,10 +1879,10 @@ Unit <FullAdder> synthesized.
 
 Synthesizing Unit <Div_Normalization>.
     Related source file is "/home/onur/Desktop/Neorv/IALU.v".
-    Found 5-bit subtractor for signal <exp_result[4]_GND_135_o_sub_30_OUT> created at line 546.
-    Found 12-bit adder for signal <frac_result[11]_GND_135_o_add_27_OUT> created at line 541.
-    Found 5-bit subtractor for signal <GND_135_o_i2[31]_sub_24_OUT<4:0>> created at line 537.
-    Found 12-bit shifter logical left for signal <frac_result[11]_i2[31]_shift_left_22_OUT> created at line 536
+    Found 5-bit subtractor for signal <exp_result[4]_GND_135_o_sub_30_OUT> created at line 543.
+    Found 12-bit adder for signal <frac_result[11]_GND_135_o_add_27_OUT> created at line 538.
+    Found 5-bit subtractor for signal <GND_135_o_i2[31]_sub_24_OUT<4:0>> created at line 534.
+    Found 12-bit shifter logical left for signal <frac_result[11]_i2[31]_shift_left_22_OUT> created at line 533
 WARNING:Xst:737 - Found 1-bit latch for signal <i2<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <i2<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <i2<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -1997,7 +1996,7 @@ WARNING:Xst:647 - Input <x_rsp_i_err> is never used. This port will be preserved
     Found 5-bit register for signal <keeper_cnt>.
     Found 1-bit register for signal <keeper_err>.
     Found 1-bit register for signal <keeper_busy>.
-    Found 5-bit adder for signal <keeper_cnt[4]_GND_241_o_add_44_OUT> created at line 1241.
+    Found 5-bit adder for signal <keeper_cnt[4]_GND_238_o_add_44_OUT> created at line 1241.
     WARNING:Xst:2404 -  FFs/Latches <keeper_halt<0:0>> (without init value) have a constant value of 0 in block <neorv32_bus_gateway>.
     Summary:
 	inferred   1 Adder/Subtractor(s).
@@ -2244,7 +2243,7 @@ WARNING:Xst:647 - Input <bus_req_i_amo> is never used. This port will be preserv
 WARNING:Xst:647 - Input <bus_req_i_fence> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 1-bit register for signal <rden>.
     Found 32-bit register for signal <rdata>.
-    Found 1024x32-bit Read Only RAM for signal <bus_req_i_addr[11]_GND_622_o_wide_mux_0_OUT>
+    Found 1024x32-bit Read Only RAM for signal <bus_req_i_addr[11]_GND_619_o_wide_mux_0_OUT>
     Summary:
 	inferred   1 RAM(s).
 	inferred  33 D-type flip-flop(s).
@@ -2282,7 +2281,7 @@ WARNING:Xst:647 - Input <bus_req_i_fence> is never used. This port will be prese
     Found 4x1-bit Read Only RAM for signal <irq_trig<5>>
     Found 4x1-bit Read Only RAM for signal <irq_trig<6>>
     Found 4x1-bit Read Only RAM for signal <irq_trig<7>>
-    Found 32-bit 7-to-1 multiplexer for signal <bus_req_i_addr[4]_GND_623_o_wide_mux_5_OUT> created at line 82.
+    Found 32-bit 7-to-1 multiplexer for signal <bus_req_i_addr[4]_GND_620_o_wide_mux_5_OUT> created at line 82.
     WARNING:Xst:2404 -  FFs/Latches <bus_rsp_o_err<0:0>> (without init value) have a constant value of 0 in block <neorv32_gpio>.
     WARNING:Xst:2404 -  FFs/Latches <port_in<7:0>> (without init value) have a constant value of 0 in block <neorv32_gpio>.
     WARNING:Xst:2404 -  FFs/Latches <port_in2<7:0>> (without init value) have a constant value of 0 in block <neorv32_gpio>.
@@ -2432,10 +2431,10 @@ INFO:Xst:3210 - "/home/onur/Desktop/Neorv/neorv32_uart.vhd" line 275: Output por
     Found 1-bit register for signal <rx_engine_done>.
     Found 1-bit register for signal <rx_engine_over>.
     Found 1-bit register for signal <uart_rtsn_o>.
-    Found 4-bit subtractor for signal <GND_628_o_GND_628_o_sub_18_OUT<3:0>> created at line 1308.
-    Found 10-bit subtractor for signal <GND_628_o_GND_628_o_sub_19_OUT<9:0>> created at line 1308.
-    Found 4-bit subtractor for signal <GND_628_o_GND_628_o_sub_42_OUT<3:0>> created at line 1308.
-    Found 10-bit subtractor for signal <GND_628_o_GND_628_o_sub_43_OUT<9:0>> created at line 1308.
+    Found 4-bit subtractor for signal <GND_625_o_GND_625_o_sub_18_OUT<3:0>> created at line 1308.
+    Found 10-bit subtractor for signal <GND_625_o_GND_625_o_sub_19_OUT<9:0>> created at line 1308.
+    Found 4-bit subtractor for signal <GND_625_o_GND_625_o_sub_42_OUT<3:0>> created at line 1308.
+    Found 10-bit subtractor for signal <GND_625_o_GND_625_o_sub_43_OUT<9:0>> created at line 1308.
     Found 1-bit 8-to-1 multiplexer for signal <uart_clk> created at line 225.
     Found 1-bit 3-to-1 multiplexer for signal <rx_engine_state[1]_rx_engine_state[0]_Mux_50_o> created at line 414.
     WARNING:Xst:2404 -  FFs/Latches <bus_rsp_o_err<0:0>> (without init value) have a constant value of 0 in block <neorv32_uart>.
@@ -2730,7 +2729,7 @@ WARNING:Xst:1710 - FF/Latch <trap_ctrl_irq_buf_17> (without init value) has a co
 WARNING:Xst:1710 - FF/Latch <trap_ctrl_irq_buf_18> (without init value) has a constant value of 0 in block <neorv32_cpu_control_inst>. This FF/Latch will be trimmed during the optimization process.
 
 Synthesizing (advanced) Unit <neorv32_boot_rom>.
-INFO:Xst:3226 - The RAM <Mram_bus_req_i_addr[11]_GND_622_o_wide_mux_0_OUT> will be implemented as a BLOCK RAM, absorbing the following register(s): <rdata>
+INFO:Xst:3226 - The RAM <Mram_bus_req_i_addr[11]_GND_619_o_wide_mux_0_OUT> will be implemented as a BLOCK RAM, absorbing the following register(s): <rdata>
     -----------------------------------------------------------------------
     | ram_type           | Block                               |          |
     -----------------------------------------------------------------------
@@ -2770,7 +2769,7 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_exe_engine_ir[14]_GND_10_o_Mux_321_o
     |     diA            | connected to signal <GND>           |          |
     |     doA            | connected to internal node          |          |
     -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n3580> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n4584> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -2781,7 +2780,7 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n3580> will be implemented on LUTs 
     |     diA            | connected to signal <GND>           |          |
     |     doA            | connected to internal node          |          |
     -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n3589> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n4593> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -3590,11 +3589,11 @@ Top Level Output File Name         : neorv32_test_setup_bootloader.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 7872
+# BELS                             : 7871
 #      GND                         : 1
-#      INV                         : 111
+#      INV                         : 112
 #      LUT1                        : 122
-#      LUT2                        : 360
+#      LUT2                        : 358
 #      LUT3                        : 824
 #      LUT4                        : 766
 #      LUT5                        : 1024
@@ -3606,10 +3605,10 @@ Primitive and Black Box Usage:
 # FlipFlops/Latches                : 2860
 #      FD                          : 69
 #      FDC                         : 619
-#      FDCE                        : 856
-#      FDE                         : 1209
-#      FDP                         : 4
-#      FDPE                        : 36
+#      FDCE                        : 859
+#      FDE                         : 1206
+#      FDP                         : 5
+#      FDPE                        : 35
 #      LD                          : 58
 #      LDE                         : 1
 #      LDE_1                       : 8
@@ -3632,15 +3631,15 @@ Selected Device : 6slx45csg324-2
 
 Slice Logic Utilization: 
  Number of Slice Registers:            2860  out of  54576     5%  
- Number of Slice LUTs:                 5910  out of  27288    21%  
-    Number used as Logic:              5910  out of  27288    21%  
+ Number of Slice LUTs:                 5909  out of  27288    21%  
+    Number used as Logic:              5909  out of  27288    21%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   7281
-   Number with an unused Flip Flop:    4421  out of   7281    60%  
-   Number with an unused LUT:          1371  out of   7281    18%  
-   Number of fully used LUT-FF pairs:  1489  out of   7281    20%  
-   Number of unique control sets:       106
+ Number of LUT Flip Flop pairs used:   7280
+   Number with an unused Flip Flop:    4420  out of   7280    60%  
+   Number with an unused LUT:          1371  out of   7280    18%  
+   Number of fully used LUT-FF pairs:  1489  out of   7280    20%  
+   Number of unique control sets:       104
 
 IO Utilization: 
  Number of IOs:                          12
@@ -3713,7 +3712,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk_i'
   Clock period: 58.739ns (frequency: 17.024MHz)
-  Total number of paths / destination ports: 2850654632667115312644096 / 7797
+  Total number of paths / destination ports: 2850654632667114238902272 / 7799
 -------------------------------------------------------------------------
 Delay:               58.739ns (Levels of Logic = 143)
   Source:            neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/ialu_b_22 (FF)
@@ -3862,7 +3861,7 @@ Delay:               58.739ns (Levels of Logic = 143)
      LUT6:I5->O            4   0.254   1.032  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_normalized/Mmux_final_frac10221 (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_normalized/Mmux_final_frac1022)
      LUT6:I3->O            2   0.235   0.726  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_normalized/Mmux_final_frac912 (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_normalized/Mmux_final_frac912)
      LUT5:I4->O            1   0.254   0.682  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_normalized/Mmux_final_frac914_SW0 (N390)
-     LUT6:I5->O            1   0.254   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_normalized/Mmux_n0160121 (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_normalized/n0160<9>)
+     LUT6:I5->O            1   0.254   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_normalized/Mmux_n0159121 (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_normalized/n0159<9>)
      MUXCY:S->O            1   0.215   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_normalized/Madd_frac_result[11]_GND_135_o_add_27_OUT_cy<9> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_normalized/Madd_frac_result[11]_GND_135_o_add_27_OUT_cy<9>)
      MUXCY:CI->O           0   0.023   0.000  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_normalized/Madd_frac_result[11]_GND_135_o_add_27_OUT_cy<10> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_normalized/Madd_frac_result[11]_GND_135_o_add_27_OUT_cy<10>)
      XORCY:CI->O          22   0.206   1.334  neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_normalized/Madd_frac_result[11]_GND_135_o_add_27_OUT_xor<11> (neorv32_top_inst/core_complex_gen[0].neorv32_cpu_inst/neorv32_cpu_alu_inst/neorv32_cpu_cp_cfu_inst_true.neorv32_cpu_cp_cfu_inst/TopModules_inst/IALU_inst/divup/div_normalized/frac_result[11]_GND_135_o_add_27_OUT<11>)
@@ -4039,15 +4038,15 @@ clk_i          |         |         |   11.949|         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 41.00 secs
-Total CPU time to Xst completion: 40.16 secs
+Total REAL time to Xst completion: 40.00 secs
+Total CPU time to Xst completion: 39.68 secs
  
 --> 
 
 
-Total memory usage is 547948 kilobytes
+Total memory usage is 548028 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  690 (   0 filtered)
+Number of warnings :  689 (   0 filtered)
 Number of infos    :  417 (   0 filtered)
 

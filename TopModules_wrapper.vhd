@@ -34,23 +34,21 @@ architecture Behavioral of TopModules_wrapper is
             dual       : out std_ulogic
         );
     end component;
-
 begin
 
-
-    IALU_inst : IALU
-        Port map (
-            clk => clk,
-            rst => rst,
-            a   => a,
-            b   => b,
-            funct => funct,
-            fmt => fmt,
-            rm => rm,
-            result => result,
-				error =>error,
-            flag => flag
-        );
+IALU_inst : IALU
+Port map (
+	clk => clk,
+	rst => rst,
+	a   => a,
+	b   => b,
+	funct => funct,
+	fmt => fmt,
+	rm => rm,
+	result => result,
+	error =>error,
+	flag => flag
+);
 
 
 end Behavioral;

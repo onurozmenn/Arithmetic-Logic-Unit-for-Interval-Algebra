@@ -1,16 +1,8 @@
 -- ================================================================================ --
--- NEORV32 CPU - Co-Processor: Custom (RISC-V Instructions) Functions Unit (CFU)    --
+-- NEORV32 CPU - Co-Processor: Custom (RISC-V Instructions) Functions Unit (CFU)   --
 -- -------------------------------------------------------------------------------- --
--- For custom/user-defined RISC-V instructions. See the CPU's documentation for     --
--- more information. Also take a look at the "software-counterpart" of this default --
--- CFU hardware example in 'sw/example/demo_cfu'.                                   --
+-- Integrates a custom ALU (TopModules_wrapper) for user-defined RISC-V instructions.
 -- -------------------------------------------------------------------------------- --
--- The NEORV32 RISC-V Processor - https://github.com/stnolting/neorv32              --
--- Copyright (c) NEORV32 contributors.                                              --
--- Copyright (c) 2020 - 2024 Stephan Nolting. All rights reserved.                  --
--- Licensed under the BSD-3-Clause license, see LICENSE for details.                --
--- SPDX-License-Identifier: BSD-3-Clause                                            --
--- ================================================================================ --
 
 library ieee;
 use ieee.std_logic_1164.all;
@@ -18,40 +10,32 @@ use ieee.numeric_std.all;
 
 library neorv32;
 use neorv32.neorv32_package.all;
+
 entity neorv32_cpu_cp_cfu is
   port (
-    -- global control --
-    clk_i       : in  std_ulogic; -- global clock, rising edge
-    rstn_i      : in  std_ulogic; -- global reset, low-active, async
-    -- operation control --
-    start_i     : in std_ulogic; -- operation trigger/strobe
-    active_i    : in std_ulogic; -- operation in progress, CPU is waiting for CFU
-    -- CSR interface --
-    csr_we_i    : in  std_ulogic; -- write enable
-    csr_addr_i  : in  std_ulogic_vector(1 downto 0); -- address (CSR address 0x800 to 0x803)
-    csr_wdata_i : in  std_ulogic_vector(31 downto 0); -- write data
-    csr_rdata_o : out std_ulogic_vector(31 downto 0); -- read data
-    -- operands (form/via custom instruction word) --
-    rtype_i     : in std_ulogic; -- instruction type (R3-type or R4-type); from instruction word's "opcode[5]" bit
-    funct3_i    : in std_ulogic_vector(2 downto 0); -- "funct3" bit-field from custom instruction word
-    funct7_i    : in std_ulogic_vector(6 downto 0); -- "funct7" bit-field from custom instruction word
-    rs1_i       : in  std_ulogic_vector(31 downto 0); -- rf source 1 via "rs1" bit-field from custom instruction word
-    rs2_i       : in  std_ulogic_vector(31 downto 0); -- rf source 2 via "rs2" bit-field from custom instruction word
-    rs3_i       : in  std_ulogic_vector(31 downto 0); -- rf source 3 via "rs3" bit-field from custom instruction word
-    -- result and status --
-    result_o    : out std_ulogic_vector(31 downto 0); -- operation result
-    valid_o     : out std_ulogic -- result valid, operation done; set one cycle before result_o is valid
+    clk_i       : in  std_ulogic; -- Global clock
+    rstn_i      : in  std_ulogic; -- Global reset (low-active)
+    start_i     : in std_ulogic; -- Operation trigger
+    active_i    : in std_ulogic; -- CPU waits for CFU
+    csr_we_i    : in  std_ulogic; -- CSR write enable (not used for writing in this example)
+    csr_addr_i  : in  std_ulogic_vector(1 downto 0); -- CSR address (0x800-0x803)
+    csr_wdata_i : in  std_ulogic_vector(31 downto 0); -- CSR write data (not used)
+    csr_rdata_o : out std_ulogic_vector(31 downto 0); -- CSR read data (error_reg)
+    rtype_i     : in std_ulogic; -- Instruction type (R3/R4)
+    funct3_i    : in std_ulogic_vector(2 downto 0); -- funct3 field
+    funct7_i    : in std_ulogic_vector(6 downto 0); -- funct7 field
+    rs1_i       : in  std_ulogic_vector(31 downto 0); -- Register source 1
+    rs2_i       : in  std_ulogic_vector(31 downto 0); -- Register source 2
+    rs3_i       : in  std_ulogic_vector(31 downto 0); -- Register source 3 (not used)
+    result_o    : out std_ulogic_vector(31 downto 0); -- Operation result
+    valid_o     : out std_ulogic -- Result valid, operation done
   );
 end neorv32_cpu_cp_cfu;
 
 
 architecture neorv32_cpu_cp_cfu_rtl of neorv32_cpu_cp_cfu is
 
-  -- CFU instruction type formats --
-  constant r3type_c : std_ulogic := '0'; -- R3-type CFU instructions (custom-0 opcode)
-  constant r4type_c : std_ulogic := '1'; -- R4-type CFU instructions (custom-1 opcode)
-
-  -- instruction identifiers (funct3 bit-field) --
+  -- Instruction identifiers (funct3) --
   constant rm1 : std_ulogic_vector(2 downto 0) := "000";
   constant rm2 : std_ulogic_vector(2 downto 0) := "001";
   constant rm3 : std_ulogic_vector(2 downto 0) := "010";
@@ -70,154 +54,106 @@ component TopModules_wrapper
            fmt         : in  STD_ULOGIC_VECTOR(1 downto 0);
            rm          : in  STD_ULOGIC_VECTOR(2 downto 0);
            result      : out STD_ULOGIC_VECTOR(31 downto 0);
-           flag         : out STD_ULOGIC;
+           flag        : out STD_ULOGIC;
            error       : out STD_ULOGIC_VECTOR(2 downto 0);
            dual        : out STD_ULOGIC
          );
 end component;
-  -- key storage (accessed via CFU CSRs) --
-  type key_mem_t is array (0 to 3) of std_ulogic_vector(31 downto 0);
-  signal key_mem : key_mem_t;
-  signal funct5 : std_ulogic_vector(4 downto 0); -- funct5, 5 bit
-  signal fmt    : std_ulogic_vector(1 downto 0); -- fmt, 2 bit
-  signal result : std_ulogic_Vector(31 downto 0);
-  -- processing logic --
+
+  signal funct5 : std_ulogic_vector(4 downto 0); -- Derived from funct7_i
+  signal fmt    : std_ulogic_vector(1 downto 0); -- Derived from funct7_i
+
+  -- Internal state for CFU processing --
   type xfint_t is record
-    done : std_ulogic_vector(2 downto 0); -- multi-cycle done shift register; 2 stages = 2 cyles latency
-    al  : std_ulogic_vector(15 downto 0); -- input operand a
-    au  : std_ulogic_vector(15 downto 0); -- input operand b
-    bl  : std_ulogic_vector(15 downto 0); -- input operand a
-    bu  : std_ulogic_vector(15 downto 0); -- input operand b
-    res  : std_ulogic_vector(31 downto 0); -- operation results
-    err  : std_ulogic_vector(2 downto 0); -- operation results
+    done : std_ulogic_vector(2 downto 0); -- Multi-cycle done shift register (2 cycles latency)
+    res  : std_ulogic_vector(31 downto 0); -- Operation result
   end record;
   signal xfint : xfint_t;
-  
-  -- Signals for TopModules_wrapper
-  signal ialu_clk        : std_ulogic;
-  signal ialu_rst        : std_ulogic;
-  signal ialu_a          : std_ulogic_vector(31 downto 0);
-  signal ialu_b          : std_ulogic_vector(31 downto 0);
-  signal ialu_funct      : std_ulogic_vector(4 downto 0);
-  signal ialu_fmt        : std_ulogic_vector(1 downto 0);
-  signal ialu_rm         : std_ulogic_vector(2 downto 0);
-  signal ialu_result     : std_ulogic_vector(31 downto 0);
-  signal ialu_flag        : std_ulogic;
-  signal ialu_error     : std_ulogic_vector(2 downto 0);
-  signal ialu_dual       : std_ulogic;
-  signal error_reg : std_ulogic_vector(2 downto 0);
+
+  -- Signals for TopModules_wrapper instance --
+  signal ialu_rst    : std_ulogic;
+  signal ialu_a      : std_ulogic_vector(31 downto 0);
+  signal ialu_b      : std_ulogic_vector(31 downto 0);
+  signal ialu_funct  : std_ulogic_vector(4 downto 0);
+  signal ialu_fmt    : std_ulogic_vector(1 downto 0);
+  signal ialu_rm     : std_ulogic_vector(2 downto 0);
+  signal ialu_result : std_ulogic_vector(31 downto 0);
+  signal ialu_flag   : std_ulogic;
+  signal ialu_error  : std_ulogic_vector(2 downto 0);
+  signal ialu_dual   : std_ulogic;
+  signal error_reg   : std_ulogic_vector(2 downto 0); -- Stores error status for CSR read
 begin
-	 
+
   funct5 <= funct7_i(6 downto 2);
   fmt    <= funct7_i(1 downto 0);
-  -- CFU-Internal Control and Status Registers (CFU-CSRs): 128-Bit Key Storage --------------
-  -- -------------------------------------------------------------------------------------------
 
-	-- CSR okuma ilemi iin kombinasyonel process:
-	csr_read: process(csr_addr_i, key_mem, error_reg)
-	begin
-		csr_rdata_o <= (31 downto 3 => '0') & error_reg;
-	end process csr_read;
+  -- CSR Read: Provides the error_reg value --
+  csr_read: process(csr_addr_i, error_reg)
+  begin
+    csr_rdata_o <= (31 downto 3 => '0') & error_reg;
+  end process csr_read;
 
-  -- asynchronous read access --
-  --csr_rdata_o <= key_mem(to_integer(unsigned(csr_addr_i)));
-  -- Instantiate TopModules_wrapper
-	TopModules_inst : TopModules_wrapper
-	  port map (
-		 clk         => clk_i,            -- global clock
-		 rst         => ialu_rst,           -- global reset
-		 a           => ialu_a,            -- rs1_i'yi 'a'ya bala
-		 b           => ialu_b,            -- rs2_i'yi 'b'ye bala
-		 funct       => ialu_funct,           -- funct5'i 'funct'ye bala
-		 fmt         => ialu_fmt,              -- fmt'i 'fmt'ye bala
-		 rm          => ialu_rm,         -- funct3_i'yi 'rm'ye bala
-		 result      => ialu_result,     -- ilem sonucu
-		 flag         => ialu_flag,      -- flag
-		 error       => ialu_error,      -- error
-		 dual 		 => ialu_dual      -- dual
-		 
-		   );
+  -- Instantiate the custom ALU wrapper --
+  TopModules_inst : TopModules_wrapper
+    port map (
+      clk         => clk_i,
+      rst         => ialu_rst,
+      a           => ialu_a,
+      b           => ialu_b,
+      funct       => ialu_funct,
+      fmt         => ialu_fmt,
+      rm          => ialu_rm,
+      result      => ialu_result,
+      flag        => ialu_flag,
+      error       => ialu_error,
+      dual        => ialu_dual
+    );
 
-
-  -- CORE ------------------------------------------------------------------
+  -- Main CFU Processing Logic --
   xfint_core: process(rstn_i, clk_i)
   begin
     if (rstn_i = '0') then
-      xfint.done <= (others => '0');
-      xfint.al   <= (others => '0');
-      xfint.au   <= (others => '0');
-      xfint.bl   <= (others => '0');
-      xfint.bu   <= (others => '0');
-      xfint.res  <= (others => '0');
-      xfint.err  <= (others => '0');
-      ialu_rst   <= '1'; -- Reset the IALU initially
+      xfint.done  <= (others => '0');
+      xfint.res   <= (others => '0');
+      ialu_rst    <= '1'; -- Assert IALU reset
+      error_reg   <= (others => '0'); -- Reset error register
     elsif rising_edge(clk_i) then
-        -- "operation-done" shift register: module has 2 cycles latency --
-        xfint.done(0) <= '0'; -- default: no operation trigger
-        xfint.done(1) <= xfint.done(0);
-        xfint.done(2) <= xfint.done(1);
+      xfint.done(0) <= '0';
+      xfint.done(1) <= xfint.done(0);
+      xfint.done(2) <= xfint.done(1); -- 2-cycle latency tracking
 
-        -- trigger new operation --
-        if (start_i = '1') then -- execution trigger and correct instruction type
-          xfint.al      <= rs1_i(31 downto 16); -- buffer input operand rs1 (for improved physical timing)
-          xfint.au      <= rs1_i(15 downto  0); -- buffer input operand rs1 (for improved physical timing)
-          xfint.bl      <= rs2_i(31 downto 16); -- buffer input operand rs2 (for improved physical timing)
-          xfint.bu      <= rs2_i(15 downto  0); -- buffer input operand rs2 (for improved physical timing)
-			 
+      if (start_i = '1') then -- On operation trigger
+        ialu_a      <= rs1_i;
+        ialu_b      <= rs2_i;
+        ialu_funct  <= funct5;
+        ialu_fmt    <= fmt;
+        ialu_rm     <= funct3_i;
+        ialu_rst    <= '0'; -- Deassert IALU reset
+      end if;
 
-          -- Connect inputs to IALU
-          ialu_a     <= rs1_i; -- Pass rs1_i to IALU input a
-          ialu_b     <= rs2_i; -- Pass rs2_i to IALU input b
-          ialu_funct <= funct5; -- Pass funct5 to IALU input funct
-          ialu_fmt   <= fmt;    -- Pass fmt to IALU input fmt
-          ialu_rm    <= funct3_i; -- Pass funct3_i to IALU input rm
-          ialu_rst   <= '0'; -- Deassert reset for IALU
-        end if;
+      if (ialu_flag = '1') then
+        xfint.done(0) <= '1'; -- Signal start of done sequence
+      end if;
 
-		  if (ialu_flag = '1') then
-			   xfint.done(0) <= '1'; -- trigger operation
-		  end if;
-        -- data processing --
-        if (xfint.done(1) = '1') then -- second-stage execution trigger
-            -- Use the result from IALU
-				xfint.res <= ialu_result; -- Store the result from IALU
-				error_reg <= ialu_error; -- BURAYA TAI!
-
-            ialu_rst   <= '1'; -- Deassert reset for IALU
-
-        end if;
-
+      if (xfint.done(1) = '1') then -- After 2 cycles
+        xfint.res <= ialu_result;   -- Capture result
+        error_reg <= ialu_error;    -- Capture error status
+        ialu_rst    <= '0'; -- Deassert IALU reset
+      end if;
     end if;
   end process xfint_core;
 
-
-
-  -- ENDCORE ------------------------------------------------------------------
-
-
-  -- Function Result Select -----------------------------------------------------------------
-  -- -------------------------------------------------------------------------------------------
-  result_select: process(funct3_i, xfint) --process(rtype_i, funct3_i, xfint)
+  -- Select and output the result --
+  result_select: process(funct3_i, xfint)
   begin
-    --if (r3type_c = r3type_c) then -- R3-type instructions; function select via "funct3" and ""funct7
-    -- ----------------------------------------------------------------------
-      case funct3_i is -- just check "funct3" here; "funct7" bit-field is ignored in this example
-        when rm1 | rm2 | rm3 | rm4 | rm5 | rm6 | rm7 | rm8 => -- xtea encryption/decryption
-          result_o <= xfint.res; -- processing result
-          valid_o  <= xfint.done(2); -- multi-cycle processing done when set
-			 
-        when others => -- all unspecified operations
-          result_o <= (others => '0'); -- no logic implemented
-          valid_o  <= '0'; -- this will cause an illegal instruction exception after timeout
-      end case;
-
-    --else -- R4-type instructions; function select via "funct3" (but ignored here)
-    -- ----------------------------------------------------------------------
-    --  result_o <= (others => '0'); -- no logic implemented
-     -- valid_o  <= '0'; -- this will cause an illegal instruction exception after timeout
-
-    --end if;
+    case funct3_i is
+      when rm1 | rm2 | rm3 | rm4 | rm5 | rm6 | rm7 | rm8 => -- Valid operations
+        result_o <= xfint.res;
+        valid_o  <= xfint.done(2);
+      when others => -- Unspecified operations
+        result_o <= (others => '0');
+        valid_o  <= '0'; -- May cause illegal instruction exception
+    end case;
   end process result_select;
-
 
 end neorv32_cpu_cp_cfu_rtl;

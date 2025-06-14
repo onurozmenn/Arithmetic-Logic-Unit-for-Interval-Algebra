@@ -188,7 +188,6 @@ module ProcessRedirectorModule(
 		wire G_BU_0;
 		wire L_AL_0;
 		wire L_BL_0;
-		wire ready;
 		ZeroComparatorG cmp_AU_0(.A(AU), .G(G_AU_0));
 		ZeroComparatorL cmp_AL_0(.A(AL), .L(L_AL_0));
 		ZeroComparatorG cmp_BU_0(.A(BU), .G(G_BU_0));
@@ -484,7 +483,6 @@ module DividerTopModule(input [`W-1:0] n1,n2,
 	wire[`MANTISSA-1:0] frac1,frac2,f_frac;
 	wire[`MANTISSA+1:0] div_result;
 	wire[`EXP-1:0] exp_result;
-	wire flagin = 1'b0;
 	wire flag;
 	assign {s1,exp1,frac1} = n1;
 	assign {s2,exp2,frac2} = n2;
@@ -506,14 +504,13 @@ module DividerTopModule(input [`W-1:0] n1,n2,
 		
 	Four_Bit_Divider div(.a({1'b1,frac1}), .b({1'b1,frac2}), .div_result(div_result));
 	Four_Bit_Substractor_Div subs(.A(exp1),.B(exp2),.Sum(exp_result),.out_of_range(out_of_range));
-	Div_Normalization div_normalized(.exp_result(exp_result), .frac_result(div_result),.flagin(flagin), .final_exp(f_exp),.final_frac(f_frac), .flagout(flag));
+	Div_Normalization div_normalized(.exp_result(exp_result), .frac_result(div_result), .final_exp(f_exp),.final_frac(f_frac), .flagout(flag));
 	assign flagout = flag;
 	assign result = {s1^s2,f_exp,f_frac}; 
 endmodule
 
 module Div_Normalization(input [`EXP-1:0] exp_result,
 								 input [`MANTISSA+1:0] frac_result,
-								 input flagin,
 								 output reg flagout,
 								 output reg [`EXP-1:0] final_exp,
 								 output reg [`MANTISSA-1:0] final_frac);
@@ -546,7 +543,7 @@ module Div_Normalization(input [`EXP-1:0] exp_result,
 			final_exp = final_exp-1'b1;		
 			final_frac = 0;
 		end	
-		flagout = flagin? 0:1'b1;
+		flagout = 1'b1;
 	end
 endmodule
 
@@ -665,11 +662,8 @@ module MultiplierTopModule #(parameter updown = 0)(
 		wire [`EXP-1:0] mult_sumexp, mult_sumexp3, norm_exp, norm_exp2;
 		reg  [`EXP-1:0] mult_sumexp2, mult_sumexp4;
 		wire [((`MANTISSA+1)*2)-1:0] norm_res, norm_res2; 
-		wire [`W-1:0] temp0, temp1, temp2;
-		reg ch = 0;
-		reg [(`W*4)-1:0] tABCD=0;
+		wire [`W-1:0] temp0, temp1;
 		wire [2:0] error_wna,error_wnb,error_wra,error_wrb;
-		wire [2:0] error_wc;
 		always@(*)begin
 			flag = 1'b0;
 			case(dual)
