@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2025-06-14T22:20:10</DateModified>
+  <DateModified>2025-06-15T14:38:27</DateModified>
   <ModuleName>neorv32_test_setup_bootloader</ModuleName>
   <SummaryTimeStamp>2025-06-12T14:28:51</SummaryTimeStamp>
   <ImplementationReportsDirectory>/home/onur/Desktop/Neorv/</ImplementationReportsDirectory>

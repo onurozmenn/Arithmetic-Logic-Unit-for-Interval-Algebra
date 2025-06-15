@@ -5,5 +5,8 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="info" file="ConstraintSystem" num="0" >The Period constraint &lt;NET &quot;clk_i&quot;   PERIOD= 50ns HIGH 50%;&gt; [neorv32_top.ucf(3)], is specified using the Net Period method which is not recommended. Please use the Timespec PERIOD method.
+</msg>
+
 </messages>
 

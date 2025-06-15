@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Fri Jun 13 16:14:15 2025
+// Written by: Map P.20131013 on Sun Jun 15 15:24:31 2025
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -15,5 +15,6 @@ COMP "gpio_o<5>" LOCATE = SITE "D4" LEVEL 1;
 COMP "gpio_o<6>" LOCATE = SITE "P16" LEVEL 1;
 COMP "gpio_o<7>" LOCATE = SITE "N12" LEVEL 1;
 COMP "rstn_i" LOCATE = SITE "T15" LEVEL 1;
+NET "clk_i_BUFGP/IBUFG" PERIOD = 50 ns HIGH 50%;
 SCHEMATIC END;
 
