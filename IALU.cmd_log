@@ -1,1 +1,0 @@
-xst -intstyle ise -ifn "/home/onur/Desktop/Neorv/IALU.xst" -ofn "/home/onur/Desktop/Neorv/IALU.syr" 

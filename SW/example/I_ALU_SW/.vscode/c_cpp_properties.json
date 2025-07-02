@@ -1,0 +1,40 @@
+{
+    "configurations": [
+        {
+            "name": "linux-gcc-x64",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/home/onur/Desktop/neorv32-main/sw/lib/include/**"
+            ],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "${default}",
+            "cppStandard": "${default}",
+            "intelliSenseMode": "linux-gcc-x64",
+            "compilerArgs": [
+                "-I/home/onur/Desktop/neorv32-main/sw/lib/include"
+            ]
+        },
+        {
+            "name": "riscv32-gcc",
+            "includePath": [
+                "/home/onur/Desktop/neorv32-main/sw/example/demo_cfu/**",
+                "/home/onur/Desktop/neorv32-main/sw/lib/include/**"
+            ],
+            "defines": [],
+            "compilerPath": "/home/onur/.local/xPacks/@xpack-dev-tools/riscv-none-elf-gcc/14.2.0-2.1/.content/bin/riscv-none-elf-gcc",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-clang-x64",
+            "compilerPathInCppPropertiesJson": "/usr/bin/clang",
+            "mergeConfigurations": false,
+            "recursiveIncludes": {},
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "compilerArgs": [
+                "-I/home/onur/Desktop/neorv32-main/sw/lib/include"
+            ]
+        }
+    ],
+    "version": 4
+}
